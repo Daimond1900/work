@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/whall_style"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <LinearLayout
+            style="@style/wrap_style"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_id"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/edit_text"
+                android:padding="2dip"
+                android:src="@drawable/noneimg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1" >
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+	                        android:id="@+id/policy_title"
+	                        style="@style/whwrap_style"
+	                        android:singleLine="true"
+	                        android:text="2012年8月江都职教会议2012年8月江都职教会议2012年8月江都职教会议"
+	                        android:textColor="@color/black"
+	                        android:textSize="14dp"
+	                        android:layout_alignParentLeft="true" 
+	                        android:layout_centerVertical="true"
+	                        android:layout_marginRight="45dip"/>
+
+                        <TextView
+	                        android:id="@+id/policy_time"
+	                        style="@style/whwrap_style"
+	                        android:singleLine="true"
+	                        android:text="2012-05-03"
+	                        android:textColor="#DA990D"
+	                        android:textSize="8dp"
+	                        android:layout_centerVertical="true"
+	                        android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/policy_content"
+                        style="@style/whwrap_style"
+                        android:maxLines="2"
+                        android:text="2012年8月江都职教会议2012年8月江都职教会议2012年8月江都职教会议2012年8月江都职教会议2012年8月江都职教会议"
+                        android:textColor="#A0A8A0"
+                        android:textSize="12dp" />
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/main_line" />
+
+</LinearLayout>

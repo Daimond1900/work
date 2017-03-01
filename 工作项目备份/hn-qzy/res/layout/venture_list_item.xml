@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow android:layout_margin="5dip">
+
+        <ImageView
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/edit_text"
+            android:padding="2dip"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:scaleType="fitXY"
+            android:id="@+id/img"
+            android:src="@drawable/noneimg"
+            />
+
+        <TableLayout
+            style="@style/whwrap_style"
+            android:layout_weight="1" android:padding="4dip">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="标题内容显示区"
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+                   <TextView
+                    android:id="@+id/readCount"
+                    android:visibility="gone"
+                    style="@style/whwrap_style"
+                    android:singleLine="true"
+                    android:text="阅读(10)"
+                    android:textColor="#FF7700"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/fromSource"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="信息来源"
+                    android:textColor="#BCBCBC"
+                    android:textSize="14sp" />
+                  <TextView
+                    android:id="@+id/pushDate"
+                    style="@style/whwrap_style"
+                    android:singleLine="true"
+                    android:text="2012-12-10"
+                    android:textColor="#cccccc"
+                    android:textSize="14sp" />
+            </TableRow>
+
+           
+        </TableLayout>
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/right_jt" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="视频详细"
+            android:textColor="#ffffff"
+            android:textSize="20dp" >
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bt_drdp_back"
+        android:text="返回"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+    <ScrollView
+        style="@style/whall_style"
+        android:layout_above="@+id/included1"
+        android:layout_below="@id/top"
+        android:layout_margin="5dip"
+        android:background="@drawable/home_list_bg"
+        android:padding="10dip" >
+
+        <TableLayout style="@style/whall_style" >
+
+            <TableRow android:padding="4dip" >
+
+                <TextView
+                    android:id="@+id/video_title"
+                    style="@style/whall_style"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:text="视频标题视频标题视频标题视频标题"
+                    android:textColor="#333"
+                    android:textSize="18dip" />
+            </TableRow>
+
+            <TableRow>
+
+                <TableLayout style="@style/whall_style" >
+
+                    <TableRow android:padding="4dip" >
+
+                        <TextView
+                            style="@style/whwrap_style"
+                            android:text="类型:"
+                            android:textColor="#333"
+                            android:textSize="14dip" />
+
+                        <TextView
+                            android:id="@+id/video_type"
+                            style="@style/whwrap_style"
+                            android:paddingLeft="10dip"
+                            android:text="高清视频"
+                            android:textColor="#ef0000"
+                            android:textSize="14dip" />
+                    </TableRow>
+
+                    <TableRow android:padding="4dip" >
+
+                        <TextView
+                            style="@style/whwrap_style"
+                            android:text="时间:"
+                            android:textColor="#333"
+                            android:textSize="14dip" />
+
+                        <TextView
+                            android:id="@+id/video_date"
+                            style="@style/whwrap_style"
+                            android:paddingLeft="10dip"
+                            android:text="2012-10-12:12:12"
+                            android:textColor="#ef0000"
+                            android:textSize="14dip" />
+                    </TableRow>
+
+                    <TableRow android:padding="4dip" >
+
+                        <TextView
+                            style="@style/whwrap_style"
+                            android:text="时长:"
+                            android:textColor="#333"
+                            android:textSize="14dip" />
+
+                        <TextView
+                            android:id="@+id/video_long"
+                            style="@style/whwrap_style"
+                            android:paddingLeft="10dip"
+                            android:text="01.23"
+                            android:textColor="#ef0000"
+                            android:textSize="14dip" />
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    style="@style/whall_style"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip" >
+
+                    <Button
+                        android:id="@+id/play"
+                        style="@style/whwrap_style"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/play_bg" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:background="#ccc"
+                android:padding="4dip" >
+
+                <TextView
+                    style="@style/whall_style"
+                    android:layout_span="2"
+                    android:text="视频介绍"
+                    android:textColor="#333"
+                    android:textSize="18dip" />
+            </TableRow>
+
+            <TableRow android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/video_content"
+                    style="@style/whall_style"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:text="视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍"
+                    android:textColor="#413F40"
+                    android:textSize="14dip" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/included1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/bottom_menu" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/top_back_btn" />
+
+        <TextView
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:text="公司详情"
+            android:textColor="@color/white"
+            android:textSize="20dip" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/whall_style"
+        android:layout_below="@+id/top_title"
+        android:scrollbarStyle="insideInset" >
+
+        <TableLayout style="@style/whall_style" >
+
+            <TableRow style="@style/position_tablerow" >
+
+                <TextView
+                    android:id="@+id/companyName"
+                    style="@style/position_title"
+                    android:hint="公司" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/positionItem"
+                style="@style/position_tablerow"
+                android:background="@drawable/searcher_item_bg" >
+
+                <TextView
+                    android:id="@+id/allPosition"
+                    style="@style/position_itemtxt"
+                    android:layout_marginRight="5dip"
+                    android:drawableRight="@drawable/right_jt"
+                    android:paddingLeft="5dip"
+                    android:singleLine="true"
+                    android:text="该公司所有职位" />
+            </TableRow>
+
+            <LinearLayout
+                style="@style/whall_style"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/common_bg"
+                android:orientation="vertical"
+                android:padding="1dip" >
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="性质:" />
+
+                    <TextView
+                        android:id="@+id/qualityName"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="行业:" />
+
+                    <TextView
+                        android:id="@+id/tradeName"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="电话:" />
+
+                    <TextView
+                        android:id="@+id/telNumber"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="传真:" />
+
+                    <TextView
+                        android:id="@+id/faxes"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="邮箱:" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="联系人:" />
+
+                    <TextView
+                        android:id="@+id/contact"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="网址:" />
+
+                    <TextView
+                        android:id="@+id/url"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:text="" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        android:id="@+id/companyDesc"
+                        style="@style/position_itemtxt"
+                        android:hint="简介" />
+                </TableRow>
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/companyAddressItem"
+                style="@style/position_tablerow"
+                android:background="@drawable/map_item_bgs" >
+
+                <TextView
+                    android:id="@+id/companyAddress"
+                    style="@style/position_itemtxt"
+                    android:layout_marginRight="5dip"
+                    android:drawableRight="@drawable/info_detail_map_icon"
+                    android:paddingLeft="5dip"
+                    android:singleLine="true"
+                    android:textColor="#fff"
+                    android:textSize="16.0sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

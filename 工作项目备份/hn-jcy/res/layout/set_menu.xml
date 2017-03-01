@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout_Item"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:paddingBottom="4dip">
+	<!--<ImageView android:id="@+id/item_imageg"
+		android:layout_centerHorizontal="true" 
+		android:layout_width="wrap_content"
+		android:src="@drawable/setup_jiao"
+		android:layout_height="wrap_content"></ImageView>
+	<TextView android:layout_below="@id/item_imageg" 
+	    android:id="@+id/item_textg"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="4dip" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:textColor="#7F8184" 
+		android:text="名片交换"
+		android:textSize="18px"></TextView>  -->
+		
+		
+		<ImageView android:id="@+id/item_imageg"
+		android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"></ImageView>
+	<TextView android:layout_below="@id/item_imageg" android:id="@+id/item_textg"
+	    android:layout_marginTop="10dip"
+		android:layout_centerHorizontal="true" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:textColor="#7F8184" android:textSize="16dip"></TextView>
+		
+</RelativeLayout>

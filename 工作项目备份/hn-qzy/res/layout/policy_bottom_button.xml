@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/bottomBtn1"
+        style="@style/menu_btn_style"
+        android:drawableTop="@drawable/menu_policy_btn_bg1"
+        android:text="市 内" />
+
+    <Button
+        android:id="@+id/bottomBtn2"
+        style="@style/menu_btn_style"
+        android:drawableTop="@drawable/menu_policy_btn_bg2"
+        android:text="省 内" />
+
+    <Button
+        android:id="@+id/bottomBtn3"
+        style="@style/menu_btn_style"
+        android:drawableTop="@drawable/menu_policy_btn_bg3"
+        android:text="国 内" />
+
+    <Button
+        android:id="@+id/bottomBtn4"
+        android:visibility="gone"
+        style="@style/menu_btn_style"
+        android:drawableTop="@drawable/menu_policy_btn_bg4"
+        android:text="政策文件" />
+
+</LinearLayout>

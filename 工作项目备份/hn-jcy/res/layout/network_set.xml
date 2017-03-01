@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="@color/white"
+	android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+	>
+
+    <LinearLayout
+        android:id="@+id/top_liner"
+        style="@style/ywrap_style"
+        android:layout_alignParentTop="true"
+        android:background="#A50303" 
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip" >
+        
+		<ImageView style="@style/whwrap_style" 
+            android:src="@drawable/ic_dialog_menu_generic" 
+            android:layout_marginLeft="10dip"
+            android:layout_gravity="center_vertical"/>
+        
+        <TextView
+            style="@style/network_top_title"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/pTitle" 
+            android:layout_marginLeft="5dip"
+            android:text="@string/main_fetch_fail"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:layout_margin="8dip"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            style="@style/fill_style"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:padding="5dip"
+            android:text="@string/NoSignalException"
+            android:textColor="@color/black"
+            android:textSize="18dip"/>
+
+        <LinearLayout
+            style="@style/ywrap_style"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/update"
+                style="@style/common_btns"
+                android:layout_weight="1"
+                android:text="@string/netWork_set"
+                />
+
+            <Button
+                android:id="@+id/close"
+                style="@style/common_btns"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="@string/alert_dialog_cancel"
+               />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

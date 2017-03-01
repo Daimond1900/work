@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/cityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/policy_menu_btn1_"
+        android:text="地方法规"
+        android:textColor="@color/black"
+        android:textSize="14sp" >
+    </Button>
+
+    <Button
+        android:id="@+id/provinceBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/policy_menu_btn2_"
+        android:text="省级法规"
+        android:textColor="@color/black"
+        android:textSize="14sp" >
+    </Button>
+
+    <Button
+        android:id="@+id/countryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:background="@drawable/policy_menu_btn3_"
+        android:text="国家法规"
+        android:textColor="@color/black"
+        android:textSize="14sp" >
+    </Button>
+
+</LinearLayout>

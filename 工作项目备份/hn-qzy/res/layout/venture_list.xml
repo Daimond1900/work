@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_back_btn" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="创业平台"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/picBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/pic_btn_icon"
+            /> 
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top_title" >
+        <!-- 搜索框  start-->
+     <LinearLayout style="@style/ywrap_style"
+		            android:focusableInTouchMode="true"  
+                    android:id="@+id/search_bar" 
+		            android:background="@drawable/input_search"
+		            android:layout_marginTop="5dip"
+		            android:layout_marginLeft="4dip"
+		            android:layout_marginRight="4dip"
+		            android:padding="0dip">
+		                
+		            <EditText style="@style/wrap_style"
+		                android:layout_weight="1"
+		                android:hint="请在这里输入查询条件"
+		                android:textSize="14dip"
+		                android:layout_margin="2dip"
+		                android:id="@+id/keyWord"
+		                android:singleLine="true"
+		                android:padding="4dip"
+		                android:maxLength="25"
+		                android:background="@null"/>
+		            <Button
+		                style="@style/whwrap_style"
+		                android:text=" "
+		                android:padding="4dip"
+		                android:background="@drawable/search_btns"
+		                android:layout_marginTop="0dip"
+		                android:id="@+id/search_btn"
+		                />
+    </LinearLayout>
+    <!-- 搜索框 end-->
+        <LinearLayout
+            android:layout_below="@id/search_bar"  
+            style="@style/fill_style"
+            android:layout_margin="4dip"
+            android:background="@drawable/common_bg"
+            android:padding="1dip" >
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="#efefef"
+                android:dividerHeight="1dip"
+                android:fastScrollEnabled="true" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

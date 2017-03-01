@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_back_btns" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="周边信息"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/refreshBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/refresh_btns" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top_title" >
+
+         <RelativeLayout
+                style="@style/ywrap_style"
+                android:id="@+id/search_barBtn"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/category_info_sift_title">
+            <Button style="@style/category_btns" android:text="筛选"
+			android:id="@+id/screen_btn" android:layout_alignParentRight="true" />
+		    <TextView style="@style/nav_title" android:textColor="#666" android:textSize="14dip" android:layout_marginLeft="15dip" android:id="@+id/nav_title" android:layout_alignParentLeft="true"
+			android:text="@string/nav_title" />
+        </RelativeLayout>
+      
+        <LinearLayout
+            style="@style/fill_style"
+            android:layout_below="@+id/search_barBtn"
+            android:layout_margin="4dip"
+            android:background="@drawable/common_bg"
+            android:padding="0dip" >
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="#00000000"
+                android:dividerHeight="1dip"
+                android:scrollbars="none" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

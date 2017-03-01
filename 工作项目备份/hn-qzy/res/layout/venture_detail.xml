@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#fff"
+    android:orientation="vertical" >
+ <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_back_btn" />
+
+        <TextView
+            style="@style/wrap_style"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="详情"
+            android:id="@+id/title"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+       
+    </RelativeLayout>
+    <ScrollView style="@style/whall_style" 
+        android:layout_margin="5dip"
+        android:layout_below="@id/top_title" 
+        android:background="@drawable/combg"
+    	android:padding="2dip">
+      <LinearLayout
+            style="@style/whall_style"
+            android:focusableInTouchMode="true"
+            android:padding="5dip"
+            android:orientation="vertical" >
+            <ImageView
+            android:id="@+id/pic"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/loadingpic" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="汽车美容装潢"
+                android:textColor="#000000"
+                android:id="@+id/titleTxt"
+                android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="来源：扬州市人力资源网"
+                    android:id="@+id/fromSource"
+                    android:textColor="#535252"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/timeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:text="时间:2012-07-26 18:34"
+                    android:textColor="#6C6C6C"
+                    android:textSize="15sp" />
+                <TextView
+                style="@style/whall_style"
+                android:id="@+id/content"
+                android:layout_weight="1"
+                android:padding="2dip"
+                android:textColor="#333"
+                android:text="ewrwerwerewrwerwerew"
+                android:textSize="14sp" />
+        </LinearLayout>
+   </ScrollView>
+</RelativeLayout>

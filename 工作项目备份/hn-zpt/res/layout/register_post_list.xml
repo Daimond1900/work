@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yifeng.zpt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/fill_wrap_style"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_btn_back_style" />
+
+        <TextView
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:text="报名信息"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        style="@style/fill_wrap_style"
+        android:layout_below="@+id/top"
+        android:layout_weight="1"
+        android:background="@drawable/register_tab"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <Button
+            android:id="@+id/qbBtn"
+            style="@style/fill_wrap_style"
+            android:layout_weight="1"
+            android:background="@drawable/register_tab_button"
+            android:text="全  部"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/ytzBtn"
+            style="@style/fill_wrap_style"
+            android:layout_weight="1"
+            android:background="@drawable/register_tab_button_"
+            android:text="已通知"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/yjjBtn"
+            style="@style/fill_wrap_style"
+            android:layout_weight="1"
+            android:background="@drawable/register_tab_button_"
+            android:text="已拒绝"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        style="@style/fill_style"
+        android:layout_below="@+id/buttons"
+        android:padding="0dip" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#00000000"
+            android:dividerHeight="1dip"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</RelativeLayout>

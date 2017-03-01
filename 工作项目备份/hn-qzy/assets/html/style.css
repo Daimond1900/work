@@ -1,0 +1,16 @@
+    *{marign:0px;padding:0px;font-size:12px; line-height:24px}
+	    body{margin:0px;font-size:12px}
+	    .main{margin: 0 auto;text-align: center;line-height: 24px;}
+	    h1{color:#222;margin: 0px; padding: 5px;line-height: 24px;font-size:14px;}
+	    h2{padding-left:5px;background: #efefef;margin: 0px;text-align: left;color:#666}
+	    p{text-align: left; padding-left:10px;padding-right:10px;}
+	   .red{color: red;}
+	   a{text-decoration:none; color:#222}
+	   img{border:none;}
+	   table{border:1px  solid #efefef; border-left:none; border-top:none; margin:2px;}
+	   table tr td,table tr th{border:1px  solid #efefef; border-right:none; border-bottom:none; padding-left:10px;}
+	   table tr th{ font-weight:lighter; text-align:right}
+	   table tr th.clos{ text-align:left; background:#efefef}
+	   .ac a{font-size:16px; border:1px solid #ccc;display: block;  }
+	   .ac a:hover{background: url(img/right.png) #FFC503 no-repeat right; color:#fff}
+	  

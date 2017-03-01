@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_back_btn" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="抬头标题"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/refreshBtn"
+            style="@style/refresh_btn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/inputEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:hint="请在这里输入查询条件"
+                android:paddingLeft="5dp"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:background="@drawable/search_btns" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@+id/search_bar"
+        android:layout_margin="4dip"
+        android:padding="1dip" >
+
+        <com.yifeng.hnqzt.ui.MyListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/common_bg"
+            android:cacheColorHint="#00000000"
+            android:divider="#efefef"
+            android:dividerHeight="1dip"
+            android:fastScrollEnabled="true"
+            android:padding="0dip" />
+    </LinearLayout>
+
+</RelativeLayout>

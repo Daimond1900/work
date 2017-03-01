@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题	收银台 -->
+
+    <include layout="@layout/head" />
+
+    <!-- 请输入付款金额 显示 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="@color/pay_background"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Wrap"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="left"
+            android:text="请输入金额"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            style="@style/FillAndWrap"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="10dip" >
+
+            <TextView
+                style="@style/WrapAndFill"
+                android:gravity="bottom"
+                android:paddingBottom="5dip"
+                android:text="￥"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp" />
+
+            <com.winksoft.yzsmk.widget.MoneyEditText
+                android:id="@+id/enter_pay"
+                style="@style/WrapAndFill"
+                android:background="@null"
+                android:gravity="bottom"
+                android:textColor="#FFFFFF"
+                android:textSize="50dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/keyboard" />
+
+</LinearLayout>

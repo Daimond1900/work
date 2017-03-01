@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/bt_task_menu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bt_task_menu1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom|right"
+        android:text="8"
+        android:textColor="@color/red"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/bt_task_menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bt_task_menu2"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom|right"
+        android:text="8"
+        android:textColor="@color/red"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/bt_task_menu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bt_task_menu3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom|right"
+        android:text="8"
+        android:textColor="@color/red"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/bt_task_menu4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bt_task_menu4"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom|right"
+        android:text="8"
+        android:textColor="@color/red"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/bt_task_menu5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bt_task_menu5"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom|right"
+        android:text="8"
+        android:textColor="@color/red"
+        android:textSize="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/task_menu6"
+        android:gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_left_btn" />
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/top_title"
+            android:text="劳动力基本信息" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/top_right_button"
+            android:text="新建"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_bg"
+                android:hint="按身份证号或名字查询"
+                android:maxLength="20"
+                android:paddingLeft="5dp"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchbut"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:background="@drawable/search_btns" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_menu"
+        android:layout_below="@id/search"
+        android:layout_margin="5dp"
+        android:background="@drawable/edit_text"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/edt_total"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            android:text="共0条记录"
+            android:textColor="#CC0000"
+            android:textSize="14sp" />
+
+        <com.yifeng.hngly.ui.MyListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:divider="#ffffff"
+            android:fastScrollEnabled="true"
+            android:padding="0dip" />
+    </LinearLayout>
+    <!-- 底部菜单 -->
+
+    <LinearLayout
+        android:id="@+id/btn_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</RelativeLayout>

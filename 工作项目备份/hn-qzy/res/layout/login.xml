@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="用户登录"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_title"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/common_bg"
+        android:orientation="vertical" >
+
+        <!-- 主体 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/user_lab"
+                    style="@style/login_lab"
+                    android:text="用户名：" />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/input_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dip"
+                    android:hint="请输入用户名"
+                    android:textSize="14dip"
+                    android:singleLine="true"
+                    android:maxLength="15"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/paw_lab"
+                    style="@style/login_lab"
+                    android:text="密    码：" />
+
+                <EditText
+                    android:id="@+id/user_pass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/input_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dip"
+                    android:hint="请输入密码"
+                    android:password="true"
+                    android:textSize="14dip"
+                    android:maxLength="15"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+               <CheckBox style="@style/MyCheckBox" android:id="@+id/remeberPwd" android:text="记住密码" android:textColor="#222"/>
+
+               <CheckBox style="@style/MyCheckBox" android:id="@+id/autoLogin" android:text="自动登录" android:textColor="#222" android:layout_marginLeft="10dip"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:layout_marginTop="20dip"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/login_btn"
+                    style="@style/common_btns"
+                    android:layout_weight="1"
+                    android:text="登 录"
+                    android:textColor="@color/white"
+                    android:textSize="16dip" />
+
+                <View
+                    android:layout_width="25dip"
+                    android:layout_height="2dip" />
+
+                <Button
+                    android:id="@+id/login_back"
+                    style="@style/common_btns"
+                    android:layout_weight="1"
+                    android:text="注 册"
+                    android:textColor="@color/white"
+                    android:textSize="16dip" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- 登录提示信息 -->
+
+        <LinearLayout
+            style="@style/ywrap_style"
+            android:layout_marginTop="3dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dip" >
+
+            <TextView
+                android:id="@+id/loadtext"
+                style="@style/wrap_style"
+                android:text=""
+                android:textColor="#FF0000"
+                android:textSize="14dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/copyright"
+        style="@style/ywrap_style"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/wrap_style"
+            android:text="@string/copy_right"
+            android:textColor="@color/black"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+    -->
+
+</RelativeLayout>

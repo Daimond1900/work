@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg">
+       <Button 
+            android:id="@+id/back_btn"
+            style="@style/top_back_btn"
+             />
+        <TextView
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="我的求职"/>
+    </RelativeLayout>
+    <LinearLayout style="@style/whwrap_style" 
+                android:layout_below="@id/top_title"
+				android:layout_margin="5dip"
+				android:id="@+id/header"
+				android:orientation="horizontal"
+				android:layout_width="fill_parent">
+					<ImageView android:layout_width="80dip"
+						android:layout_height="80dip"
+						android:background="@drawable/edit_text"
+						android:id="@+id/userHead"
+						android:src="@drawable/head"
+						/>
+					<LinearLayout android:layout_marginLeft="5dip" style="@style/whwrap_style" android:orientation="vertical">
+						<TextView style="@style/whwrap_style"
+						 android:textColor="#222"
+						 android:textSize="18dip"
+						 android:layout_height="wrap_content" 
+						 android:id="@+id/userName"
+						 android:hint="姓名"
+						 />
+						 <TextView style="@style/whwrap_style"
+						 android:textSize="16dip"
+						 android:layout_height="wrap_content" 
+						 android:id="@+id/jobCountLab"
+						 android:hint="您共投递0份简历"
+						 />
+					</LinearLayout>
+					 
+   </LinearLayout>
+    <!-- 列表 -->
+    <LinearLayout style="@style/whwrap_style"
+            android:orientation="vertical"
+            android:layout_below="@id/header"
+            android:background="@drawable/common_bg"
+            android:layout_margin="5dip"
+            android:id="@+id/list1"
+            android:padding="0dip"
+            >
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:dividerHeight="1dip"
+                android:divider="#ccc"
+                android:scrollbars="none" 
+                 />
+            
+   </LinearLayout>
+   
+   
+   <LinearLayout style="@style/whwrap_style"
+            android:orientation="vertical"
+            android:layout_below="@id/list1"
+            android:background="@drawable/common_bg"
+            android:layout_margin="5dip"
+            android:layout_marginTop="20dip"
+            android:padding="0dip"
+            android:visibility="gone"
+            
+            >
+            <ListView
+                android:id="@+id/listview1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:dividerHeight="1dip"
+                android:divider="#ccc"
+                android:scrollbars="none" 
+                />
+            
+   </LinearLayout>
+  
+</RelativeLayout>

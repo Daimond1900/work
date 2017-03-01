@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/wrap_style"
+            android:src="@drawable/main_title" />
+    </LinearLayout>
+
+    <ScrollView
+        style="@style/fill_style"
+        android:layout_below="@id/top_title" >
+
+        <LinearLayout
+            style="@style/fill_style"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/ywrap_style"
+                android:background="@drawable/yy_bg" />
+
+            <!-- 主体 -->
+
+            <LinearLayout
+                style="@style/ywrap_style"
+                android:orientation="vertical"
+                android:padding="5dip" >
+
+                <TableLayout
+                    style="@style/ywrap_style"
+                    android:orientation="vertical">
+
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="公司名称:" />
+
+                        <TextView
+                            android:id="@+id/company_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="扬州恒春电子有限公司"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="招聘工种:" />
+
+                        <TextView
+                            android:id="@+id/job_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="计算机工程技术人员"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="工种说明:" />
+
+                        <TextView
+                            android:id="@+id/gzsm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="软件设计师"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="招聘总人数:" />
+
+                        <TextView
+                            android:id="@+id/zpzrs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1 (男1 女0 兼招0)"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="用工区域:" />
+
+                        <TextView
+                            android:id="@+id/ygqy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="本埠"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="工作地点:" />
+
+                        <TextView
+                            android:id="@+id/gzdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="地点详细:" />
+
+                        <TextView
+                            android:id="@+id/dzxx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="年龄要求:" />
+
+                        <TextView
+                            android:id="@+id/nlyq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="文化程度:" />
+
+                        <TextView
+                            android:id="@+id/whcd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="大专"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="技术等级:" />
+
+                        <TextView
+                            android:id="@+id/jsdj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="从业年数:" />
+
+                        <TextView
+                            android:id="@+id/cyls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="月工资:" />
+
+                        <TextView
+                            android:id="@+id/ygz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1000.0"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="福利待遇:" />
+
+                        <TextView
+                            android:id="@+id/fldy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="食宿提供:" />
+
+                        <TextView
+                            android:id="@+id/sstg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="技术专长:" />
+
+                        <TextView
+                            android:id="@+id/jszc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="户口性质:" />
+
+                        <TextView
+                            android:id="@+id/hkxz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="招聘对象:" />
+
+                        <TextView
+                            android:id="@+id/zpdx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="外语语种:" />
+
+                        <TextView
+                            android:id="@+id/wyyz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="外语水平:" />
+
+                        <TextView
+                            android:id="@+id/wysp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="计算机水平:" />
+
+                        <TextView
+                            android:id="@+id/jsjsp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="联系人:" />
+
+                        <TextView
+                            android:id="@+id/lxr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="张女士"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="联系方式:" />
+
+                        <TextView
+                            android:id="@+id/lxfs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="80827726"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                    <TableRow android:gravity="center_vertical" >
+                        <TextView
+                            style="@style/login_lab"
+                            android:text="有效期:" />
+
+                        <TextView
+                            android:id="@+id/yxq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="从20120830至20120930"
+                            android:gravity="left|center_vertical"
+                            android:textColor="#000000" />
+                    </TableRow>
+                    
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

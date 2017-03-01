@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+             style="@style/top_left_btn"/>
+
+        <TextView
+            android:id="@+id/top_titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="培训信息详情"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top_title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/whall_style"
+            android:layout_above="@+id/buttom_menu"
+            android:padding="1dip" >
+
+            <include layout="@layout/webview" >
+            </include>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

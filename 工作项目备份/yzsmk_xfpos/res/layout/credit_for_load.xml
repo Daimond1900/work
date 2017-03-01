@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txCardInfor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txBeforeBalance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txAfterBalance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值1分钱" />
+
+        <Button
+            android:id="@+id/btnPacket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打包处理" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/testInfor_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/testInfor_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+</LinearLayout>

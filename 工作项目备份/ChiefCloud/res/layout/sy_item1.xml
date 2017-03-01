@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/sy_csgd" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:text="扬州市委"
+            android:textColor="@color/black"
+            android:textSize="18dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sy_button"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="0"
+            android:textColor="#ffffff" >
+        </TextView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="消息"
+            android:textColor="@color/black"
+            android:textSize="16dp" >
+        </TextView>
+    </TableRow>
+
+    <View
+        android:layout_height="1dip"
+        android:background="@drawable/sy_line" />
+
+</TableLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txCardType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txBalance"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txTanseResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取余额" />
+
+        <Button
+            android:id="@+id/btnConsumption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消费1分钱" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭射频" />
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_horizontal" >
+
+       <!-- <Button
+            android:id="@+id/btnPackage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打包CPU卡信息" />
+         --> 
+        
+         <Button
+            android:id="@+id/btnftpstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ftpstart" />
+        <Button
+            android:id="@+id/btnftpstop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ftpstop" />
+        <Button
+            android:id="@+id/btnftp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TESTFTP" />
+    </LinearLayout>
+
+           <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnPackage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打包CPU卡信息" />
+               
+        <Button
+            android:id="@+id/btnSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签到" />
+        
+        <Button
+            android:id="@+id/btnLiquTrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结算" />
+        
+        
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_horizontal" >
+        <EditText
+	    android:id="@+id/editText1"
+	    android:enabled="false"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="15sp"
+	    android:ems="10" >
+	</EditText>
+       </LinearLayout>
+        
+    <TextView
+        android:id="@+id/testInfor1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/testInfor2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+    
+        <EditText
+	    android:id="@+id/editText1"
+	    android:enabled="false"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="15sp"
+	    android:ems="10" >
+	</EditText>
+
+</LinearLayout>

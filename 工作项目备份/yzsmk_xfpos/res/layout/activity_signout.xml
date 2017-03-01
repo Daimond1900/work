@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dash="http://schemas.android.com/apk/res/com.winksoft.yzsmk.xfpos"
+    style="@style/Fill"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        style="@style/FillAndWrap"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="消费日结报表"
+            android:textSize="18sp" />
+
+        <com.winksoft.yzsmk.widget.DashedLine
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            dash:lineColor="#333333" />
+
+        <LinearLayout
+            style="@style/FillAndWrap"
+            android:layout_margin="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/signout_layout" >
+
+                <TextView
+                    style="@style/signout_text_left"
+                    android:text="交易日期：" />
+
+                <TextView
+                    android:id="@+id/tvPayDate"
+                    style="@style/signout_text_right" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/signout_layout" >
+
+                <TextView
+                    style="@style/signout_text_left"
+                    android:text="日结时间：" />
+
+                <TextView
+                    android:id="@+id/tvDayPayDate"
+                    style="@style/signout_text_right" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/signout_layout" >
+
+                <TextView
+                    style="@style/signout_text_left"
+                    android:text="工号：" />
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    style="@style/signout_text_right" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/signout_layout" >
+
+                <TextView
+                    style="@style/signout_text_left"
+                    android:text="PSAM1：" />
+
+                <TextView
+                    android:id="@+id/tvPSAM1"
+                    style="@style/signout_text_right" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/signout_layout" >
+
+                <TextView
+                    style="@style/signout_text_left"
+                    android:text="PSAM2：" />
+
+                <TextView
+                    android:id="@+id/tvPSAM2"
+                    style="@style/signout_text_right" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/signout_layout" >
+
+                <TextView
+                    style="@style/signout_text_left"
+                    android:text="交易金额：" />
+
+                <TextView
+                    android:id="@+id/tvPayMoney"
+                    style="@style/signout_text_right" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/signout_layout" >
+
+                <TextView
+                    style="@style/signout_text_left"
+                    android:text="交易笔数：" />
+
+                <TextView
+                    android:id="@+id/tvPayCount"
+                    style="@style/signout_text_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/FillAndWrap"
+        android:layout_margin="10dip" 
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/dayPay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dayPay"
+            android:text="日结" />
+
+       <Button
+           android:id="@+id/dayPayPrint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dayPayPrint"
+            android:text="打印"
+          	android:visibility="gone"/> 
+    </LinearLayout>
+
+</LinearLayout>

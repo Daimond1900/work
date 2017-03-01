@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top"
+        android:orientation="horizontal" >
+        
+        <Button android:id="@+id/back_btn"
+          style="@style/top_left_btn"
+           />
+
+        <TextView style="@style/wrap_style"
+            android:text="职位详情"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20dip"/>
+       
+    </RelativeLayout>
+    <ScrollView android:scrollbarStyle="insideInset"   style="@style/whall_style" 
+        android:layout_below="@+id/top_title"
+        >
+        
+    <TableLayout style="@style/whall_style">
+        <TableRow style="@style/position_tablerow">
+            <TextView style="@style/position_title" android:id="@+id/positionTitle" android:hint="职位" />
+        </TableRow>
+        <TableRow style="@style/position_tablerow" android:id="@+id/company_item" android:background="@drawable/searcher_item_bg" >
+            <TextView style="@style/position_itemtxt" android:id="@+id/companyName" android:hint="公司" android:singleLine="true" android:drawableRight="@drawable/right_jt" android:paddingLeft="5dip" android:layout_marginRight="5dip"/>
+        </TableRow>
+       <LinearLayout style="@style/whall_style" android:background="@drawable/common_bg" android:orientation="vertical" android:layout_marginLeft="8dip" android:layout_marginRight="8dip" android:layout_marginTop="5dip" android:padding="1dip">
+       
+           <TableRow style="@style/position_tablerow">
+            <TextView style="@style/position_itemtitle" android:text="工作说明 :"/>
+            <TextView style="@style/position_itemtxt" android:id="@+id/gzsm" 
+                android:hint="工作说明 " android:paddingLeft="10dip"/>
+        </TableRow>
+        <View style="@style/position_ViewLine"/>
+           
+           <TableRow style="@style/position_tablerow">
+            <TextView style="@style/position_itemtitle" android:text="有效日期:"/>
+            <TextView style="@style/position_itemtxt" android:id="@+id/pushDate" android:hint="有效期" android:paddingLeft="10dip"/>
+        </TableRow>
+        <View style="@style/position_ViewLine"/>
+        
+        <TableRow style="@style/position_tablerow">
+            <TextView style="@style/position_itemtitle" android:text="招聘人数:"/>
+            <TextView style="@style/position_itemtxt" android:id="@+id/peopleCount" android:hint="人数" android:paddingLeft="10dip"/>
+        </TableRow>
+        <View style="@style/position_ViewLine"/>
+        
+         <TableRow style="@style/position_tablerow">
+            <TextView style="@style/position_itemtitle" android:text="工资待遇:"/>
+            <TextView style="@style/position_itemtxt" android:id="@+id/monthlyPay" android:hint="薪资" android:paddingLeft="10dip" android:textColor="#F37D0D"/>
+        </TableRow>
+        <View style="@style/position_ViewLine"/>
+        
+        <TableRow style="@style/position_tablerow" android:visibility="gone">
+            <TextView style="@style/position_itemtitle" android:text="文化程度:"/>
+            <TextView style="@style/position_itemtxt" android:id="@+id/record" android:hint="文凭" android:paddingLeft="10dip" />
+        </TableRow>
+        <View style="@style/position_ViewLine"/>
+        
+        <TableRow style="@style/position_tablerow" 
+            android:visibility="gone">
+            <TextView style="@style/position_itemtitle" android:text="用工区域:"/>
+            <TextView style="@style/position_itemtxt" android:id="@+id/area" android:hint="区域" android:paddingLeft="10dip"/>
+        </TableRow>
+        <View style="@style/position_ViewLine"/>
+        
+         <TableRow style="@style/position_tablerow">
+            <TextView style="@style/position_itemtitle" android:text="联系电话:"/>
+            <TextView style="@style/position_itemtxt" android:id="@+id/telNumber" android:hint="电话" android:paddingLeft="10dip" />
+        </TableRow>
+        <View style="@style/position_ViewLine"/>
+        
+        <TableRow style="@style/position_tablerow">
+             <TextView style="@style/position_itemtxt" android:id="@+id/positionDesc" android:hint="简价"/>
+        </TableRow>
+        
+       </LinearLayout>
+        
+        <TableRow style="@style/position_tablerow" android:id="@+id/companyAddressItem" android:background="@drawable/map_item_bgs" >
+            <TextView style="@style/position_itemtxt" android:id="@+id/companyAddress" 
+                android:paddingLeft="5dip" 
+                android:drawableRight="@drawable/info_detail_map_icon" 
+                android:singleLine="true" 
+                android:layout_marginRight="5dip" 
+                android:textColor="#fff" 
+                android:textSize="16.0sp"/>
+        </TableRow>
+        
+    </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

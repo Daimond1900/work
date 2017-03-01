@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/fill_wrap_style"
+        android:background="@drawable/top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_left_btn" />
+
+        <TextView
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:text="新增简历"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/common_bg"
+        android:padding="0dip" >
+
+        <ScrollView
+            style="@style/fill_style"
+            android:layout_gravity="center_vertical"
+            android:fadeScrollbars="true"
+            android:fastScrollEnabled="true"
+            android:focusable="true"
+            android:padding="5dip" >
+
+            <TableLayout
+                style="@style/fill_style"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="用户名：" />
+
+                    <EditText
+                        android:id="@+id/edt_user_name"
+                        style="@style/common_right_style"
+                        android:background="@drawable/input_bg"
+                        android:hint="不能包含汉字和%,',?,*等字符，长度为1到15！" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="姓名："
+                        android:hint="" />
+
+                    <EditText
+                        android:id="@+id/edt_full_name"
+                        style="@style/common_right_style"
+                        android:background="@drawable/input_bg" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="身份证号码：" />
+
+                    <EditText
+                        android:id="@+id/edt_num"
+                        style="@style/common_right_style"
+                        android:background="@drawable/input_bg" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="籍贯：" />
+
+                    <EditText
+                        android:id="@+id/edt_jg"
+                        style="@style/common_right_style"
+                        android:background="@drawable/input_bg" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text=""
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="婚姻状况：" />
+
+                    <Spinner
+                        android:id="@+id/sp_hyzk"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dropdown" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="学历:" />
+
+                    <Spinner
+                        android:id="@+id/sp_xl"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dropdown" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="联系电话：" />
+
+                    <EditText
+                        android:id="@+id/edt_lldh"
+                        style="@style/common_right_style"
+                        android:background="@drawable/input_bg" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="求职岗位：" />
+
+                    <EditText
+                        android:id="@+id/edt_qzgw"
+                        style="@style/common_right_style"
+                        android:background="@drawable/input_bg" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="工作性质：" />
+
+                    <Spinner
+                        android:id="@+id/sp_gzxz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dropdown" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <LinearLayout
+                    style="@style/fill_wrap_style"
+                    android:layout_marginTop="15dip"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dip" >
+
+                    <Button
+                        android:id="@+id/submitBtn"
+                        style="@style/common_button_style"
+                        android:text="提 交" />
+
+                    <Button
+                        android:id="@+id/resetBtn"
+                        style="@style/common_button_style"
+                        android:layout_marginLeft="15dip"
+                        android:text="重 置" />
+                </LinearLayout>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

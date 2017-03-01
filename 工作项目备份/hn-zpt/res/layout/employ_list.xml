@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yifeng.zpt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/fill_wrap_style"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_btn_back_style" />
+
+        <TextView
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:text="录用查询"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/refreshBtn"
+            style="@style/top_btn_refresh_style" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_kuang"
+        style="@style/fill_wrap_style"
+        android:layout_below="@+id/top"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dip"
+            android:layout_weight="1"
+            android:background="@drawable/main_search_kuang"
+            android:gravity="center_vertical"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/searchEdt"
+                style="@style/fill_wrap_style"
+                android:background="#00000000"
+                android:hint="输入工作岗位进行搜索！"
+                android:paddingLeft="5dip"
+                android:textColorHint="#D3D3D2"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="32dip"
+            android:background="@drawable/main_search_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@id/search_kuang"
+        android:layout_margin="5dip"
+        android:background="@drawable/common_bg"
+        android:padding="5dip" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#cccccc"
+            android:dividerHeight="1dip"
+            android:fadeScrollbars="true"
+            android:fastScrollEnabled="true"
+            android:focusable="true"
+            android:scrollbarSize="3dip"
+            android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+    </LinearLayout>
+
+</RelativeLayout>

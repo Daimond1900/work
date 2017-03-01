@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yifeng.jobgly.ui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_left_btn" />
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/top_title"
+            android:text="培训意愿" />
+           <Button
+            android:id="@+id/save"
+            style="@style/top_right_button"
+            android:text="保存"
+              android:visibility="gone"
+          />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:scrollbars="vertical" >
+  <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/inputbg"
+                android:padding="1dp"
+                >
+
+            <LinearLayout android:gravity="center_vertical"  
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    style="@style/ldl_detail_text_left"
+                    android:text="身份证号码:" />
+
+                <TextView
+                    android:id="@+id/sfz"
+                    style="@style/ldl_detail_text_right"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                     />
+            </LinearLayout>
+ <View style="@style/position_ViewLine" />
+            <LinearLayout android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    style="@style/ldl_detail_text_left"
+                    android:text="姓		名:" />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/ldl_detail_text_right"
+                    android:layout_width="fill_parent"
+                      android:layout_weight="1"
+                      android:textColor="@color/black"
+                    />
+            </LinearLayout>
+            </TableLayout>
+              <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/inputbg"
+                android:padding="1dp" >
+             <LinearLayout android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    style="@style/ldl_detail_text_left"
+                    android:text="技能特长:" />
+
+                <TextView
+                    android:id="@+id/jntc"
+                    style="@style/ldl_detail_text_right"
+                    android:layout_width="fill_parent"
+                      android:layout_weight="1"
+                      android:textColor="@color/black"
+                      android:maxLength="20"
+                    />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+             <LinearLayout android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    style="@style/ldl_detail_text_left"
+                    android:text="国家职业资格:" />
+
+                <TextView
+                    android:id="@+id/gjzyzg"
+                    style="@style/ldl_detail_text_right"
+                    android:layout_width="fill_parent"
+                       android:focusable="false"
+                       android:textColor="@color/black"
+                      android:layout_weight="1"
+                    />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+             <LinearLayout android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    style="@style/ldl_detail_text_left"
+                    android:text="培训意愿:" />
+
+                <TextView
+                    android:id="@+id/pxyy"
+                    style="@style/ldl_detail_text_right"
+                    android:layout_width="fill_parent"
+                       android:focusable="false"
+                      android:layout_weight="1"
+                       android:textColor="@color/black"
+                       android:maxLines="20"
+                    />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+             <LinearLayout android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    style="@style/ldl_detail_text_left"
+                    android:text="登记时间:" />
+
+                <TextView
+                    android:id="@+id/djsj"
+                    style="@style/ldl_detail_text_right"
+                    android:layout_width="fill_parent"
+                      android:layout_weight="1"
+                      android:background="#00000000"
+                       android:textColor="@color/black"
+                      android:enabled="false"
+                  />
+            </LinearLayout>
+              <View style="@style/position_ViewLine" />
+             <LinearLayout android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TextView
+                    style="@style/ldl_detail_text_left"
+                    android:text="是否参加\n过培训:" />
+
+                <TextView
+                    android:id="@+id/sfcjgpx"
+                    style="@style/ldl_detail_text_right"
+                    android:layout_width="fill_parent"
+                    android:focusable="false"
+                     android:textColor="@color/black"
+                      android:layout_weight="1"
+                    />
+                </LinearLayout>
+
+              
+        </TableLayout >
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

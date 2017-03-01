@@ -1,0 +1,148 @@
+# view AndroidManifest.xml #generated:188
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/mapabc_view.xml #generated:31
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:13
+-keep class com.yifeng.hnjcy.ui.LoadingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.yifeng.hnjcy.ui.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.yifeng.hnjcy.ui.MainActivity { <init>(...); }
+
+# view res/layout/delivery_list.xml #generated:26
+# view res/layout/ldl_main_list.xml #generated:79
+# view res/layout/policy.xml #generated:68
+# view res/layout/resume_main.xml #generated:38
+# view res/layout/send_resume.xml #generated:38
+# view res/layout/training_list.xml #generated:69
+# view res/layout/zcfg_list.xml #generated:36
+# view res/layout/zero_transfer_list.xml #generated:80
+-keep class com.yifeng.hnjcy.ui.MyListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.yifeng.hnjcy.ui.Statistical.StatisticalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.yifeng.hnjcy.ui.contact.AddressListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class com.yifeng.hnjcy.ui.delivery.DeliveryDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:179
+-keep class com.yifeng.hnjcy.ui.delivery.DeliveryListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.yifeng.hnjcy.ui.ldlxx.CreateLdlDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.yifeng.hnjcy.ui.ldlxx.JyzkDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.yifeng.hnjcy.ui.ldlxx.LdlDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.yifeng.hnjcy.ui.ldlxx.MainList { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.yifeng.hnjcy.ui.ldlxx.PxyyDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.yifeng.hnjcy.ui.ldlxx.QzyyDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.yifeng.hnjcy.ui.ldlxx.ZyjsDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.yifeng.hnjcy.ui.policy.PolicyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class com.yifeng.hnjcy.ui.policy.PolicyListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.yifeng.hnjcy.ui.recruit.PositionView { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.yifeng.hnjcy.ui.recruit.RecuitInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.yifeng.hnjcy.ui.recruit.SendResumeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:165
+-keep class com.yifeng.hnjcy.ui.resume.AddResumeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:173
+-keep class com.yifeng.hnjcy.ui.resume.ModifyResumeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:169
+-keep class com.yifeng.hnjcy.ui.resume.ResumeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:161
+-keep class com.yifeng.hnjcy.ui.resume.ResumeListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.yifeng.hnjcy.ui.set.MyPassword { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.yifeng.hnjcy.ui.set.SetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:147
+-keep class com.yifeng.hnjcy.ui.zcdt.ZCFGDeatilActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:151
+-keep class com.yifeng.hnjcy.ui.zcdt.ZCFGListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.yifeng.hnjcy.ui.zerotransfer.TansferDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:71
+-keep class com.yifeng.hnjcy.ui.zerotransfer.TransferList { <init>(...); }
+
+# view AndroidManifest.xml #generated:131
+-keep class com.yifeng.hnjcy.ui.zerotransfer.ViewDetail { <init>(...); }
+
+# view res/layout/address_list.xml #generated:82
+-keep class com.yifeng.jobjcy.ui.contact.IndexBar { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.yifeng.qzt.ui.enterprise.EnterpriseList { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class com.yifeng.qzt.ui.enterprise.EnterpriseView { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class com.yifeng.qzt.ui.enterprise.PositionList { <init>(...); }
+
+# view AndroidManifest.xml #generated:9
+-keep class com.yifeng.qzt.ui.mapabc.BMapApiApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.yifeng.qzt.ui.mapabc.MapInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.yifeng.qzt.ui.system.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.yifeng.qzt.ui.system.AccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:127
+-keep class com.yifeng.qzt.ui.system.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.yifeng.qzt.ui.system.SystemSettings { <init>(...); }
+
+# view AndroidManifest.xml #generated:135
+-keep class com.yifeng.qzt.ui.training.TrainDeatilActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.yifeng.qzt.ui.training.TrainingActivity { <init>(...); }
+
+# view res/layout/main.xml #generated:64
+-keep class com.yifeng.qzt.widget.CircleFlowIndicator { <init>(...); }
+
+# view res/layout/main.xml #generated:49
+-keep class com.yifeng.qzt.widget.ViewFlow { <init>(...); }
+

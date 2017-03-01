@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow android:padding="12dip" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/campus_icon_listmeanu_talk" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/whwrap_style"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="试用通知"
+            android:textColor="#6C6C6C"
+            android:textSize="18dip" />
+
+        <TextView
+            android:id="@+id/count"
+            style="@style/whwrap_style"
+            android:layout_marginRight="10dip"
+            android:singleLine="true"
+            android:text="3"
+            android:textColor="#D70909"
+            android:textSize="20dip" />
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/right_jt" />
+    </TableRow>
+
+</TableLayout>

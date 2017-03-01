@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yifeng.hnqzt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/main_topbg" >
+
+        <ImageView
+            android:id="@+id/imglogo"
+            style="@style/wrap_style"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/top_logo" />
+
+        <TextView
+            android:id="@+id/login_msg"
+            style="@style/whwrap_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            style="@style/common_btns"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:text="登 录"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!-- 滑动广告 -->
+
+    <RelativeLayout
+        android:id="@+id/advert"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:layout_below="@id/top_title" >
+
+        <com.yifeng.hnqzt.widget.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dip"
+            android:background="@drawable/main_advert_linebg"
+            android:gravity="right"
+            android:padding="3dip" >
+
+            <com.yifeng.hnqzt.widget.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:activeColor="#E44F03"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="#ffffff"
+                app:inactiveType="fill"
+                app:radius="4dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 九宫格 -->
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_above="@+id/copyright"
+        android:layout_below="@id/advert"
+        android:background="#E4E4E4"
+        android:gravity="center"
+        android:paddingTop="5dip" >
+
+        <GridView
+            android:id="@+id/grid_view"
+            style="@style/fill_style"
+            android:gravity="center"
+            android:horizontalSpacing="10dip"
+            android:scrollbars="none"
+            android:verticalSpacing="10dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/copyright"
+        style="@style/ywrap_style"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_companyName"
+            style="@style/wrap_style"
+            android:text="@string/copyright"
+            android:textColor="#363636"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top"
+        android:orientation="horizontal" >
+        
+        <Button android:id="@+id/back_btn"
+          style="@style/top_left_btn"
+           />
+
+        <TextView style="@style/wrap_style"
+            android:text="该公司所有职位"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+          
+   <!-- 主体 -->    
+   <LinearLayout style="@style/ywrap_style"
+		            android:layout_below="@id/top_title"
+                    android:focusableInTouchMode="true"  
+                    android:id="@+id/search_bar" 
+		            android:background="@drawable/category_info_sift_title"
+		            android:gravity="center_vertical"
+		            android:padding="0dip">
+		            <TextView style="@style/whwrap_style" android:id="@+id/companyName" android:text="华硕电脑（上海）有限公司" android:textSize="16sp" android:textColor="#222" android:paddingLeft="10dip"/>
+		        </LinearLayout>
+         
+        <!-- 列表 -->
+        <LinearLayout style="@style/fill_style"
+            android:orientation="vertical"
+            android:layout_below="@id/search_bar"
+            android:background="@drawable/edit_text"
+            android:layout_margin="4dip"
+            android:padding="1dip">
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:dividerHeight="1dip"
+                android:divider="#efefef"
+                android:fastScrollEnabled="true"
+                 />
+        </LinearLayout>
+   
+</RelativeLayout>

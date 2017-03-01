@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="10dip" >
+
+        <TableLayout
+            style="@style/wrap_style"
+            android:layout_weight="1" >
+
+            <LinearLayout android:padding="2dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    style="@style/wrap_style"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/circle" />
+
+                <TextView
+                    android:id="@+id/training_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dip"
+                    android:singleLine="true"
+                    android:text="培训信息的标题内容显示区"
+                    android:textColor="#2E2E2E"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TableRow android:padding="2dip" >
+
+                <TextView
+                    android:id="@+id/training_from"
+                    style="@style/wrap_style"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="信息来源:信息内容的来源阅读(1000)"
+                    android:textColor="#888888"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:padding="2dip" >
+
+                <TextView
+                    android:id="@+id/training_date"
+                    style="@style/wrap_style"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="发布:2012-12-10"
+                    android:textColor="#888888"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/count"
+                    style="@style/wrap_style"
+                    android:layout_gravity="right"
+                    android:singleLine="true"
+                    android:text="阅读(1200)"
+                    android:textColor="#FF7700"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            style="@style/wrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/right_jt" />
+    </TableRow>
+
+</TableLayout>

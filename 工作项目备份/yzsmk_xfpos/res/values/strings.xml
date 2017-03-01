@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">扬州市民卡收银台</string>
+    <string name="action_settings">设置</string>
+    <string name="action_start">开始</string>
+    <string name="action_stop">关闭</string>
+    <string name="config_ok">开始</string>
+	<string name="config_cancel">开始</string>
+	<string name="app_caption">扬州园林.市民卡检票终端</string>
+	<string name="main_name">姓名:</string>
+	<string name="main_create_date">发卡日期:</string>
+	<string name="main_valid_date">有效日期:</string>
+	<string name="main_card_type">卡类型:</string>
+	
+	<string name="dialog_confirm_text">确定</string>
+</resources>

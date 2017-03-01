@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="red">#fd8d8d</color>		<!-- 声明名为red的资源 -->
+	<color name="green">#9cfda3</color>		<!-- 声明名为green的资源 -->
+	<color name="blue">#8d9dfd</color>		<!-- 声明名为blue的资源 -->
+	<color name="white">#FFFFFF</color>		<!-- 声明名为white的资源 -->
+	<color name="black">#000000</color>		<!-- 声明名为black的资源 -->
+	<color name="yellow">#FFFF00</color>		<!-- 声明名为yellow的资源 -->
+	<color name="cecc0b">#cecc0b</color>
+	<color name="e7e7e7">#e7e7e7</color>
+	<color name="ADEFFF">#adefff</color>
+	<color name="FFC700">#FFC700</color>
+	<color name="procolor">#176EC8</color>
+	<color name="trans">#00000000</color>
+</resources>

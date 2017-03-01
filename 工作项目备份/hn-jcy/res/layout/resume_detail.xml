@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/fill_wrap_style"
+        android:background="@drawable/top"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_left_btn" />
+
+        <TextView
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:text="简历详情"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/common_bg"
+        android:padding="0dip" >
+
+        <ScrollView
+            style="@style/fill_style"
+            android:layout_gravity="center_vertical"
+            android:fadeScrollbars="true"
+            android:fastScrollEnabled="true"
+            android:focusable="true" >
+
+            <TableLayout
+                style="@style/fill_style"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:hint=""
+                        android:text="姓名：" />
+
+                    <TextView
+                        android:id="@+id/txt_full_name"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:hint=""
+                        android:text="性别：" />
+
+                    <TextView
+                        android:id="@+id/txt_xb"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="身份证号码：" />
+
+                    <TextView
+                        android:id="@+id/txt_num"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="籍贯：" />
+
+                    <TextView
+                        android:id="@+id/txt_jg"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="婚姻状况：" />
+
+                    <TextView
+                        android:id="@+id/txt_hyzk"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="学历:" />
+
+                    <TextView
+                        android:id="@+id/txt_xl"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="联系电话：" />
+
+                    <TextView
+                        android:id="@+id/txt_lldh"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="求职岗位：" />
+
+                    <TextView
+                        android:id="@+id/txt_qzgw"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="工作性质：" />
+
+                    <TextView
+                        android:id="@+id/txt_gzxz"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:padding="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="是否公开：" />
+
+                    <TextView
+                        android:id="@+id/txt_sfgk"
+                        style="@style/common_right_style" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+                
+                <LinearLayout
+                    style="@style/fill_wrap_style"
+                    android:layout_marginTop="15dip"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dip" >
+
+                    <Button
+                        android:id="@+id/btn_add"
+                        style="@style/common_button_style"
+                        android:text="修改简历" />
+
+                    <Button
+                        android:id="@+id/btn_update"
+                        style="@style/common_button_style"
+                        android:layout_marginLeft="15dip"
+                        android:text="" />
+                </LinearLayout>
+                
+                
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

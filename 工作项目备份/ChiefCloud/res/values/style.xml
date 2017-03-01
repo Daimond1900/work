@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="whall_style">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+	</style>
+	<style name="whwrap_style">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	<style name="yfbutton">
+		<item name="android:layout_height">40dip</item>
+		<item name="android:layout_width">100dip</item>
+	</style>
+	<style name="login_bottom">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">14dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+	<style name="source_text_style">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:gravity">center</item>
+	</style>
+
+
+	<style name="login_yhdl">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">18dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+
+	<style name="bt_select">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">30dp</item>
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+	<style name="login_yhm">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textSize">16dip</item>
+		<item name="android:textColor">#000000</item>
+	</style>
+	<style name="input_style">
+		<item name="android:layout_width">150dip</item>
+		<item name="android:textColor">#000000</item>
+		<item name="android:textSize">15dp</item>
+		<item name="android:layout_height">20dp</item>
+	</style>
+	<style name="dialog" parent="android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item><!--边框 -->
+		<item name="android:windowIsFloating">true</item><!--是否浮现在activity之上 -->
+		<item name="android:windowIsTranslucent">false</item><!--半透明 -->
+		<item name="android:windowNoTitle">true</item><!--无标题 -->
+		<item name="android:backgroundDimEnabled">false</item><!--模糊 -->
+		<item name="android:windowBackground">@color/trans</item>
+		<!--<item name="android:windowBackground">@drawable/sys_dialog_bg</item> --><!--背景透明 -->
+	</style>
+	<!-- style name以及它所继承的系统Theme主题 -->
+	<style name="Theme.MainActivity" parent="@android:style/Theme.Dialog">
+		<!-- 是否允许有标题栏 -->
+		<item name="android:windowNoTitle">true</item>
+		<!-- 提示背景图片 -->
+		<!--<item name="android:windowBackground">@drawable/bg_theme</item>-->
+		<item name="android:windowContentOverlay">@null</item>
+		<!-- 是否允许背景灰暗 -->
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>
+	<!-- dialog样式的Activity -->
+	<style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">
+	<!--	<item name="android:windowBackground">@drawable/bg_car</item>-->
+		<item name="android:backgroundDimEnabled">false</item>
+	</style>
+	
+	<style name="MyCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+		<item name="android:button">@drawable/check_bg</item>
+		<item name="android:layout_marginLeft">1.0dip</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+     </style>
+
+</resources>

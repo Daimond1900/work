@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">基层云</string>
+    <string name="copyright">主办：海南省就业局</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="alert_dialog_ok">确认</string>
+    <string name="alert_dialog_finish_title">系统提示</string>
+    <string name="alert_dialog_finish">是否退出程序?</string>
+    <string name="main_fetch_fail">网络异常</string>
+    <string name="NoSignalException">对不起，无法连接到网络，请检查网络配置！</string>
+    <string name="netWork_set">网络设置</string>
+    <string name="title_alert">友情提醒</string>
+    <string name="wiat_msg">正在加载请稍后...</string>
+    <string name="fail_msg">数据加载失败</string>
+    <string name="server_error_msg">服务器未响应</string>
+    <string name="inner_error_msg">数据解析失败</string>
+    <string name="empty_error_msg">没有加载到任何数据</string>
+    <string name="login_time_out">登陆失效请重新返回登陆界面进行登陆!</string>
+    <string name="maps_api_key">88fd41604cc3fa0cd81188420064db826765b9262c69b079923ae528b31c5296d39b4c26ce4637b2</string>
+    <string name="contacts_search">快速搜索</string>
+    <string name="spin_prompt">请选择区域</string>
+
+</resources>

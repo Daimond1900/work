@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="扬州市委"
+            android:textColor="#666666"
+            android:textSize="14dp" >
+        </TextView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:maxLines="1"
+            android:text="扬州市委"
+            android:textColor="#666666"
+            android:textSize="14dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:src="@drawable/phone1" >
+        </ImageView>
+    </TableRow>
+
+    <View
+        android:layout_height="1dip"
+        android:background="#cccccc" />
+
+</TableLayout>

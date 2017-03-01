@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+        
+        <Button style="@style/top_back_btn"
+            android:id="@+id/back_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"/>
+
+        <TextView style="@style/wrap_style"
+            android:text="详细地址"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:id="@+id/title"
+            android:textSize="20dip"/>
+        
+         <Button style="@style/common_btns"
+            android:id="@+id/refresh_btn"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dip"
+            android:text="重新定位 "
+            android:layout_marginRight="5dip"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top_title"
+        android:orientation="vertical" >
+       <com.baidu.mapapi.map.MapView android:id="@+id/main_mapView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		android:clickable="true"    
+		android:apiKey="@string/maps_api_key" 
+	  />
+     
+    </RelativeLayout>
+    <Button style="@style/whwrap_style" android:id="@+id/loadRouteBtn" android:background="@drawable/map_right_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    
+    <RelativeLayout style="@style/whwrap_style" android:visibility="gone"  android:background="@drawable/map_route_bg"  android:layout_width="200dip"  android:id="@+id/showRouteView" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:padding="1dip" android:layout_marginTop="50dip"> 
+       <ScrollView  
+         android:layout_width="fill_parent"  
+         android:layout_height="wrap_content" > 
+          <TextView style="@style/whwrap_style" android:textColor="#333" android:textSize="13dip" android:id="@+id/showRoteTxt" android:text="" android:padding="10dip"/>
+      </ScrollView>
+       <Button style="@style/whwrap_style" android:id="@+id/coloseRouteBtn" android:background="@drawable/delete" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <Button style="@style/whwrap_style" 
+        android:id="@+id/selfBtn" 
+        android:visibility="visible"
+        android:background="@drawable/right_btnbg" 
+        android:padding="5dip"
+        android:textColor="#EE7601"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:drawableTop="@drawable/marker_gpsvalid"
+        android:layout_marginBottom="50dip"
+        android:text="我的位置"/>
+    
+</RelativeLayout>

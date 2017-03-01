@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<ImageView android:id="@+id/image2" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentTop="true"
+		android:adjustViewBounds="true" android:padding="2dip" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_toRightOf="@+id/image2">
+		<RelativeLayout android:layout_width="wrap_content"
+			android:id="@+id/userHead" android:layout_height="wrap_content"
+			android:padding="2dp">
+			<!-- head -->
+			<ImageView android:id="@+id/pic" android:layout_marginLeft="6dip"
+				android:layout_marginRight="6dip" style="@style/item_head"
+				android:src="@drawable/nopic" />
+			<!-- friendSign -->
+
+			<ImageView android:id="@+id/contacts_isFriend"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/pic" android:layout_alignRight="@+id/pic"
+				android:clickable="false" android:focusable="false"
+				android:focusableInTouchMode="false" android:visibility="visible" />
+		</RelativeLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_toRightOf="@+id/image2" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<TextView android:id="@+id/text2" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:singleLine="true"
+					 android:textColor="#000000"
+					android:minWidth="90dp"
+					 android:textSize="20dip" />
+				<TextView android:id="@+id/duty" android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					  android:singleLine="true"
+					 android:textColor="#738698"
+					android:text="" android:textSize="14dip" />
+			</LinearLayout>
+			<TextView android:id="@+id/phoneNum" android:layout_width="fill_parent"
+				android:text="123456789" android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true" android:singleLine="true"
+				android:ellipsize="marquee" android:textColor="#738698"
+				android:textSize="16dip" />
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

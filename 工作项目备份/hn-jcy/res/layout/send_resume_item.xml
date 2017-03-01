@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/whall_style"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/common_bg"
+        android:padding="5dip"
+        >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TableRow android:padding="2dip" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/whwrap_style"
+                        android:layout_width="wrap_content"
+                        android:text="姓名:"
+                        android:textColor="#333333"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/r_name"
+                        style="@style/whwrap_style"
+                        android:singleLine="true"
+                        android:text="张三"
+                        android:textColor="#666666"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/whwrap_style"
+                        android:layout_width="wrap_content"
+                        android:text="性别:"
+                        android:textColor="#333333"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/r_sex"
+                        style="@style/whwrap_style"
+                        android:singleLine="true"
+                        android:text="男"
+                        android:textColor="#666666"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:padding="2dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/author_lab"
+                        style="@style/whwrap_style"
+                        android:text="身份证号:"
+                        android:textColor="#333333"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/r_num"
+                        style="@style/whwrap_style"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="1234567890"
+                        android:textColor="#666666"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:padding="2dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/whwrap_style"
+                        android:text="求职岗位:"
+                        android:textColor="#333333"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/r_qzgw"
+                        style="@style/whwrap_style"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textColor="#666666"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:padding="2dip"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/whwrap_style"
+                        android:text="求职区域:"
+                        android:textColor="#333333"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/r_qzqy"
+                        style="@style/whwrap_style"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="五指山市区"
+                        android:textColor="#666666"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+        <CheckBox
+            android:id="@+id/btn_check"
+            style="@style/wrap_style"
+              >
+        </CheckBox>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/line" />
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+	
+     <Button
+		android:id="@+id/button_start"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="启动"
+		android:focusable="true" 
+        android:focusableInTouchMode="true" 
+		/>
+     
+      <LinearLayout 
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:layout_centerHorizontal="true"   >
+     
+    <Button
+		android:id="@+id/button_createtestfile"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:text="创建测试文件"
+		android:gravity="center" 
+		android:enabled="false"
+		android:layout_weight="10"
+		/>
+      
+    <Button
+		android:id="@+id/button_getestfile"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:text="获取测试文件"
+		android:enabled="false"
+		android:gravity="center" 
+		android:layout_weight="10"
+		/> 
+		</LinearLayout>
+		
+     <LinearLayout 
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:layout_centerHorizontal="true"   >
+     <Button
+		android:id="@+id/button_uploadtestfile"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:text="批量上传测试文件"
+		android:enabled="false"
+		android:layout_weight="10"
+		/>
+     
+      <Button
+		android:id="@+id/button_modeA"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:text="手动模式"
+		android:enabled="false"
+		android:layout_weight="10"
+		/>
+</LinearLayout>
+      
+      <LinearLayout 
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:layout_centerHorizontal="true"   >
+       <EditText
+	    android:id="@+id/editText2"
+	    android:layout_width="150dp"
+	    android:layout_height="wrap_content"
+	    android:ems="10"  
+	    android:text="17:15"
+	    android:layout_weight="10">
+	    </EditText>
+       <Button
+		android:id="@+id/button_setRunTime"
+		android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:text="设置时间"
+		android:enabled="false"
+		android:layout_weight="10"
+		/>
+       </LinearLayout>
+       
+	<!--  <Button
+		android:id="@+id/button_upload"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="上传"
+		/>
+		
+	<Button
+		android:id="@+id/button_down"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="下载"
+		/>
+		
+	<Button
+		android:id="@+id/button_delete"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="删除"
+		/>
+-->
+
+ 
+	<EditText
+	    android:id="@+id/editText1"
+	    android:enabled="false"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="15sp"
+	    android:ems="10" >
+	</EditText>
+	
+	<LinearLayout 
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:layout_centerHorizontal="true"   >
+	 <Button
+		android:id="@+id/button_gencz"
+		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:text="生成充值数据"
+		android:enabled="false"
+		/> 
+	<Button
+		android:id="@+id/button_getcz"
+		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:text="获取充值数据"
+		android:enabled="false"
+		/> 
+	 <Button
+		android:id="@+id/button_clrlog"
+		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:text="清除运行日志"
+		android:enabled="false"
+		/> 
+	</LinearLayout>
+	
+	 <LinearLayout 
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:layout_centerHorizontal="true"   >
+	 <Button
+		android:id="@+id/button_genxf"
+		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:text="生成消费数据"
+		android:enabled="false"
+		/> 
+	<Button
+		android:id="@+id/button_getxf"
+		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:text="获取消费数据"
+		android:enabled="false"
+		/> 
+	 <Button
+		android:id="@+id/button_getlog"
+		android:layout_width="120dp"
+		android:layout_height="wrap_content"
+		android:text="获取运行日志"
+		android:enabled="false"
+		/> 
+	</LinearLayout>
+	  
+     <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="30dip" android:background="#000000">
+                    <TextView style="@style/Fill" android:layout_weight="2" android:gravity="center" android:textColor="#FFFFFF" android:textSize="14sp" android:text="内容" />
+                    <TextView style="@style/Fill" android:layout_weight="1" android:gravity="center" android:textColor="#FFFFFF" android:textSize="14sp" android:text="类型" />
+                    <TextView style="@style/Fill" android:layout_weight="2" android:gravity="center" android:textColor="#FFFFFF" android:textSize="14sp" android:text="时间" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    style="@style/Fill"
+                    android:scrollbars="none" >
+
+                    <ListView
+                        android:id="@+id/listView1"
+                        style="@style/Fill"
+                        android:listSelector="@null" />
+                </HorizontalScrollView>
+            </LinearLayout>
+</LinearLayout>

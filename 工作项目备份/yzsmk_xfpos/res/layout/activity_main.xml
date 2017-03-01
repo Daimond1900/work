@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <!-- 标题	收银台 -->
+
+    <include layout="@layout/head" />
+
+    <!-- 请输入付款金额 显示 -->
+
+    <LinearLayout
+        android:id="@+id/lPayment"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="@color/pay_background"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/Wrap"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="left"
+            android:text="请输入金额"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            style="@style/FillAndWrap"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="10dip" >
+
+            <TextView
+                style="@style/WrapAndFill"
+                android:gravity="bottom"
+                android:paddingBottom="5dip"
+                android:text="￥"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp" />
+
+            <TextView
+                style="@style/WrapAndFill"
+                android:gravity="bottom"
+                android:text="0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 按钮区域 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <GridView
+            android:id="@+id/mainGview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="10dip"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dip" />
+    </LinearLayout>
+
+</LinearLayout>

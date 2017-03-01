@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/fill_wrap_style"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_btn_back_style" />
+
+        <TextView
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:text="招聘信息修改"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/fill_style"
+        android:layout_below="@id/top"
+        android:scrollbars="none" >
+
+        <TableLayout style="@style/fill_style" >
+
+            <TableRow style="@style/position_tablerow" >
+
+                <TextView
+                    android:id="@+id/postTxt"
+                    style="@style/position_title"
+                    android:hint="职位" />
+            </TableRow>
+
+            <LinearLayout
+                style="@style/fill_style"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/common_bg"
+                android:orientation="vertical"
+                android:padding="1dip" >
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/gwsm"
+                        style="@style/common_left_style"
+                        android:text="工作说明 :" />
+
+                    <EditText
+                        android:id="@+id/gwsmnumberEdt"
+                        style="@style/position_itemtxt"
+                        android:background="@null"
+                        android:hint="输入工作说明(30字内)"
+                        android:maxLength="30"
+                         />
+                </TableRow>
+
+                <View style="@style/line_style" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/zpnx"
+                        style="@style/common_left_style"
+                        android:text="招聘男性：" />
+
+                    <EditText
+                        android:id="@+id/zpnxnumberEdt"
+                        style="@style/position_itemtxt"
+                        android:background="@null"
+                        android:maxLength="4"
+                        android:numeric="integer" />
+                </TableRow>
+
+                <View style="@style/line_style" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/zpvx"
+                        style="@style/common_left_style"
+                        android:text="招聘女性：" />
+
+                    <EditText
+                        android:id="@+id/zpvxnumberEdt"
+                        style="@style/position_itemtxt"
+                        android:background="@null"
+                        android:maxLength="4"
+                        android:numeric="integer" />
+                </TableRow>
+
+                <View style="@style/line_style" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/jz"
+                        style="@style/common_left_style"
+                        android:text="兼招：" />
+
+                    <EditText
+                        android:id="@+id/jznumberEdt"
+                        style="@style/position_itemtxt"
+                        android:background="@null"
+                        android:maxLength="4"
+                        android:numeric="integer" />
+                </TableRow>
+
+                <View style="@style/line_style" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="月工资：" />
+
+                    <EditText
+                        android:id="@+id/ygzEdt"
+                        style="@style/position_itemtxt"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:numeric="integer"
+                        android:maxLength="6"
+                        android:minLines="2" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text=" "
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <View style="@style/line_style" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="福利待遇:" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginTop="0dip" >
+
+                    <EditText
+                        android:id="@+id/fldyEdt"
+                        style="@style/position_itemtxt"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:hint="编辑福利待遇信息(1000字内)"
+                        android:minLines="2"
+                        android:maxLength="1000"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="3dip" />
+                </TableRow>
+
+                <View style="@style/line_style" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="有效终止日期:" />
+
+                    <LinearLayout
+                        style="@style/wrap_style"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical" >
+
+                         
+                     <Button
+                           android:id="@+id/daysSpi"
+                            style="@style/person_info"
+                            android:text="2012-08-09" />
+
+                        <ImageView
+                            style="@style/wrap_style"
+                            android:src="@drawable/right_jt" />
+                    </LinearLayout>
+                </TableRow>
+
+                <View style="@style/line_style" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="发布日期:" />
+
+                    <TextView
+                        android:id="@+id/dateTxt"
+                        style="@style/position_itemtxt"
+                        android:background="@null"
+                        android:paddingBottom="3dip"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="3dip"
+                        android:paddingTop="3dip" />
+                </TableRow>
+
+                <View style="@style/line_style" />
+
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="具体要求:" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="0dip" >
+
+                    <EditText
+                        android:id="@+id/requireEdt"
+                        style="@style/position_itemtxt"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:hint="编辑具体的要求信息(1000字内)"
+                        android:maxLength="1000"
+                        android:minLines="3"
+                        android:paddingBottom="5dip"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="3dip" />
+                </TableRow>
+                
+                <View style="@style/line_style" />
+                
+                <TableRow style="@style/position_tablerow" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="用工区域:" />
+
+                    <Spinner
+                        android:id="@+id/spn_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_dropdown"
+                        android:prompt="@string/spin_prompt"
+                          />
+                </TableRow>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fill_wrap_style"
+                android:layout_marginBottom="15dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="32dip"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/submitBtn"
+                    style="@style/common_button_style"
+                    android:text="提 交" />
+
+                <Button
+                    android:id="@+id/resetBtn"
+                    style="@style/common_button_style"
+                    android:layout_marginLeft="15dip"
+                    android:text="重 置" />
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

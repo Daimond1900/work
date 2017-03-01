@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="5dip" >
+
+        <TableLayout
+            style="@style/whwrap_style"
+            android:layout_weight="1" >
+
+            <TableRow android:padding="4dip" >
+
+                <TextView
+                    android:id="@+id/companyTxt"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="江苏怡丰通信设备有限公司"
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/gz"
+                    style="@style/whwrap_style"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/jgz_"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="确 认"
+                    android:visibility="gone"
+                    android:padding="3dip"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+            </TableRow>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dip" >
+
+                <TextView
+                    android:id="@+id/postTxt"
+                    style="@style/whwrap_style"
+                    android:text="岗位"
+                    android:textColor="#535252"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/timeTxt"
+                    style="@style/whwrap_style"
+                    android:layout_alignParentRight="true"
+                    android:text="面试时间"
+                    android:textColor="#535252"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TableRow android:padding="4dip" >
+
+                <TextView
+                    android:id="@+id/addressTxt"
+                    style="@style/whwrap_style"
+                    android:singleLine="true"
+                    android:text="公司地址"
+                    android:textColor="#535252"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/right_jt" />
+    </TableRow>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#DADBDD" />
+
+</TableLayout>

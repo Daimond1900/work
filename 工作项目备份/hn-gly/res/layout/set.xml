@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/top_liner"
+        style="@style/whwrap_style"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_left_btn"/>
+
+        <TextView
+            android:id="@+id/toptitle"
+            style="@style/top_title"
+            android:text="设置中心" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        style="@style/whwrap_style"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/top_liner"
+        android:layout_margin="5dip" >
+
+        <GridView
+            android:id="@+id/GridView_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:paddingTop="5dip"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</RelativeLayout>

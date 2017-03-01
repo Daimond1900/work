@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/whall_style"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/whwrap_style"
+                    android:layout_width="wrap_content"
+                    android:text="标题:"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/policy_title"
+                    style="@style/whwrap_style"
+                    android:singleLine="true"
+                    android:text="2012年8月江都职教会议"
+                    android:textColor="#DA990D"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/author_lab"
+                    style="@style/whwrap_style"
+                    android:text="单位:"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/policy_unit"
+                    style="@style/whwrap_style"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="江都职教集团"
+                    android:textColor="#DA990D"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <TableRow android:layout_weight="1" >
+
+                <TextView
+                    style="@style/whwrap_style"
+                    android:text="编号:"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/policy_num"
+                    style="@style/whwrap_style"
+                    android:singleLine="true"
+                    android:text="305008888888"
+                    android:textColor="#DA990D"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1" >
+
+                <TextView
+                    style="@style/whwrap_style"
+                    android:text="时间:"
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/policy_time"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="2012-08-11 16:20:52"
+                    android:textColor="#DA990D"
+                    android:textSize="16dp" />
+            </TableRow>
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/line" />
+
+</LinearLayout>

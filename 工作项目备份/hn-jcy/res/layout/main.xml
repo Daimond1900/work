@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yifeng.hnjcy.ui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/main_top" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/loginuser"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="14sp" >
+        </TextView>
+    </RelativeLayout>
+    <!-- 滑动广告 -->
+
+    <RelativeLayout
+        android:id="@+id/advert"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:layout_below="@id/top_liner" >
+
+        <com.yifeng.qzt.widget.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dip"
+            android:background="@drawable/main_advert_linebg"
+            android:gravity="right"
+            android:padding="3dip" >
+
+            <com.yifeng.qzt.widget.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                app:activeColor="#E44F03"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="#ffffff"
+                app:inactiveType="fill"
+                app:radius="4dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_menu"
+        android:layout_below="@id/advert"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/l_zpxx"
+                style="@style/main_inearLayout" >
+
+                <Button
+                    android:id="@+id/zpxx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/new_mainpage_zpcx"
+                    android:text="招聘信息"
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_zpqy"
+                style="@style/main_inearLayout" >
+
+                <Button
+                    android:id="@+id/zpqy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/new_mainpage_jsdj"
+                    android:text="招聘企业 "
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_jldw"
+                style="@style/main_inearLayout" >
+
+                <Button
+                    android:id="@+id/jldw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/new_mainpage_jsdj"
+                    android:text="简历代维"
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/l_tdjl"
+                style="@style/main_inearLayout" >
+
+                <Button
+                    android:id="@+id/tdjl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/new_mainpage_jsdj"
+                    android:text="投递记录"
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_pxxx"
+                style="@style/main_inearLayout" >
+
+                <Button
+                    android:id="@+id/pxxx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/new_mainpage_pxdj"
+                    android:text="就业新闻"
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_zcfg"
+                style="@style/main_inearLayout" >
+
+                <Button
+                    android:id="@+id/zcfg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/new_mainpage_zcfg"
+                    android:text="政策法规"
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+            
+            <LinearLayout
+                android:id="@+id/l_ldlxx"
+                style="@style/main_inearLayout" >
+
+                <Button
+                    android:id="@+id/ldlxx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/new_mainpage_ldlxx"
+                    android:text="劳动力信息"
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_lzy"
+                style="@style/main_inearLayout" >
+
+                <Button
+                    android:id="@+id/lzy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/new_mainpage_qzyy"
+                    android:text="零转移"
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/l_dhb"
+                style="@style/main_inearLayout" >
+
+                <Button
+                    android:id="@+id/dhb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/dhb"
+                    android:text="电话簿"
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l_rx"
+                style="@style/main_inearLayout"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/rx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:drawableTop="@drawable/new_mainpage_12333"
+                    android:text="就业热线"
+                    android:textColor="#444444"
+                    android:textSize="15dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 底部菜单 -->
+
+    <LinearLayout
+        android:id="@+id/btn_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/maian_bottom"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/txt_companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright"
+            android:textColor="#363636"
+            android:textSize="15dip" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yifeng.hnqzt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_back_btns" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="抬头标题"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <!-- <Button
+            android:id="@+id/refreshBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/btn_top_button_bg"
+            android:paddingBottom="3dip"
+            android:paddingLeft="7dip"
+            android:paddingRight="7dip"
+            android:paddingTop="3dip"
+            android:text="刷 新"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mid_menu"
+        style="@style/whall_style"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_title"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="5dip" >
+
+        <com.yifeng.hnqzt.widget.ViewFlow
+            android:id="@+id/viewflow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:sidebuffer="3"
+            android:layout_marginBottom="12dip" >
+        </com.yifeng.hnqzt.widget.ViewFlow>
+         <!-- 
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="3dip" >
+
+            <com.yifeng.qzt.widget.CircleFlowIndicator
+                android:id="@+id/viewflowindic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                app:activeColor="#E44F03"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="#ccc"
+                app:inactiveType="fill"
+                android:padding="2dip"
+                app:radius="4dip" />
+        </LinearLayout> -->
+    </RelativeLayout>
+
+</RelativeLayout>

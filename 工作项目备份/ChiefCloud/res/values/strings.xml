@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">热线云</string>
+	<string name="alert_dialog_finish_title">退出程序</string>
+	<string name="alert_dialog_finish">是否退出程序?</string>
+	<string name="alert_dialog_ok">确认</string>
+	<string name="alert_dialog_cancel">取消</string>
+	<string name="title_fail">错误</string>
+	<string name="title_success">成功</string>
+	<string name="title_alert">友情提醒</string>
+	<string name="wiat_msg">正在加载请稍后...</string>
+	<string name="fail_msg">数据加载失败</string>
+	<string name="server_error_msg">服务器未响应</string>
+	<string name="inner_error_msg">数据解析失败</string>
+	<string name="empty_error_msg">没有加载到任何数据</string>
+	<string name="login_time_out">登陆失效请重新返回登陆界面进行登陆!</string>
+	<string name="tel_version">2.1-update1</string>
+	<string name="ipconfig">http://218.91.96.109:12345/yzrxy/</string>
+	<string name="take_photo">拍照</string>
+	<string name="pick_photo">相册</string>
+	<string name="attachToContact">插入图片</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+    <TableLayout style="@style/whall_style" >
+
+        <TableRow>
+
+            <RelativeLayout
+                android:layout_width="100dip"
+                android:layout_height="75dip" >
+
+                <ImageView
+                    android:id="@+id/video_type"
+                    android:layout_width="100dip"
+                    android:layout_height="75dip"
+                    android:background="@drawable/edit_text"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/play"
+                    style="@style/whwrap_style"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/bf_bg" />
+            </RelativeLayout>
+
+            <TableLayout
+                style="@style/whall_style"
+                android:layout_weight="1" >
+
+                <TableRow android:paddingLeft="4dip" >
+
+                    <TextView
+                        android:id="@+id/video_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text="第二次全市大会视频"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="1分钟前"
+                        android:textColor="#DA990D"
+                        android:textSize="12dp" >
+                    </TextView>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:padding="5dip"
+                        android:text="视频介绍中心 更多详细>>"
+                        android:textColor="#413F40"
+                        android:textSize="14dp" >
+                    </TextView>
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/long_time"
+                        style="@style/whwrap_style"
+                        android:layout_width="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:maxLines="4"
+                        android:text="片长:2小时"
+                        android:textColor="#413F40"
+                        android:textSize="14dp" >
+                    </TextView>
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/line1" />
+
+</LinearLayout>

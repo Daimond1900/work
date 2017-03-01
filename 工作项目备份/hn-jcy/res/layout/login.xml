@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"  android:background="@drawable/login_bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:id="@+id/logo_icon"
+                style="@style/fill_wrap_style"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/zhan_wei"
+                    style="@style/wrap_style"
+                    android:src="@drawable/login_logo" />
+
+                <ImageView
+                    android:id="@+id/zhan_wei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/login_zi" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fill_wrap_style"
+                android:layout_below="@+id/logo_icon"
+                android:layout_marginTop="40dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/fill_wrap_style"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        style="@style/fill_wrap_style"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical" >
+
+                        <TableLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center_horizontal"
+                            android:padding="0dip" >
+
+                            <TableRow
+                                android:layout_marginTop="5dip"
+                                android:gravity="center_vertical"
+                                android:padding="0dip" >
+
+                                <TextView
+                                    android:id="@+id/user_lab"
+                                    style="@style/wrap_style"
+                                    android:text="用户名："
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/user_name"
+                                    style="@style/wrap_style"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/login_text"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="admin"
+                                    android:textColor="#909090" android:maxLines="20" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginTop="30dip"
+                                android:gravity="center_vertical"
+                                android:padding="0dip" >
+
+                                <TextView
+                                    android:id="@+id/paw_lab"
+                                    style="@style/wrap_style"
+                                    android:text="密    码："
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp" />
+
+                                <EditText
+                                    android:id="@+id/user_pass"
+                                    style="@style/wrap_style"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/login_text"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="5dp"
+                                    android:password="true"
+                                     android:maxLines="32"
+                                    android:text="8426"
+                                    android:textColor="#909090" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginTop="30dip"
+                                android:gravity="center_vertical"
+                                android:padding="3dip" >
+
+                                <TextView style="@style/wrap_style" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal" >
+
+                                    <CheckBox
+                                        android:id="@+id/checkbox"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/checkboa_bg"
+                                        android:button="@null"
+                                        android:checked="true" >
+                                    </CheckBox>
+
+                                    <TextView
+                                        android:id="@+id/jzmm"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="记住密码"
+                                        android:textColor="#FFFFFF"
+                                        android:textSize="16sp" />
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginTop="30dip"
+                                android:gravity="center_vertical" >
+
+                                <TextView style="@style/wrap_style" />
+
+                                <RelativeLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" >
+
+                                    <Button
+                                        android:id="@+id/login_btn"
+                                        style="@style/login_btn_style"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="登 录" />
+
+                                    <Button
+                                        android:id="@+id/login_back"
+                                        style="@style/login_btn_style"
+                                        android:layout_alignParentRight="true"
+                                        android:text="退 出" />
+                                </RelativeLayout>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/fill_wrap_style"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/loadtext"
+                        style="@style/wrap_style"
+                        android:text=""
+                        android:textColor="#FF0000"
+                        android:textSize="14dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

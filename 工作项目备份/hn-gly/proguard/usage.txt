@@ -1,0 +1,468 @@
+android.annotation.SuppressLint
+android.annotation.TargetApi
+com.yifeng.cloud.entity.SetUp
+com.yifeng.cloud.entity.User:
+    private java.lang.String cookie
+    private java.lang.String oaGroup
+    private java.lang.String oaToken
+    83:83:public static android.graphics.Bitmap getUserHead()
+    87:88:public static void setUserHead(android.graphics.Bitmap)
+    279:279:public java.lang.String getCookie()
+    283:284:public void setCookie(java.lang.String)
+    327:327:public static android.graphics.Bitmap getUserHead(android.content.Context)
+    339:339:public java.lang.String getOaToken()
+    343:344:public void setOaToken(java.lang.String)
+    347:347:public java.lang.String getOaGroup()
+    351:352:public void setOaGroup(java.lang.String)
+com.yifeng.hngly.adapter.AsyncAdapter:
+    public android.os.Handler need2
+    public android.os.Handler jbHandler
+    public android.os.Handler assignHandler
+    public android.os.Handler gzHandler
+    public android.os.Handler noHandler
+com.yifeng.hngly.adapter.CommonAdapter:
+    public android.os.Handler chandler
+    104:106:public void setData(java.util.List)
+com.yifeng.hngly.adapter.HomeAdapter
+com.yifeng.hngly.adapter.HomeAdapter$MyViewBinder
+com.yifeng.hngly.adapter.ImageAdapter
+com.yifeng.hngly.adapter.ImageAdapter$1
+com.yifeng.hngly.adapter.MainPicAdapter:
+    public android.widget.ImageView banner
+    public android.webkit.WebView webView
+    78:81:public void setData(java.util.List)
+com.yifeng.hngly.asyncload.AsyncImageLoader:
+    130:164:public static android.graphics.Bitmap loadImageFromUrl2Bitmap(java.lang.String,com.yifeng.hngly.asyncload.ReturnImage)
+    201:227:public static synchronized android.graphics.Bitmap findByNetUrl2Bitmap(java.lang.String,com.yifeng.hngly.asyncload.ReturnImage)
+    231:246:public static synchronized java.lang.String findByNetUrl2Path(java.lang.String)
+    272:299:public void releaseBitmapCache()
+com.yifeng.hngly.asyncload.DataBaseHelper:
+    private static final java.lang.String DATABASE_NAME
+    private static final int VERSION
+    private static final java.lang.String T_SEND_MSG
+    private static final java.lang.String T_SHARE
+    private static final java.lang.String USER_HEAD_IMG
+    private static final java.lang.String MEETING_DB
+    53:55:public DataBaseHelper(android.content.Context,java.lang.String)
+com.yifeng.hngly.asyncload.ReturnImage
+com.yifeng.hngly.asyncload.SqliteUtil:
+    48:51:public void dropTable(java.lang.String)
+    148:163:public java.util.Map findById(java.lang.String,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String)
+    179:183:public boolean doDelete(java.lang.String,java.lang.String,java.lang.String[])
+    202:214:public boolean doUpdate(java.lang.String,java.util.Map,java.lang.String,java.lang.String[])
+com.yifeng.hngly.contacts.tool.SystemConstant:
+    public static final java.lang.String cKey
+    public static final java.lang.String PWD
+    public static final java.lang.String TOTAL_MSG_NUM
+    public static final java.lang.String TOTAL_FREE_MSG_NUM
+    public static final java.lang.String RECORD_MONTH
+    public static final java.lang.String MSG_NUM_IN_MONTH
+    public static final java.lang.String FREE_MSG_NUM_IN_MONTH
+    public static final java.lang.String MSG_TYPE_CMD
+    public static final java.lang.String GROUP_NAME
+    public static final java.lang.String MSG_TYPE_CMD_REQUEST_LOCATION
+    public static final java.lang.String MSG_TYPE_CMD_ACCEPT_LOCATION
+    public static final java.lang.String MSG_TYPE_CMD_REJECT_LOCATION
+    public static final java.lang.String MSG_TYPE_CMD_LOCATION
+    public static final java.lang.String MSG_TYPE_CMD_LOCATION_STOP
+    public static final java.lang.String MSG_TYPE_CMD_PING_REQ
+    public static final java.lang.String MSG_TYPE_CMD_PING_RESP
+    public static final java.lang.String ZTL_TZ
+    public static final java.lang.String ZTL_YL
+    public static final java.lang.String TC_TZ
+    public static final java.lang.String TC_YL
+    public static final java.lang.String TX_ZD
+    public static final java.lang.String TX_SY
+    public static final java.lang.String PRO
+    public static final java.lang.String VERSION
+    public static final java.lang.String IS_NEW_VERSION
+    public static final java.lang.String DEFULT_TYPE_RING
+    public static final java.lang.String SEARCH_SERVICE
+    public static final java.lang.String LOCAL_ADDR
+    public static final java.lang.String STATUS_BAR_NOTIFY
+    public static final java.lang.String STATUS_BAR_EXPECT
+    public static final java.lang.String REMIND_JUMP_INFO
+    public static final java.lang.String REMIND_REMIND_SHOCK
+    public static final java.lang.String REMIND_REMIND_AUDIO
+    public static final java.lang.String REMIND_RING_SHOCK_FREQUENCY
+    public static final java.lang.String DEFULT_RING_SHOCK_FREQUENCY
+    public static final java.lang.String RING_NAME
+    public static final java.lang.String RING_PATH
+    public static final java.lang.String RING_TYPE
+    public static final java.lang.String SKIN_PACKAGE_NAME
+    public static final java.lang.String FRIEND_ADDRESS_LISTS
+    public static final java.lang.String GUAGUA
+    public static final java.lang.String BUBBLE_COLOR
+    public static final java.lang.String BUBBLE_SHAPE
+    public static final java.lang.String FONT_SIZE
+    public static final java.lang.String IMAGE_RESOLUTION
+    public static final java.lang.String TO_WEB
+    public static final java.lang.String USER_HEAD
+    public static final java.lang.String APP_RINGS
+    public static final java.lang.String HEAD_IMAGE
+    public static final java.lang.String NAME
+    public static final java.lang.String SIGNATURE
+    public static final java.lang.String TYPE_RINGS
+    public static final java.lang.String MMS
+    public static final int ISERROR
+    public static final int SEUCESS
+    public static final int FILEISEXIT
+    public static final int MESSAGE_TYPE_ALL
+    public static final int MESSAGE_TYPE_INBOX
+    public static final int MESSAGE_TYPE_SENT
+    public static final int MESSAGE_TYPE_DRAFT
+    public static final int MESSAGE_TYPE_OUTBOX
+    public static final int MESSAGE_TYPE_FAILED
+    public static final int MESSAGE_TYPE_QUEUED
+    public static final int MESSAGE_STATUS_RECEIVE
+    public static final int MESSAGE_STATUS_COMPLETE
+    public static final int MESSAGE_STATUS_PENDING
+    public static final int MESSAGE_STATUS_FAILED
+    public static final int PROTOCOL_SMS
+    public static final int PROTOCOL_MMS
+    public static final int PROTOCOL_OUR
+    public static final int UNREAD
+    public static final int READ
+    static final java.lang.String ATTACH_URL_FORMAT
+    public static final java.lang.String PROTOCOL_OUR_HEAD
+    public static final int MEDIARECORDER_PATH_NULL
+    public static final int MEDIARECORDER_START_FETTLE
+    public static final int MEDIARECORDER_START_DATA
+    public static final int MEDIARECORDER_START
+    public static final int MEDIARECORDER_STOP
+    public static final int MEDIARECORDER_CLEAR
+    public static final int MEDIARECORDER_SUCCESS_FILEPATH
+    public static final int MEDIARECORDER_TIMEDATA
+    public static final java.lang.String SQL_CREATE_LOCATION_TABLE
+    public static final java.lang.String COL_NAME_ID
+    public static final java.lang.String COL_NAME_STATUS
+    public static final java.lang.String TBL_NAME
+    public static final int STATUS_NOT_INIT
+    public static final int STATUS_LOADING
+    public static final int STATUS_OK
+    public static final int STATUS_UPDATED
+    public static final java.lang.String TBL_MSG
+    public static final java.lang.String COLNAME_TBL_MSG_ID
+    public static final java.lang.String COLNAME_TBL_MSG_PATH
+    public static final java.lang.String COLNAME_TBL_MSG_TYPE
+    public static final java.lang.String COLNAME_TBL_MSG_SIZE
+    public static final java.lang.String COLNAME_TBL_MSG_NAME
+    public static final java.lang.String COLNAME_TBL_MSG_TRANSFER_STATUS
+    public static final java.lang.String SQL_CREATE_MSG_TABLE
+    public static final int SELECT_PICTURE
+    public static final int SELECT_TYPE_CAMERA
+    public static final int SELECT_TYPE_VIDEO
+    public static final java.lang.String SERVER_ADDRESS
+    public static final long INTERVAL_FIVE_MINUTES
+    public static final java.lang.String REPEAT_ALARM
+    public static final java.lang.String AUTO_UPDATE_DAY
+    public static final java.lang.String XML_UPDATE_DAY
+    public static final java.lang.String XML_VERSION_TEXT
+    public static final int CHUCK_SIZE
+    public static final java.lang.String TRY_LOGIN
+    public static final long TEN_M
+    6:6:public SystemConstant()
+com.yifeng.hngly.data.BaseDAL:
+    36:37:public void setIpconfig(java.lang.String)
+    96:105:public java.lang.String doPost1(java.util.List)
+com.yifeng.hngly.data.EnterpriseDal:
+    60:70:public java.util.List doQuery()
+    99:124:public java.util.List loadMaps(int,int,int,java.lang.String,java.lang.String)
+com.yifeng.hngly.data.LoginuserDAL
+com.yifeng.hngly.data.PolicyDAL:
+    66:74:public java.util.List doQueryNewDetail(int)
+com.yifeng.hngly.data.RecuitDal:
+    44:46:public java.lang.String doQuery(java.util.Map,java.lang.String)
+com.yifeng.hngly.data.SetDAL:
+    31:38:public java.util.List doQuery()
+com.yifeng.hngly.data.UserDAL:
+    81:85:public java.util.Map doGetAuth(java.lang.String)
+    96:109:public java.util.Map loadOaUser(java.util.Map)
+    118:123:public java.lang.String doLogOut()
+    134:148:public int doUpdatePwd(java.lang.String,java.lang.String)
+com.yifeng.hngly.data.ZeroTransferDAL:
+    87:97:public com.yifeng.hngly.util.ReJson modifyZeroTransferStatus(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    110:120:public com.yifeng.hngly.util.ReJson deleteZeroTransfer(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+com.yifeng.hngly.ui.AppContext:
+    6:6:public AppContext()
+com.yifeng.hngly.ui.BuildConfig
+com.yifeng.hngly.ui.LoadingActivity:
+    181:187:void initAllselect()
+com.yifeng.hngly.ui.LoadingActivity$loadSelect
+com.yifeng.hngly.ui.MainActivity:
+    private android.widget.LinearLayout l_mryx
+com.yifeng.hngly.ui.Manifest
+com.yifeng.hngly.ui.Manifest$permission
+com.yifeng.hngly.ui.MyListView:
+    private static final java.lang.String TAG
+    private static final int RELEASE_To_REFRESH
+    private static final int PULL_To_REFRESH
+    private static final int REFRESHING
+    private static final int DONE
+    private static final int LOADING
+    private static final int RATIO
+com.yifeng.hngly.ui.R:
+    10:10:public R()
+com.yifeng.hngly.ui.R$anim
+com.yifeng.hngly.ui.R$array
+com.yifeng.hngly.ui.R$attr
+com.yifeng.hngly.ui.R$color
+com.yifeng.hngly.ui.R$drawable
+com.yifeng.hngly.ui.R$id
+com.yifeng.hngly.ui.R$layout
+com.yifeng.hngly.ui.R$menu
+com.yifeng.hngly.ui.R$string
+com.yifeng.hngly.ui.R$style
+com.yifeng.hngly.ui.R$styleable:
+    public static final int CircleFlowIndicator_activeColor
+    public static final int CircleFlowIndicator_activeRadius
+    public static final int CircleFlowIndicator_activeType
+    public static final int CircleFlowIndicator_centered
+    public static final int CircleFlowIndicator_circleSeparation
+    public static final int CircleFlowIndicator_fadeOut
+    public static final int CircleFlowIndicator_inactiveColor
+    public static final int CircleFlowIndicator_inactiveType
+    public static final int CircleFlowIndicator_radius
+    public static final int Gallery1_android_galleryItemBackground
+    public static final int LabelView_text
+    public static final int LabelView_textColor
+    public static final int LabelView_textSize
+    public static final int TogglePrefAttrs_android_preferenceLayoutChild
+    public static final int ViewFlow_sidebuffer
+    1250:1250:public R$styleable()
+com.yifeng.hngly.ui.ldlxx.IDCard:
+    11:11:public IDCard()
+    209:213:public static void main(java.lang.String[])
+com.yifeng.hngly.ui.ldlxx.JyzkDetail:
+    304:329:private void setButtonClisk(android.widget.TextView,java.lang.String[],java.lang.String)
+    332:356:private varargs void setTextView(android.widget.TextView[])
+com.yifeng.hngly.ui.ldlxx.JyzkDetail$5
+com.yifeng.hngly.ui.ldlxx.JyzkDetail$6
+com.yifeng.hngly.ui.ldlxx.LdlDetail:
+    203:228:private void setButtonClisk(android.widget.EditText,java.lang.String[],java.lang.String)
+com.yifeng.hngly.ui.ldlxx.LdlDetail$4
+com.yifeng.hngly.ui.ldlxx.LdlDetail$4$1
+com.yifeng.hngly.ui.ldlxx.LdlDetail$4$2
+com.yifeng.hngly.ui.ldlxx.ParseData:
+    10:10:public ParseData()
+    243:263:public static void initDate(java.util.Map)
+    266:280:public static java.util.Map pasreDate(java.lang.String)
+com.yifeng.hngly.ui.ldlxx.PxyyDetail:
+    184:209:private void setButtonClisk(android.widget.TextView,java.lang.String[],java.lang.String)
+    212:236:private varargs void setTextView(android.widget.TextView[])
+    33:33:static synthetic java.lang.String access$6(com.yifeng.hngly.ui.ldlxx.PxyyDetail)
+com.yifeng.hngly.ui.ldlxx.PxyyDetail$4
+com.yifeng.hngly.ui.ldlxx.PxyyDetail$4$1
+com.yifeng.hngly.ui.ldlxx.PxyyDetail$4$2
+com.yifeng.hngly.ui.ldlxx.PxyyDetail$5
+com.yifeng.hngly.ui.ldlxx.QzyyDetail:
+    172:197:private void setButtonClisk(android.widget.TextView,java.lang.String[],java.lang.String)
+    200:224:private varargs void setTextView(android.widget.TextView[])
+    34:34:static synthetic java.lang.String access$5(com.yifeng.hngly.ui.ldlxx.QzyyDetail)
+com.yifeng.hngly.ui.ldlxx.QzyyDetail$4
+com.yifeng.hngly.ui.ldlxx.QzyyDetail$4$1
+com.yifeng.hngly.ui.ldlxx.QzyyDetail$4$2
+com.yifeng.hngly.ui.ldlxx.QzyyDetail$5
+com.yifeng.hngly.ui.ldlxx.ZyjsDetail:
+    166:191:private void setButtonClisk(android.widget.TextView,java.lang.String[],java.lang.String)
+    194:218:private varargs void setTextView(android.widget.TextView[])
+    33:33:static synthetic java.lang.String access$6(com.yifeng.hngly.ui.ldlxx.ZyjsDetail)
+com.yifeng.hngly.ui.ldlxx.ZyjsDetail$4
+com.yifeng.hngly.ui.ldlxx.ZyjsDetail$4$1
+com.yifeng.hngly.ui.ldlxx.ZyjsDetail$4$2
+com.yifeng.hngly.ui.ldlxx.ZyjsDetail$5
+com.yifeng.hngly.ui.recruit.RecuitWebView$1:
+    44:51:public void toMap()
+    41:41:static synthetic com.yifeng.hngly.ui.recruit.RecuitWebView access$0(com.yifeng.hngly.ui.recruit.RecuitWebView$1)
+com.yifeng.hngly.ui.recruit.RecuitWebView$1$1
+com.yifeng.hngly.util.ActivityStackControlUtil:
+    11:11:public ActivityStackControlUtil()
+    22:22:public static java.util.List getAllActivity()
+com.yifeng.hngly.util.AutoUpdate:
+    private static final java.lang.String TAG
+    private android.app.ProgressDialog dialog
+    private static final int DOWNLOAD
+    private static final int DOWNLOAD_FINISH
+    233:262:public void showWaitDialog()
+    436:446:public void delFile()
+com.yifeng.hngly.util.AutoUpdate$5
+com.yifeng.hngly.util.CommonUtil:
+    107:136:public static void dialog(java.lang.String,java.lang.String,android.os.Handler,android.os.Message,android.content.Context)
+    181:183:public static byte[] Bitmap2Bytes(android.graphics.Bitmap)
+    193:208:public static byte[] getBytesFromFile(java.io.File)
+    276:342:public void doGetTime(android.widget.TextView)
+    403:404:public java.lang.String getSDK()
+    413:414:public java.lang.String getModel()
+    423:424:public java.lang.String getVersion()
+    512:547:public static android.graphics.Bitmap getURLBitmap(java.lang.String)
+    558:563:public static android.graphics.Bitmap getLoacalBitmap(java.lang.String)
+    574:580:public java.lang.String getFix(java.lang.String)
+    587:592:public java.lang.String getFixName(java.lang.String)
+    605:618:public java.lang.String getPsdnIp()
+    629:633:public android.app.ProgressDialog showProg(java.lang.String,java.lang.String)
+    644:650:public boolean isPkgInstalled(java.lang.String)
+com.yifeng.hngly.util.CommonUtil$1
+com.yifeng.hngly.util.CommonUtil$2
+com.yifeng.hngly.util.CommonUtil$7
+com.yifeng.hngly.util.CommonUtil$8
+com.yifeng.hngly.util.ConstantUtil:
+    public static final int KEY_ERROR
+    public static final int SERVER_ERROR
+    public static final int LOGIN_FAIL
+    public static final int LOGIN_FAIL1
+    public static final int LOGIN_SUCCESS
+    public static final int INNER_ERROR
+    public static final int IS_EMPTY
+    public static final int DATA_NULL
+    public static final int EXISTS
+    public static final int LOCKED
+    public static final int GROUP_LOCKED
+    public static final int SYS_LOCKED
+    public static final int WRONG_ID_OR_PWD
+    public static final int OA_LOGIN_FAIL
+    public static final java.lang.String PWD
+    public static final java.lang.String NO_USER_HEAD_PIC
+    public static final java.lang.String NO_PIC
+    public static final java.lang.String HAVE_PIC
+    public static final java.lang.String ip
+    public static final java.lang.String SYS_PACK_NAME
+    public static final java.lang.String downapk
+    public static final java.lang.String downtxt
+    public static final java.lang.String AUTH_KEY
+    9:9:public ConstantUtil()
+com.yifeng.hngly.util.DataConvert:
+    12:12:public DataConvert()
+    146:194:public static java.util.Map toMap1(java.lang.String)
+    306:321:public static org.json.JSONArray toJSONArray(java.util.List)
+    332:340:public static org.json.JSONObject toJsonObject(java.util.Map)
+    465:487:public static java.util.Map toConvertObjectMap(java.lang.String,java.lang.String)
+    491:553:private static java.util.LinkedHashMap paraMap(java.lang.String)
+com.yifeng.hngly.util.DateUtil:
+    public static final int HOUR
+    public static final int DATE
+    public static final int WEEK
+    public static final int MONTH
+    public static final int SEASON
+    public static final int YEAR
+    public static final java.lang.String BEGIN
+    public static final java.lang.String END
+    17:17:public DateUtil()
+    34:38:public static java.lang.String getStrCurrentTime()
+    47:51:public static java.lang.String getStrCurrentDateTime()
+    71:75:public static java.lang.String getStrCurrentDates()
+    82:122:public static java.lang.String getStrCurrentMonth()
+    136:155:public static java.lang.String getStrAccountDateTime(java.util.Date,java.lang.String,int)
+    169:182:public static java.lang.String getStrAccountDate(java.util.Date,java.lang.String,int)
+    191:195:public static int getCurrentYear()
+    204:208:public static int getCurrentMonth()
+    217:221:public static int getCurrentDay()
+    230:234:public static int getCurrentHour()
+    243:247:public static int getCurrentMinute()
+    256:260:public static int getCurrentSecond()
+    271:280:public static long getSubtractDate(java.lang.String)
+    291:300:public static long getSubtractDate(java.lang.String,java.lang.String)
+    317:317:public static java.lang.String formatDate(java.lang.String)
+    326:358:public static java.lang.String getDate(java.lang.String,java.lang.String)
+    376:479:public static java.util.Map getDateRange(java.util.Date,int)
+    497:504:public static java.util.Map getDateRange(java.lang.String,int)
+    517:519:public static java.lang.String dateToStr(java.util.Date,java.lang.String)
+    529:529:public static java.lang.String dateToStr(java.util.Date)
+    540:546:public static java.util.Date strToDate(java.lang.String)
+    557:569:private static void setTime(java.util.Map)
+    581:582:public static java.sql.Timestamp setSqlCurrentDateTime(java.util.Date)
+    597:601:public static java.sql.Timestamp setSqlDate(int,int,int)
+    623:627:public static java.sql.Timestamp setSqlDateTime(int,int,int,int,int,int)
+    638:657:public static java.sql.Timestamp setSqlDateTime(java.lang.String)
+    668:677:public static java.sql.Timestamp setSqlDate(java.lang.String)
+    690:694:public static int getUtilYear(java.sql.Timestamp)
+    705:709:public static int getUtilMonth(java.sql.Timestamp)
+    720:724:public static int getUtilDay(java.sql.Timestamp)
+    735:739:public static int getUtilHour(java.sql.Timestamp)
+    750:754:public static int getUtilMinute(java.sql.Timestamp)
+    765:769:public static int getUtilSecond(java.sql.Timestamp)
+    780:784:public static java.lang.String getUtilDate(java.sql.Timestamp)
+    795:799:public static java.lang.String getUtilTime(java.sql.Timestamp)
+    810:814:public static java.lang.String getUtilDateTime(java.sql.Timestamp)
+    823:851:public static double getDaysOfCurrentMonth()
+    860:878:public static java.lang.String getIdByDate()
+    888:920:public static java.lang.String getDate(java.lang.String)
+com.yifeng.hngly.util.FileUtils:
+    35:35:public java.lang.String getSDPATH()
+    46:52:public boolean checkSDCard()
+    68:83:public int delFile(java.lang.String)
+    117:118:public boolean isFileExist(java.lang.String)
+    161:172:public java.util.List getFiles(java.lang.String)
+    182:200:public static byte[] readFile(java.lang.String)
+    212:288:public static java.lang.String post(java.lang.String,java.util.Map,com.yifeng.hngly.util.FormFile[])
+com.yifeng.hngly.util.FormFile
+com.yifeng.hngly.util.HttpDownloader:
+    70:95:public int downFile(java.lang.String,java.lang.String,java.lang.String)
+    104:117:public java.io.InputStream getInputStreamFromURL(java.lang.String)
+com.yifeng.hngly.util.HttpPostGetUtil:
+    private static final java.lang.String CHARSET
+    private static final java.lang.String COOKIES
+    49:49:public HttpPostGetUtil()
+    335:392:public static java.lang.String doPost1(java.lang.String,java.util.List)
+com.yifeng.hngly.util.MD5:
+    5:5:public MD5()
+com.yifeng.hngly.util.OpenFileUtil
+com.yifeng.hngly.util.ReJson:
+    private static final long serialVersionUID
+    43:43:public java.util.Map getOther()
+    47:48:public void setOther(java.util.Map)
+    51:51:public int getSize()
+    60:61:public void setSize(int)
+    64:64:public java.lang.String getMsg()
+    68:69:public void setMsg(java.lang.String)
+    76:77:public void setSuccess(boolean)
+    84:85:public void setList(java.util.List)
+com.yifeng.hngly.util.StringHelper:
+    12:12:public StringHelper()
+    43:60:public static java.lang.String eregi_replaceXml(java.lang.String,java.lang.String,java.lang.String)
+    93:106:public static java.lang.String StringFilter(java.lang.String)
+    117:123:public static java.lang.String removeHtml(java.lang.String)
+    134:140:public static boolean checkString(java.lang.String)
+    151:157:public static boolean checkNumOrEn(java.lang.String)
+    168:175:public static boolean checkEmail(java.lang.String)
+    203:211:public static java.lang.String doConvertEmpty(java.lang.String)
+    220:231:public static int getLongitude(java.lang.String)
+    240:251:public static int getLatitude(java.lang.String)
+com.yifeng.hngly.util.UserSession:
+    public static final java.lang.String USERINFO
+com.yifeng.qzt.ui.mapabc.BMapApiApp:
+    public static final java.lang.String strKey
+com.yifeng.qzt.ui.mapabc.MapInfoActivity:
+    public static final int FIRST_LOCATION
+com.yifeng.qzt.ui.mapabc.MyItemizedOverlay
+com.yifeng.qzt.ui.system.AccountActivity:
+    private android.widget.CheckBox checkbox
+com.yifeng.qzt.widget.AuthLogin:
+    public static final int HANDLER_MSG
+    public static final java.lang.String LOGINAUTH
+    public static final java.lang.String LOADINGAUTH
+    private java.lang.String[] seletcs
+    118:140:private void loginLoading()
+    146:170:public void loginActivity()
+    177:199:private void setCompany()
+    207:250:private void setLoginConfig(int)
+    259:270:private java.util.Map setOaConfig(java.lang.String)
+    309:313:public void goLoginActivity()
+com.yifeng.qzt.widget.CircleFlowIndicator:
+    private static final int STYLE_STROKE
+    private static final int STYLE_FILL
+    311:313:public void setFillColor(int)
+    322:324:public void setStrokeColor(int)
+com.yifeng.qzt.widget.ViewFlow:
+    private static final int SNAP_VELOCITY
+    private static final int INVALID_SCREEN
+    private static final int TOUCH_STATE_REST
+    private static final int TOUCH_STATE_SCROLLING
+    138:142:public void onConfigurationChanged(android.content.res.Configuration)
+    481:482:public void setOnViewSwitchListener(com.yifeng.qzt.widget.ViewFlow$ViewSwitchListener)
+    524:537:public void startAutoFlowTimer()
+    540:543:public void stopAutoFlowTimer()
+    69:69:static synthetic int access$4(com.yifeng.qzt.widget.ViewFlow)
+    424:424:static synthetic void access$5(com.yifeng.qzt.widget.ViewFlow,int)
+    78:78:static synthetic android.os.Handler access$6(com.yifeng.qzt.widget.ViewFlow)
+    80:80:static synthetic long access$7(com.yifeng.qzt.widget.ViewFlow)
+com.yifeng.qzt.widget.ViewFlow$2

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        style="@style/whwrap_style"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_back_btns" />
+
+        <Button
+            android:id="@+id/reset_btn"
+            style="@style/common_btns"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="4dip"
+            android:text="重 设" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="筛选条件"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/whall_style"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/top_liner"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:scrollbars="none" >
+
+        <TableLayout
+            style="@style/whwrap_style"
+            android:layout_width="fill_parent" >
+
+            <TableRow style="@style/search_item" >
+
+                <TextView
+                    android:id="@+id/ambitus_lab"
+                    style="@style/whwrap_style"
+                    android:layout_width="90dip"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingLeft="12dip"
+                    android:text="5千米内|"
+                    android:textColor="#666" >
+                </TextView>
+
+                <SeekBar
+                    android:id="@+id/seek"
+                    style="@style/Template.SeekBar.Small"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="1"
+                    android:max="10000"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:progress="3000" />
+            </TableRow>
+
+            <TableRow style="@style/search_item" >
+
+                <TextView
+                    style="@style/whwrap_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingLeft="12dip"
+                    android:text="职   位|"
+                    android:textColor="#666" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/ponsition"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入岗位"
+                    android:maxLength="30"
+                    android:paddingLeft="12dip"
+                    android:textSize="14dip" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/price_item"
+                style="@style/search_item" >
+
+                <TextView
+                    style="@style/whwrap_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingLeft="12dip"
+                    android:text="薪   资|"
+                    android:textColor="#666" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/priceLab"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:paddingLeft="12dip"
+                    android:text="全部"
+                    android:textColor="#FF801B" >
+                </TextView>
+
+                <ImageView
+                    style="@style/whwrap_style"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/right_jt" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        style="@style/whwrap_style"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/category_info_sift_title"
+        android:padding="4dip" >
+
+        <Button
+            android:id="@+id/screen_btn"
+            style="@style/common_btns"
+            android:layout_centerHorizontal="true"
+            android:minWidth="200dip"
+            android:text="立即筛选" >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/register_line" >
+
+    <TableRow android:layout_marginLeft="5dip" >
+
+        <TableLayout
+            style="@style/fill_wrap_style"
+            android:layout_weight="1"
+            android:padding="7dip" >
+
+            <RelativeLayout
+                style="@style/fill_style"
+                android:layout_gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/item_nameTxt"
+                    style="@style/wrap_style"
+                    android:singleLine="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="李四"
+                    android:textColor="#4DA0D4"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/item_sexTxt"
+                    style="@style/wrap_style"
+                    android:singleLine="true"
+                    android:text="男"
+                    android:layout_toLeftOf="@+id/item_tagTxt"
+                    android:layout_marginRight="42dip"
+                    android:textColor="#424242"
+                    android:gravity="center_horizontal"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/item_tagTxt"
+                    style="@style/wrap_style"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:text="已拒绝"
+                    android:textColor="#4DA0D4"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TableRow
+                android:layout_marginTop="2dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/item_contactTxt"
+                    style="@style/wrap_style"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="15252753732"
+                    android:textColor="#424242"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/item_dateTxt"
+                    style="@style/wrap_style"
+                    android:singleLine="true"
+                    android:text="2012-12-10 10:10"
+                    android:textColor="#6C6C6C"
+                    android:textSize="13sp" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            style="@style/wrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/right_jt" />
+    </TableRow>
+
+</TableLayout>

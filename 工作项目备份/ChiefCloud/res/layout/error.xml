@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0dip"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/whwrap_style"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:text="您手机未能联网或数开关己关闭!"
+        android:textColor="#000000" />
+
+</RelativeLayout>

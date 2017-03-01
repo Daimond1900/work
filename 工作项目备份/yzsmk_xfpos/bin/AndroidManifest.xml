@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.winksoft.yzsmk.xfpos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <!-- SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 向SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".YFApp"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.winksoft.yzsmk.xfpos.main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- created by ADT ext plugin at 2016-09-04 17:55:04 -->
+        <!--
+        <activity android:name="com.yifengcom.desfire.Consumption" />
+        <activity android:name=".CardTypeSelectActivity"/>
+        -->
+        <!-- <activity android:name="com.yifengcom.ftp.MainActivity" /> -->
+        <activity android:name="com.winksoft.yzsmk.xfpos.balance.SelectBalanceActivity" android:screenOrientation="portrait" />
+        <activity android:name=".xf.PayActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.winksoft.yzsmk.xfpos.settingparam.SettingActivity" android:screenOrientation="portrait" />
+        <activity android:name=".xf.PayByCreditCardActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.winksoft.yzsmk.xfpos.xf.SuccessPayActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.winksoft.yzsmk.xfpos.consumerecord.ConsumptionList" android:screenOrientation="portrait" />
+        <activity android:name=".DayPayActivity" android:screenOrientation="portrait" />
+        <activity android:name=".MonthPayActivity" android:screenOrientation="portrait" />
+        <activity android:name=".employee.EmployeeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".signout.SignOutActivity" android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

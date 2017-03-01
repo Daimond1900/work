@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_back_btn" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:text="意见反馈"
+            android:textColor="@color/white"
+            android:textSize="21dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/area1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/common_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="欢迎您提出宝贵的意见！谢谢！"
+                android:textColor="#6C6C6C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/contentEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="165dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/input_bg"
+                android:gravity="top|left"
+                android:hint="请输入你的反馈意见（200字以内）"
+                android:maxLines="7"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/area1"
+            android:layout_margin="5dip"
+            android:background="@drawable/common_bg"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="您的联系方式（QQ、电话或邮箱）！"
+                android:textColor="#6C6C6C"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/contactEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="65dip"
+                android:layout_marginTop="5dip"
+                android:gravity="top|left"
+                android:background="@drawable/input_bg"
+                android:hint="方便我们给你留言（选填）"
+                android:maxLines="5"
+                android:padding="5dip"
+                android:textColor="#666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/area2"
+            android:layout_margin="5dip"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/com_btns"
+                android:padding="2dip"
+                android:text="发 送"
+                android:textColor="@color/white"
+                android:textSize="16dip" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/com_btns"
+                android:padding="2dip"
+                android:text="取 消"
+                android:textColor="@color/white"
+                android:textSize="16dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

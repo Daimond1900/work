@@ -1,0 +1,149 @@
+# view AndroidManifest.xml #generated:197
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/ambitus_map.xml #generated:46
+# view res/layout/mapabc_view.xml #generated:38
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view res/layout/map_select.xml #generated:34
+-keep class com.mapabc.mapapi.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.yifeng.hnqzt.ui.AddResumeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class com.yifeng.hnqzt.ui.AutoLoginService { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.yifeng.hnqzt.ui.BrowseInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.yifeng.hnqzt.ui.CompanyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:13
+-keep class com.yifeng.hnqzt.ui.LoadingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.yifeng.hnqzt.ui.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.yifeng.hnqzt.ui.MainActivity { <init>(...); }
+
+# view res/layout/training_list.xml #generated:71
+# view res/layout/zcfg_list.xml #generated:36
+-keep class com.yifeng.hnqzt.ui.MyListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.yifeng.hnqzt.ui.PersonalResumeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.yifeng.hnqzt.ui.RegeditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.yifeng.hnqzt.ui.ResumeInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:181
+-keep class com.yifeng.hnqzt.ui.ambitus.AmbitusDetail { <init>(...); }
+
+# view AndroidManifest.xml #generated:177
+-keep class com.yifeng.hnqzt.ui.ambitus.AmbitusInformation { <init>(...); }
+
+# view AndroidManifest.xml #generated:189
+-keep class com.yifeng.hnqzt.ui.ambitus.AmbitusMap { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.yifeng.hnqzt.ui.ambitus.Search { <init>(...); }
+
+# view AndroidManifest.xml #generated:137
+-keep class com.yifeng.hnqzt.ui.enterprise.EnterpriseList { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class com.yifeng.hnqzt.ui.enterprise.EnterpriseView { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+-keep class com.yifeng.hnqzt.ui.enterprise.PositionList { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.yifeng.hnqzt.ui.job.AttentionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:121
+-keep class com.yifeng.hnqzt.ui.job.InvitedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.yifeng.hnqzt.ui.job.JobCommonActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.yifeng.hnqzt.ui.job.JobDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.yifeng.hnqzt.ui.job.MyJobActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.yifeng.hnqzt.ui.job.NoticeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:9
+-keep class com.yifeng.hnqzt.ui.mapabc.BMapApiApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class com.yifeng.hnqzt.ui.mapabc.MapInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.yifeng.hnqzt.ui.policy.PolicyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.yifeng.hnqzt.ui.policy.PolicyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class com.yifeng.hnqzt.ui.recruit.PositionView { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.yifeng.hnqzt.ui.recruit.RecuitInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.yifeng.hnqzt.ui.recruit.RecuitWebView { <init>(...); }
+
+# view AndroidManifest.xml #generated:171
+-keep class com.yifeng.hnqzt.ui.system.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:159
+-keep class com.yifeng.hnqzt.ui.system.AccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:167
+-keep class com.yifeng.hnqzt.ui.system.FeedbackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.yifeng.hnqzt.ui.system.HelpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.yifeng.hnqzt.ui.system.SystemSettings { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.yifeng.hnqzt.ui.training.TrainDeatilActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.yifeng.hnqzt.ui.training.TrainingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class com.yifeng.hnqzt.ui.venture.VentureDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.yifeng.hnqzt.ui.venture.VentureGalleryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.yifeng.hnqzt.ui.venture.VentureListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.yifeng.hnqzt.ui.zcfg.ZCFGDeatilActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class com.yifeng.hnqzt.ui.zcfg.ZCFGListActivity { <init>(...); }
+
+# view 480x320\res/layout-480x320/main.xml #generated:69
+# view res/layout/main.xml #generated:66
+-keep class com.yifeng.hnqzt.widget.CircleFlowIndicator { <init>(...); }
+
+# view 480x320\res/layout-480x320/main.xml #generated:52
+# view res/layout/main.xml #generated:51
+# view res/layout/venture.xml #generated:57
+-keep class com.yifeng.hnqzt.widget.ViewFlow { <init>(...); }
+

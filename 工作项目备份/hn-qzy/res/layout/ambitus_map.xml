@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+        
+        <Button style="@style/top_back_btn"
+            android:id="@+id/back_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"/>
+
+        <TextView style="@style/wrap_style"
+            android:text="周边信息"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:id="@+id/title"
+            android:textSize="20dip"/>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top_title"
+        android:orientation="vertical" >
+       <LinearLayout
+                style="@style/ywrap_style"
+                android:id="@+id/search_barBtn"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/category_info_sift_title">
+            <Button style="@style/category_btns" android:text="筛选"
+			android:id="@+id/screen_btn" android:layout_alignParentRight="true" />
+		    <TextView style="@style/nav_title" 
+		        android:textColor="#666" android:textSize="14dip" 
+		        android:layout_marginLeft="15dip" android:id="@+id/nav_title" 
+		        android:layout_alignParentLeft="true"
+			android:text="@string/nav_title" />
+       </LinearLayout>
+        
+       <com.baidu.mapapi.map.MapView android:id="@+id/main_mapView"
+        android:layout_below="@+id/search_barBtn"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" 
+		android:clickable="true"    
+		android:apiKey="@string/maps_api_key" 
+	  />
+     
+    </RelativeLayout>
+   
+</RelativeLayout>

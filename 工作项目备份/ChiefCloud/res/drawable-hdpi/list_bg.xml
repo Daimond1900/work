@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- 没有焦点时的背景颜色 此项相当与直接在布局中设置的background-->
+ 	<item android:state_window_focused="false" android:drawable="@color/white" /> 
+	<!--
+		非触摸模式下获得焦点并单击时的背景颜色 <item android:state_focused="true"
+		android:state_pressed="true" android:drawable="@color/pressed" />
+	-->
+	<!--触摸模式下单击时的背景颜色  item被点击的时候颜色的改变，松开后颜色还原-->
+	<item android:state_focused="false" android:state_pressed="true" android:drawable="@color/FFC700" />
+	<!--
+		选中时的背景颜色 <item android:state_selected="true"
+		android:drawable="@color/selected" />
+	-->
+	<!--
+		获得焦点时的背景 颜色 <item android:state_focused="true"
+		android:drawable="@color/focused" />
+	-->
+</selector>  

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="15dip"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/top_liner"
+        style="@style/fill_wrap_style"
+        android:layout_alignParentTop="true"
+        android:background="#4596C7"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            style="@style/wrap_style"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/ic_dialog_menu_generic" />
+
+        <TextView
+            android:id="@+id/pTitle"
+            style="@style/network_top_title"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:layout_margin="8dip"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/pMsg"
+            style="@style/fill_style"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:padding="5dip"
+            android:textColor="@color/black"
+            android:textSize="18dip" />
+
+        <LinearLayout
+            style="@style/fill_wrap_style"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/confirm_btn"
+                style="@style/fill_wrap_style"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/alert_dialog_btn"
+                android:text="@string/alert_dialog_ok"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                style="@style/fill_wrap_style"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/alert_dialog_btn"
+                android:text="@string/alert_dialog_cancel"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

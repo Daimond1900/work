@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            style="@style/wrap_style"
+            android:src="@drawable/main_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top_title"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/yy_bar"
+            style="@style/ywrap_style"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/yy_bg" />
+
+        <!-- 主体 -->
+
+        <LinearLayout
+            android:id="@+id/main_table"
+            style="@style/ywrap_style"
+            android:layout_below="@id/yy_bar"
+            android:orientation="vertical" >
+
+            <TableLayout
+                style="@style/ywrap_style"
+                android:orientation="vertical"
+                android:padding="5dip" >
+
+                <TableRow android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/login_lab"
+                        android:text="招聘职位:" />
+
+                    <EditText
+                        android:id="@+id/position_request"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/input_bg"
+                        android:gravity="left|center_vertical"
+                        android:textColor="#000000" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/subbmit_xml_button"
+                        android:text="查询"
+                        android:id="@+id/search_btn"
+                        android:textColor="@color/white" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <!-- 查询结果 -->
+
+        <View
+            android:id="@+id/green_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/main_table"
+            android:background="#008000" />
+
+        <LinearLayout
+            style="@style/fill_style"
+            android:layout_below="@id/green_line"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="#00000000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

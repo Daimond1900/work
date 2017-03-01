@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:gravity="center_vertical"
+        android:padding="10dip" >
+
+        <ImageView
+            android:id="@+id/imageIvw"
+            style="@style/FillAndWrap"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/pic" />
+
+        <LinearLayout
+            style="@style/FillAndWrap"
+            android:layout_marginLeft="8dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/FillAndWrap"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/Wrap"
+                    android:text="工号："
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvNo"
+                    style="@style/Wrap"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/FillAndWrap"
+                android:layout_marginTop="5dip" >
+
+                <TextView
+                    style="@style/Wrap"
+                    android:text="密码："
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvPwd"
+                    style="@style/Wrap"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </TableRow>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_weight="1"
+        android:background="#E5E5E5" />
+
+</TableLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        style="@style/whwrap_style"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_left_btn"/>
+
+        <TextView
+            android:id="@+id/toptitle"
+            style="@style/top_title"
+            android:text="统计报表" />
+    </RelativeLayout>
+
+    <!-- 列表 -->
+
+    <LinearLayout
+        android:id="@+id/list1"
+        style="@style/whwrap_style"
+        android:layout_below="@id/top_liner"
+        android:layout_margin="5dip"
+        android:background="@drawable/common_bg"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#ccc"
+            android:dividerHeight="1dip"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/whwrap_style"
+        android:layout_below="@id/list1"
+        android:layout_margin="5dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/common_bg"
+        android:orientation="vertical"
+        android:padding="0dip"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/listview1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#ccc"
+            android:dividerHeight="1dip"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</RelativeLayout>

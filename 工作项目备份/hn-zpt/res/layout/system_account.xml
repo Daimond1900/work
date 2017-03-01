@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/fill_wrap_style"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_btn_back_style" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:text="帐号管理"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top"
+        android:layout_margin="5dip"
+        android:background="@drawable/common_bg"
+        android:orientation="vertical"
+        android:padding="0dip" >
+
+        <TableLayout
+            style="@style/fill_wrap_style"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+            <TableRow
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/login_lab"
+                    android:text="原 密 码：" />
+
+                <EditText
+                    android:id="@+id/old_passwordEdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_bg"
+                    android:gravity="center_vertical"
+                    android:hint="输入原密码"
+                    android:maxLength="15"
+                    android:paddingLeft="5dip"
+                    android:password="true"
+                    android:textColor="#2E2E2E"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/login_lab"
+                    android:text="新 密 码：" />
+
+                <EditText
+                    android:id="@+id/new_passwordEdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_bg"
+                    android:gravity="center_vertical"
+                    android:hint="6位英文大小写字母或数字"
+                    android:maxLength="6"
+                    android:paddingLeft="5dip"
+                    android:password="true"
+                    android:textColor="#2E2E2E"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/login_lab"
+                    android:text="确认密码：" />
+
+                <EditText
+                    android:id="@+id/confirm_passwordEdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_bg"
+                    android:gravity="center_vertical"
+                    android:hint="6位英文大小写字母或数字"
+                    android:maxLength="6"
+                    android:paddingLeft="5dip"
+                    android:password="true"
+                    android:textColor="#2E2E2E"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            style="@style/fill_wrap_style"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="15dip" >
+
+            <Button
+                android:id="@+id/submitBtn"
+                style="@style/common_button_style"
+                android:text="提 交" />
+
+            <Button
+                android:id="@+id/resetBtn"
+                style="@style/common_button_style"
+                android:layout_marginLeft="15dip"
+                android:text="重 置" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

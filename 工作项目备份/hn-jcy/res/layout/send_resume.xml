@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_left_btn" />
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/top_title"
+            android:text="投递简历" />
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/top_right_btns"
+            android:text="提交简历"
+            android:textSize="16dip"
+            android:textColor="#fff"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <com.yifeng.hnjcy.ui.MyListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_liner"
+        android:layout_margin="5dip"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffffff"
+        android:fastScrollEnabled="true"
+        android:padding="0dip" />
+
+</RelativeLayout>

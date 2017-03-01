@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.winksoft.yzsmk.widget.Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btOne"
+            style="@style/myPayButton"
+            android:text="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <Button
+            android:id="@+id/btTwo"
+            style="@style/myPayButton"
+            android:text="2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <Button
+            android:id="@+id/btThree"
+            style="@style/myPayButton"
+            android:text="3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <TextView
+            style="@style/myPayButton"
+            android:background="@color/key_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btFour"
+            style="@style/myPayButton"
+            android:text="4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <Button
+            android:id="@+id/btFive"
+            style="@style/myPayButton"
+            android:text="5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <Button
+            android:id="@+id/btSix"
+            style="@style/myPayButton"
+            android:text="6" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <Button
+            android:id="@+id/btZero"
+            style="@style/myPayButton"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btSeven"
+            style="@style/myPayButton"
+            android:text="7" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <Button
+            android:id="@+id/btEgiht"
+            style="@style/myPayButton"
+            android:text="8" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <Button
+            android:id="@+id/btNine"
+            style="@style/myPayButton"
+            android:text="9" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <TextView
+            style="@style/myPayButton"
+            android:background="@color/key_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btCancel"
+            style="@style/myPayButton"
+            android:layout_weight=".25"
+            android:text="取消"
+            android:textColor="#FE420A" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <Button
+            android:id="@+id/btn_keyboard_del"
+            style="@style/myPayButton"
+            android:layout_weight=".25"
+            android:text="退格"
+            android:textColor="#FFB300" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/lightgrey" />
+
+        <Button
+            android:id="@+id/btDetermine"
+            style="@style/myPayButton"
+            android:layout_weight=".5"
+            android:background="@drawable/key_enter_selector"
+            android:text="确认"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</com.winksoft.yzsmk.widget.Keyboard>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout_Item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="2dip" >
+
+
+        <ImageView
+            android:id="@+id/item_imageg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cyxm_icon"
+            android:layout_marginTop="8dip" >
+        </ImageView>
+        <RelativeLayout style="@style/whwrap_style"  
+            android:layout_marginLeft="-8dip"
+            android:layout_marginTop="0dip"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/item_imageg"
+            >
+        <ImageView
+            android:id="@+id/news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/news" >
+        </ImageView>
+        <TextView android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_textg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_imageg"
+        android:layout_centerHorizontal="true"
+        android:text="招聘信息"
+        android:textColor="#444444"
+        android:textSize="15dip"
+        android:textStyle="bold" >
+    </TextView>
+
+</RelativeLayout>

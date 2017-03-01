@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/ywrap_style"
+        android:background="@drawable/top_bg" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/top_back_btn" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="抬头标题"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+         <Button
+            android:id="@+id/listBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/list_btn_icon"
+            /> 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mid_menu"
+        style="@style/whall_style"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_title"
+        android:layout_marginBottom="2dip"
+        android:gravity="center_horizontal">
+
+        <Gallery android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:spacing="5dp"
+        android:cacheColorHint="#00000000"
+        />
+        
+       
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        style="@style/whwrap_style" 
+        android:layout_width="fill_parent"
+        android:background="#cccccccc"
+        android:padding="1dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" 
+        >
+        <TextView style="@style/whwrap_style" 
+            android:text=""
+            android:id="@+id/pageLab" 
+            android:padding="2dip"
+            android:textSize="16dip" 
+            android:textColor="#000" 
+            android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

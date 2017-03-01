@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yifeng.zpt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/fill_wrap_style"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/titleTxt"
+            style="@style/wrap_style"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="政策法规"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/include"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top" >
+
+        <include layout="@layout/policy_menu_button" />
+    </RelativeLayout>
+
+    <com.yifeng.hnzpt.ui.MyListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/include"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="0dip"
+        android:background="@drawable/common_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffffff"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="true"
+        android:focusable="true"
+        android:padding="3dip"
+        android:scrollbarSize="3dip"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb" />
+
+</RelativeLayout>

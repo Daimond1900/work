@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yifeng.hnzpt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F7" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_home_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="7dip"
+            android:src="@drawable/logo_bg"
+            android:layout_centerVertical="true" />
+        
+        <TextView android:layout_width="160dip"
+			android:layout_height="wrap_content"
+			android:id="@+id/userTxt"
+			android:gravity="right"
+			android:textColor="#ffffff"
+			android:textSize="14sp" 
+			android:layout_marginRight="8dp"
+			android:ellipsize="marquee" 
+        	android:focusable="true" 
+        	android:marqueeRepeatLimit="marquee_forever" 
+	        android:focusableInTouchMode="true" 
+	        android:scrollHorizontally="true"
+	        android:singleLine="true"
+	        android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+        	></TextView>
+    </RelativeLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/search_kuang"
+        style="@style/ywrap_style"
+        android:layout_below="@+id/top"
+        android:background="@drawable/search_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="31dip"
+            android:layout_weight="1"
+            android:background="@drawable/main_search_kuang"
+            android:gravity="center_vertical"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/search_content"
+                style="@style/ywrap_style"
+                android:background="#00000000"
+                android:hint="点我输入搜索内容"
+                android:paddingLeft="5dip"
+                android:textColorHint="#D3D3D2"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="31dip"
+            android:background="@drawable/main_search_btn" />
+    </LinearLayout>
+
+    -->
+    <!-- 滑动广告 -->
+
+    <RelativeLayout
+        android:id="@+id/advert"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:layout_below="@+id/top" >
+
+        <com.yifeng.hnzpt.widget.ViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dip"
+            android:background="@drawable/main_advert_linebg"
+            android:gravity="center_vertical|right"
+            android:padding="3dip" >
+
+            <com.yifeng.hnzpt.widget.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                app:activeColor="#0783BB"
+                app:activeType="fill"
+                app:circleSeparation="20dip"
+                app:inactiveColor="#ffffff"
+                app:inactiveType="fill"
+                android:padding="2dip"
+                app:radius="4dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 主菜单-九宫格 -->
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_above="@+id/copyright"
+        android:layout_below="@id/advert"
+        android:gravity="center"
+        android:padding="10dip" >
+
+        <GridView
+            android:id="@+id/gridview"
+            style="@style/fill_style"
+            android:gravity="center"
+            android:horizontalSpacing="10dip"
+            android:verticalSpacing="10dip"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/copyright"
+        style="@style/fill_wrap_style"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_companyName"
+            style="@style/wrap_style"
+            android:text="@string/copyright"
+            android:textColor="#363636"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

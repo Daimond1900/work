@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dash="http://schemas.android.com/apk/res/com.winksoft.yzsmk.czpos"
+    style="@style/Fill"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        style="@style/FillAndWrap"
+        android:layout_margin="10dip" 
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btUpLoad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="dayPay"
+            android:text="充值上传" />
+    </LinearLayout>
+
+</LinearLayout>

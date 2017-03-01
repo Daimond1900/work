@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        style="@style/whwrap_style"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/top_left_btn" />
+
+        <Button
+            android:id="@+id/selectbt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dip"
+            android:background="@drawable/bt_address_zm" />
+
+        <TextView
+            android:id="@+id/toptitle"
+            style="@style/top_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="通讯录" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_below="@+id/top_liner"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="6dip"
+        android:padding="0dp"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/contacts_serch_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dip"
+            android:layout_toLeftOf="@+id/contacts_clear"
+            android:background="@null"
+            android:hint="@string/contacts_search"
+            android:inputType="textUri" />
+
+        <Button
+            android:id="@+id/contacts_clear"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/clear_click" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/address_list"
+        style="@style/whall_style"
+        android:layout_above="@+id/dial_digits_delete"
+        android:layout_below="@+id/searchbar"
+        android:layout_margin="5dip"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffffff"
+        android:fastScrollEnabled="true"
+        android:padding="0dip" />
+
+    <com.yifeng.jobjcy.ui.contact.IndexBar
+        android:id="@+id/layout_indexbar"
+        android:layout_width="20dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dial_digits_delete"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/searchbar"
+        android:background="#50dddddd" />
+
+    <RelativeLayout
+        android:id="@+id/layout_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/overlay"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/cover_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="70sp" />
+    </RelativeLayout>
+    <!-- 底部菜单 -->
+
+    <LinearLayout
+        android:id="@+id/imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <LinearLayout
+        android:id="@+id/btn_menu"
+        style="@style/whwrap_style"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/buttom_m"
+            style="@style/whwrap_style"
+            android:layout_width="fill_parent"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/keypad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:stretchColumns="*" >
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/button1"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_1_no_vm" />
+
+                <ImageButton
+                    android:id="@+id/button2"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_2" />
+
+                <ImageButton
+                    android:id="@+id/button3"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_3" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/button4"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_4" />
+
+                <ImageButton
+                    android:id="@+id/button5"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_5" />
+
+                <ImageButton
+                    android:id="@+id/button6"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_6" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/button7"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_7" />
+
+                <ImageButton
+                    android:id="@+id/button8"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_8" />
+
+                <ImageButton
+                    android:id="@+id/button9"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_9" />
+            </TableRow>
+
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/buttonstar"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/ic_dial_action_call1" />
+
+                <ImageButton
+                    android:id="@+id/button0"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/dial_num_0" />
+
+                <ImageButton
+                    android:id="@+id/deleteButton"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_dial1"
+                    android:src="@drawable/ic_dial_action_delete" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dial_digits_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_menu"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginTop="2dip"
+        android:orientation="vertical" >
+
+        <include layout="@layout/dial_digits_delete" >
+        </include>
+    </LinearLayout>
+
+</RelativeLayout>
