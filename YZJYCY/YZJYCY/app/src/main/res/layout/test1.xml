@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:paddingTop="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="2dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <!-- head -->
+                <ImageView
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/img"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/new1"
+                    android:layout_marginTop="6dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- username -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <!-- 姓名 -->
+
+                    
+
+                    <!-- 身份证 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_middle_text_size" />
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="公考面试“天价培训班”揭秘：教师日工资五六千"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:textSize="@dimen/large_medium_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_middle_text_size" />
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="随着公务员考试季的到来，公考培训亦进入忙碌期。2017年国考面试已进入尾声，各省联考、省考也开始拉开序幕，不少考生马不停蹄地在各类辅导机构间穿梭。经过第一轮残酷的笔试，一部分考生从“千军万马”中脱颖而出，进入面试。为了最终“成公”"
+                            android:textColor="#666"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+
+                    
+                </LinearLayout>
+<!-- 添加详情剪头 -->
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/hintColor" />
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/titleComStyle"
+     >
+
+      <Button
+            android:id="@+id/back_btn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:text="招聘企业"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/topTilteStyle" />
+
+        <Button
+            android:id="@+id/refresh_btn"
+             android:layout_width="40dp"
+            android:layout_height="28dp"
+            style="@style/common_title_btn_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip" 
+            android:background="@drawable/qzt_refresh_btns"/>
+    </RelativeLayout>
+
+    <!-- 搜索框  start -->
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_title"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <Spinner
+                android:id="@+id/spn_area"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:background="@drawable/qzt_btn_dropdown"
+                android:prompt="@string/spin_prompt" />
+
+            <EditText
+                android:id="@+id/edtTxt_name"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:background="@drawable/qzt_search_bg"
+                android:hint="请输入企业名称"
+                android:maxLength="20"
+                android:paddingLeft="5dp"
+                android:textColor="#333"
+                android:textSize="14sp"
+                android:layout_marginTop="5dip" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/zpt_search_button_bg" />
+    </LinearLayout>
+
+    <!-- 搜索框 end -->
+
+    <RelativeLayout
+        style="@style/fill_style"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@id/search_bar"
+        android:orientation="vertical" >
+
+        <!-- 列表 -->
+
+        <LinearLayout
+            style="@style/fill_style"
+            android:layout_margin="4dip"
+            android:orientation="vertical"
+            android:padding="1dip" >
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="#efefef"
+                android:dividerHeight="1dip"
+                android:fastScrollEnabled="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 底部菜单 -->
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        style="@style/ywrap_style"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dip"
+        android:background="@drawable/qzt_menu_bottom_bg"
+        android:orientation="horizontal"
+        android:padding="4dip"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/qbqy_btn"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_qbqys"
+            android:text="全部企业" />
+
+        <Button
+            android:id="@+id/djqy_btn"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_djzws"
+            android:text="推荐企业" />
+
+        <Button
+            android:id="@+id/zmqy_btn"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_zmqys"
+            android:text="知名企业" />
+    </LinearLayout>
+
+</RelativeLayout>

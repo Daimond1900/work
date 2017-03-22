@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F6F3F5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_home_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/topTilteStyle"
+            android:text="扬州就业创业APP" />
+        <!--
+             <RelativeLayout
+            android:id="@+id/layout_home_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_home_message"
+            android:layout_toRightOf="@+id/img_home"
+            android:background="@drawable/jshop_searchbar_bg" >
+        -->
+
+        <!--<RelativeLayout
+            android:id="@+id/layout_home_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_home_message"
+            android:layout_toRightOf="@+id/img_home"
+            android:gravity="center"
+           >-->
+
+        <!-- <TextView
+             android:id="@+id/textView2"
+             style="@style/topTilteStyle"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/imageView3"
+             android:text="扬州就业创业APP"
+              />-->
+
+        <!--  <ImageView
+             android:id="@+id/imageView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="6dp"
+             android:src="@drawable/lib_story_img_search_bt" /> -->
+        <!--  </RelativeLayout>-->
+
+        <!-- <ImageView
+            android:id="@+id/img_home_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            />-->
+        <!--  <ImageView
+             android:id="@+id/img_home_message"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="10dp"
+             android:src="@drawable/home_message" /> -->
+
+        <!-- <ImageView
+             android:id="@+id/img_home"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:src="@mipmap/home_logo" />-->
+    </LinearLayout>
+
+    <ScrollView
+        style="@style/Fill"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/Fill"
+            android:orientation="vertical">
+
+            <com.winksoft.banner.Banner
+                android:id="@+id/banner1"
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                app:indicator_height="8dp"
+                app:indicator_margin="3dp"
+                app:indicator_width="8dp" />
+
+            <com.winksoft.zgh.pagegridview.PageGridView
+                android:id="@+id/pagingGridView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:PagingColums="0"
+                app:PagingDiver="@drawable/divider_bg"
+                app:PagingRows="2" />
+
+            <com.winksoft.zgh.pagegridview.MyPageIndicator
+                android:id="@+id/pageindicator"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#EEEEEE"
+                android:gravity="center" />
+            <!--<com.winksoft.android.widget.MyGridView
+                android:id="@+id/mainGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="1dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="1dip" />-->
+
+            <!-- <include layout="@layout/item_home_like" /> -->
+
+           <!-- <include layout="@layout/test2" />-->
+
+            <include layout="@layout/test1" />
+
+            <include layout="@layout/test3" />
+
+            <include layout="@layout/test4" />
+
+            <include layout="@layout/item_home_zp" />
+
+            <include layout="@layout/item_home_qz" />
+
+            <include layout="@layout/item_home_cy" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

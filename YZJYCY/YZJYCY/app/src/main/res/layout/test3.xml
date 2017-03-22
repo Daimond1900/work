@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:paddingTop="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="2dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <!-- head -->
+                <ImageView
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/img"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/new2"
+                    android:layout_marginTop="6dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- username -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <!-- 姓名 -->
+
+                    
+
+                    <!-- 身份证 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_middle_text_size" />
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="北京野生动物园白虎区有游客下车？爆料者透露细节"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:textSize="@dimen/large_medium_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_middle_text_size" />
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:singleLine="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="今日中午，爆料者向中新网记者透露相关细节，称该事件发生在19日上午，有游客驾驶一辆丰田SUV进入自驾区，在第一个水禽区下车，被工作人员劝阻，在后一个白虎区，他们再次下车，随后在工作人员劝阻后上了车，之后这一家人就没再下过车了"
+                            android:textColor="#666"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+
+                    
+                </LinearLayout>
+<!-- 添加详情剪头 -->
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/hintColor" />
+</LinearLayout>

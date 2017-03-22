@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:paddingTop="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="2dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <!-- head -->
+                <ImageView
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/img"
+                    android:layout_width="95dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/new3"
+                    android:layout_marginTop="6dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <!-- username -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <!-- 姓名 -->
+
+                    
+
+                    <!-- 身份证 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_middle_text_size" />
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="市民被诈骗9.2万元仍不醒悟 女行长追撵1公里苦劝"
+                            android:textColor="@color/black"
+                            android:singleLine="true"
+                            android:textSize="@dimen/large_medium_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="  "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_middle_text_size" />
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:singleLine="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="柳州市民刘女士日前遭遇电信诈骗，在已损失9.2万元的情况下，3月16日准备再度打款给骗子。细心的银行员工察觉不妙，想劝说却遭拒。该女士弃车狂跑，一女行长在街上狂追1"
+                            android:textColor="#666"
+                            android:textSize="@dimen/small_text_size" />
+                    </LinearLayout>
+
+                    
+                </LinearLayout>
+<!-- 添加详情剪头 -->
+                
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/hintColor" />-->
+    <!--<LinearLayout
+        style="@style/whall_style"
+        android:layout_height="wrap_content"
+        android:layout_span="0"
+        android:background="@drawable/jcy_line" />-->
+</LinearLayout>

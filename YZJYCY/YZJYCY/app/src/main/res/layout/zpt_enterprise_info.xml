@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="企业信息" />
+
+        <Button
+            android:id="@+id/editBtn"
+            style="@style/common_title_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:text="编辑" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/fill_style"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="5dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/fill_style"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/position_tablerow" >
+
+                <TextView
+                    android:id="@+id/gsTxt"
+                    style="@style/position_title"
+                    android:hint="公司" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fill_style"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/zpt_common_bg"
+                android:orientation="vertical"
+                android:padding="1dip" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dip"
+                    android:layout_margin="5dip"
+                    android:layout_weight="1"
+                    android:padding="3dip" >
+
+                    <ImageView
+                        android:id="@+id/logoBtn"
+                        style="@style/fill_style"
+                        android:layout_weight="1"
+                        android:background="@drawable/zpt_company_logo" />
+
+                    <!--
+                         <TextView
+                        android:id="@+id/logo_tipTxt"
+                        style="@style/fill_style"
+                        android:gravity="bottom|center_horizontal"
+                        android:paddingBottom="3dip"
+                        android:text="暂无企业图片"
+                        android:textColor="#FF0000" />
+                    -->
+                </FrameLayout>
+
+                <View style="@style/line_style" />
+
+                <TableLayout style="@style/fill_wrap_style" >
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="性 质:" />
+
+                        <TextView
+                            android:id="@+id/xzTxt"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <View style="@style/position_ViewLine" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="行 业:" />
+
+                        <TextView
+                            android:id="@+id/hyTxt"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <View style="@style/position_ViewLine" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="联系人:" />
+
+                        <TextView
+                            android:id="@+id/lxrTxt"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <View style="@style/line_style" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="电 话:" />
+
+                        <TextView
+                            android:id="@+id/dhTxt"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <View style="@style/line_style" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="传 真:" />
+
+                        <TextView
+                            android:id="@+id/czTxt"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <View style="@style/line_style" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="邮 箱:" />
+
+                        <TextView
+                            android:id="@+id/yxTxt"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <View style="@style/line_style" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="网 址:" />
+
+                        <TextView
+                            android:id="@+id/wzTxt"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:autoLink="web"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/addressTab"
+                style="@style/position_tablerow"
+                android:background="@drawable/zpt_searcher_item_bg"
+                android:padding="1dip" >
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginTop="0dip" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="地 址:" />
+
+                    <TextView
+                        android:id="@+id/dzTxt"
+                        style="@style/position_itemtxt"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/zpt_mark"
+                        android:paddingLeft="5dip"
+                        android:singleLine="true" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                style="@style/fill_wrap_style"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/zpt_common_bg"
+                android:orientation="vertical"
+                android:padding="1dip" >
+
+                <LinearLayout
+                    style="@style/position_tablerow"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="简 介:" />
+
+                    <TextView
+                        android:id="@+id/jjTxt"
+                        style="@style/fill_wrap_style"
+                        android:layout_weight="1"
+                        android:minLines="3"
+                        android:textColor="#222222"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        style="@style/titleComStyle">
+
+        <Button
+            android:id="@+id/back"
+           style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/topTilteStyle"
+            android:text="零转移家庭" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/top_right_button"
+            android:text="保存"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/jcy_inputbg"
+                android:padding="1dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="*身份证号:" />
+
+                    <EditText
+                        android:id="@+id/sfz"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1" />
+
+                    <ImageView style="@style/right_jt_style" >
+                    </ImageView>
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="*户主姓名:" />
+
+                    <EditText
+                        android:id="@+id/hzxm"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                         android:maxLength="20"
+                        android:layout_weight="1" />
+
+                    <ImageView style="@style/right_jt_style" >
+                    </ImageView>
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="*劳动力数:" />
+
+                    <EditText
+                        android:id="@+id/ldls"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                         android:maxLength="2"
+                        android:numeric="integer" />
+
+                    <ImageView style="@style/right_jt_style" >
+                    </ImageView>
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="*联系电话:" />
+
+                    <EditText
+                        android:id="@+id/lxdh"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                         android:maxLength="20"
+                        android:layout_weight="1" />
+
+                    <ImageView style="@style/right_jt_style" >
+                    </ImageView>
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/jcy_inputbg"
+                android:padding="1dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="top" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="备			注:" />
+
+                    <EditText
+                        android:id="@+id/bz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                         android:maxLength="400"
+                        android:minLines="5" />
+                </LinearLayout>
+            </TableLayout>
+              <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/showtable"
+                android:background="@drawable/jcy_inputbg"
+                android:padding="1dp" >
+                   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="经办日期:" />
+
+                    <EditText
+                        android:id="@+id/jbrq"  android:enabled="false"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="经办机构:" />
+
+                    <EditText
+                        android:id="@+id/jbjg"  android:enabled="false"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="经办人:" />
+
+                    <EditText
+                        android:id="@+id/jbr"  android:enabled="false"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+                  <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="状			态:" />
+
+                    <EditText
+                        android:id="@+id/zt"
+                        android:enabled="false"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

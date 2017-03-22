@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">扬州就业创业</string>
+    <string name="menu_settings">Settings</string>
+    <string name="push_down_msg">扬州消防云网格化管理平台下载地址 </string>
+    <string name="menu_recomd">软件推荐</string>
+    <string name="menu_pwd">修改密码</string>
+    <string name="menu_exit">退出系统</string>
+    <string name="menu_logout">注销</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="alert_dialog_ok">确认</string>
+    <string name="alert_dialog_finish_title">退出程序</string>
+    <string name="alert_dialog_finish">是否退出程序?</string>
+    <string name="main_fetch_fail">网络异常</string>
+    <string name="NoSignalException">是否对网络进行设置？</string>
+    <string name="netWork_set">网络设置</string>
+    <string name="loading">正在加载,请稍后...</string>
+    <string name="take_photo">拍照</string>
+    <string name="pick_photo">相册</string>
+    <string name="attachToContact">插入图片</string>
+    <string name="onKeyBackMsg">退出当前页面将不会保留现在单据的检查数据，确定要退出吗？</string>
+    <string name="search">请输入公司名称</string>
+    <string name="search_button">搜索</string>
+
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="copyright">主办：海南省就业局</string>
+
+    <string name="maps_api_key">88fd41604cc3fa0cd81188420064db826765b9262c69b079923ae528b31c5296d39b4c26ce4637b2</string>
+    <string name="spin_prompt">请选择用工区域</string>
+    <string name="nav_title">点击左侧按钮筛选信息</string>
+    <string name="contacts_search">快速搜索</string>
+
+
+
+    <string name="cube_ptr_pull_down">Pull Down</string>
+    <string name="cube_ptr_pull_down_to_refresh">Pull Down to Refresh</string>
+    <string name="cube_ptr_release_to_refresh">Release To Refresh</string>
+    <string name="cube_ptr_refreshing">Updating...</string>
+    <string name="cube_ptr_refresh_complete">Updated.</string>
+    <string name="cube_ptr_last_update">last update:&#160;</string>
+    <string name="cube_ptr_seconds_ago">&#160;seconds ago</string>
+    <string name="cube_ptr_minutes_ago">&#160;minutes ago</string>
+    <string name="cube_ptr_hours_ago">&#160;hours ago</string>
+</resources>

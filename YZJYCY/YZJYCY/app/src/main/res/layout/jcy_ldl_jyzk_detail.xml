@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+       style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/back"
+        style="@style/topBackStyle"
+            android:layout_alignParentLeft="true"
+         />
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/topTilteStyle"
+            android:text="就业状况" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/top_right_button"
+            android:text="保存"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+              
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/jcy_inputbg"
+                 android:padding="1dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="身份证号码:" />
+
+                    <TextView
+                        android:id="@+id/sfz"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:text="3333"
+                         />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="姓		名:" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:text="1210"
+                       />
+                 </LinearLayout> 
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/LinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/jcy_inputbg"
+                 android:padding="1dp" >
+
+                <LinearLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="基本情况:" />
+
+                    <TextView
+                        android:id="@+id/jbqc"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                     	android:text="sadasd"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="就业状态:" />
+
+                    <TextView
+                        android:id="@+id/jyzt"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:text="sadasd"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="目前就业产业:" />
+
+                    <EditText
+                        android:id="@+id/mqjycy"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:text="sadasd"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="从业行业:" />
+
+                    <TextView
+                        android:id="@+id/cyhy"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                       android:text="sadasd"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="就业形式:" />
+
+                    <TextView
+                        android:id="@+id/jyxs"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:text="sadasd"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="就业地区类型:" />
+
+                    <TextView
+                        android:id="@+id/jydqlx"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="务工月工资:" />
+
+                    <TextView
+                        android:id="@+id/wgygz"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                         android:focusable="false" 
+                         android:text="sadasd"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="就业地区:" />
+
+                    <TextView
+                        android:id="@+id/jydq"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="就业方式:" />
+
+                    <TextView
+                        android:id="@+id/jyfs"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout android:gravity="center_vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="务工年限:" />
+
+                    <TextView
+                        android:id="@+id/wgnx"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                         android:maxLength="2"
+                        android:layout_weight="1" 
+                        android:inputType="number"/>
+                    
+                </LinearLayout>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/jcy_inputbg"
+                android:padding="5dp" >
+
+                <LinearLayout  
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="今年务工\n时间(月):" />
+
+                    <TextView
+                        android:id="@+id/jnwgsj"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                         android:maxLength="2"
+                        android:layout_weight="1"  android:inputType="number" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout  
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="是否返乡\n创业人员:" />
+
+                    <TextView
+                        android:id="@+id/sffxcyry"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="是否签订\n劳动合同:" />
+
+                    <TextView
+                        android:id="@+id/sfqdldht"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="尚未转移人\n员就业意向:" />
+
+                    <TextView
+                        android:id="@+id/swzyryjyyx"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="是否建工部门\n成建制输出:" />
+
+                    <TextView
+                        android:id="@+id/sfjgbm"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

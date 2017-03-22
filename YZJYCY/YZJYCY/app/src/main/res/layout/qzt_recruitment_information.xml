@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招聘列表" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/fill_style"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@id/top_title"
+        android:layout_marginTop="0dip" >
+
+        <!-- 主体 -->
+
+        <LinearLayout
+            android:id="@+id/search_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_title"
+                    android:layout_margin="4dp"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical" >
+
+                        <Spinner
+                            android:id="@+id/spn_area"
+                            android:layout_width="fill_parent"
+                            android:layout_height="33dp"
+                            android:background="@drawable/qzt_btn_dropdown"
+                            android:prompt="@string/spin_prompt" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/search_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:background="@drawable/jcy_search_btns" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/edtTxt_name"
+                        android:layout_width="0dp"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jcy_search_bg"
+                        android:hint="请输入企业名称"
+                        android:maxLength="20"
+                        android:paddingLeft="5dp"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/edtTxt_remark"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_width="0dp"
+                        android:layout_height="33dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/jcy_search_bg"
+                        android:hint="请输入工种说明"
+                        android:maxLength="20"
+                        android:paddingLeft="5dp"
+                        android:textColor="#333"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 列表 -->
+
+        <LinearLayout
+            style="@style/fill_style"
+            android:layout_below="@id/search_bar"
+            android:layout_margin="4dip"
+            android:background="@drawable/zpt_common_bg"
+            android:orientation="vertical"
+            android:padding="1dip" >
+
+            <com.winksoft.nox.android.view.YFListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="#cccccc"
+                android:dividerHeight="1dip"
+                android:fastScrollEnabled="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 底部菜单 -->
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        style="@style/ywrap_style"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dip"
+        android:background="@drawable/qzt_menu_bottom_bg"
+        android:orientation="horizontal"
+        android:padding="4dip"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/zpxi"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_zpxis"
+            android:text="招聘信息" />
+
+        <Button
+            android:id="@+id/djzw"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_djzws"
+            android:text="推荐职位" />
+
+        <Button
+            android:id="@+id/rmzw"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_rmzws"
+            android:text="热门职位" />
+
+        <Button
+            android:id="@+id/search"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_searchs"
+            android:text="搜索历史" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow>
+
+        <TableLayout
+            style="@style/whwrap_style"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_marginLeft="8dp"
+                android:padding="5dip" >
+
+                <!-- 班级名称 -->
+
+                <TextView
+                    android:id="@+id/ztinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:text="签到"
+                    android:textColor="@color/green"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/ztinfo"
+                    android:singleLine="true"
+                    android:text="2017-3-13 22:22:22"
+                    android:textColor="@color/green"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@id/time"
+                    android:src="@mipmap/ic_dz" />
+
+                <TextView
+                    android:id="@+id/dz"
+                    style="@style/position_itemtxt"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/img"
+                    android:drawableRight="@mipmap/zpt_mark"
+                    android:paddingLeft="5dip"
+                    android:text=" " />
+            </RelativeLayout>
+        </TableLayout>
+    </TableRow>
+
+    <LinearLayout
+        style="@style/whall_style"
+        android:layout_height="wrap_content"
+        android:layout_span="3"
+        android:background="@drawable/jcy_line" />
+
+</TableLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招聘管理" />
+
+        <Button
+            android:id="@+id/refreshBtn"
+            style="@style/common_title_btn_style"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/qzt_refresh_btns" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:background="@drawable/zpt_register_tab"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <Button
+            android:id="@+id/ysh_tabBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/zpt_register_tab_button"
+            android:gravity="center"
+            android:text="已审核"
+            android:textColor="@color/tab_normal"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/wsh_tabBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/zpt_register_tab_button_"
+            android:gravity="center"
+            android:text="未审核"
+            android:textColor="@color/tab_normal"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_kuang"
+        style="@style/fill_wrap_style"
+        android:layout_below="@+id/tab_layout"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="33dip"
+            android:layout_weight="1"
+            android:background="@drawable/jcy_search_bg"
+            android:gravity="center_vertical"
+            android:padding="5dip" >
+
+            <EditText
+                android:id="@+id/searchEdt"
+                style="@style/fill_wrap_style"
+                android:background="#00000000"
+                android:hint="输入工作岗位进行搜索"
+                android:paddingLeft="5dip"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="33dip"
+            android:background="@drawable/jcy_search_btns" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@id/search_kuang"
+        android:layout_margin="4dip"
+        android:background="@drawable/jcy_edit_text"
+        android:padding="1dip" >
+
+        <com.winksoft.nox.android.view.YFListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#cccccc"
+            android:dividerHeight="1dip"
+            android:fadeScrollbars="true"
+            android:fastScrollEnabled="true"
+            android:focusable="true"
+            android:scrollbarSize="2dip"
+            android:scrollbarThumbVertical="@drawable/zpt_scrollbar_vertical_thumb" />
+    </LinearLayout>
+
+</RelativeLayout>

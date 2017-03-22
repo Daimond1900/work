@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TableLayout
+        style="@style/fill_style" >
+
+        <TableRow android:padding="10dip"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/item_postTxt"
+                style="@style/wrap_style"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="江苏怡丰通信设备有限公司"
+                android:textColor="#2E2E2E"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/item_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="6dip"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </TableRow>
+    </TableLayout>
+
+</TableLayout>
