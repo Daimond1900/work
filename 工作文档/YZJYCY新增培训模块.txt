@@ -1,0 +1,30 @@
+培训信息
+	列表：	pxxx_list.xml
+	item:	pxxx_list_item.xml
+	
+{"success":true,
+	"pxxx":{
+			"idcard":"321027199111162712",
+			"roleid":"4028c2e948ba2b750148ba2e76960000",
+			"department_id":"4028c2e941fd35f60141fdab46e40001",
+			"usertype":"0",
+			"pic":"2017-02\\23\\78312403-3268-4f5c-bff3-eb596467b335",
+			"area_id":null,
+			"orgid":null,
+			"realname":"胡杨",
+			"zbdw":"扬州市人社局邗江区就业创业综合服务平台",
+			"email":null,
+			"userstatus":"Normal",
+			"logintype":"0",
+			"loginname":"15161876341",
+			"password":"e10adc3949ba59abbe56e057f20f883e",
+			"department_name":"扬州市",
+			"department":"4028c2e941fd35f60141fdab46e40001",
+			"userid":"4028808a59b994060159bac89aec0001"}}
+			
+{"success":true,
+	"pxxx":{
+			"bt":"创业职业生涯规划",
+			"nr":"扬州市劳动就业服务",
+			"jzsj":"2014-9-20",
+			"pic":"2017-02\\23\\78312403-3268-4f5c-bff3-eb596467b335"}}
