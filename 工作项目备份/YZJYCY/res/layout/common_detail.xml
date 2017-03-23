@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="#F1EDE2" >
+    <LinearLayout android:id="@+id/topLayout" style="@style/wrap_style" android:layout_width="fill_parent">
+        <include
+            layout="@layout/com_title" />
+   </LinearLayout>
+   <LinearLayout style="@style/fill_style" android:layout_below="@id/topLayout">
+        <include layout="@layout/webview"/>
+   </LinearLayout>
+</RelativeLayout>

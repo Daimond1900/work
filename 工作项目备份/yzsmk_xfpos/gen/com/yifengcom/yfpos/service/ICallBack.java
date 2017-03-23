@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: E:\\workspace\\yzsmk_xfpos\\src\\com\\yifengcom\\yfpos\\service\\ICallBack.aidl
+ * Original file: E:\\GitHub\\work\\工作项目备份\\yzsmk_xfpos\\src\\com\\yifengcom\\yfpos\\service\\ICallBack.aidl
  */
 package com.yifengcom.yfpos.service;
 public interface ICallBack extends android.os.IInterface

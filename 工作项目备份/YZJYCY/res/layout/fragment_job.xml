@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F3F5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_home_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top" >
+
+        <RelativeLayout
+            android:id="@+id/layout_home_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/img_home_message"
+            android:layout_toRightOf="@+id/img_home"
+            android:background="@drawable/jshop_searchbar_bg" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/imageView3"
+                android:text="输入关键字搜索"
+                android:textColor="#a0a0a0" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/lib_story_img_search_bt" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_home_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/home_message" />
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_logo" />
+    </RelativeLayout>
+
+    <com.winksoft.in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/rotate_header_web_view_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f1f1"
+        app:ptr_duration_to_close="200"
+        app:ptr_duration_to_close_header="1000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7" >
+
+        <ScrollView
+            android:id="@+id/rotate_header_scroll_view"
+            style="@style/Fill"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                style="@style/Fill"
+                android:orientation="vertical" >
+
+                <com.winksoft.banner.Banner
+                    android:id="@+id/jobbanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    app:indicator_height="8dp"
+                    app:indicator_margin="3dp"
+                    app:indicator_width="8dp" />
+
+                <com.winksoft.android.widget.MyGridView
+                    android:id="@+id/jobMainGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dip"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="1dip" />
+
+                <include layout="@layout/job_item_home_zp" />
+
+                <include layout="@layout/job_item_home_qz" />
+            </LinearLayout>
+        </ScrollView>
+    </com.winksoft.in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招聘登记" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/zpt_common_bg"
+        android:padding="0dip" >
+
+        <ScrollView
+            style="@style/fill_style"
+            android:layout_gravity="center_vertical"
+            android:fadeScrollbars="true"
+            android:fastScrollEnabled="true"
+            android:focusable="true"
+            android:scrollbarSize="3dip"
+            android:scrollbarThumbVertical="@drawable/zpt_scrollbar_vertical_thumb" >
+
+            <TableLayout
+                style="@style/fill_style"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <LinearLayout
+                    android:layout_marginTop="10dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/zpgw"
+                        style="@style/common_left_style"
+                        android:layout_marginRight="16dip"
+                        android:text="招聘岗位： " />
+
+                    <EditText
+                        android:id="@+id/postEdt"
+                        style="@style/common_right_style"
+                        android:background="@drawable/zpt_input_bg"
+                        android:editable="false" />
+
+                    <Button
+                        android:id="@+id/chooseBtn"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/jcy_search_btns"
+                        android:gravity="center" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/gwsm"
+                        style="@style/common_left_style"
+                        android:text="工作说明：" />
+
+                    <EditText
+                        android:id="@+id/gwsmnumberEdt"
+                        style="@style/common_right_style"
+                        android:background="@drawable/zpt_input_bg"
+                        android:hint="输入工作说明(30字内)"
+                        android:maxLength="30" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text="*"
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/zpnx"
+                        style="@style/common_left_style"
+                        android:text="招聘男性：" />
+
+                    <EditText
+                        android:id="@+id/zpnxnumberEdt"
+                        style="@style/common_right_style"
+                        android:background="@drawable/zpt_input_bg"
+                        android:maxLength="4"
+                        android:numeric="integer" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/zpvx"
+                        style="@style/common_left_style"
+                        android:text="招聘女性：" />
+
+                    <EditText
+                        android:id="@+id/zpvxnumberEdt"
+                        style="@style/common_right_style"
+                        android:background="@drawable/zpt_input_bg"
+                        android:maxLength="4"
+                        android:numeric="integer" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/jz"
+                        style="@style/common_left_style"
+                        android:text="兼招：" />
+
+                    <EditText
+                        android:id="@+id/jznumberEdt"
+                        style="@style/common_right_style"
+                        android:background="@drawable/zpt_input_bg"
+                        android:maxLength="4"
+                        android:numeric="integer" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="月工资：" />
+
+                    <EditText
+                        android:id="@+id/ygzEdt"
+                        style="@style/common_right_style"
+                        android:background="@drawable/zpt_input_bg"
+                        android:gravity="top|left"
+                        android:maxLength="6"
+                        android:minLines="2"
+                        android:numeric="integer" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text=" "
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/fldy"
+                        style="@style/common_left_style"
+                        android:text="福利待遇：" />
+
+                    <EditText
+                        android:id="@+id/wageEdt"
+                        style="@style/common_right_style"
+                        android:background="@drawable/zpt_input_bg"
+                        android:gravity="top|left"
+                        android:hint="输入福利待遇(1000字内)"
+                        android:maxLength="1000"
+                        android:minLines="2" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text=" "
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_gravity="top"
+                    android:layout_marginTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/jtyq"
+                        style="@style/common_left_style"
+                        android:text="具体要求：" />
+
+                    <EditText
+                        android:id="@+id/requireEdt"
+                        style="@style/common_right_style"
+                        android:background="@drawable/zpt_input_bg"
+                        android:gravity="top|left"
+                        android:hint="输入具体要求(1000字内)"
+                        android:maxLength="1000"
+                        android:minLines="4" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text=" "
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow android:visibility="gone" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(包括文化程度、工龄、专业技术等)"
+                        android:textColor="#2E2E2E"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/wrap_style"
+                        android:text=" "
+                        android:textColor="#FF0000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="有效终止日期:" />
+
+                    <Button
+                        android:id="@+id/daysSpi"
+                        style="@style/person_info"
+                        android:text="2012-08-09" />
+
+                    <ImageView
+                        style="@style/wrap_style"
+                        android:src="@drawable/zpt_right_jt" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/common_left_style"
+                        android:text="用工区域:" />
+
+                    <Spinner
+                        android:id="@+id/spn_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/zpt_btn_dropdown"
+                        android:prompt="@string/spin_prompt" />
+                </TableRow>
+
+                <LinearLayout
+                    style="@style/fill_wrap_style"
+                    android:layout_marginTop="15dip"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dip" >
+
+                    <Button
+                        android:id="@+id/submitBtn"
+                        style="@style/common_title_btn_style"
+                        android:layout_weight="1"
+                        android:text="提 交" />
+
+                    <Button
+                        android:id="@+id/resetBtn"
+                        style="@style/common_title_btn_style"
+                        android:layout_marginLeft="15dip"
+                        android:layout_weight="1"
+                        android:text="重 置" />
+                </LinearLayout>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

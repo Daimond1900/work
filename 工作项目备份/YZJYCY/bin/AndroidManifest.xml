@@ -1,0 +1,448 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.winksoft.android.yzjycy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+    <!-- 读写储存卡 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <!-- ************************************* -->
+    <!-- 定位相关权限 -->
+    <!-- ************************************* -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 读取短信权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 定位相关 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 推送相关 -->
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- for log. -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:name=".MyApp"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.LoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="645bad1e07505ff3e95ae9b443a8ef66" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".activity.MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UpdatePassWord"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <!-- 创业部分 -->
+        <activity
+            android:name=".CommonPageView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OAuthWebView"
+            android:screenOrientation="portrait" />
+
+        <!-- 招聘通 -->
+        <!-- 招聘管理-岗位详情 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.recruitmanage.Zpt_PostDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 报名信息-岗位的报名情况 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.bminfo.Zpt_RegisterPostListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 招聘管理-修改招聘信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.recruitmanage.Zpt_ManageEditActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 招聘登记-选择招聘岗位（一级列表） -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.registration.Zpt_ChooseJobsActivity1"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 招聘登记-选择招聘岗位（二级列表） -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.registration.Zpt_ChooseJobsActivity2"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 招聘登记-选择招聘岗位（三级列表,单选框） -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.registration.Zpt_ChooseJobsActivity4"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 招聘登记-选择招聘岗位（三级列表，带CheckBox多选框） -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.registration.Zpt_ChooseJobsActivity3"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 录用查询-统计页面 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.hireQuery.Zpt_EmployCountListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 报名信息-统计页面 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.bminfo.Zpt_RegisterCountListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 招聘管理-列表 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.recruitmanage.Zpt_ManageListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 地图显示公司详细信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.zptmapabc.ZptMapInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 企业信息-编辑信息中公司地理位置 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.zptmapabc.ZptMapDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 招聘登记 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.registration.Zpt_RecruitmentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 企业信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.enterprise.ZptEnterpriseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 企业信息-修改企业信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.enterprise.ZptEnterpriseEditActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 报名信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.bminfo.ZptPersonalResumeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 录用查询 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.hireQuery.ZptEmployListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 求职通 -->
+        <!-- 招聘信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.recruitInfor.QztRecuitInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 个人简历管理 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.resume.QztPersonalResumeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 新增个人简历 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.resume.QztAddResumeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 浏览企业招聘信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.resume.QztBrowseInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 浏览企业招聘信息详细信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.resume.QztCompanyDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 简历信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.resume.QztResumeInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 招聘信息详情，投简历联系hr -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.recruitInfor.QztRecuitWebView"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 职位详细 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.recruitInfor.QztPositionView"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 就业新闻 、培训信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.training.QztTrainingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 就业新闻 、培训信息-详情 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.training.QztTrainDeatilActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 政策法规 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.zcfg.QztZCFGListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 政策法规-详情 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.zcfg.QztZCFGDeatilActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 我的求职 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.job.QztMyJobActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 我的求职-试用通知 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.job.QztNoticeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 我的求职-面试邀请函 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.job.QztInvitedActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 我的求职-公共(1.等待公司确认；2.简历投递失败；3.收藏的职位) -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.job.QztJobCommonActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 我的求职-关注的公司 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.job.QztAttentionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 我的求职-详情 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.job.QztJobDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 招聘企业 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.enterprise.QztEnterpriseList"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 公司详细信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.enterprise.QztEnterpriseView"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <!-- 地理位置 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.enterprise.QztPositionList"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <!-- 基层云 -->
+        <!-- *************************************************************************************** -->
+        <!-- 劳动力信息 主页面 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.ldlxx.MainList"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <!-- 劳动力      基本信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.ldlxx.LdlDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <!-- 劳动力  就业状况 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.ldlxx.JyzkDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <!-- 劳动力   求职意愿 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.ldlxx.QzyyDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 劳动力   资源减少 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.ldlxx.ZyjsDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 劳动力   培训意愿 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.ldlxx.PxyyDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 创建劳动力信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.ldlxx.CreateLdlDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 零转移 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.zerotransfer.TransferList"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 零转移 	详情 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.zerotransfer.TansferDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 零转移 	新增 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.zerotransfer.ViewDetail"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 投递详情 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.delivery.DeliveryListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.delivery.DeliveryDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.system.AccountActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 培训信息 new -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.pxxx.PxxxActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 培训详情 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.pxxx.PxDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 报名信息 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.pxxx.BmInfoSureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 考勤列表 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.pxxx.KqInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        
+         <!-- 考勤详情 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.pxxx.KqInfoDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 考勤操作 -->
+        <activity
+            android:name="com.winksoft.android.yzjycy.ui.pxxx.KqInfoSureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+                
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>

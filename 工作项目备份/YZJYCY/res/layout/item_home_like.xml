@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dip"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="猜你喜欢"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF3956"
+        android:textSize="@dimen/small_middle_text_size"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目经理"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/small_text_size"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="江苏云控软件技术有限公司"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/small_text_size"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+             />
+
+        <RelativeLayout
+            android:id="@+id/layout_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/timer_bg"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="03"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tiny_middle_text_size" />
+
+            <TextView
+                android:id="@+id/tv_timer_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_hour"
+                android:layout_alignBottom="@+id/tv_hour"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/tv_hour"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tv_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_timer_divider"
+                android:layout_alignBottom="@+id/tv_timer_divider"
+                android:layout_toRightOf="@+id/tv_timer_divider"
+                android:background="@drawable/timer_bg"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="35"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tiny_middle_text_size" />
+
+            <TextView
+                android:id="@+id/tv_timer_divider2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_minute"
+                android:layout_alignBottom="@+id/tv_minute"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_toRightOf="@+id/tv_minute"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_timer_divider2"
+                android:layout_alignBottom="@+id/tv_timer_divider2"
+                android:layout_toRightOf="@+id/tv_timer_divider2"
+                android:background="@drawable/timer_bg"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="35"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tiny_middle_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

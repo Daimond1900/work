@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TableRow android:layout_marginLeft="4dip" >
+
+        <ImageView
+            android:id="@+id/companyLogo"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/qzt_edit_text"
+            android:scaleType="fitXY"
+            android:src="@drawable/qzt_default_logo" >
+        </ImageView>
+
+        <TableLayout
+            style="@style/whwrap_style"
+            android:layout_weight="1" >
+
+            <TableRow android:padding="4dip" >
+
+                <TextView
+                    android:id="@+id/companyName"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="江苏怡丰通信设备有限公司"
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow android:padding="4dip" >
+
+                <TextView
+                    android:id="@+id/count"
+                    style="@style/whwrap_style"
+                    android:layout_span="2"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="岗位:100 ,求职数:12,关注数:1200"
+                    android:textColor="#535252"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/qzt_right_jt" />
+    </TableRow>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#DADBDD" />
+
+</TableLayout> 

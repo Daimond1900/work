@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: E:\\workspace\\yzsmk_xfpos\\src\\com\\yifengcom\\yfpos\\service\\IService.aidl
+ * Original file: E:\\GitHub\\work\\工作项目备份\\yzsmk_xfpos\\src\\com\\yifengcom\\yfpos\\service\\IService.aidl
  */
 package com.yifengcom.yfpos.service;
 public interface IService extends android.os.IInterface
