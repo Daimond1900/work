@@ -1,6 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-   <item android:id="@+id/recomd" android:icon="@drawable/ic_menu_forward" android:title="@string/menu_recomd"></item>
-   <item android:id="@+id/update_pwd" android:icon="@drawable/ic_menu_set" android:title="@string/menu_pwd"></item>
-   <item android:id="@+id/exit" android:icon="@drawable/ic_menu_exit" android:title="@string/menu_exit"></item>
-   <item android:id="@+id/logout" android:icon="@drawable/ic_menu_logout" android:title="@string/menu_logout"></item>
-</menu>

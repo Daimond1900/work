@@ -1,0 +1,8 @@
+Variant: debugAndroidTest
+Config: YZJYCY
+Store: E:\Github\key\yzjycy.keystore
+Alias: YZJYCY
+MD5: C4:F1:2A:86:0F:2F:E7:62:69:67:32:2D:D8:C7:39:18
+SHA1: 2C:D9:F2:AA:71:79:1A:16:0C:8F:8B:EC:F1:2A:E7:EE:2D:00:F0:6A
+Valid until: 2116年12月24日 星期四
+----------
