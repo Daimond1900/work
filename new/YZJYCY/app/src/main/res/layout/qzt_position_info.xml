@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/titleComStyle">
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="职位详情" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        style="@style/whall_style"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top_title"
+        android:padding="1dip"
+        android:layout_marginBottom="55dp"
+        android:scrollbarStyle="insideInset"
+        android:layout_weight="1">
+
+        <TableLayout style="@style/whall_style">
+
+
+            <TableRow
+                android:id="@+id/company_item"
+                style="@style/position_tablerow">
+
+                <TableLayout
+                    style="@style/whwrap_style"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/companyName"
+                        style="@style/position_itemtxt"
+                        android:hint="公司"
+                        android:paddingLeft="5dip"
+                        android:singleLine="true"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/large_medium_text_size" />
+                </TableLayout>
+
+                <ImageView
+                    android:id="@+id/im_right"
+                    style="@style/whwrap_style"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dip"
+                    android:src="@drawable/qzt_right_jt" />
+            </TableRow>
+
+            <LinearLayout
+                style="@style/whall_style"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical"
+                android:padding="1dip">
+
+                <TableRow
+                    android:id="@+id/tdrqrow"
+                    style="@style/position_tablerow"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="投递日期:"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/small_middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/tdrq"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:id="@+id/gzrqrow"
+                    style="@style/position_tablerow"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="关注日期:"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/small_middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/gzrq"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:id="@+id/dwhfztrow"
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="单位回复状态:"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/small_middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/dwhfzt"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    android:id="@+id/grhfztrow"
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="个人回复状态:"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/small_middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/grhfzt"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工作说明:"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/small_middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/gzsm"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="职位名称:"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/small_middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/txt_zw"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="有效日期:"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/small_middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/pushDate"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更新日期:"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/small_middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/gxrq"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工        种:"
+                        android:textColor="#444444"
+                        android:textSize="@dimen/small_middle_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_gz"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="招聘人数:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/peopleCount"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工资待遇:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/monthlyPay"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#F37D0D"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="文化程度:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/record"
+                        style="@style/position_itemtxt"
+                        android:hint="文凭"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/position_itemtitle"
+                        android:text="用工区域:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/area"
+                        style="@style/position_itemtxt"
+                        android:hint="区域"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学历要求:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/xl"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View
+                    style="@style/position_ViewLine"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="从业年数:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/cyns"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+
+                <View
+                    style="@style/position_ViewLine"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TableRow style="@style/position_tablerow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所学专业:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/sxzy"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="年        龄:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nl"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身高体重:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/sgtz"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <View style="@style/position_ViewLine" />
+
+                <View style="@style/position_ViewLine" />
+
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系电话:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/telNumber"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <View style="@style/position_ViewLine" />
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系人:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/lxr"
+                        style="@style/position_itemtxt"
+                        android:paddingLeft="10dip"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+
+
+                <View style="@style/position_ViewLine" />
+
+                <!--<TableRow-->
+                <!--android:id="@+id/companyAddressItem"-->
+                <!--style="@style/position_tablerow"-->
+                <!--android:background="@drawable/qzt_map_item_bgs">-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/companyAddress"-->
+                <!--style="@style/position_itemtxt"-->
+                <!--android:layout_marginRight="5dip"-->
+                <!--android:drawableRight="@mipmap/qzt_info_detail_map_icon"-->
+                <!--android:paddingLeft="5dip"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="#fff"-->
+                <!--android:textSize="16.0sp" />-->
+                <!--</TableRow>-->
+
+                <!--<View style="@style/position_ViewLine" />-->
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/positionDesc"
+                        style="@style/position_itemtxt"
+                        android:hint="简介"
+                        android:textColor="#888888"
+                        android:textSize="16sp" />
+                </TableRow>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+
+    <!-- 底部菜单 -->
+
+    <LinearLayout
+        android:id="@+id/buttom_menu"
+        style="@style/ywrap_style"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/qzt_menu_bottom_bg"
+        android:orientation="horizontal"
+        android:padding="4dip">
+
+        <Button
+            android:id="@+id/deliveryBtn"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_recruitment_btn_bg1"
+            android:text="投递简历" />
+
+        <Button
+            android:id="@+id/scBt"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_recruitment_btn_bg3"
+            android:text="收藏职位" />
+
+        <Button
+            android:id="@+id/contactBtn"
+            style="@style/menu_btn_style"
+            android:drawableTop="@drawable/qzt_menu_recruitment_btn_bg3"
+            android:text="联系HR" />
+    </LinearLayout>
+
+    <include layout="@layout/wlyc_info"></include>
+</RelativeLayout>

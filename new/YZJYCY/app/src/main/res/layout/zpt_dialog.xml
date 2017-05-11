@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="15dip"
+    android:layout_weight="1"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="0dip" >
+
+    <LinearLayout
+        style="@style/fill_wrap_style"
+        android:layout_weight="1"
+        android:background="#4596C7"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            style="@style/wrap_style"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:src="@mipmap/ic_dialog_menu_generic" />
+
+        <TextView
+            android:id="@+id/pTitle"
+            style="@style/fill_wrap_style"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:text="警告"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill_wrap_style"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pMsg"
+            style="@style/fill_wrap_style"
+            android:layout_marginTop="15dip"
+            android:padding="10dip"
+            android:layout_weight="1"
+            android:text="密码或账号不能为空！"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/pBtn"
+            style="@style/fill_wrap_style"
+            android:layout_margin="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/zpt_alert_dialog_btn"
+            android:text="@string/alert_dialog_ok"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

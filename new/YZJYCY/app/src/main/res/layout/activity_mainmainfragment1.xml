@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top">
+
+        <TextView
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="求职招聘" />
+    </RelativeLayout>
+    <com.gigamole.navigationtabstrip.NavigationTabStrip
+        android:id="@+id/nts_center"
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:nts_active_color="#466CE0"
+        app:nts_color="#466CE0"
+        app:nts_corners_radius="1.5dp"
+        app:nts_factor="1.8"
+        app:nts_gravity="bottom"
+        app:nts_inactive_color="#000000"
+        app:nts_titles="@array/qzzp_titles"
+        app:nts_type="line"
+        app:nts_size="18sp"
+        app:nts_weight="2dp"
+        />
+
+    <view
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        class="android.support.v4.view.ViewPager" />
+
+</LinearLayout>

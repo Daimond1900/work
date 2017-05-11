@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <TableRow android:background="@drawable/bg_item_zxxw">
+
+        <TableLayout
+            style="@style/whwrap_style"
+            android:layout_weight="1">
+
+
+            <TableRow
+                style="@style/position_tablerow"
+                android:layout_marginTop="0dip">
+
+                <TextView
+                    android:id="@+id/kqzt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:singleLine="true"
+                    android:text="考勤状态"
+                    android:textColor="@color/register_tab_button_font"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="6dp"
+                android:padding="4dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="开课内容："
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/kcnr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#888888"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="6dp"
+                android:padding="4dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="开始时间："
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/kssj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#888888"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="6dp"
+                android:padding="4dip">
+
+                <TextView
+                    android:id="@+id/workTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/moneyTxt"
+                    android:singleLine="true"
+                    android:text="结束时间："
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/jssj"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="#888888"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="6dp"
+                android:padding="4dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/moneyTxt"
+                    android:singleLine="true"
+                    android:text="开课老师："
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/skr"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="#888888"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="6dp"
+                android:padding="4dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/moneyTxt"
+                    android:singleLine="true"
+                    android:text="开课地点："
+                    android:textColor="#444444"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dz"
+                    style="@style/whwrap_style"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:textColor="#888888"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/qzt_right_jt" />
+    </TableRow>
+
+    <LinearLayout
+        style="@style/whall_style"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_span="3"
+        android:background="@drawable/jcy_line" />
+
+</TableLayout>

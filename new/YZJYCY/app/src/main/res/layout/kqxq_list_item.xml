@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- 内容简介 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/zpt_register_tab"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_kcmc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:maxLines="1"
+                android:text="基本信息"
+                android:textColor="#fff"
+                android:textSize="@dimen/small_middle_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/ztinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:text="签到"
+                android:textColor="#7E8083"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="2017-3-13 22:22:22"
+                android:textColor="#7E8083"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:src="@mipmap/new_xj" />
+
+            <TextView
+                android:id="@+id/dz"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_toRightOf="@id/img"
+                android:drawableRight="@mipmap/new_dt"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/whall_style"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_span="3"
+        android:background="@drawable/jcy_line" />
+
+</TableLayout>

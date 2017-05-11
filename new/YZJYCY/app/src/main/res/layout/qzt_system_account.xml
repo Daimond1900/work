@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/titleComStyle">
+
+        <Button
+            android:id="@+id/backBtn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="帐号管理" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top_title"
+        android:orientation="vertical">
+
+        <!-- 主体 -->
+
+        <LinearLayout
+            style="@style/ywrap_style"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/qzt_common_bg"
+            android:orientation="vertical"
+            android:padding="15dip">
+
+            <TableLayout
+                style="@style/ywrap_style"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical"
+                android:padding="5dip">
+
+                <TableRow android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/login_lab"
+                        android:layout_gravity="right"
+                        android:text="原始密码：" />
+
+                    <EditText
+                        android:id="@+id/old_passwordEdt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/qzt_input_bg"
+                        android:gravity="center_vertical"
+                        android:maxLength="15"
+                        android:password="true"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/login_lab"
+                        android:layout_gravity="right"
+                        android:text="新密码：" />
+
+                    <EditText
+                        android:id="@+id/new_passwordEdt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/qzt_input_bg"
+                        android:gravity="left|center_vertical"
+                        android:maxLength="15"
+                        android:password="true"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/login_lab"
+                        android:layout_gravity="right"
+                        android:text="确认密码：" />
+
+                    <EditText
+                        android:id="@+id/confirm_passwordEdt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/qzt_input_bg"
+                        android:gravity="center_vertical|left"
+                        android:maxLength="15"
+                        android:password="true"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <!--
+                <TableRow
+                     android:gravity="center_vertical" android:layout_marginLeft="25dip">
+
+                    <CheckBox
+                        android:id="@+id/checkbox" 
+                        android:layout_span="2"
+                        android:layout_weight="1"
+                        style="@style/MyCheckBox" android:text="自动登录" android:textColor="#222" >
+                    </CheckBox>
+
+                </TableRow>
+                -->
+                <!--
+                <Button
+                    android:id="@+id/submitBtn"
+                    style="@style/common_btns"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:text="提 交"
+                    android:textColor="@color/white"
+                    android:textSize="16dip" />
+                -->
+
+                <Button
+                    android:id="@+id/submitBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/com_btns"
+                    android:gravity="center"
+                    android:padding="0dip"
+                    android:text="提交"
+                    android:textColor="#fff"
+                    android:textSize="18.0sp" />
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

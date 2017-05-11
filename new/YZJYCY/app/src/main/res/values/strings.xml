@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">扬州就业创业</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="alert_dialog_ok">确认</string>
+    <string name="alert_dialog_finish_title">退出程序</string>
+    <string name="alert_dialog_finish">是否退出程序?</string>
+    <string name="main_fetch_fail">网络异常</string>
+    <string name="NoSignalException">是否对网络进行设置？</string>
+    <string name="netWork_set">网络设置</string>
+    <string name="loading">正在加载,请稍后...</string>
+    <string name="tab_5">就业新闻</string>
+    <string name="tab_6">创业新闻</string>
+    <string name="tab_7">市场公告</string>
+    <string name="tab_8">政策法规</string>
+    <string name="tab_9">工资指导价</string>
+
+    <!--<string name="maps_api_key">88fd41604cc3fa0cd81188420064db826765b9262c69b079923ae528b31c5296d39b4c26ce4637b2</string>-->
+
+
+    <string name="spin_prompt">请选择用工区域</string>
+
+
+    <string name="cube_ptr_pull_down">Pull Down</string>
+    <string name="cube_ptr_pull_down_to_refresh">Pull Down to Refresh</string>
+    <string name="cube_ptr_release_to_refresh">Release To Refresh</string>
+    <string name="cube_ptr_refreshing">Updating...</string>
+    <string name="cube_ptr_refresh_complete">Updated.</string>
+    <string name="cube_ptr_last_update">last update:&#160;</string>
+    <string name="cube_ptr_seconds_ago">&#160;seconds ago</string>
+    <string name="cube_ptr_minutes_ago">&#160;minutes ago</string>
+    <string name="cube_ptr_hours_ago">&#160;hours ago</string>
+</resources>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+       style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/topTilteStyle"
+            android:text="基本信息" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/top_right_button"
+            android:text="保存"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/jcy_inputbg"
+                android:padding="1dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="身份证号码:" />
+
+                    <TextView
+                        android:id="@+id/sfz"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:text="321027199106220610"
+                        android:maxLines="20" />
+                </LinearLayout>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/jcy_inputbg"
+                android:padding="1dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="姓		名:" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:maxLines="10"
+                        android:textColor="#666" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="性		别:" />
+
+                    <TextView
+                        android:id="@+id/xb"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="出生日期:" />
+
+                    <TextView
+                        android:id="@+id/csrq"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="联系电话:" />
+
+                    <TextView
+                        android:id="@+id/lxdh"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:maxLines="20"
+                        android:numeric="integer"
+                        android:textColor="#666" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="文化程度:" />
+
+                    <TextView
+                        android:id="@+id/whcd"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="户口性质:" />
+
+                    <TextView
+                        android:id="@+id/hkxz"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="民		族:" />
+
+                    <TextView
+                        android:id="@+id/mz"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="政治面貌:" />
+
+                    <TextView
+                        android:id="@+id/zzmm"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false" />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="家庭住址:" />
+
+                    <TextView
+                        android:id="@+id/jtzz"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:maxLength="40"
+                        android:textColor="#666" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l_jyzt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <View style="@style/position_ViewLine" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/ldl_detail_text_left"
+                            android:text="就业状态:" />
+
+                        <TextView
+                            android:id="@+id/jyzt"
+                            style="@style/ldl_detail_text_right"
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1"
+                            android:focusable="false" />
+                    </LinearLayout>
+                </LinearLayout>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

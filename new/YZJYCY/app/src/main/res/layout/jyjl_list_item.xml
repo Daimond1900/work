@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            style="@style/whwrap_style"
+            android:layout_weight="1">
+            <TableRow>
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginTop="0dip">
+                    <TextView
+                        android:id="@+id/qssj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text="起始时间:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text=" ~ "
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/jssj"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text="结束时间:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                </TableRow>
+            </TableRow>
+            <TableRow>
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginTop="0dip">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text="毕业学校:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/byxx"
+                        style="@style/position_itemtxt"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dip"
+                        android:singleLine="true"
+                        android:text="大旺 " />
+                </TableRow>
+            </TableRow>
+
+            <TableRow>
+
+                <TableRow
+                    style="@style/position_tablerow"
+                    android:layout_marginTop="0dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:singleLine="true"
+                        android:text="所学专业:"
+                        android:textColor="#444444"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/sxzy"
+                        style="@style/position_itemtxt"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dip"
+                        android:singleLine="true"
+                        android:text="java web " />
+                </TableRow>
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+
+    <LinearLayout
+        style="@style/whall_style"
+        android:layout_height="wrap_content"
+        android:layout_span="3"
+        android:background="@drawable/jcy_line" />
+
+</TableLayout>

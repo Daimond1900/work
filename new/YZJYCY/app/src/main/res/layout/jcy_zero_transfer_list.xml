@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/back"
+             style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/topTilteStyle"
+            android:text="农村零转移家庭" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/top_right_button"
+            android:text="新增"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@drawable/jcy_search_bg"
+                android:hint="按身份证号查询"
+                android:maxLength="20"
+                android:paddingLeft="5dp"
+                android:textColor="#333"
+                    android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchbut"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:background="@drawable/jcy_search_btns" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_menu"
+        android:layout_below="@id/search"
+        android:layout_margin="5dp"
+        android:background="@drawable/jcy_edit_text" >
+
+        <com.winksoft.nox.android.view.YFListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:divider="#efefef"
+            android:dividerHeight="1dip"
+            android:fastScrollEnabled="true"
+            android:padding="0dip" />
+    </LinearLayout>
+    <!-- 底部菜单 -->
+    <LinearLayout
+        android:id="@+id/btn_menu"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </LinearLayout>
+
+</RelativeLayout>

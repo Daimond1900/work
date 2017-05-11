@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社保信息绑定" />
+    </RelativeLayout>
+
+    <LinearLayout style="@style/baoming_info_layout" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="社保号："
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <EditText
+            android:id="@+id/et_sbh"
+            style="@style/sign_up_editText"
+            android:hint="请输入社保号" />
+    </LinearLayout>
+    <!-- 手机号 -->
+
+    <!--   <LinearLayout style="@style/baoming_info_layout" >
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="6dp"
+              android:text="手机号："
+              android:textColor="@color/black"
+              android:textSize="@dimen/small_middle_text_size" />
+
+          <EditText
+              android:id="@+id/et_sjh"
+              style="@style/sign_up_editText"
+              android:hint="请输入手机号"
+              android:inputType="phone"
+              android:maxLength="11" />
+      </LinearLayout> -->
+    <!-- 身份证号 -->
+
+    <LinearLayout style="@style/baoming_info_layout" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="身份证号："
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <EditText
+            android:id="@+id/et_sfz"
+            style="@style/sign_up_editText"
+            android:hint="请输入身份证号" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/baoming_info_layout" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="省个人识别码："
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <EditText
+            android:id="@+id/et_sbm"
+            style="@style/sign_up_editText"
+            android:hint="请输入省个人识别码" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/baoming_info_layout" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="联系电话（选填）："
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/sign_up_editText"
+            android:hint="请输入电话号码" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        style="@style/common_btn_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="绑定信息"
+        android:textColor="#fff"
+        android:textSize="18.0sp" />
+
+</LinearLayout>

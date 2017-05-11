@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>新闻概要</item>
+        <item>政策资讯</item>
+        <item>行业资讯</item>
+        <item>通知公告</item>
+    </string-array>
+
+    <string-array name="qzzp_titles">
+        <item>招聘信息</item>
+        <item>招聘单位</item>
+    </string-array>
+    <string-array name="px_titles">
+        <item>所有培训</item>
+        <item>我的培训</item>
+    </string-array>
+
+
+</resources>

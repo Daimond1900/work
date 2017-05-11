@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/back"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/top_title"
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="考勤信息" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:background="@drawable/jcy_search_bg"
+                android:hint="按课程名查询"
+                android:maxLength="20"
+                android:paddingLeft="5dp"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchbut"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:background="@drawable/jcy_search_btns" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_menu"
+        android:layout_below="@id/search"
+        android:layout_margin="5dp"
+        android:background="@drawable/jcy_edit_text"
+        android:orientation="horizontal" >
+
+        <com.winksoft.nox.android.view.YFListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:divider="#ffffff"
+            android:fastScrollEnabled="true"
+            android:padding="0dip" />
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/btn_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </LinearLayout>
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/titleComStyle">
+
+        <Button
+              android:id="@+id/backBtn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+             android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/topTilteStyle"
+            android:text="录用查询"
+           />
+
+        <Button
+            android:id="@+id/refreshBtn"
+            android:layout_width="0dp"
+android:layout_height="0dp"
+            style="@style/common_title_btn_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip" 
+            android:background="@drawable/qzt_refresh_btns"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@id/top"
+        android:layout_margin="5dip"
+        android:background="@drawable/zpt_common_bg"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <com.winksoft.nox.android.view.YFListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#cccccc"
+            android:dividerHeight="1dip" />
+    </LinearLayout>
+
+</RelativeLayout>

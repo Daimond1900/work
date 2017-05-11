@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/main_view"
+        android:background="@drawable/top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/topTilteStyle"
+            android:text="修改求职意向" />
+
+
+        <Button
+            android:id="@+id/bc"
+            android:layout_width="50dp"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/home_more"
+            android:text="保 存"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_hint"
+            android:layout_gravity="left"
+            android:maxLength="20"
+            android:text="*"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="月薪要求："
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/yxyq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number"
+            android:textColor="#444444"
+            android:hint="请输入月薪要求"
+            android:textColorHint="#ccc"
+            android:textSize="16sp" />
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dip" />
+    </LinearLayout>
+
+    <View style="@style/line_style"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_hint"
+            android:layout_gravity="left"
+            android:maxLength="20"
+            android:text="*"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="岗位名称："
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/gwmc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLines="1"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dip"
+            android:src="@drawable/qzt_right_jt" />
+    </LinearLayout>
+
+    <View style="@style/line_style"  android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_hint"
+            android:layout_gravity="left"
+            android:maxLength="20"
+            android:text="*"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="岗位描述："
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/gwms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="#444444"
+            android:hint="请输入岗位描述"
+            android:textColorHint="#ccc"
+            android:textSize="16sp"  />
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dip" />
+    </LinearLayout>
+
+    <View style="@style/line_style"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_hint"
+            android:layout_gravity="left"
+            android:maxLength="20"
+            android:text="*"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="工作地点："
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/gzdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLines="1"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dip"
+            android:src="@drawable/qzt_right_jt" />
+    </LinearLayout>
+
+    <View style="@style/line_style"  android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"/>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_hint"
+            android:layout_gravity="left"
+            android:maxLength="20"
+            android:text="*"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="单位类型："
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/dwlx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLines="1"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dip"
+            android:src="@drawable/qzt_right_jt" />
+    </LinearLayout>
+
+    <View style="@style/line_style"  android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_hint"
+            android:layout_gravity="left"
+            android:maxLength="20"
+            android:text="*"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="工作性质："
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/gzxz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLines="1"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dip"
+            android:src="@drawable/qzt_right_jt" />
+    </LinearLayout>
+
+    <View style="@style/line_style"  android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_hint"
+            android:layout_gravity="left"
+            android:maxLength="20"
+            android:text="*"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="经济类型："
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/jjlx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:maxLines="1"
+            android:textColor="#444444"
+            android:textSize="18sp" />
+
+        <ImageView
+            style="@style/whwrap_style"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="8dip"
+            android:src="@drawable/qzt_right_jt" />
+    </LinearLayout>
+
+    <View style="@style/line_style"  android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"/>
+
+
+    <Button
+        android:id="@+id/sc"
+        style="@style/common_btn_style"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="13dp"
+        android:text="删除此条记录"
+        android:textSize="16sp" />
+</LinearLayout>
