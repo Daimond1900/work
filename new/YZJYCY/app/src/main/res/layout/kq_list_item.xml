@@ -31,7 +31,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:singleLine="true"
-                    android:text="班级名称："
+                    android:text="班    级："
                     android:textColor="#444444"
                     android:textSize="16sp" />
 
@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_toLeftOf="@+id/moneyTxt"
                     android:singleLine="true"
-                    android:text="课程名称："
+                    android:text="名    称："
                     android:textColor="#444444"
                     android:textSize="16sp" />
 
