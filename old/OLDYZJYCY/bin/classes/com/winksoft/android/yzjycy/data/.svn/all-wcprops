@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/SVN/YZJYCY/!svn/ver/518/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data
+END
+EnterpriseDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/SVN/YZJYCY/!svn/ver/292/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/EnterpriseDAL.java
+END
+SetDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 211
+/SVN/YZJYCY/!svn/ver/499/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/SetDAL.java
+END
+RegisterDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/SVN/YZJYCY/!svn/ver/465/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/RegisterDAL.java
+END
+ManageDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/SVN/YZJYCY/!svn/ver/292/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/ManageDAL.java
+END
+pxDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/SVN/YZJYCY/!svn/ver/499/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/pxDAL.java
+END
+LoginDal.java
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/SVN/YZJYCY/!svn/ver/465/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/LoginDal.java
+END
+BrowseDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/SVN/YZJYCY/!svn/ver/292/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/BrowseDAL.java
+END
+UserDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/SVN/YZJYCY/!svn/ver/518/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/UserDAL.java
+END
+QztEnterpriseDal.java
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/SVN/YZJYCY/!svn/ver/292/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/QztEnterpriseDal.java
+END
+ResumeDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/SVN/YZJYCY/!svn/ver/358/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/ResumeDAL.java
+END
+RecuitDal.java
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/SVN/YZJYCY/!svn/ver/465/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/RecuitDal.java
+END
+BaseDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/SVN/YZJYCY/!svn/ver/342/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/BaseDAL.java
+END
+ZeroTransferDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/SVN/YZJYCY/!svn/ver/465/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/ZeroTransferDAL.java
+END
+LoginuserDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/SVN/YZJYCY/!svn/ver/358/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/LoginuserDAL.java
+END
+TrainingDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/SVN/YZJYCY/!svn/ver/465/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/TrainingDAL.java
+END
+RecruitmentDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/SVN/YZJYCY/!svn/ver/292/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/RecruitmentDAL.java
+END
+ManpowerDetailDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/SVN/YZJYCY/!svn/ver/465/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/ManpowerDetailDAL.java
+END
+JobDAL.java
+K 25
+svn:wc:ra_dav:version-url
+V 211
+/SVN/YZJYCY/!svn/ver/465/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/src/com/winksoft/android/yzjycy/data/JobDAL.java
+END

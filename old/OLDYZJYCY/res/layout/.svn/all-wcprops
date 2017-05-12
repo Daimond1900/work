@@ -1,0 +1,785 @@
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout
+END
+kqinfo_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/kqinfo_activity.xml
+END
+qzt_recruitment_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_recruitment_list_item.xml
+END
+item_home_qz.xml
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/SVN/YZJYCY/!svn/ver/456/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/item_home_qz.xml
+END
+zpt_publicloadingprogress.xml
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_publicloadingprogress.xml
+END
+qzt_attention_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_attention_list_item.xml
+END
+publicloadingprogress.xml
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/publicloadingprogress.xml
+END
+fragment_mine.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/459/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/fragment_mine.xml
+END
+qzt_job_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_job_detail.xml
+END
+qzt_enterprise_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_enterprise_list.xml
+END
+zpt_register_count_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_register_count_list_item.xml
+END
+zpt_employ_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_employ_list.xml
+END
+qzt_my_work.xml
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/SVN/YZJYCY/!svn/ver/450/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_my_work.xml
+END
+qzt_system_account.xml
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/SVN/YZJYCY/!svn/ver/459/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_system_account.xml
+END
+pxxx_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/pxxx_list.xml
+END
+zpt_manage_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/448/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_manage_list.xml
+END
+jcy_ldl_main_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_ldl_main_list_item.xml
+END
+qzt_enterprise_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_enterprise_info.xml
+END
+kq_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/kq_list_item.xml
+END
+jcy_ldl_zyjs_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_ldl_zyjs_detail.xml
+END
+down_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/down_dialog.xml
+END
+jcy_ldl_jyzk_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_ldl_jyzk_detail.xml
+END
+zpt_confirm_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_confirm_dialog.xml
+END
+qzt_enterprise_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_enterprise_list_item.xml
+END
+zpt_enterprise_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_enterprise_info.xml
+END
+qzt_publicloadingprogress.xml
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_publicloadingprogress.xml
+END
+pxxq_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/pxxq_activity.xml
+END
+activity_menu.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/474/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/activity_menu.xml
+END
+zpt_network_set.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_network_set.xml
+END
+activity_head.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/activity_head.xml
+END
+zpt_register_personal_resume.xml
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_register_personal_resume.xml
+END
+zpt_recruitment_choose_jobs_list_item1_1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_recruitment_choose_jobs_list_item1_1.xml
+END
+zpt_recruitment_choose_jobs_list_item1_3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_recruitment_choose_jobs_list_item1_3.xml
+END
+com_title.xml
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/com_title.xml
+END
+zpt_spinner_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_spinner_item.xml
+END
+qzt_job_common_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_job_common_list.xml
+END
+jcy_lzy_main_edit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_lzy_main_edit.xml
+END
+jcy_ldl_qzyy_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_ldl_qzyy_detail.xml
+END
+pxxx_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/pxxx_list_item.xml
+END
+zpt_employ_count_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_employ_count_list.xml
+END
+job_item_home_qz.xml
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/SVN/YZJYCY/!svn/ver/447/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/job_item_home_qz.xml
+END
+zpt_map_select.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_map_select.xml
+END
+qzt_position_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_position_list.xml
+END
+zpt_register_post_list_item2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_register_post_list_item2.xml
+END
+zpt_register_post_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_register_post_list.xml
+END
+zpt_recruitment_choose_jobs_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_recruitment_choose_jobs_list.xml
+END
+jcy_lzy_main_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_lzy_main_detail.xml
+END
+zpt_register_input_dialog_agree.xml
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_register_input_dialog_agree.xml
+END
+qzt_company_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_company_detail.xml
+END
+confirm_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/confirm_dialog.xml
+END
+zpt_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_dialog.xml
+END
+banner.xml
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/banner.xml
+END
+qzt_position_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_position_info.xml
+END
+qzt_down_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_down_dialog.xml
+END
+progressdialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/progressdialog.xml
+END
+qzt_personal_resume.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_personal_resume.xml
+END
+jcy_ldl_main_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_ldl_main_list.xml
+END
+mygridview_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/mygridview_item.xml
+END
+loading.xml
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/loading.xml
+END
+dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/dialog.xml
+END
+qzt_template_spinner_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_template_spinner_item.xml
+END
+item_home_like.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/item_home_like.xml
+END
+qzt_spinner_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_spinner_item.xml
+END
+fragment_job.xml
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/SVN/YZJYCY/!svn/ver/456/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/fragment_job.xml
+END
+fragment_business.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/SVN/YZJYCY/!svn/ver/474/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/fragment_business.xml
+END
+qzt_job_common_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_job_common_list_item.xml
+END
+zpt_manage_post_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_manage_post_detail.xml
+END
+jcy_zero_transfer_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_zero_transfer_list.xml
+END
+zpt_recruitment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/448/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_recruitment.xml
+END
+zpt_manage_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_manage_list_item.xml
+END
+zpt_listview_head.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_listview_head.xml
+END
+listview_head.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/listview_head.xml
+END
+qzt_add_resume.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_add_resume.xml
+END
+qzt_main_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_main_list_item.xml
+END
+zpt_recruitment_choose_jobs_list_item2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_recruitment_choose_jobs_list_item2.xml
+END
+zpt_manage_edit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_manage_edit.xml
+END
+qzt_my_work_menu_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_my_work_menu_item.xml
+END
+tab_indicator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/tab_indicator.xml
+END
+zpt_enterprise_edit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_enterprise_edit.xml
+END
+activity_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/activity_main.xml
+END
+item_home_zp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/SVN/YZJYCY/!svn/ver/456/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/item_home_zp.xml
+END
+qzt_browse_org_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_browse_org_info.xml
+END
+listcourseinfo_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/listcourseinfo_item.xml
+END
+jcy_ldl_main_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_ldl_main_detail.xml
+END
+fragment_home.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/fragment_home.xml
+END
+jcy_network_set.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_network_set.xml
+END
+qzt_main_dialog_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_main_dialog_item.xml
+END
+webview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 185
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/webview.xml
+END
+qzt_confirm_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_confirm_dialog.xml
+END
+qzt_invited_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_invited_list_item.xml
+END
+qzt_network_set.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_network_set.xml
+END
+zpt_mapabc_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_mapabc_view.xml
+END
+qzt_recruitment_webview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_recruitment_webview.xml
+END
+qzt_training_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_training_detail.xml
+END
+qzt_listview_head.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_listview_head.xml
+END
+qzt_training_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_training_list.xml
+END
+jcy_recruitment_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_recruitment_list_item.xml
+END
+qzt_zcfg_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_zcfg_list_item.xml
+END
+zpt_recruitment_choose_jobs_list_item1_2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_recruitment_choose_jobs_list_item1_2.xml
+END
+bminfo_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/bminfo_activity.xml
+END
+owner_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/owner_activity.xml
+END
+qzt_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_dialog.xml
+END
+jcy_ldl_pxyy_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/jcy_ldl_pxyy_detail.xml
+END
+bmkqinfo.xml
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/bmkqinfo.xml
+END
+zpt_register_post_list_item1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_register_post_list_item1.xml
+END
+common_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/common_detail.xml
+END
+qzt_webview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_webview.xml
+END
+qzt_template_spinner.xml
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_template_spinner.xml
+END
+pic_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/pic_item.xml
+END
+zpt_register_count_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_register_count_list.xml
+END
+item_home_cy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/SVN/YZJYCY/!svn/ver/466/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/item_home_cy.xml
+END
+zpt_popup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_popup.xml
+END
+job_item_home_zp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/SVN/YZJYCY/!svn/ver/447/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/job_item_home_zp.xml
+END
+activity_sign_up.xml
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/activity_sign_up.xml
+END
+qzt_zcfg_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_zcfg_detail.xml
+END
+kqxq_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/kqxq_list_item.xml
+END
+qzt_recruitment_information.xml
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_recruitment_information.xml
+END
+zpt_webview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_webview.xml
+END
+activity_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/activity_login.xml
+END
+qzt_main_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_main_dialog.xml
+END
+zpt_register_input_dialog_refuse.xml
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_register_input_dialog_refuse.xml
+END
+qzt_zcfg_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_zcfg_list.xml
+END
+qzt_training_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_training_list_item.xml
+END
+zpt_employ_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_employ_list_item.xml
+END
+zpt_down_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/zpt_down_dialog.xml
+END
+kq_activity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/SVN/YZJYCY/!svn/ver/501/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/kq_activity.xml
+END
+qzt_browse_org_info_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 202
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_browse_org_info_item.xml
+END
+update_password.xml
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/update_password.xml
+END
+qzt_position_list_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/qzt_position_list_item.xml
+END
+cube_ptr_classic_default_header.xml
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/SVN/YZJYCY/!svn/ver/455/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/cube_ptr_classic_default_header.xml
+END
+mygridview_item1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/SVN/YZJYCY/!svn/ver/435/01-%E5%BC%80%E5%8F%91%E5%BA%93/050.%E7%BC%96%E7%A0%81/010.%E6%BA%90%E4%BB%A3%E7%A0%81/%E7%A8%8B%E5%BA%8F%E6%96%87%E4%BB%B6/android/YZJYCY/res/layout/mygridview_item1.xml
+END

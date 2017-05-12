@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_liner"
+        style="@style/titleComStyle"  >
+
+        <Button
+            android:id="@+id/back"
+                style="@style/topBackStyle"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/top_title"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/topTilteStyle"
+            android:text="求职意愿" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/top_right_button"
+            android:text="保存"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/jcy_inputbg"
+                android:padding="1dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="身份证号码:" />
+
+                    <TextView
+                        android:id="@+id/sfz"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                         />
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="姓		名:" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/jcy_inputbg"
+                android:padding="1dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="求职工种:" />
+
+                    <TextView
+                        android:id="@+id/qzgz"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:maxLength="20"/>
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="求职地区:" />
+
+                    <TextView
+                        android:id="@+id/qzdq"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:focusable="false"/>
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="意向工资价位:" />
+
+                    <TextView
+                        android:id="@+id/yxgzjw"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"/>
+                </LinearLayout>
+
+                <View style="@style/position_ViewLine" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        style="@style/ldl_detail_text_left"
+                        android:text="登记时间:" />
+
+                    <TextView
+                        android:id="@+id/djsj"
+                        style="@style/ldl_detail_text_right"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:enabled="false" />
+                </LinearLayout>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

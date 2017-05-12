@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/titleComStyle" >
+
+    <Button
+        android:id="@+id/backBtn"
+        style="@style/topBackStyle" />
+
+    <TextView
+        android:id="@+id/topTitle"
+        style="@style/topTilteStyle"
+        android:text="" />
+
+    <Button
+        android:id="@+id/editBtn"
+        style="@style/common_title_btn_style"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/textBtn"
+        style="@style/Wrap"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:background="@null"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

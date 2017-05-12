@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:background="#ffffff"
+    >
+
+   <RelativeLayout
+        android:id="@+id/top_title"
+        style="@style/titleComStyle"
+     >
+
+        <Button
+            android:id="@+id/backBtn"
+           style="@style/topBackStyle"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/titleTxt"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/topTilteStyle"
+            android:text="政策法规"
+             />
+
+       <!--  <Button
+            android:id="@+id/refreshBtn"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/common_title_btn_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/fill_style"
+        android:layout_below="@+id/top_title"
+        android:layout_margin="4dip"
+        android:padding="1dip"
+        android:background="@drawable/jcy_edit_text" >
+
+        <com.winksoft.android.yzjycy.MyListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#efefef"
+            android:dividerHeight="1dip"
+            android:fastScrollEnabled="true" />
+    </LinearLayout>
+
+</RelativeLayout>

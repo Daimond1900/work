@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="edit_btn_press">#2f0d1923</item>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="red">#8B0000</drawable><!-- 暗红色 -->
+    <drawable name="bred">#DB562D</drawable><!-- 大红色 -->
+    <drawable name="blue">#2F8AF3</drawable><!-- 天蓝色 -->
+    <drawable name="yellow">#F3CB09</drawable><!-- 黄色 -->
+    <drawable name="purple">#9F00A5</drawable><!--紫色-->
+    <drawable name="black">#000000</drawable><!--黑色-->
+    <drawable name="press_color">#CDCDCD</drawable><!-- 手点击效果 -->
+    
+    <drawable name="red_add_to_cart_n">#f15353</drawable>
+    <drawable name="red_add_to_cart_p">#a83a3a</drawable>
+    <drawable name="hintColor">#d7d7d7</drawable>
+    <drawable name="lightBg">#fefefe</drawable>
+    
+    <!-- topbar和item的背景色 -->
+    <drawable name="bg_topbar">#fbfbfb</drawable>
+    
+    <!-- app背景色 -->
+    <drawable name="android_layout_bg">#f2f3f5</drawable>
+    
+    <!-- 购物车ListView背景 -->
+    <drawable name="listView_bg">#f2f4f6</drawable>
+    
+    <!-- 分隔条颜色 -->
+    <drawable name="divider_color">#cccccc</drawable>
+    
+    <drawable name="main_item_press_color">#CCCCCC</drawable>
+    <drawable name="main_item_color">#ffffff</drawable><!-- 手点击效果 -->
+</resources>

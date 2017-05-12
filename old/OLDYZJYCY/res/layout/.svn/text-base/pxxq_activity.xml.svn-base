@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        style="@style/titleComStyle" >
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/topBackStyle"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            style="@style/topTilteStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="培训详情" />
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/fill_style"
+        android:layout_below="@id/top"
+        android:layout_marginBottom="5dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            style="@style/fill_style"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/position_tablerow" >
+
+                <TextView
+                    android:id="@+id/bjmc"
+                    style="@style/position_title"
+                    android:gravity="center"
+                    android:hint="创业指导培训" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fill_style"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/zpt_common_bg"
+                android:orientation="vertical"
+                android:padding="1dip" >
+
+                <View style="@style/line_style" />
+
+                <TableLayout style="@style/fill_wrap_style" >
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="培训机构:" />
+
+                        <TextView
+                            android:id="@+id/pxjg"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <View style="@style/position_ViewLine" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="培训类型:" />
+
+                        <TextView
+                            android:id="@+id/pxlx"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="培训工种:" />
+
+                        <TextView
+                            android:id="@+id/pxgz"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <!--
+                    <View style="@style/position_ViewLine" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="培训工种:" />
+
+                        <TextView
+                            android:id="@+id/pxgz"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+                    -->
+
+                    <View style="@style/line_style" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="培训等级:" />
+
+                        <TextView
+                            android:id="@+id/pxdj"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="培训课时 :" />
+
+                        <TextView
+                            android:id="@+id/pxks"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <!--
+                    <View style="@style/line_style" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="培训课时 :" />
+
+                        <TextView
+                            android:id="@+id/pxks"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                        
+                    </TableRow>
+                    -->
+
+                    <View style="@style/line_style" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="开班日期:" />
+
+                        <TextView
+                            android:id="@+id/kbrq"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+
+                    <View style="@style/line_style" />
+
+                    <TableRow style="@style/position_tablerow" >
+
+                        <TextView
+                            style="@style/position_itemtitle"
+                            android:text="结束日期:" />
+
+                        <TextView
+                            android:id="@+id/jsrq"
+                            style="@style/position_itemtxt"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dip" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/zpt_register_tab"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:text="课表信息"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_middle_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/fill_wrap_style"
+                android:layout_marginBottom="3dip"
+                android:layout_marginLeft="6dip"
+                android:layout_marginRight="6dip"
+                android:layout_weight="1"
+                android:background="@drawable/zpt_common_bg"
+                android:padding="1dip" >
+
+                <ListView
+                    android:id="@+id/listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#ffffff"
+                    android:fastScrollEnabled="true"
+                    android:padding="0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttom_menu"
+                style="@style/ywrap_style"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bm"
+                    style="@style/common_btn_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:text="报     名"
+                    android:textColor="#fff"
+                    android:textSize="18.0sp" />
+
+                <Button
+                    android:id="@+id/ybm"
+                    style="@style/common_btn_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:background="#969696"
+                    android:text="已报名"
+                    android:textColor="#fff"
+                    android:textSize="18.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/buttom_menu"
+        style="@style/ywrap_style"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bm"
+            style="@style/common_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:text="报     名"
+            android:textColor="#fff"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/ybm"
+            style="@style/common_btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="#969696"
+            android:text="已报名"
+            android:textColor="#fff"
+            android:textSize="18.0sp"
+            android:visibility="gone" />
+    </LinearLayout>
+    -->
+
+</RelativeLayout>

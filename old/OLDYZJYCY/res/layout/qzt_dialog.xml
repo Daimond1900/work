@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    >
+
+    <LinearLayout style="@style/ywrap_style"
+        android:background="#FF9225" 
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:orientation="horizontal">
+        <ImageView style="@style/whwrap_style" 
+            android:src="@drawable/qzt_ic_dialog_menu_generic" 
+            android:layout_marginLeft="10dip"
+            android:layout_gravity="center_vertical"/>
+         <TextView
+	        android:id="@+id/qzt_pTitle"
+	        style="@style/ywrap_style"
+	        android:layout_gravity="center_vertical"
+	        android:textColor="@color/white"
+	        android:textSize="20.0dip"
+	        android:layout_marginLeft="5dip"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/qzt_pMsg"
+        style="@style/whwrap_style"
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="3dip"
+        android:padding="5dip"
+        android:textColor="@color/black"
+        android:textSize="18dip"/>
+
+    <Button
+        android:id="@+id/pBtn"
+        style="@style/common_btn_style"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:text="@string/alert_dialog_ok"
+        android:layout_margin="5dip"
+        />
+
+</LinearLayout>
