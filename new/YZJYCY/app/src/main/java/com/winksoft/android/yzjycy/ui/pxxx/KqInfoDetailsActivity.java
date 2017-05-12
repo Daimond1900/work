@@ -36,7 +36,7 @@ import java.util.Map;
  */
 public class KqInfoDetailsActivity extends BaseActivity implements OnClickListener {
     private final String TAG = "KqInfoDetail";
-    private Button back, bt_kq, bt_qt, bt_kqjl,bt_wjdc;
+    private Button back, bt_kq, bt_qt, bt_kqjl, bt_wjdc;
     pxDAL dal;
     private YFBaseAdapter adapter;
     private String class_id = "", course_id = "";
@@ -69,7 +69,6 @@ public class KqInfoDetailsActivity extends BaseActivity implements OnClickListen
             @Override
             public void onClick(View v) {
                 doPost();
-//                loadDate();
             }
         });
     }
@@ -236,6 +235,8 @@ public class KqInfoDetailsActivity extends BaseActivity implements OnClickListen
                 findViewById(R.id.islayout).setVisibility(View.GONE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+                ((TextView)findViewById(R.id.sxyc)).setText("暂无数据，点击刷新！");
+
                 if (proDialog != null)
                     proDialog.dismiss();
             }
@@ -253,6 +254,7 @@ public class KqInfoDetailsActivity extends BaseActivity implements OnClickListen
                 findViewById(R.id.islayout).setVisibility(View.GONE);
                 findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                ((TextView)findViewById(R.id.sxyc)).setText("暂无数据，点击刷新！");
             } else if (map.get("success").equals("true")) {
                 Map<String, String> baseInfo = DataConvert.toConvertStringMap(json, "baseInfo");
                 if (baseInfo != null) {
@@ -350,7 +352,6 @@ public class KqInfoDetailsActivity extends BaseActivity implements OnClickListen
                                         intent.putExtra("lot", lot);
                                         startActivity(intent);
                                     }
-                                    Log.d(TAG, "onItemClick:课程点击事件 = " + listCourseInfo.get(arg2));
 //                                    Log.d(TAG, "onItemClick: SURPERDATA" + mapList + "_________________");
 //                                    String positionId = mapList.get(arg2).get("acb200").toString();// 职位编号
 //                                    Intent intent = new Intent(getActivity(), QztPositionView.class);

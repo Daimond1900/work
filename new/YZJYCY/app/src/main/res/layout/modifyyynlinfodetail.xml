@@ -58,7 +58,7 @@
             android:maxLines="1"
             android:text="语言种类："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/yyzl"
@@ -69,7 +69,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"
@@ -104,7 +104,7 @@
             android:maxLines="1"
             android:text="语言水平："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/yysp"
@@ -115,7 +115,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"

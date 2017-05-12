@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:background="@color/white" 
+	android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip">
+    <LinearLayout
+        android:id="@+id/top_liner"
+        style="@style/dialog_style">
+        
+		<ImageView style="@style/wrap_style" 
+            android:src="@mipmap/ic_dialog_menu_generic"
+            android:layout_marginLeft="10dip"
+            android:layout_gravity="center_vertical"/>
+        
+        <TextView
+            style="@style/wrap_style" 
+            android:layout_gravity="center_vertical"
+            android:id="@+id/pTitle"
+            android:textColor="@color/white" 
+            android:textSize="20sp"
+            android:layout_marginLeft="5dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill_style" 
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_liner"
+        android:layout_margin="8dip"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/pMsg"
+            style="@style/fill_style" 
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:padding="5dip"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            style="@style/fill_style" 
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/confirm_btn"
+                style="@style/common_btn_style"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:text="确认"
+                />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_marginLeft="10dip"
+                style="@style/common_btn_style"
+                android:layout_weight="1"
+                android:padding="10dip"
+                android:text="取消"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

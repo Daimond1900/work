@@ -1,5 +1,6 @@
 package com.winksoft.android.yzjycy.newyzjycy.wd;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -53,6 +54,7 @@ public class MineFragment extends Fragment implements OnClickListener {
     private String newRealname, newSfz;
     private TextView tv_cache_size;
     private ProgressBar publicloading;
+    Dialog proDialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -274,18 +276,7 @@ public class MineFragment extends Fragment implements OnClickListener {
                 break;
             case R.id.layout_mine_clear: //清除缓存
 
-                DataCleanManager.cleanInternalCache(getActivity());
-                DataCleanManager.cleanFiles(getActivity());
-                DataCleanManager.cleanExternalCache(getActivity());
-                try {
-                    Log.d("ttt", "onClick:  清除缓存后 本APP内部cache大小 = " + DataCleanManager.getCacheSize(getActivity().getCacheDir()));
-                   /* Log.d("ttt", "onClick:  清除缓存后 file 大小 = " + DataCleanManager.getCacheSize(getActivity().getFilesDir()));
-                    Log.d("ttt", "onClick:  清除缓存后 外部cache 大小 = " + DataCleanManager.getCacheSize(getActivity().getExternalCacheDir()));*/
-                    Log.d("ttt", "-------------------------------------------------------");
-                    tv_cache_size.setText(DataCleanManager.getCacheSize(getActivity().getCacheDir()));
-                } catch (Exception e) {
-
-                }
+                doQchc();
 
                 break;
             case R.id.layout_mine_help: //使用说明
@@ -296,6 +287,41 @@ public class MineFragment extends Fragment implements OnClickListener {
             default:
                 break;
         }
+    }
+
+
+    /**
+     * 清除缓存的提示框
+     */
+    public void doQchc() {
+        final Dialog builder = new Dialog(getActivity(), R.style.dialog);
+        builder.setContentView(R.layout.zpt_confirm_dialog);
+        TextView ptitle = (TextView) builder.findViewById(R.id.pTitle);
+        TextView pMsg = (TextView) builder.findViewById(R.id.pMsg);
+        ptitle.setText("清除缓存");
+        pMsg.setText("确定需要清除缓存吗？");
+        final Button confirm_btn = (Button) builder.findViewById(R.id.confirm_btn);
+        Button cancel_btn = (Button) builder.findViewById(R.id.cancel_btn);
+        confirm_btn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                confirm_btn.setEnabled(false);
+                DataCleanManager.cleanInternalCache(getActivity());
+                try {
+                    tv_cache_size.setText(DataCleanManager.getCacheSize(getActivity().getCacheDir()));
+                } catch (Exception e) {
+
+                }
+                builder.dismiss();
+            }
+        });
+
+        cancel_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                builder.dismiss();
+            }
+        });
+        builder.show();
     }
 
     @Override

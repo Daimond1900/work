@@ -210,7 +210,7 @@ public class HomeFm extends Fragment {
             if (("true").equals(map.get("success"))) {
                 List<Map<String, String>> tables = DataConvert.toConvertStringList(json, "table");// 待定
                 imgUrls = new ArrayList<>();
-                String url = "";
+                String url;
                 for (Map<String, String> table : tables) {
                     if (table.get("picpath") == null || "".equals(table.get("picpath"))) {
                         url = Constants.IP + "attached/recruit/main_banner1.png";

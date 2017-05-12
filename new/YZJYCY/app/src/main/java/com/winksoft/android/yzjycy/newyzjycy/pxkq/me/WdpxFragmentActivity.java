@@ -75,13 +75,6 @@ public class WdpxFragmentActivity extends BaseActivity implements View.OnClickLi
                 startActivity(intent);
             }
         });
-         /*异常情况刷新*/
-        findViewById(R.id.sxyc).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                refreshData();
-            }
-        });
 
         springView = (SpringView) findViewById(R.id.springview);
         springView.setType(SpringView.Type.FOLLOW);
@@ -94,7 +87,7 @@ public class WdpxFragmentActivity extends BaseActivity implements View.OnClickLi
                         refreshData();
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
 
             @Override
@@ -107,7 +100,7 @@ public class WdpxFragmentActivity extends BaseActivity implements View.OnClickLi
                         }
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
         });
         springView.setHeader(new DefaultHeader(this));
@@ -159,9 +152,14 @@ public class WdpxFragmentActivity extends BaseActivity implements View.OnClickLi
             @Override
             public void onFailure(Throwable t, String strMsg) {
                 super.onFailure(t, strMsg);
+                //网络异常时调用
                 findViewById(R.id.islayout).setVisibility(View.GONE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
                 if (proDialog != null)
                     proDialog.dismiss();
             }
@@ -176,43 +174,47 @@ public class WdpxFragmentActivity extends BaseActivity implements View.OnClickLi
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
+                springView.setGive(SpringView.Give.BOTH);
                 formatData(DataConvert.toConvertStringList(json, "enrolledTraningList"));
                 listview.setVisibility(View.VISIBLE);
                 yfbaseAdapter.notifyDataSetChanged();
             } else {
                 findViewById(R.id.islayout).setVisibility(View.GONE);
-                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
-                listview.setVisibility(View.GONE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             }
         }
     }
 
     private void formatData(List<Map<String, String>> STRINGLIST) {
-        if (STRINGLIST != null && STRINGLIST.size() > 0) {
-            for (Map<String, String> tm : STRINGLIST) {
-                Map<String, Object> otm = new HashMap<>();
-                for (String ts : tm.keySet()) {
-                    otm.put(ts, tm.get(ts));
-                }
-                mapList.add(otm);
+        if (STRINGLIST != null) {
+            if (STRINGLIST.size() < 10 && STRINGLIST.size() >= 0) {
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
             }
-        }
-
-        if (STRINGLIST != null && STRINGLIST.size() < 10 && STRINGLIST.size() > 0) {
-            isBotom = true;
-            springView.setEnable(true);
-            springView.setGive(SpringView.Give.TOP);
-            springView.getFooterView().setVisibility(View.GONE);
-        } else if (STRINGLIST != null && STRINGLIST.size() == 0) {
-            isBotom = true;
-            springView.setEnable(true);
-            springView.setGive(SpringView.Give.TOP);
-            springView.getFooterView().setVisibility(View.GONE);
+            if (STRINGLIST.size() == 0) {
+                findViewById(R.id.islayout).setVisibility(View.GONE);
+                findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+            }
+            if (STRINGLIST.size() > 0) {
+                findViewById(R.id.islayout).setVisibility(View.VISIBLE);
+                findViewById(R.id.kb).setVisibility(View.GONE);
+                findViewById(R.id.wlyc).setVisibility(View.GONE);
+                for (Map<String, String> tm : STRINGLIST) {
+                    Map<String, Object> otm = new HashMap<>();
+                    for (String ts : tm.keySet()) {
+                        otm.put(ts, tm.get(ts));
+                    }
+                    mapList.add(otm);
+                }
+            }
+        } else {
             findViewById(R.id.islayout).setVisibility(View.GONE);
-            findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             findViewById(R.id.kb).setVisibility(View.VISIBLE);
-            commonUtil.shortToast("暂无数据");
+            findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
         }
     }
 

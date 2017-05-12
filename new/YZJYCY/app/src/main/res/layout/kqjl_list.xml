@@ -64,7 +64,13 @@
                     </LinearLayout>
                 </RelativeLayout>
 
-                <include layout="@layout/wsj_info"></include>
+                <TextView
+                    android:id="@+id/kb"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="gone" />
+
+                <include layout="@layout/wlyc_info"></include>
             </LinearLayout>
         </ScrollView>
     </com.liaoinstan.springview.widget.SpringView>

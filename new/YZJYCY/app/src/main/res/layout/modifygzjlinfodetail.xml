@@ -57,9 +57,10 @@
             android:maxLines="1"
             android:text="起始日期："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
+            android:layout_marginLeft="6dp"
             android:id="@+id/qsrq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,9 +104,10 @@
             android:maxLines="1"
             android:text="结束日期："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
+            android:layout_marginLeft="6dp"
             android:id="@+id/jsrq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -148,9 +150,10 @@
             android:maxLines="1"
             android:text="单位名称："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
+            android:layout_marginLeft="6dp"
             android:id="@+id/dwmc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -191,7 +194,7 @@
             android:maxLines="1"
             android:text="所在职位："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/szzw"
@@ -202,7 +205,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"
@@ -234,9 +237,10 @@
             android:maxLines="1"
             android:text="工作备注："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
+            android:layout_marginLeft="6dp"
             android:id="@+id/gzbz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

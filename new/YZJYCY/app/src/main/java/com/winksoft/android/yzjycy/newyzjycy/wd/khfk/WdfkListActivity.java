@@ -7,8 +7,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.liaoinstan.springview.container.DefaultFooter;
 import com.liaoinstan.springview.container.DefaultHeader;
@@ -42,8 +40,6 @@ public class WdfkListActivity extends BaseActivity implements View.OnClickListen
     Dialog proDialog;
     private SpringView springView;
     private boolean isBotom = false;
-    private ImageView wsj_img;
-    private TextView wsj_tv;
     private int a = 0;
 
     @Override
@@ -52,8 +48,6 @@ public class WdfkListActivity extends BaseActivity implements View.OnClickListen
         setContentView(R.layout.wdfk_list);
         xwzxDAL = new XwzxDAL(this);
         commonUtil = new CommonUtil(this);
-        wsj_img = (ImageView) findViewById(R.id.wsj_img);
-        wsj_tv = (TextView) findViewById(R.id.wsj_tv);
         Button back = (Button) findViewById(R.id.back);
         back.setOnClickListener(this);
         Button xz = (Button) findViewById(R.id.xz);
@@ -95,7 +89,7 @@ public class WdfkListActivity extends BaseActivity implements View.OnClickListen
                         refreshData();
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
 
             @Override
@@ -108,7 +102,7 @@ public class WdfkListActivity extends BaseActivity implements View.OnClickListen
                         }
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
         });
         springView.setHeader(new DefaultHeader(this));
@@ -145,6 +139,9 @@ public class WdfkListActivity extends BaseActivity implements View.OnClickListen
             @Override
             public void onSuccess(Object arg0) {
                 super.onSuccess(arg0);
+                findViewById(R.id.islayout).setVisibility(View.VISIBLE);
+                findViewById(R.id.kb).setVisibility(View.GONE);
+                findViewById(R.id.wlyc).setVisibility(View.GONE);
                 postResult((String) arg0);
                 if (proDialog != null)
                     proDialog.dismiss();
@@ -153,10 +150,14 @@ public class WdfkListActivity extends BaseActivity implements View.OnClickListen
             @Override
             public void onFailure(Throwable t, String strMsg) {
                 super.onFailure(t, strMsg);
-                listview.setVisibility(View.GONE);
-                wsj_tv.setVisibility(View.VISIBLE);
-                wsj_tv.setText("服务器繁忙，请稍后再试！");
-                wsj_img.setVisibility(View.VISIBLE);
+                //网络异常时调用
+                findViewById(R.id.islayout).setVisibility(View.GONE);
+                findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
                 if (proDialog != null)
                     proDialog.dismiss();
             }
@@ -171,12 +172,14 @@ public class WdfkListActivity extends BaseActivity implements View.OnClickListen
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
+                springView.setGive(SpringView.Give.BOTH);
                 formatData(DataConvert.toConvertStringList(json, "table"));
+                listview.setVisibility(View.VISIBLE);
                 yfbaseAdapter.notifyDataSetChanged();
             } else {
-                listview.setVisibility(View.GONE);
-                wsj_tv.setVisibility(View.VISIBLE);
-                wsj_img.setVisibility(View.VISIBLE);
+                findViewById(R.id.islayout).setVisibility(View.GONE);
+                findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             }
         }
     }
@@ -191,14 +194,14 @@ public class WdfkListActivity extends BaseActivity implements View.OnClickListen
                 springView.getFooterView().setVisibility(View.GONE);
             }
             if (STRINGLIST.size() == 0) {
-                listview.setVisibility(View.GONE);
-                wsj_tv.setVisibility(View.VISIBLE);
-                wsj_img.setVisibility(View.VISIBLE);
+                findViewById(R.id.islayout).setVisibility(View.GONE);
+                findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             }
             if (STRINGLIST.size() > 0) {
-                listview.setVisibility(View.VISIBLE);
-                wsj_tv.setVisibility(View.GONE);
-                wsj_img.setVisibility(View.GONE);
+                findViewById(R.id.islayout).setVisibility(View.VISIBLE);
+                findViewById(R.id.kb).setVisibility(View.GONE);
+                findViewById(R.id.wlyc).setVisibility(View.GONE);
                 for (Map<String, String> tm : STRINGLIST) {
                     Map<String, Object> otm = new HashMap<>();
                     for (String ts : tm.keySet()) {
@@ -208,9 +211,9 @@ public class WdfkListActivity extends BaseActivity implements View.OnClickListen
                 }
             }
         } else {
-            listview.setVisibility(View.GONE);
-            wsj_tv.setVisibility(View.VISIBLE);
-            wsj_img.setVisibility(View.VISIBLE);
+            findViewById(R.id.islayout).setVisibility(View.GONE);
+            findViewById(R.id.kb).setVisibility(View.VISIBLE);
+            findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
         }
     }
 

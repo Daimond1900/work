@@ -92,15 +92,16 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="姓       名："
+                                    android:text="姓        名："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/xm"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="85dp"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_weight="1"
                                     android:background="@null"
                                     android:textColor="#444444"
@@ -131,9 +132,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="性       别："
+                                    android:text="性        别："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <Spinner
                                     android:id="@+id/xb"
@@ -168,9 +169,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="学       历："
+                                    android:text="学        历："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <Spinner
                                     android:id="@+id/xl"
@@ -181,7 +182,7 @@
                                     android:background="@null"
                                     android:gravity="top|right"
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -246,9 +247,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="民       族："
+                                    android:text="民        族："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <Spinner
                                     android:id="@+id/mz"
@@ -259,7 +260,7 @@
                                     android:background="@null"
                                     android:maxLines="1"
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -289,9 +290,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="身高(m)："
+                                    android:text="身高(cm)："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/sg"
@@ -301,6 +302,7 @@
                                     android:layout_weight="1"
                                     android:background="@null"
                                     android:maxLines="1"
+                                    android:layout_marginLeft="6dp"
                                     android:inputType="number"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
@@ -334,14 +336,15 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="体重(kg)："
+                                    android:text="体 重(kg)："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/tz"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
@@ -379,9 +382,9 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="视       力："
+                                    android:text="视        力："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/sl"
@@ -389,6 +392,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
+                                    android:layout_marginLeft="6dp"
                                     android:background="@null"
                                     android:maxLines="1"
                                     android:textColor="#444444"
@@ -425,7 +429,7 @@
                                     android:maxLines="1"
                                     android:text="政治面貌："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <Spinner
                                     android:id="@+id/zzmm"
@@ -436,7 +440,7 @@
                                     android:background="@null"
                                     android:maxLines="1"
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -468,7 +472,7 @@
                                     android:maxLines="1"
                                     android:text="所学专业："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <Spinner
                                     android:id="@+id/sxzy"
@@ -479,7 +483,7 @@
                                     android:background="@null"
                                     android:maxLines="1"
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -511,7 +515,7 @@
                                     android:maxLines="1"
                                     android:text="专业描述："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/zyms"
@@ -521,6 +525,7 @@
                                     android:layout_weight="1"
                                     android:background="@null"
                                     android:textColor="#444444"
+                                    android:layout_marginLeft="6dp"
                                     android:textColorHint="#ccc"
                                     android:hint="请输入专业描述"
                                     android:textSize="16sp" />
@@ -549,7 +554,7 @@
                                     android:maxLines="1"
                                     android:text="出生日期："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:id="@+id/csrq"
@@ -559,6 +564,7 @@
                                     android:layout_weight="1"
                                     android:background="@null"
                                     android:maxLines="1"
+                                    android:layout_marginLeft="6dp"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
                                     android:hint="请输入出生日期"
@@ -593,7 +599,7 @@
                                     android:maxLines="1"
                                     android:text="婚姻状况："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <Spinner
                                     android:id="@+id/hyzk"
@@ -604,7 +610,7 @@
                                     android:background="@null"
                                     android:maxLines="1"
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -637,7 +643,7 @@
                                     android:maxLines="1"
                                     android:text="健康状况："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/jkzk"
@@ -648,6 +654,7 @@
                                     android:background="@null"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
+                                    android:layout_marginLeft="6dp"
                                     android:hint="请输入健康状况"
                                     android:textSize="16sp" />
 
@@ -678,7 +685,7 @@
                                     android:maxLines="1"
                                     android:text="毕业院校："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/byyx"
@@ -687,7 +694,7 @@
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-
+                                    android:layout_marginLeft="6dp"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
                                     android:hint="请输入毕业院校"
@@ -720,7 +727,7 @@
                                     android:maxLines="1"
                                     android:text="计算机水平："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <Spinner
                                     android:id="@+id/jsjsp"
@@ -731,7 +738,7 @@
                                     android:background="@null"
                                     android:maxLines="1"
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -763,7 +770,7 @@
                                     android:maxLines="1"
                                     android:text="就业状态："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <Spinner
                                     android:id="@+id/jyzt"
@@ -774,7 +781,7 @@
                                     android:background="@null"
                                     android:maxLines="1"
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -806,7 +813,7 @@
                                     android:maxLines="1"
                                     android:text="毕业日期："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <TextView
                                     android:id="@+id/byrq"
@@ -818,6 +825,7 @@
                                     android:maxLines="1"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
+                                    android:layout_marginLeft="6dp"
                                     android:hint="请输入毕业日期"
                                     android:textSize="16sp"  />
 
@@ -850,7 +858,7 @@
                                     android:maxLines="1"
                                     android:text="自我介绍："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/zwjs"
@@ -859,6 +867,7 @@
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
+                                    android:layout_marginLeft="6dp"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
                                     android:hint="请输入自我介绍"
@@ -893,7 +902,7 @@
                                     android:maxLines="1"
                                     android:text="家庭住址："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/jtzz"
@@ -902,6 +911,7 @@
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
+                                    android:layout_marginLeft="6dp"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
                                     android:hint="请输入家庭住址"
@@ -936,7 +946,7 @@
                                     android:maxLines="1"
                                     android:text="所在地区："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <Spinner
                                     android:id="@+id/szdq"
@@ -947,7 +957,7 @@
                                     android:background="@null"
                                     android:maxLines="1"
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -979,7 +989,7 @@
                                     android:maxLines="1"
                                     android:text="邮政编码："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/yzbm"
@@ -989,6 +999,7 @@
                                     android:layout_weight="1"
                                     android:background="@null"
                                     android:textColor="#444444"
+                                    android:layout_marginLeft="6dp"
                                     android:textColorHint="#ccc"
                                     android:hint="请输入邮政编码"
                                     android:textSize="16sp"/>
@@ -1022,7 +1033,7 @@
                                     android:maxLines="1"
                                     android:text="固定电话："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/gddh"
@@ -1032,6 +1043,7 @@
                                     android:layout_weight="1"
                                     android:background="@null"
                                     android:textColor="#444444"
+                                    android:layout_marginLeft="6dp"
                                     android:textColorHint="#ccc"
                                     android:hint="请输入固定电话"
                                     android:textSize="16sp"/>
@@ -1066,7 +1078,7 @@
                                     android:maxLines="1"
                                     android:text="手机号码："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/sjhm"
@@ -1075,6 +1087,7 @@
                                     android:layout_marginRight="10dp"
                                     android:background="@null"
                                     android:textColorHint="#ccc"
+                                    android:layout_marginLeft="6dp"
                                     android:hint="请输入手机号码"
                                     android:textSize="16sp"
                                     android:inputType="phone"
@@ -1105,7 +1118,7 @@
                                     android:maxLines="1"
                                     android:text="电子信箱："
                                     android:textColor="#444444"
-                                    android:textSize="18sp" />
+                                    android:textSize="16sp" />
 
                                 <EditText
                                     android:id="@+id/dzyj"
@@ -1115,6 +1128,7 @@
                                     android:layout_weight="1"
                                     android:background="@null"
                                     android:textColor="#444444"
+                                    android:layout_marginLeft="6dp"
                                     android:textColorHint="#ccc"
                                     android:hint="请输入电子信箱"
                                     android:textSize="16sp" />

@@ -7,8 +7,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.liaoinstan.springview.container.DefaultFooter;
 import com.liaoinstan.springview.container.DefaultHeader;
@@ -36,7 +34,7 @@ import java.util.Map;
  * 我的问卷调查
  * Created by 1900
  */
-public class WdWjdc  extends BaseActivity implements View.OnClickListener{
+public class WdWjdc extends BaseActivity implements View.OnClickListener {
     private final static String secret_key = "(YZcyjy2017!@#$)";//签名-key
     private MyListView1 listview;
     private List<Map<String, Object>> mapList = new ArrayList<>();
@@ -46,8 +44,6 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
     Dialog proDialog;
     private SpringView springView;
     private boolean isBotom = false;
-    private ImageView wsj_img;
-    private TextView wsj_tv;
     private int a = 0;
 
     @Override
@@ -56,8 +52,6 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
         setContentView(R.layout.wd_wjdc_list);
         xwzxDAL = new XwzxDAL(this);
         commonUtil = new CommonUtil(this);
-        wsj_img = (ImageView) findViewById(R.id.wsj_img);
-        wsj_tv = (TextView) findViewById(R.id.wsj_tv);
         Button back = (Button) findViewById(R.id.back);
         back.setOnClickListener(this);
 
@@ -79,17 +73,21 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
                 if (arg2 == mapList.size()) {
                     return;
                 }
-                String id = mapList.get(arg2).get("quest_id").toString();
-                HashMap<String, String> map = new HashMap<>();
-                map.put("id", id);
-                map.put("userid", user.getUserId());
-                String secret_value = DateUtil.getStrCurrentDate();
-                map.put("Date", secret_value);
-                HashMap SignHashMap = ParamSignUtils.sign(map, secret_key);
-                Intent intent = new Intent(WdWjdc.this, CommonPageView.class);
-                intent.putExtra("url", Constants.IP + "android/person/viewQuestionnaire?id=" + id + "&&userid=" + user.getUserId() + "&&appSign=" + SignHashMap.get("appSign"));
-                intent.putExtra("title", "问卷题干及选项");
-                startActivity(intent);
+                if (!commonUtil.checkNetWork()) {/*dialogUtil.shortToast("请设置网络连接!");*/
+                    dialogUtil.alertNetError();
+                } else {
+                    String id = mapList.get(arg2).get("quest_id").toString();
+                    HashMap<String, String> map = new HashMap<>();
+                    map.put("id", id);
+                    map.put("userid", user.getUserId());
+                    String secret_value = DateUtil.getStrCurrentDate();
+                    map.put("Date", secret_value);
+                    HashMap SignHashMap = ParamSignUtils.sign(map, secret_key);
+                    Intent intent = new Intent(WdWjdc.this, CommonPageView.class);
+                    intent.putExtra("url", Constants.IP + "android/person/viewQuestionnaire?id=" + id + "&&userid=" + user.getUserId() + "&&appSign=" + SignHashMap.get("appSign"));
+                    intent.putExtra("title", "问卷题干及选项");
+                    startActivity(intent);
+                }
             }
         });
         springView = (SpringView) findViewById(R.id.springview);
@@ -103,7 +101,7 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
                         refreshData();
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
 
             @Override
@@ -116,7 +114,7 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
                         }
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
         });
         springView.setHeader(new DefaultHeader(this));
@@ -153,6 +151,9 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
             @Override
             public void onSuccess(Object arg0) {
                 super.onSuccess(arg0);
+                findViewById(R.id.islayout).setVisibility(View.VISIBLE);
+                findViewById(R.id.kb).setVisibility(View.GONE);
+                findViewById(R.id.wlyc).setVisibility(View.GONE);
                 postResult((String) arg0);
                 if (proDialog != null)
                     proDialog.dismiss();
@@ -161,15 +162,19 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
             @Override
             public void onFailure(Throwable t, String strMsg) {
                 super.onFailure(t, strMsg);
-                listview.setVisibility(View.GONE);
-                wsj_tv.setVisibility(View.VISIBLE);
-                wsj_tv.setText("服务器繁忙，请稍后再试！");
-                wsj_img.setVisibility(View.VISIBLE);
+                //网络异常时调用
+                findViewById(R.id.islayout).setVisibility(View.GONE);
+                findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
                 if (proDialog != null)
                     proDialog.dismiss();
             }
         };
-        xwzxDAL.queryWdWjdcInfo(user.getUserId(),temp_data_count_page, callBack);
+        xwzxDAL.queryWdWjdcInfo(user.getUserId(), temp_data_count_page, callBack);
     }
 
     /**
@@ -179,12 +184,14 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
+                springView.setGive(SpringView.Give.BOTH);
                 formatData(DataConvert.toConvertStringList(json, "table"));
+                listview.setVisibility(View.VISIBLE);
                 yfbaseAdapter.notifyDataSetChanged();
             } else {
-                listview.setVisibility(View.GONE);
-                wsj_tv.setVisibility(View.VISIBLE);
-                wsj_img.setVisibility(View.VISIBLE);
+                findViewById(R.id.islayout).setVisibility(View.GONE);
+                findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             }
         }
     }
@@ -199,14 +206,14 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
                 springView.getFooterView().setVisibility(View.GONE);
             }
             if (STRINGLIST.size() == 0) {
-                listview.setVisibility(View.GONE);
-                wsj_tv.setVisibility(View.VISIBLE);
-                wsj_img.setVisibility(View.VISIBLE);
+                findViewById(R.id.islayout).setVisibility(View.GONE);
+                findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             }
             if (STRINGLIST.size() > 0) {
-                listview.setVisibility(View.VISIBLE);
-                wsj_tv.setVisibility(View.GONE);
-                wsj_img.setVisibility(View.GONE);
+                findViewById(R.id.islayout).setVisibility(View.VISIBLE);
+                findViewById(R.id.kb).setVisibility(View.GONE);
+                findViewById(R.id.wlyc).setVisibility(View.GONE);
                 for (Map<String, String> tm : STRINGLIST) {
                     Map<String, Object> otm = new HashMap<>();
                     for (String ts : tm.keySet()) {
@@ -216,9 +223,9 @@ public class WdWjdc  extends BaseActivity implements View.OnClickListener{
                 }
             }
         } else {
-            listview.setVisibility(View.GONE);
-            wsj_tv.setVisibility(View.VISIBLE);
-            wsj_img.setVisibility(View.VISIBLE);
+            findViewById(R.id.islayout).setVisibility(View.GONE);
+            findViewById(R.id.kb).setVisibility(View.VISIBLE);
+            findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
         }
     }
 

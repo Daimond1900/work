@@ -19,7 +19,6 @@ import com.winksoft.android.yzjycy.R;
 import com.winksoft.android.yzjycy.activity.LoginActivity;
 import com.winksoft.android.yzjycy.data.XwzxDAL;
 import com.winksoft.android.yzjycy.ui.pxxx.KqInfoDetailsActivity;
-import com.winksoft.android.yzjycy.util.CommonUtil;
 import com.winksoft.android.yzjycy.util.Constants;
 import com.winksoft.nox.android.view.YFBaseAdapter;
 import com.yifeng.nox.android.http.http.AjaxCallBack;
@@ -43,7 +42,6 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
     int temp_data_count_page = 0;//临时存放当前加载页对应的pos
 
     XwzxDAL xwzxDAL;
-    private CommonUtil commonUtil;
     Dialog proDialog;
 
     private int sc = 0;
@@ -59,7 +57,6 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
         }
         view = inflater.inflate(R.layout.fragment_wdpx, null);
         xwzxDAL = new XwzxDAL(getActivity());
-        commonUtil = new CommonUtil(getActivity());
         tx_dl = (TextView) view.findViewById(R.id.tx_dl);
         tx_dl.setOnClickListener(this);
 
@@ -105,7 +102,7 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
                         refreshData();
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
 
             @Override
@@ -118,7 +115,7 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
                         }
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
         });
         springView.setHeader(new DefaultHeader(getContext()));
@@ -167,30 +164,34 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
     //*************************************************************************
 
     private void formatData(List<Map<String, String>> STRINGLIST) {
-        if (STRINGLIST != null && STRINGLIST.size() > 0) {
-            for (Map<String, String> tm : STRINGLIST) {
-                Map<String, Object> otm = new HashMap<>();
-                for (String ts : tm.keySet()) {
-                    otm.put(ts, tm.get(ts));
-                }
-                mapList.add(otm);
+        if (STRINGLIST != null) {
+            if (STRINGLIST.size() < 10 && STRINGLIST.size() >= 0) {
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
             }
-        }
-
-        if (STRINGLIST != null && STRINGLIST.size() < 10&& STRINGLIST.size() >0) {
-            isBotom = true;
-            springView.setEnable(true);
-            springView.setGive(SpringView.Give.TOP);
-            springView.getFooterView().setVisibility(View.GONE);
-        } else if (STRINGLIST != null && STRINGLIST.size() == 0) {
-            isBotom = true;
-            springView.setEnable(true);
-            springView.setGive(SpringView.Give.TOP);
-            springView.getFooterView().setVisibility(View.GONE);
+            if (STRINGLIST.size() == 0) {
+                view.findViewById(R.id.islayout).setVisibility(View.GONE);
+                view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+            }
+            if (STRINGLIST.size() > 0) {
+                view.findViewById(R.id.islayout).setVisibility(View.VISIBLE);
+                view.findViewById(R.id.kb).setVisibility(View.GONE);
+                view.findViewById(R.id.wlyc).setVisibility(View.GONE);
+                for (Map<String, String> tm : STRINGLIST) {
+                    Map<String, Object> otm = new HashMap<>();
+                    for (String ts : tm.keySet()) {
+                        otm.put(ts, tm.get(ts));
+                    }
+                    mapList.add(otm);
+                }
+            }
+        } else {
             view.findViewById(R.id.islayout).setVisibility(View.GONE);
-            view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
-            commonUtil.shortToast("暂无数据");
+            view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
         }
     }
 
@@ -219,6 +220,10 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
                 view.findViewById(R.id.islayout).setVisibility(View.GONE);
                 view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
                 if (proDialog != null)
                     proDialog.dismiss();
             }
@@ -233,13 +238,14 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
+                springView.setGive(SpringView.Give.BOTH);
                 formatData(DataConvert.toConvertStringList(json, "enrolledTraningList"));
                 listview.setVisibility(View.VISIBLE);
                 yfbaseAdapter.notifyDataSetChanged();
             } else {
-                view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
-                view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 view.findViewById(R.id.islayout).setVisibility(View.GONE);
+                view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             }
         }
     }

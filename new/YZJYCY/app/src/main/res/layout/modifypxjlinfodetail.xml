@@ -58,9 +58,10 @@
             android:maxLines="1"
             android:text="培训单位："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
+            android:layout_marginLeft="6dp"
             android:id="@+id/pxdw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -104,7 +105,7 @@
             android:maxLines="1"
             android:text="培训内容："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/pxnr"
@@ -113,6 +114,7 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:background="@null"
+            android:layout_marginLeft="6dp"
             android:hint="请输入培训内容"
             android:textColor="#444444"
             android:textColorHint="#ccc"
@@ -141,6 +143,7 @@
             style="@style/login_hint"
             android:layout_gravity="left"
             android:maxLength="20"
+
             android:text="*"
             android:textColor="#FF0000" />
 
@@ -150,9 +153,10 @@
             android:maxLines="1"
             android:text="起始日期："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
+            android:layout_marginLeft="6dp"
             android:id="@+id/qsrq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -197,9 +201,10 @@
             android:maxLines="1"
             android:text="结束日期："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
+            android:layout_marginLeft="6dp"
             android:id="@+id/jsrq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -246,9 +251,10 @@
             android:maxLines="1"
             android:text="培训结果："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
+            android:layout_marginLeft="6dp"
             android:id="@+id/pxjg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -293,9 +299,10 @@
             android:maxLines="1"
             android:text="培训备注："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
+            android:layout_marginLeft="6dp"
             android:id="@+id/pxbz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

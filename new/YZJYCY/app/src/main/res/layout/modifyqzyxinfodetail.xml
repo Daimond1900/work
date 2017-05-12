@@ -57,9 +57,10 @@
             android:maxLines="1"
             android:text="月薪要求："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
+            android:layout_marginLeft="6dp"
             android:id="@+id/yxyq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -104,7 +105,7 @@
             android:maxLines="1"
             android:text="岗位名称："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/gwmc"
@@ -115,7 +116,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"
@@ -147,9 +148,10 @@
             android:maxLines="1"
             android:text="岗位描述："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
+            android:layout_marginLeft="6dp"
             android:id="@+id/gwms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -192,7 +194,7 @@
             android:maxLines="1"
             android:text="工作地点："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/gzdd"
@@ -203,7 +205,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"
@@ -238,7 +240,7 @@
             android:maxLines="1"
             android:text="单位类型："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/dwlx"
@@ -249,7 +251,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"
@@ -282,7 +284,7 @@
             android:maxLines="1"
             android:text="工作性质："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/gzxz"
@@ -293,7 +295,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"
@@ -325,7 +327,7 @@
             android:maxLines="1"
             android:text="经济类型："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/jjlx"
@@ -336,7 +338,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"

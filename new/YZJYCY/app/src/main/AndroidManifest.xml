@@ -150,10 +150,10 @@
             android:name="com.winksoft.android.yzjycy.newyzjycy.wd.jl.ModifyPxjlInfoDetail"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.winksoft.android.yzjycy.newyzjycy.wd.jl.ModifyJLActivity$ModifyYynlInfo"
+            android:name="com.winksoft.android.yzjycy.newyzjycy.wd.jl.ModifyYynlInfo"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.winksoft.android.yzjycy.newyzjycy.wd.jl.ModifyJLActivity$ModifyYynlInfoDetail"
+            android:name="com.winksoft.android.yzjycy.newyzjycy.wd.jl.ModifyYynlInfoDetail"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.winksoft.android.yzjycy.newyzjycy.wd.jl.ModifyJszcInfo"

@@ -173,7 +173,7 @@ public class NewQztMyJobActivity extends BaseActivity {
                         refreshData();
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
 
             @Override
@@ -186,7 +186,7 @@ public class NewQztMyJobActivity extends BaseActivity {
                         }
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
         });
         springView.setHeader(new DefaultHeader(this));
@@ -214,130 +214,134 @@ public class NewQztMyJobActivity extends BaseActivity {
     //*************************************************************************
 
     private void formatData(List<Map<String, String>> STRINGLIST) {
-        if (STRINGLIST != null && STRINGLIST.size() > 0) {
-            if ("1".equals(flag)) {
-                for (Map<String, String> tm : STRINGLIST) {
-                    Map<String, Object> otm = new HashMap<>();
-                    tm.put("work", tm.get("aca112"));   // 职位名称
-                    // 投递状态
-                    String money = tm.get("hfzt") == null ? "" : tm.get("hfzt");
-                    switch (money) {
-                        case "3":
-                            money = "未阅";
-                            break;
-                        case "4":
-                            money = "已阅";
-                            break;
-                        case "5":
-                            money = "接收";
-                            break;
-                        case "6":
-                            money = "拒绝";
-                            break;
-                        case "7":
-                            money = "退档";
-                            break;
-                        case "8":
-                            money = "成交";
-                            break;
-                        case "11":
-                            money = "系统退回";
-                            break;
-                        default:
-                            money = "等待回复";
-                            break;
-                    }
-                    tm.put("money", money);
+        if (STRINGLIST != null) {
+            if (STRINGLIST.size() < 10 && STRINGLIST.size() >= 0) {
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
+            }
+            if (STRINGLIST.size() == 0) {
+                findViewById(R.id.islayout).setVisibility(View.GONE);
+                findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+            }
+            if (STRINGLIST.size() > 0) {
+                findViewById(R.id.islayout).setVisibility(View.VISIBLE);
+                findViewById(R.id.kb).setVisibility(View.GONE);
+                findViewById(R.id.wlyc).setVisibility(View.GONE);
+                if ("1".equals(flag)) {
+                    for (Map<String, String> tm : STRINGLIST) {
+                        Map<String, Object> otm = new HashMap<>();
+                        tm.put("work", tm.get("aca112"));   // 职位名称
+                        // 投递状态
+                        String money = tm.get("hfzt") == null ? "" : tm.get("hfzt");
+                        switch (money) {
+                            case "3":
+                                money = "未阅";
+                                break;
+                            case "4":
+                                money = "已阅";
+                                break;
+                            case "5":
+                                money = "接收";
+                                break;
+                            case "6":
+                                money = "拒绝";
+                                break;
+                            case "7":
+                                money = "退档";
+                                break;
+                            case "8":
+                                money = "成交";
+                                break;
+                            case "11":
+                                money = "系统退回";
+                                break;
+                            default:
+                                money = "等待回复";
+                                break;
+                        }
+                        tm.put("money", money);
 
-                    // 公司地址
-                    tm.put("company", tm.get("aab004") == null ? "" : tm.get("aab004"));
+                        // 公司地址
+                        tm.put("company", tm.get("aab004") == null ? "" : tm.get("aab004"));
 
-                    // 投递日期日期
-                    tm.put("date", tm.get("tdrq") == null ? "" : tm.get("tdrq"));
-                    for (String ts : tm.keySet()) {
-                        otm.put(ts, tm.get(ts));
+                        // 投递日期日期
+                        tm.put("date", tm.get("tdrq") == null ? "" : tm.get("tdrq"));
+                        for (String ts : tm.keySet()) {
+                            otm.put(ts, tm.get(ts));
+                        }
+                        mapList.add(otm);
                     }
-                    mapList.add(otm);
-                }
-            } else if ("2".equals(flag)) {
-                for (Map<String, String> tm : STRINGLIST) {
-                    Map<String, Object> otm = new HashMap<>();
-                    tm.put("work", tm.get("aca112"));   // 职位名称
-                    // 投递状态
-                    String money = tm.get("hfzt") == null ? "" : tm.get("hfzt");
-                    switch (money) {
-                        case "3":
-                            money = "未阅";
-                            break;
-                        case "4":
-                            money = "已阅";
-                            break;
-                        case "5":
-                            money = "接收";
-                            break;
-                        case "6":
-                            money = "拒绝";
-                            break;
-                        case "7":
-                            money = "退档";
-                            break;
-                        case "8":
-                            money = "成交";
-                            break;
-                        case "11":
-                            money = "系统退回";
-                            break;
-                        default:
-                            money = "等待回复";
-                            break;
+                } else if ("2".equals(flag)) {
+                    for (Map<String, String> tm : STRINGLIST) {
+                        Map<String, Object> otm = new HashMap<>();
+                        tm.put("work", tm.get("aca112"));   // 职位名称
+                        // 投递状态
+                        String money = tm.get("hfzt") == null ? "" : tm.get("hfzt");
+                        switch (money) {
+                            case "3":
+                                money = "未阅";
+                                break;
+                            case "4":
+                                money = "已阅";
+                                break;
+                            case "5":
+                                money = "接收";
+                                break;
+                            case "6":
+                                money = "拒绝";
+                                break;
+                            case "7":
+                                money = "退档";
+                                break;
+                            case "8":
+                                money = "成交";
+                                break;
+                            case "11":
+                                money = "系统退回";
+                                break;
+                            default:
+                                money = "等待回复";
+                                break;
 
+                        }
+                        tm.put("money", money);
+                        // 公司地址
+                        tm.put("company", tm.get("acb202") == null ? "" : tm.get("acb202"));
+                        // 投递日期日期
+                        tm.put("date", tm.get("tdrq") == null ? "" : tm.get("tdrq"));
+                        for (String ts : tm.keySet()) {
+                            otm.put(ts, tm.get(ts));
+                        }
+                        mapList.add(otm);
                     }
-                    tm.put("money", money);
-                    // 公司地址
-                    tm.put("company", tm.get("acb202") == null ? "" : tm.get("acb202"));
-                    // 投递日期日期
-                    tm.put("date", tm.get("tdrq") == null ? "" : tm.get("tdrq"));
-                    for (String ts : tm.keySet()) {
-                        otm.put(ts, tm.get(ts));
+                } else if ("3".equals(flag)) {
+                    for (Map<String, String> tm : STRINGLIST) {
+                        Map<String, Object> otm = new HashMap<>();
+                        tm.put("work", tm.get("aca112"));   // 职位名称
+                        // 投递状态
+                        String money = tm.get("acb241") == null ? "" : tm.get("acb241");
+                        if ("".equals(money)) {
+                            money = "0";
+                        }
+                        tm.put("money", "标准工资:" + money);
+                        // 公司地址
+                        tm.put("company", tm.get("aab004") == null ? "" : tm.get("aab004"));
+                        // 投递日期日期
+                        tm.put("date", tm.get("gzrq") == null ? "" : tm.get("gzrq"));
+                        for (String ts : tm.keySet()) {
+                            otm.put(ts, tm.get(ts));
+                        }
+                        mapList.add(otm);
                     }
-                    mapList.add(otm);
-                }
-            } else if ("3".equals(flag)) {
-                for (Map<String, String> tm : STRINGLIST) {
-                    Map<String, Object> otm = new HashMap<>();
-                    tm.put("work", tm.get("aca112"));   // 职位名称
-                    // 投递状态
-                    String money = tm.get("acb241") == null ? "" : tm.get("acb241");
-                    if ("".equals(money)) {
-                        money = "0";
-                    }
-                    tm.put("money", "标准工资:" + money);
-                    // 公司地址
-                    tm.put("company", tm.get("aab004") == null ? "" : tm.get("aab004"));
-                    // 投递日期日期
-                    tm.put("date", tm.get("gzrq") == null ? "" : tm.get("gzrq"));
-                    for (String ts : tm.keySet()) {
-                        otm.put(ts, tm.get(ts));
-                    }
-                    mapList.add(otm);
                 }
             }
-        }
-
-        if (STRINGLIST != null && STRINGLIST.size() < 10 && STRINGLIST.size() > 0) {
-            isBotom = true;
-            springView.setEnable(true);
-            springView.setGive(SpringView.Give.TOP);
-            springView.getFooterView().setVisibility(View.GONE);
-        } else if (STRINGLIST != null && STRINGLIST.size() == 0) {
-            isBotom = true;
-            springView.setEnable(true);
-            springView.setGive(SpringView.Give.TOP);
-            springView.getFooterView().setVisibility(View.GONE);
+        } else {
             findViewById(R.id.islayout).setVisibility(View.GONE);
-            findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             findViewById(R.id.kb).setVisibility(View.VISIBLE);
-            commonUtil.shortToast("暂无数据");
+            findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
         }
     }
 
@@ -356,8 +360,8 @@ public class NewQztMyJobActivity extends BaseActivity {
             public void onSuccess(Object arg0) {
                 super.onSuccess(arg0);
                 findViewById(R.id.islayout).setVisibility(View.VISIBLE);
-                findViewById(R.id.wlyc).setVisibility(View.GONE);
                 findViewById(R.id.kb).setVisibility(View.GONE);
+                findViewById(R.id.wlyc).setVisibility(View.GONE);
                 postResult((String) arg0);
                 if (proDialog != null)
                     proDialog.dismiss();
@@ -366,9 +370,14 @@ public class NewQztMyJobActivity extends BaseActivity {
             @Override
             public void onFailure(Throwable t, String strMsg) {
                 super.onFailure(t, strMsg);
+                //网络异常时调用
                 findViewById(R.id.islayout).setVisibility(View.GONE);
-                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
                 if (proDialog != null)
                     proDialog.dismiss();
             }
@@ -386,14 +395,14 @@ public class NewQztMyJobActivity extends BaseActivity {
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
+                springView.setGive(SpringView.Give.BOTH);
                 formatData(DataConvert.toConvertStringList(json, "table"));
                 listview.setVisibility(View.VISIBLE);
                 yfbaseAdapter.notifyDataSetChanged();
             } else {
                 findViewById(R.id.islayout).setVisibility(View.GONE);
-                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
-                commonUtil.shortToast(map.get("msg"));
+                findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
             }
         } else {
             commonUtil.shortToast("系统繁忙!");

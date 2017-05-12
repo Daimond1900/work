@@ -109,6 +109,7 @@ public class NewWdjlActivity extends BaseActivity implements View.OnClickListene
             public void onSuccess(Object arg0) {
                 super.onSuccess(arg0);
                 postResult((String) arg0);
+
                 if (proDialog != null)
                     proDialog.dismiss();
             }
@@ -116,6 +117,13 @@ public class NewWdjlActivity extends BaseActivity implements View.OnClickListene
             @Override
             public void onFailure(Throwable t, String strMsg) {
                 super.onFailure(t, strMsg);
+                xz.setVisibility(View.GONE);
+                islayout.setVisibility(View.GONE);
+                wsj_img.setVisibility(View.VISIBLE);
+                wsj_tv.setVisibility(View.VISIBLE);
+                wsj_tv.setText("暂无数据，下拉刷新！");
+                wsj_img.setVisibility(View.GONE);
+                wsj_tv.setVisibility(View.GONE);
                 if (proDialog != null)
                     proDialog.dismiss();
             }

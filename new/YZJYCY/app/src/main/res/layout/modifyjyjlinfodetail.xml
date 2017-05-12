@@ -57,7 +57,7 @@
             android:maxLines="1"
             android:text="毕业院校："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/byyx"
@@ -67,6 +67,7 @@
             android:layout_weight="1"
             android:background="@null"
             android:hint="请输入毕业院校名称"
+            android:layout_marginLeft="6dp"
             android:textColor="#444444"
             android:textColorHint="#ccc"
             android:textSize="16sp" />
@@ -103,9 +104,10 @@
             android:maxLines="1"
             android:text="起始日期："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
+            android:layout_marginLeft="6dp"
             android:id="@+id/qsrq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -150,9 +152,10 @@
             android:maxLines="1"
             android:text="结束日期："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
+            android:layout_marginLeft="6dp"
             android:id="@+id/jsrq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -197,9 +200,10 @@
             android:maxLines="1"
             android:text="学习备注："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
+            android:layout_marginLeft="6dp"
             android:id="@+id/xxbz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -243,7 +247,7 @@
             android:maxLines="1"
             android:text="所学专业："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/sxzy"
@@ -254,7 +258,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"
@@ -289,7 +293,7 @@
             android:maxLines="1"
             android:text="获得职称："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/hdzc"
@@ -300,7 +304,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"
@@ -335,7 +339,7 @@
             android:maxLines="1"
             android:text="职称等级："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/zcdj"
@@ -346,7 +350,7 @@
             android:background="@null"
             android:maxLines="1"
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <ImageView
             style="@style/whwrap_style"

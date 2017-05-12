@@ -30,11 +30,11 @@ import java.util.Map;
 /**
  * 工作经历 修改
  */
-public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickListener{
+public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickListener {
 
-    private TextView qsrq, jsrq,dwmc,gzbz;
+    private TextView qsrq, jsrq, dwmc, gzbz;
     private Spinner szzw;
-    private String gzidStr,szzwId,szzwStr;
+    private String gzidStr, szzwId, szzwStr;
     private XwzxDAL xwzxDAL;
     private CommonUtil commonUtil;
     private Dialog proDialog;
@@ -53,13 +53,14 @@ public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickLi
         }
         initView();
     }
+
     private void postBc() {
         String qsrqStr = qsrq.getText().toString().trim();
         String jsrqStr = jsrq.getText().toString().trim();
         String dwmcStr1 = dwmc.getText().toString().trim();
         String gzbzStr1 = gzbz.getText().toString().trim();
 
-        if(DateUtil.getSubtractDate(qsrqStr,jsrqStr) <= 0){
+        if (DateUtil.getSubtractDate(qsrqStr, jsrqStr) <= 0) {
             commonUtil.shortToast("日期填写有误！");
             return;
         }
@@ -75,10 +76,10 @@ public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickLi
             commonUtil.shortToast("单位名称不能为空！");
             return;
         }
-        if(flag == 0){
-            postDataXz(user.getUserId(),qsrqStr,jsrqStr,dwmcStr1,szzwId,gzbzStr1);
-        }else {
-            postData(gzidStr, qsrqStr,jsrqStr,dwmcStr1,szzwId,gzbzStr1);
+        if (flag == 0) {
+            postDataXz(user.getUserId(), qsrqStr, jsrqStr, dwmcStr1, szzwId, gzbzStr1);
+        } else {
+            postData(gzidStr, qsrqStr, jsrqStr, dwmcStr1, szzwId, gzbzStr1);
         }
     }
 
@@ -107,7 +108,7 @@ public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickLi
                     proDialog.dismiss();
             }
         };
-        xwzxDAL.doXzGzjl(userid,qsrqStr,jsrqStr,dwmcStr1,szzwId,gzbzStr1,
+        xwzxDAL.doXzGzjl(userid, qsrqStr, jsrqStr, dwmcStr1, szzwId, gzbzStr1,
                 callBack);
     }
 
@@ -149,7 +150,7 @@ public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickLi
                     proDialog.dismiss();
             }
         };
-        xwzxDAL.doModifyGzjl(gzidStr, qsrqStr,jsrqStr,dwmcStr1,szzwId,gzbzStr1,
+        xwzxDAL.doModifyGzjl(gzidStr, qsrqStr, jsrqStr, dwmcStr1, szzwId, gzbzStr1,
                 callBack);
     }
 
@@ -207,9 +208,9 @@ public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickLi
         Button sc = (Button) findViewById(R.id.sc);
         sc.setOnClickListener(this);
 
-        if(flag == 0){
+        if (flag == 0) {
             sc.setVisibility(View.GONE);
-        }else{
+        } else {
             sc.setVisibility(View.VISIBLE);
         }
         qsrq.setText(qsrqStr);
@@ -220,7 +221,8 @@ public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bc:
-                postBc();
+                doBcTs();
+
                 break;
             case R.id.back:
                 this.finish();
@@ -241,6 +243,35 @@ public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickLi
             default:
                 break;
         }
+    }
+
+    /**
+     * 保存的提示框
+     */
+    public void doBcTs() {
+        final Dialog builder = new Dialog(this, R.style.dialog);
+        builder.setContentView(R.layout.zpt_confirm_dialog);
+        TextView ptitle = (TextView) builder.findViewById(R.id.pTitle);
+        TextView pMsg = (TextView) builder.findViewById(R.id.pMsg);
+        ptitle.setText("保存记录");
+        pMsg.setText("确定要保存这条记录吗？");
+        final Button confirm_btn = (Button) builder.findViewById(R.id.confirm_btn);
+        Button cancel_btn = (Button) builder.findViewById(R.id.cancel_btn);
+        confirm_btn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                confirm_btn.setEnabled(false);
+                postBc();
+                builder.dismiss();
+            }
+        });
+
+        cancel_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                builder.dismiss();
+            }
+        });
+        builder.show();
     }
 
     /**
@@ -297,7 +328,7 @@ public class ModifyGzjlInfoDetail extends BaseActivity implements View.OnClickLi
                     proDialog.dismiss();
             }
         };
-        xwzxDAL.doScGzjl(gzidStr,callBack);
+        xwzxDAL.doScGzjl(gzidStr, callBack);
     }
 
     private void postScResult(String json) {

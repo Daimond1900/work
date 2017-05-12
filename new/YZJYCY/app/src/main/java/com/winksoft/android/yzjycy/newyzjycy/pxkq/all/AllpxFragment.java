@@ -127,7 +127,7 @@ public class AllpxFragment extends Fragment {
                         refreshData();
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
 
             @Override
@@ -140,7 +140,7 @@ public class AllpxFragment extends Fragment {
                         }
                         springView.onFinishFreshAndLoad();
                     }
-                }, 2000);
+                }, 25);
             }
         });
         springView.setHeader(new DefaultHeader(getContext()));
@@ -176,6 +176,10 @@ public class AllpxFragment extends Fragment {
                 listview.setVisibility(View.GONE);
                 view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
                 if (proDialog != null)
                     proDialog.dismiss();
             }
@@ -190,6 +194,7 @@ public class AllpxFragment extends Fragment {
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
+                springView.setGive(SpringView.Give.BOTH);
                 formatData(DataConvert.toConvertStringList(json, "attendance"));
                 listview.setVisibility(View.VISIBLE);
                 yfbaseAdapter.notifyDataSetChanged();
@@ -221,22 +226,34 @@ public class AllpxFragment extends Fragment {
     //*************************************************************************
 
     private void formatData(List<Map<String, String>> STRINGLIST) {
-
-        if (STRINGLIST != null && STRINGLIST.size() > 0) {
-            for (Map<String, String> tm : STRINGLIST) {
-                Map<String, Object> otm = new HashMap<>();
-                for (String ts : tm.keySet()) {
-                    otm.put(ts, tm.get(ts));
-                }
-                mapList.add(otm);
+        if (STRINGLIST != null) {
+            if (STRINGLIST.size() < 10 && STRINGLIST.size() >= 0) {
+                isBotom = true;
+                springView.setEnable(true);
+                springView.setGive(SpringView.Give.TOP);
+                springView.getFooterView().setVisibility(View.GONE);
             }
-        }
-
-        if (STRINGLIST != null && STRINGLIST.size() < 10) {
-            isBotom = true;
-            springView.setEnable(true);
-            springView.setGive(SpringView.Give.TOP);
-            springView.getFooterView().setVisibility(View.GONE);
+            if (STRINGLIST.size() == 0) {
+                listview.setVisibility(View.GONE);
+                view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
+                view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
+            }
+            if (STRINGLIST.size() > 0) {
+                listview.setVisibility(View.VISIBLE);
+                view.findViewById(R.id.kb).setVisibility(View.GONE);
+                view.findViewById(R.id.wlyc).setVisibility(View.GONE);
+                for (Map<String, String> tm : STRINGLIST) {
+                    Map<String, Object> otm = new HashMap<>();
+                    for (String ts : tm.keySet()) {
+                        otm.put(ts, tm.get(ts));
+                    }
+                    mapList.add(otm);
+                }
+            }
+        } else {
+            listview.setVisibility(View.GONE);
+            view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
+            view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
         }
     }
 }

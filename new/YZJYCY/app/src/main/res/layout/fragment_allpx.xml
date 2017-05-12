@@ -27,7 +27,7 @@
                     android:background="#ffffff"
                     android:cacheColorHint="#00000000"
                     android:descendantFocusability="blocksDescendants"
-                    android:divider="#ffffff"
+                    android:divider="#F6F6F6"
                     android:fastScrollEnabled="true"
                     android:padding="0dip" />
 

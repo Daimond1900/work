@@ -201,7 +201,7 @@ public class ModifyQzyxInfoDetail extends BaseActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bc:
-                postBc();
+                doBcTs();
                 break;
             case R.id.back:
                 this.finish();
@@ -212,6 +212,34 @@ public class ModifyQzyxInfoDetail extends BaseActivity implements View.OnClickLi
             default:
                 break;
         }
+    }
+    /**
+     * 保存的提示框
+     */
+    public void doBcTs() {
+        final Dialog builder = new Dialog(this, R.style.dialog);
+        builder.setContentView(R.layout.zpt_confirm_dialog);
+        TextView ptitle = (TextView) builder.findViewById(R.id.pTitle);
+        TextView pMsg = (TextView) builder.findViewById(R.id.pMsg);
+        ptitle.setText("保存记录");
+        pMsg.setText("确定要保存这条记录吗？");
+        final Button confirm_btn = (Button) builder.findViewById(R.id.confirm_btn);
+        Button cancel_btn = (Button) builder.findViewById(R.id.cancel_btn);
+        confirm_btn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                confirm_btn.setEnabled(false);
+                postBc();
+                builder.dismiss();
+            }
+        });
+
+        cancel_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                builder.dismiss();
+            }
+        });
+        builder.show();
     }
 
     /**
