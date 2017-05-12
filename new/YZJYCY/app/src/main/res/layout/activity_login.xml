@@ -32,7 +32,6 @@
                 android:layout_width="fill_parent"
                 android:background="@drawable/input_bg"
                 android:hint="用户名"
-                android:maxLength="11"
                 android:paddingBottom="10dip"
                 android:paddingLeft="5dip"
                 android:paddingTop="10dip"
