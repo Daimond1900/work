@@ -652,7 +652,7 @@ public class QztPositionView extends BaseActivity {
             xl.setText(commonUtil.getMapValue(positionInfo, "aac011"));// 学历
             nl.setText(commonUtil.getMapValue(positionInfo, "acb221") + "~" + commonUtil.getMapValue(positionInfo, "acb222"));//年龄
             sgtz.setText("身高:" + commonUtil.getMapValue(positionInfo, "aac034") + "; 体重:" + commonUtil.getMapValue(positionInfo, "aac035"));
-            gxrq.setText(commonUtil.getMapValue(positionInfo, "aae396"));
+            gxrq.setText(commonUtil.getMapValue(positionInfo, "aae397"));
             cyns.setText(commonUtil.getMapValue(positionInfo, "acc217"));
             area.setText(positionInfo.get("aab301"));// 用工区域
 

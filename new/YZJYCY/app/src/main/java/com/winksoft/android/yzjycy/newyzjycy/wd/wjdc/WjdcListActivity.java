@@ -49,7 +49,7 @@ public class WjdcListActivity extends BaseActivity implements View.OnClickListen
     private ImageView wsj_img;
     private TextView wsj_tv;
     private int a = 0;
-
+    private boolean isTen = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -140,6 +140,7 @@ public class WjdcListActivity extends BaseActivity implements View.OnClickListen
 
     //模拟加载数据
     private void loadMore() {
+        isTen = true;
         temp_data_count_page++;
         loadDate();
         yfbaseAdapter.notifyDataSetChanged();
@@ -213,7 +214,7 @@ public class WjdcListActivity extends BaseActivity implements View.OnClickListen
                 springView.setGive(SpringView.Give.TOP);
                 springView.getFooterView().setVisibility(View.GONE);
             }
-            if (STRINGLIST.size() == 0) {
+            if (STRINGLIST.size() == 0 && !isTen) {
                 findViewById(R.id.islayout).setVisibility(View.GONE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 findViewById(R.id.wlyc).setVisibility(View.VISIBLE);

@@ -57,7 +57,7 @@ public class AllXwFm extends Fragment {
     private boolean isBotom = false;
     private CommonUtil commonUtil;
     private DialogUtil dialogUtil;
-
+    private boolean isTen = false;
     private int lazy_id = 0;
 
 
@@ -190,6 +190,7 @@ public class AllXwFm extends Fragment {
 
     //模拟加载数据
     private void loadMore() {
+        isTen = true;
         temp_data_count_page++;
         loadDate();
         yfbaseAdapter.notifyDataSetChanged();
@@ -262,7 +263,7 @@ public class AllXwFm extends Fragment {
                 springView.setGive(SpringView.Give.TOP);
                 springView.getFooterView().setVisibility(View.GONE);
             }
-            if (STRINGLIST.size() == 0) {
+            if (STRINGLIST.size() == 0 && !isTen) {
                 view.findViewById(R.id.islayout).setVisibility(View.GONE);
                 view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);

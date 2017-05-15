@@ -45,7 +45,7 @@ public class WdWjdc extends BaseActivity implements View.OnClickListener {
     private SpringView springView;
     private boolean isBotom = false;
     private int a = 0;
-
+    private boolean isTen = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -132,6 +132,7 @@ public class WdWjdc extends BaseActivity implements View.OnClickListener {
 
     //模拟加载数据
     private void loadMore() {
+        isTen = true;
         temp_data_count_page++;
         loadDate();
         yfbaseAdapter.notifyDataSetChanged();
@@ -205,7 +206,7 @@ public class WdWjdc extends BaseActivity implements View.OnClickListener {
                 springView.setGive(SpringView.Give.TOP);
                 springView.getFooterView().setVisibility(View.GONE);
             }
-            if (STRINGLIST.size() == 0) {
+            if (STRINGLIST.size() == 0  && !isTen) {
                 findViewById(R.id.islayout).setVisibility(View.GONE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 findViewById(R.id.wlyc).setVisibility(View.VISIBLE);

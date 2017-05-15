@@ -3,11 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/top_liner"
-        style="@style/titleComStyle" >
+        style="@style/titleComStyle">
 
         <Button
             android:id="@+id/back"
@@ -22,7 +22,7 @@
             android:text="考勤操作" />
     </RelativeLayout>
 
-    <LinearLayout style="@style/sign_up_layout" >
+    <LinearLayout style="@style/sign_up_layout">
 
         <TextView
             android:layout_width="100dip"
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@drawable/zpt_common_bg" >
+        android:background="@drawable/zpt_common_bg">
 
         <!--
         <ImageView
@@ -50,13 +50,12 @@
             android:layout_width="fill_parent"
             android:layout_height="100dp"
             android:layout_weight="1"
-            android:padding="2dip" >
+            android:padding="2dip">
 
             <ImageView
                 android:id="@+id/kqImageBtn"
                 style="@style/fill_style"
-                android:layout_weight="1"
-                />
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/logo_tipTxt"
@@ -69,10 +68,20 @@
         </FrameLayout>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/dwdz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="正在定位中...."
+        android:textColor="@color/register_tab_button_font"
+        android:textSize="18sp" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_yeskq"

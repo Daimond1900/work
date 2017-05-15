@@ -42,7 +42,7 @@ import java.util.Map;
 
 public class KqInfoSureActivity extends BaseActivity implements OnClickListener {
     private final static String secret_key = "(YZcyjy2017!@#$)";//签名-key
-    private static final String TAG = "Kq";
+    private static final String TAG = "KqInfo";
     private Button back;
     private Button btn_nokq;
     private Button btn_yeskq;
@@ -63,12 +63,15 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
     pxDAL dal;
     private boolean isPost;
     private String class_id = "";
-    private String isCheck = "" , course_id = "";
+    private String isCheck = "", course_id = "";
     Dialog proDialog;
     private List<FormFile> listForm = new ArrayList<>();
     private CommonUtil commonUtil;
     private XwzxDAL xwzxDAL;
     private GpsUtil gpsUtil;
+    private TextView dwdz;
+    private String mProvince = "", mCity= "", mDistrict= "", mStreet= "";
+    private Dialog mDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,31 +85,65 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
         commonUtil = new CommonUtil(this);
         xwzxDAL = new XwzxDAL(this);
         initView();
+        doKqDw();
+
+    }
+
+    private void doKqDw(){
+        mDialog = CustomeProgressDialog.createLoadingDialog(
+                KqInfoSureActivity.this, "正在定位中,请稍后...");
+        mDialog.show();
         //定位
         try {
-//            gpsUtil = GpsUtil.getInstance(this);
-//            gpsUtil.startMonitor();
-//            latitude = gpsUtil.getBaseLocation().latitude;
-//            longitude = gpsUtil.getBaseLocation().longitude;
-//            Log.d(TAG, "onCreate: 经纬度信息 " + latitude+"==== : ====" + longitude);
+            Thread thread = new Thread() {
+                @Override
+                public void run() {
+                    gpsUtil = GpsUtil.getInstance(KqInfoSureActivity.this);
+                    gpsUtil.startMonitor();
+                    GpsUtil.mHandler = mHandler;
+                }
+            };
+            thread.start();
 
-            gpsUtil = GpsUtil.getInstance(this);
-            gpsUtil.startMonitor();
-            GpsUtil.mHandler = this.mHandler;
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        locationInfo();
     }
 
     Handler mHandler = new Handler() {
         public void handleMessage(Message msg) {
+            Log.d(TAG, "handleMessage: -------------------------------------");
             if (msg.what == GpsUtil.SEND_GPS_MSG) {
                 //定位成功，传给html界面
-                //webView.loadUrl("javascript:onLocationByAndroid('"+GpsUtil.address+"','"+GpsUtil.longitude+"','"+GpsUtil.latitude+"')");
                 latitude = gpsUtil.getBaseLocation().latitude;
                 longitude = gpsUtil.getBaseLocation().longitude;
-                Log.d(TAG, "handleMessage: 定位信息" + latitude + "=====================" + longitude);
+
+                mProvince = gpsUtil.getBaseLocation().province; //省
+                mCity = gpsUtil.getBaseLocation().city;//市
+                mDistrict = gpsUtil.getBaseLocation().district;//区
+                mStreet = gpsUtil.getBaseLocation().street;//街道
+
+                if (latitude != 0.0 && longitude != 0.0) {
+                    commonUtil.shortToast("考勤定位成功");
+                    if ("".equals(mProvince) && "".equals(mCity)&& "".equals(mDistrict)&& "".equals(mStreet)) {
+                        dwdz.setOnClickListener(KqInfoSureActivity.this);
+                        commonUtil.shortToast("考勤定位失败");
+                        dwdz.setText("定位失败，点击重新定位！");
+                    }else{
+                        dwdz.setText(mProvince + mCity + mDistrict + mStreet);
+                    }
+
+                    if (mDialog !=null) {
+                        mDialog.dismiss();
+                    }
+
+                } else {
+                    dwdz.setOnClickListener(KqInfoSureActivity.this);
+                    commonUtil.shortToast("考勤定位失败");
+                    dwdz.setText("定位失败，点击重新定位！");
+                    mDialog.dismiss();
+                }
+                Log.d(TAG, "handleMessage: 考勤地址 = " + mProvince + " " + mCity + " " + mDistrict + " " + mStreet);
                 if (gpsUtil != null)
                     gpsUtil.stopMonitor();//定位成功即时关掉避免重复定位
             }
@@ -115,6 +152,7 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
 
 
     private void initView() {
+        dwdz = (TextView) findViewById(R.id.dwdz);
         kqImageBtn = (ImageView) findViewById(R.id.kqImageBtn);
         kqImageBtn.setOnClickListener(this);
         back = (Button) findViewById(R.id.back);
@@ -127,78 +165,15 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
         class_id = this.getIntent().getStringExtra("class_id");
     }
 
-
-//    private void locationInfo() {
-//        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-//        // 获取所有可用的位置提供器
-//        List<String> providerList = locationManager.getProviders(true);
-//        if (providerList.contains(LocationManager.GPS_PROVIDER)) {
-//            // 优先使用gps
-//            provider = LocationManager.GPS_PROVIDER;
-//        } else if (providerList.contains(LocationManager.NETWORK_PROVIDER)) {
-//            provider = LocationManager.NETWORK_PROVIDER;
-//        } else {
-//            // 没有可用的位置提供器
-//            Toast.makeText(KqInfoSureActivity.this, "请开启定位功能后，完成考勤！", Toast.LENGTH_LONG).show();
-//            Intent i = new Intent();
-//            i.setAction(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-//            startActivity(i);
-//            return;
-//        }
-//
-//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//            return;
-//        }
-//        Location location = locationManager.getLastKnownLocation(provider);
-//        if (location != null) {
-//            // 显示当前设备的位置信息
-//            showLocation(location);
-//        } else {
-//            commonUtil.shortToast("无法获得当前位置");
-//        }
-//
-//        // 更新当前位置
-//        locationManager.requestLocationUpdates(provider, 5 * 1000, 1, locationListener);
-//
-//    }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
         gpsUtil.stopMonitor();
-//        if (locationManager != null) {
-//            // 关闭程序时将监听器移除
-//            locationManager.removeUpdates(locationListener);
-//        }
-
     }
-
-//    LocationListener locationListener = new LocationListener() {
-//        @Override
-//        public void onStatusChanged(String provider, int status, Bundle extras) {
-//        }
-//
-//        @Override
-//        public void onProviderEnabled(String provider) {
-//        }
-//
-//        @Override
-//        public void onProviderDisabled(String provider) {
-//        }
-//
-//        @Override
-//        public void onLocationChanged(Location location) {
-//            showLocation(location);
-//        }
-//    };
 
     /**
      * 显示当前设备的位置信息
      */
-//    private void showLocation(Location location) {
-//        longitude = location.getLongitude() + "";
-//        latitude = location.getLatitude() + "";
-//    }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -212,11 +187,36 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 this.finish();
                 break;
             case R.id.btn_yeskq: // 确定
-                isPost = true;
-                postData();
-                onPostData();
-                break;
+                if(latitude != 0.0 && longitude != 0.0){
+                    isPost = true;
+                    postData();
+                    onPostData();
+                }else{
+                    commonUtil.shortToast("考勤定位失败,请重新定位！");
+                }
 
+                break;
+            case R.id.dwdz: // 点击重新定位
+//                //定位
+                doKqDw();
+//                mDialog = CustomeProgressDialog.createLoadingDialog(
+//                        KqInfoSureActivity.this, "正在定位中,请稍后...");
+//                mDialog.show();
+//                try {
+//                    Thread thread1 = new Thread() {
+//                        @Override
+//                        public void run() {
+//                            gpsUtil = GpsUtil.getInstance(KqInfoSureActivity.this);
+//                            gpsUtil.startMonitor();
+//                            GpsUtil.mHandler = mHandler;
+//                        }
+//                    };
+//                    thread1.start();
+//
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+                break;
             default:
                 break;
         }

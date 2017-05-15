@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -42,6 +43,7 @@ public class KqjlInfoActivity extends BaseActivity implements View.OnClickListen
     private SpringView springView;
     private boolean isBotom = false;
     private String class_id = "";
+    private boolean isTen = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -133,6 +135,7 @@ public class KqjlInfoActivity extends BaseActivity implements View.OnClickListen
 
     //模拟加载数据
     private void loadMore() {
+        isTen = true;
         temp_data_count_page++;
         loadDate();
         yfbaseAdapter.notifyDataSetChanged();
@@ -181,6 +184,7 @@ public class KqjlInfoActivity extends BaseActivity implements View.OnClickListen
      * @param json 结果
      */
     private void postResult(String json) {
+        Log.d("Kqlb", "postResult: 考勤列表 === " + json);
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
@@ -198,14 +202,16 @@ public class KqjlInfoActivity extends BaseActivity implements View.OnClickListen
 
 
     private void formatData(List<Map<String, String>> STRINGLIST) {
+        Log.d("Kqlb", "formatData: STRINGLIST == " + STRINGLIST);
         if (STRINGLIST != null) {
             if (STRINGLIST.size() < 10 && STRINGLIST.size() >= 0) {
+                Log.d("Kqlb", "formatData: --------------------------------------------+++++");
                 isBotom = true;
                 springView.setEnable(true);
                 springView.setGive(SpringView.Give.TOP);
                 springView.getFooterView().setVisibility(View.GONE);
             }
-            if (STRINGLIST.size() == 0) {
+            if (STRINGLIST.size() == 0 && !isTen) {
                 findViewById(R.id.islayout).setVisibility(View.GONE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
@@ -223,6 +229,7 @@ public class KqjlInfoActivity extends BaseActivity implements View.OnClickListen
                 }
             }
         } else {
+            Log.d("Kqlb", "formatData:  else  STRINGLIST == " + STRINGLIST);
             findViewById(R.id.islayout).setVisibility(View.GONE);
             findViewById(R.id.kb).setVisibility(View.VISIBLE);
             findViewById(R.id.wlyc).setVisibility(View.VISIBLE);

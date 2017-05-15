@@ -46,7 +46,7 @@ public class AllpxFragment extends Fragment {
     private CommonUtil commonUtil;
     Dialog proDialog;
     private DialogUtil dialogUtil;
-
+    private boolean isTen = false;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -218,6 +218,7 @@ public class AllpxFragment extends Fragment {
 
     //模拟加载数据
     private void loadMore() {
+        isTen = true;
         temp_data_count_page++;
         loadDate();
         yfbaseAdapter.notifyDataSetChanged();
@@ -233,7 +234,7 @@ public class AllpxFragment extends Fragment {
                 springView.setGive(SpringView.Give.TOP);
                 springView.getFooterView().setVisibility(View.GONE);
             }
-            if (STRINGLIST.size() == 0) {
+            if (STRINGLIST.size() == 0 && !isTen) {
                 listview.setVisibility(View.GONE);
                 view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);

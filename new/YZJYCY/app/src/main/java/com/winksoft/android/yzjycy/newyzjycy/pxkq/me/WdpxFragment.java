@@ -47,6 +47,7 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
     private int sc = 0;
     private SpringView springView;
     private boolean isBotom = false;
+    private boolean isTen = false;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -156,6 +157,7 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
 
     //模拟加载数据
     private void loadMore() {
+        isTen = true;
         temp_data_count_page++;
         loadDate();
         yfbaseAdapter.notifyDataSetChanged();
@@ -171,7 +173,7 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
                 springView.setGive(SpringView.Give.TOP);
                 springView.getFooterView().setVisibility(View.GONE);
             }
-            if (STRINGLIST.size() == 0) {
+            if (STRINGLIST.size() == 0 && !isTen) {
                 view.findViewById(R.id.islayout).setVisibility(View.GONE);
                 view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);

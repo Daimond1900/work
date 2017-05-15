@@ -41,6 +41,7 @@ public class WdpxFragmentActivity extends BaseActivity implements View.OnClickLi
     XwzxDAL xwzxDAL;
     private CommonUtil commonUtil;
     Dialog proDialog;
+    private boolean isTen = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,6 +120,7 @@ public class WdpxFragmentActivity extends BaseActivity implements View.OnClickLi
 
     //模拟加载数据
     private void loadMore() {
+        isTen = true;
         temp_data_count_page++;
         loadDate();
         yfbaseAdapter.notifyDataSetChanged();
@@ -194,7 +196,7 @@ public class WdpxFragmentActivity extends BaseActivity implements View.OnClickLi
                 springView.setGive(SpringView.Give.TOP);
                 springView.getFooterView().setVisibility(View.GONE);
             }
-            if (STRINGLIST.size() == 0) {
+            if (STRINGLIST.size() == 0  && !isTen) {
                 findViewById(R.id.islayout).setVisibility(View.GONE);
                 findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 findViewById(R.id.wlyc).setVisibility(View.VISIBLE);

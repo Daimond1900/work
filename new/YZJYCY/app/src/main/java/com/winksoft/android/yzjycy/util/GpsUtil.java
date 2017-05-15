@@ -95,6 +95,10 @@ public class GpsUtil {
             mLocation = location;
             mBaseLocation.latitude = mLocation.getLatitude();
             mBaseLocation.longitude = mLocation.getLongitude();
+            mBaseLocation.province = mLocation.getProvince();
+            mBaseLocation.city = mLocation.getCity();
+            mBaseLocation.district = mLocation.getDistrict();
+            mBaseLocation.street = mLocation.getStreet();
 
             StringBuilder currentPosition = new StringBuilder();
             currentPosition
@@ -154,5 +158,9 @@ public class GpsUtil {
     public class MLocation {
         public double latitude;
         public double longitude;
+        public String province; //省
+        public String city; //市
+        public String district; //区
+        public String street; //街道
     }
 }
