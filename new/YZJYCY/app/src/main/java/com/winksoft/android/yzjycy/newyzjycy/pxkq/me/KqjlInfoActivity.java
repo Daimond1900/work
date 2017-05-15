@@ -202,7 +202,6 @@ public class KqjlInfoActivity extends BaseActivity implements View.OnClickListen
 
 
     private void formatData(List<Map<String, String>> STRINGLIST) {
-        Log.d("Kqlb", "formatData: STRINGLIST == " + STRINGLIST);
         if (STRINGLIST != null) {
             if (STRINGLIST.size() < 10 && STRINGLIST.size() >= 0) {
                 Log.d("Kqlb", "formatData: --------------------------------------------+++++");

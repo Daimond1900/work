@@ -70,7 +70,7 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
     private XwzxDAL xwzxDAL;
     private GpsUtil gpsUtil;
     private TextView dwdz;
-    private String mProvince = "", mCity= "", mDistrict= "", mStreet= "";
+    private String mProvince = "", mCity = "", mDistrict = "", mStreet = "";
     private Dialog mDialog;
 
     @Override
@@ -89,7 +89,7 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
 
     }
 
-    private void doKqDw(){
+    private void doKqDw() {
         mDialog = CustomeProgressDialog.createLoadingDialog(
                 KqInfoSureActivity.this, "正在定位中,请稍后...");
         mDialog.show();
@@ -125,15 +125,15 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
 
                 if (latitude != 0.0 && longitude != 0.0) {
                     commonUtil.shortToast("考勤定位成功");
-                    if ("".equals(mProvince) && "".equals(mCity)&& "".equals(mDistrict)&& "".equals(mStreet)) {
+                    if ("".equals(mProvince) && "".equals(mCity) && "".equals(mDistrict) && "".equals(mStreet)) {
                         dwdz.setOnClickListener(KqInfoSureActivity.this);
                         commonUtil.shortToast("考勤定位失败");
                         dwdz.setText("定位失败，点击重新定位！");
-                    }else{
+                    } else {
                         dwdz.setText(mProvince + mCity + mDistrict + mStreet);
                     }
 
-                    if (mDialog !=null) {
+                    if (mDialog != null) {
                         mDialog.dismiss();
                     }
 
@@ -141,7 +141,9 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                     dwdz.setOnClickListener(KqInfoSureActivity.this);
                     commonUtil.shortToast("考勤定位失败");
                     dwdz.setText("定位失败，点击重新定位！");
-                    mDialog.dismiss();
+                    if (mDialog != null) {
+                        mDialog.dismiss();
+                    }
                 }
                 Log.d(TAG, "handleMessage: 考勤地址 = " + mProvince + " " + mCity + " " + mDistrict + " " + mStreet);
                 if (gpsUtil != null)
@@ -187,11 +189,11 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 this.finish();
                 break;
             case R.id.btn_yeskq: // 确定
-                if(latitude != 0.0 && longitude != 0.0){
+                if (latitude != 0.0 && longitude != 0.0) {
                     isPost = true;
                     postData();
                     onPostData();
-                }else{
+                } else {
                     commonUtil.shortToast("考勤定位失败,请重新定位！");
                 }
 
