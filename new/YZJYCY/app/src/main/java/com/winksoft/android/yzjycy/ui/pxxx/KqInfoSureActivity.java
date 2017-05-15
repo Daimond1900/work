@@ -56,7 +56,6 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
     private String provider;// 位置提供器
     private Double longitude = 0.0; // 经度
     private Double latitude = 0.0; // 纬
-    // private String sj = ""; // 签到时间 private Map<String,String>
     private Map<String, String> postParams, postResult;
     private ProgressDialog progressDialog;
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -123,6 +122,9 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 mDistrict = gpsUtil.getBaseLocation().district;//区
                 mStreet = gpsUtil.getBaseLocation().street;//街道
                 mStreetNumber = gpsUtil.getBaseLocation().streetNumber;//街道号码
+                if(!"".equals(mStreetNumber)){
+                    mStreetNumber += "号";
+                }
                 if (latitude != 0.0 && longitude != 0.0) {
                     commonUtil.shortToast("考勤定位成功");
                     if ("".equals(mProvince) && "".equals(mCity) && "".equals(mDistrict) && "".equals(mStreet) && "".equals(mStreetNumber)) {
@@ -202,25 +204,8 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 }
                 break;
             case R.id.dwdz: // 点击重新定位
-//                //定位
+
                 doKqDw();
-//                mDialog = CustomeProgressDialog.createLoadingDialog(
-//                        KqInfoSureActivity.this, "正在定位中,请稍后...");
-//                mDialog.show();
-//                try {
-//                    Thread thread1 = new Thread() {
-//                        @Override
-//                        public void run() {
-//                            gpsUtil = GpsUtil.getInstance(KqInfoSureActivity.this);
-//                            gpsUtil.startMonitor();
-//                            GpsUtil.mHandler = mHandler;
-//                        }
-//                    };
-//                    thread1.start();
-//
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
                 break;
             default:
                 break;
