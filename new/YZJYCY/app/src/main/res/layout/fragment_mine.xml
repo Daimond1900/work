@@ -501,6 +501,7 @@
                 <LinearLayout
                     android:id="@+id/layout_mine_update"
                     style="@style/MineItemStyle"
+                    android:visibility="gone"
                     android:background="@drawable/bg_item_center">
 
                     <ImageView

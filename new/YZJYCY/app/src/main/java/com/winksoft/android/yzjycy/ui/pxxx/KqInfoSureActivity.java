@@ -204,7 +204,6 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 }
                 break;
             case R.id.dwdz: // 点击重新定位
-
                 doKqDw();
                 break;
             default:
