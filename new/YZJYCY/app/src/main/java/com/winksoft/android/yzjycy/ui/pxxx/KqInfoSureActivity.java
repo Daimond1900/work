@@ -70,7 +70,7 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
     private XwzxDAL xwzxDAL;
     private GpsUtil gpsUtil;
     private TextView dwdz;
-    private String mProvince = "", mCity = "", mDistrict = "", mStreet = "";
+    private String mProvince = "", mCity = "", mDistrict = "", mStreet = "", mStreetNumber = "";
     private Dialog mDialog;
 
     @Override
@@ -122,15 +122,15 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 mCity = gpsUtil.getBaseLocation().city;//市
                 mDistrict = gpsUtil.getBaseLocation().district;//区
                 mStreet = gpsUtil.getBaseLocation().street;//街道
-
+                mStreetNumber = gpsUtil.getBaseLocation().streetNumber;//街道号码
                 if (latitude != 0.0 && longitude != 0.0) {
                     commonUtil.shortToast("考勤定位成功");
-                    if ("".equals(mProvince) && "".equals(mCity) && "".equals(mDistrict) && "".equals(mStreet)) {
+                    if ("".equals(mProvince) && "".equals(mCity) && "".equals(mDistrict) && "".equals(mStreet) && "".equals(mStreetNumber)) {
                         dwdz.setOnClickListener(KqInfoSureActivity.this);
                         commonUtil.shortToast("考勤定位失败");
                         dwdz.setText("定位失败，点击重新定位！");
                     } else {
-                        dwdz.setText(mProvince + mCity + mDistrict + mStreet);
+                        dwdz.setText(mProvince + mCity + mDistrict + mStreet + mStreetNumber);
                     }
 
                     if (mDialog != null) {
@@ -140,7 +140,7 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 } else {
                     dwdz.setOnClickListener(KqInfoSureActivity.this);
                     commonUtil.shortToast("考勤定位失败");
-                    dwdz.setText("定位失败，点击重新定位！");
+                    dwdz.setText("定位失败，请检查网络情况后，点击重新定位！");
                     if (mDialog != null) {
                         mDialog.dismiss();
                     }
@@ -189,14 +189,17 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 this.finish();
                 break;
             case R.id.btn_yeskq: // 确定
-                if (latitude != 0.0 && longitude != 0.0) {
-                    isPost = true;
-                    postData();
-                    onPostData();
+                if (!commonUtil.checkNetWork()) {/*dialogUtil.shortToast("请设置网络连接!");*/
+                    dialogUtil.alertNetError();
                 } else {
-                    commonUtil.shortToast("考勤定位失败,请重新定位！");
+                    if (latitude != 0.0 && longitude != 0.0) {
+                        isPost = true;
+                        postData();
+                        onPostData();
+                    } else {
+                        commonUtil.shortToast("考勤定位失败,请重新定位！");
+                    }
                 }
-
                 break;
             case R.id.dwdz: // 点击重新定位
 //                //定位

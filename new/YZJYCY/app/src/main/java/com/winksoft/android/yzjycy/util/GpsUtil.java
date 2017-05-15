@@ -99,6 +99,7 @@ public class GpsUtil {
             mBaseLocation.city = mLocation.getCity();
             mBaseLocation.district = mLocation.getDistrict();
             mBaseLocation.street = mLocation.getStreet();
+            mBaseLocation.streetNumber = mLocation.getStreetNumber();
 
             StringBuilder currentPosition = new StringBuilder();
             currentPosition
@@ -162,5 +163,6 @@ public class GpsUtil {
         public String city; //市
         public String district; //区
         public String street; //街道
+        public String streetNumber;//门牌号号码
     }
 }
