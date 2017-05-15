@@ -1,11 +1,22 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
+    //work
+    /*signingConfigs {
         YZJYCY {
             keyAlias 'YZJYCY'
             keyPassword '123456'
             storeFile file('F:/key/yzjycy.keystore')
+            storePassword '123456'
+        }
+    }*/
+
+    //home
+   signingConfigs {
+        YZJYCY {
+            keyAlias 'YZJYCY'
+            keyPassword '123456'
+            storeFile file('C:/Users/1900/Desktop/work/new/key/yzjycy.keystore')
             storePassword '123456'
         }
     }
