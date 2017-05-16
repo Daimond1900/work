@@ -1,25 +1,13 @@
 package com.winksoft.android.yzjycy.newyzjycy.wd.jl;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.SimpleAdapter;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.winksoft.android.yzjycy.BaseActivity;
-import com.winksoft.android.yzjycy.CustomeProgressDialog;
 import com.winksoft.android.yzjycy.R;
-import com.winksoft.android.yzjycy.data.XwzxDAL;
-import com.winksoft.android.yzjycy.util.CommonUtil;
-import com.yifeng.nox.android.http.http.AjaxCallBack;
-import com.yifeng.nox.android.json.DataConvert;
-
-import java.util.List;
-import java.util.Map;
 
 /**
  * 修改简历 主界面
@@ -105,7 +93,4 @@ public class ModifyJLActivity extends BaseActivity implements View.OnClickListen
                 break;
         }
     }
-
-
-
 }

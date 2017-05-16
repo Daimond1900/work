@@ -81,10 +81,18 @@ public class ModifyYynlInfo extends BaseActivity implements View.OnClickListener
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (map.get("success").equals("true")) {
-                list.setVisibility(View.VISIBLE);
-                setPage(DataConvert.toConvertStringList(json, "table"));
-                wsj_img.setVisibility(View.GONE);
-                wsj_tv.setVisibility(View.GONE);
+                List<Map<String, String>> table = DataConvert.toConvertStringList(json, "table");
+                if(table != null && table.size()>0){
+                    setPage(table);
+                    list.setVisibility(View.VISIBLE);
+                    wsj_img.setVisibility(View.GONE);
+                    wsj_tv.setVisibility(View.GONE);
+                }else{
+                    wsj_tv.setText("暂无记录，赶紧完善它吧！");
+                    wsj_img.setVisibility(View.VISIBLE);
+                    wsj_tv.setVisibility(View.VISIBLE);
+                    list.setVisibility(View.GONE);
+                }
             } else {
                 wsj_tv.setText("暂无记录，赶紧完善它吧！");
                 wsj_img.setVisibility(View.VISIBLE);
