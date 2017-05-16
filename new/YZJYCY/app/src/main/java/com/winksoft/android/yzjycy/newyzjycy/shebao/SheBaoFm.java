@@ -132,13 +132,13 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
     private void queryInfo(StringBuilder url, String title) {
         HashMap<String, String> map = new HashMap<>();
         map.put("id", user.getUserId());
-        map.put("dateTime", DateUtil.getStrCurrentDateTime());
+        map.put("datetime", DateUtil.getStrCurrentDateTime());
         String secret_value = DateUtil.getStrCurrentDate();
         map.put("Date", secret_value);
         HashMap SignHashMap = ParamSignUtils.sign(map, secret_key);
 
         url.append("?id=").append(user.getUserId())
-                .append("&&dateTime=").append(map.get("dateTime"))
+                .append("&&datetime=").append(map.get("datetime"))
                 .append("&&appSign=").append(SignHashMap.get("appSign"));
         Intent i = new Intent(getActivity(), CommonPageView.class);
         i.putExtra("url", url.toString());

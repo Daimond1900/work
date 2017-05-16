@@ -525,7 +525,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
     public void checkUserInfo(AjaxCallBack<?> callBack) {
         Map<String, String> map = new HashMap<String, String>();
         map.put("id", user.getUserId());
-        map.put("dateTime", DateUtil.getStrCurrentDateTime());
+        map.put("datetime", DateUtil.getStrCurrentDateTime());
         String secret_value = DateUtil.getStrCurrentDate();
         map.put("Date", secret_value);
         HashMap SignHashMap = ParamSignUtils.sign(map, secret_key);
@@ -550,7 +550,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
         map.put("sbcard", sbcard);
         map.put("idnumber", idnumber);
         map.put("phone", phone);
-        map.put("dateTime", DateUtil.getStrCurrentDateTime());
+        map.put("datetime", DateUtil.getStrCurrentDateTime());
         String secret_value = DateUtil.getStrCurrentDate();
         map.put("Date", secret_value);
         HashMap SignHashMap = ParamSignUtils.sign(map, secret_key);
