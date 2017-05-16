@@ -13,7 +13,6 @@ import com.winksoft.android.yzjycy.R;
  * 修改简历 主界面
  * Created by 1900 on 2017/4/18.
  */
-
 public class ModifyJLActivity extends BaseActivity implements View.OnClickListener {
     private int pdBt;
 
