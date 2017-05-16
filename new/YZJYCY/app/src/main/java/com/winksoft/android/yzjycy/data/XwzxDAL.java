@@ -118,12 +118,13 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
         map.put("page", page + "");
         post(Constants.IP + "android/attendance/listQuestionnaire", callBack, map);
     }
+
     /**
      * 查询我的问卷调查列表
      */
-    public void queryWdWjdcInfo(String userid,int page, AjaxCallBack<?> callBack) {
+    public void queryWdWjdcInfo(String userid, int page, AjaxCallBack<?> callBack) {
         Map<String, String> map = new HashMap<String, String>();
-        map.put("userid",userid);
+        map.put("userid", userid);
         String secret_value = DateUtil.getStrCurrentDate();
         map.put("Date", secret_value);
         HashMap SignHashMap = ParamSignUtils.sign(map, secret_key);
@@ -641,9 +642,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
      */
     public void doKqInfoQuery(int page, String keyword, AjaxCallBack<?> callBack) {
         Map<String, String> map = new HashMap<String, String>();
-//        map.put("keyword", keyword);
         map.put("userid", !Constants.iflogin ? "" : user.getUserId());
-        Log.d(TAG, "doKqInfoQuery: ---------------------" + user.getUserId());
         String secret_value = DateUtil.getStrCurrentDate();
         map.put("Date", secret_value);
         HashMap SignHashMap = ParamSignUtils.sign(map, secret_key);
