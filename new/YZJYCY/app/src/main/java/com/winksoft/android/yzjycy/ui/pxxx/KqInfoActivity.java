@@ -1,8 +1,15 @@
 package com.winksoft.android.yzjycy.ui.pxxx;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.winksoft.android.yzjycy.CustomeProgressDialog;
 import com.winksoft.android.yzjycy.R;
@@ -13,16 +20,9 @@ import com.winksoft.nox.android.view.YFBaseAdapter;
 import com.yifeng.nox.android.http.http.AjaxCallBack;
 import com.yifeng.nox.android.json.DataConvert;
 
-import android.app.Dialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.AdapterView.OnItemClickListener;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class KqInfoActivity extends BaseListActivity implements OnClickListener {
 	private final String TAG = "KqInfoActivity";
@@ -108,7 +108,7 @@ public class KqInfoActivity extends BaseListActivity implements OnClickListener 
 				onListviewonFailure();
 			}
 		};
-		xwzxDAL.doKqInfoQuery(SUPERPAGENUM,keyWord, callBack);
+//		xwzxDAL.doKqInfoQuery(SUPERPAGENUM,keyWord, callBack);
 	}
 
 	/**

@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,8 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
     private CommonUtil commonUtil;
     private DialogUtil dialogUtil;
 
+    private static final String TAG = "SheBaoFm";
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -49,13 +52,12 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
         }
         commonUtil = new CommonUtil(getActivity());
         dialogUtil = new DialogUtil(getActivity());
-        UserSession userSession = new UserSession(getActivity());
-        user = userSession.getUser();
         layout = inflater.inflate(R.layout.fragment_shebao, container, false);
         xwzxDAL = new XwzxDAL(getActivity());
         initView();
         return layout;
     }
+
 
     private void initView() {
         View layout_shebao_ylj = layout.findViewById(R.id.layout_shebao_ylj);
@@ -172,7 +174,7 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
                     proDialog.dismiss();
             }
         };
-        xwzxDAL.checkUserInfo(callBack);
+        xwzxDAL.checkUserInfo(user.getUserId(),callBack);
     }
 
     private void postResult(String json) {
@@ -180,6 +182,9 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
         if (map != null) {
             if (("true").equals(map.get("success"))) {
                 isBindInfo = true;
+                Log.d(TAG, "postResult: 返回结果 = " + map);
+            }else{
+                isBindInfo = false;
             }
         }
     }
@@ -188,6 +193,9 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
+        UserSession userSession = new UserSession(getActivity());
+        user = userSession.getUser();
+        Log.d(TAG, "onResume: ID = " + user.getUserId() );
         loadDate();
     }
 

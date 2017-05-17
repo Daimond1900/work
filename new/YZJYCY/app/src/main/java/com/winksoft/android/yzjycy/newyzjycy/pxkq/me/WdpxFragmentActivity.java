@@ -166,7 +166,7 @@ public class WdpxFragmentActivity extends BaseActivity implements View.OnClickLi
                     proDialog.dismiss();
             }
         };
-        xwzxDAL.doKqInfoQuery(temp_data_count_page, "", callBack);
+        xwzxDAL.doKqInfoQuery(temp_data_count_page, "", user.getUserId(),callBack);
     }
 
     /**

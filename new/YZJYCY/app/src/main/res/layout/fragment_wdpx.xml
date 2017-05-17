@@ -9,7 +9,7 @@
     <com.liaoinstan.springview.widget.SpringView
         android:id="@+id/springview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1">
 
         <ScrollView
@@ -47,10 +47,10 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="100dp"
                     android:drawablePadding="10dp"
-                    android:textColor="@color/register_tab_button_font"
                     android:drawableTop="@mipmap/wsj"
                     android:gravity="center"
-                    android:text="点击登录！" />
+                    android:text="点击登录！"
+                    android:textColor="@color/register_tab_button_font" />
 
                 <TextView
                     android:id="@+id/kb"
@@ -61,6 +61,5 @@
                 <include layout="@layout/wlyc_info"></include>
             </LinearLayout>
         </ScrollView>
-        >
     </com.liaoinstan.springview.widget.SpringView>
 </LinearLayout>

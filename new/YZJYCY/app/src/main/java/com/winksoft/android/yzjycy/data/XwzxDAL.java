@@ -523,9 +523,12 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
     /**
      * 社保查询，检查用户信息是否完整
      */
-    public void checkUserInfo(AjaxCallBack<?> callBack) {
+    public void checkUserInfo(String userid,AjaxCallBack<?> callBack) {
         Map<String, String> map = new HashMap<String, String>();
-        map.put("id", user.getUserId());
+        map.put("id", userid);
+
+        Log.d("SheBaoFm", "checkUserInfo: 社保ID = " +  userid);
+
         map.put("datetime", DateUtil.getStrCurrentDateTime());
         String secret_value = DateUtil.getStrCurrentDate();
         map.put("Date", secret_value);
@@ -640,9 +643,10 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
     /**
      * 考勤信息列表
      */
-    public void doKqInfoQuery(int page, String keyword, AjaxCallBack<?> callBack) {
+    public void doKqInfoQuery(int page, String keyword, String userid,AjaxCallBack<?> callBack) {
         Map<String, String> map = new HashMap<String, String>();
-        map.put("userid", !Constants.iflogin ? "" : user.getUserId());
+        map.put("userid", userid);
+        Log.d("cc_pxbm", "doKqInfoQuery: 传值ID = " + userid);
         String secret_value = DateUtil.getStrCurrentDate();
         map.put("Date", secret_value);
         HashMap SignHashMap = ParamSignUtils.sign(map, secret_key);

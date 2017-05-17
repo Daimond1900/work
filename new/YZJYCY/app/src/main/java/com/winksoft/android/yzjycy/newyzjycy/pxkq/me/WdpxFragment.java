@@ -4,7 +4,9 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +20,8 @@ import com.winksoft.android.yzjycy.MyListView1;
 import com.winksoft.android.yzjycy.R;
 import com.winksoft.android.yzjycy.activity.LoginActivity;
 import com.winksoft.android.yzjycy.data.XwzxDAL;
+import com.winksoft.android.yzjycy.newentity.User;
+import com.winksoft.android.yzjycy.newentity.UserSession;
 import com.winksoft.android.yzjycy.ui.pxxx.KqInfoDetailsActivity;
 import com.winksoft.android.yzjycy.util.Constants;
 import com.winksoft.nox.android.view.YFBaseAdapter;
@@ -49,12 +53,21 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
     private boolean isBotom = false;
     private boolean isTen = false;
 
+    private User user;
+    private UserSession userSession;
+
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
-
+//            Log.d("cc_pxbm", "setUserVisibleHint: ID = " + user.getUserId());
         }
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Log.d("cc_pxbm", "onViewCreated: ");
     }
 
     @Override
@@ -64,13 +77,14 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
             // 防止多次new出片段对象，造成图片错乱问题
             return view;
         }
+        Log.d("cc_pxbm", "onCreateView: ");
+
         view = inflater.inflate(R.layout.fragment_wdpx, null);
         xwzxDAL = new XwzxDAL(getActivity());
         tx_dl = (TextView) view.findViewById(R.id.tx_dl);
         tx_dl.setOnClickListener(this);
 
         listview = (MyListView1) view.findViewById(R.id.id_lv);
-
 
         yfbaseAdapter = new YFBaseAdapter(getActivity(), mapList, R.layout.kq_list_item,
                 new String[]{"class_id", "class_name"},
@@ -135,6 +149,7 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
+        Log.d("cc_pxbm", "onResume: ");
         if (!Constants.iflogin) {
             tx_dl.setVisibility(View.VISIBLE);
             listview.setVisibility(View.GONE);
@@ -144,11 +159,11 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
             springView.setEnable(true);
             springView.setGive(SpringView.Give.TOP);
             springView.getFooterView().setVisibility(View.GONE);
-        } else if (Constants.iflogin && sc == 0) {
+        } else if (Constants.iflogin) {
             tx_dl.setVisibility(View.GONE);
             listview.setVisibility(View.VISIBLE);
-            loadDate();
-            sc++;
+            refreshData();
+            yfbaseAdapter.notifyDataSetChanged();
         } else {
             tx_dl.setVisibility(View.GONE);
             listview.setVisibility(View.VISIBLE);
@@ -157,6 +172,9 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
 
     //模拟刷新数据
     private void refreshData() {
+        userSession = new UserSession(getActivity());
+        user = userSession.getUser();
+        Log.d("cc_pxbm", "refreshData: ID = " + user.getUserId());
         mapList.clear();
         temp_data_count_page = 0;//回到第一页
         loadDate();
@@ -238,7 +256,7 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
                     proDialog.dismiss();
             }
         };
-        xwzxDAL.doKqInfoQuery(temp_data_count_page, "", callBack);
+        xwzxDAL.doKqInfoQuery(temp_data_count_page, "",user.getUserId(), callBack);
     }
 
     /**
@@ -246,6 +264,7 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
      */
     private void postResult(String json) {
         Map<String, String> map = DataConvert.toMap(json);
+        Log.d("cc_pxbm", "postResult: map = " + map);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
                 springView.setGive(SpringView.Give.BOTH);

@@ -210,7 +210,7 @@ public class QztEnterpriseView extends BaseActivity {
             txturl.setText(url);    //网址
 
             //公司简介
-            String desc = enterInfo.get("dwjj") == null ? "" : enterInfo.get("dwjj");
+            String desc = enterInfo.get("aab092") == null ? "" : enterInfo.get("aab092");
             companyDesc.setText(Html.fromHtml("".equals(desc) ? "暂无简介" : desc));
 
             //如果公司地址为空就显示公司名字
