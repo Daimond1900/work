@@ -16,7 +16,7 @@
             android:id="@+id/textView2"
             style="@style/topTilteStyle"
             android:drawableLeft="@mipmap/home_logo"
-            android:text="扬州就业创业APP" />
+            android:text="扬州创业就业APP" />
 
         <Button
             android:id="@+id/btLogin"

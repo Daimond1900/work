@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">扬州就业创业</string>
+    <string name="app_name">扬州创业就业</string>
     <string name="alert_dialog_cancel">取消</string>
     <string name="alert_dialog_ok">确认</string>
     <string name="alert_dialog_finish_title">退出程序</string>
