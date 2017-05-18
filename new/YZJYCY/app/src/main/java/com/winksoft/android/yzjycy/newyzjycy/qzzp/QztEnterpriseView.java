@@ -232,6 +232,4 @@ public class QztEnterpriseView extends BaseActivity {
             commonUtil.shortToast("信息加载失败!");
         }
     }
-
-
 }
