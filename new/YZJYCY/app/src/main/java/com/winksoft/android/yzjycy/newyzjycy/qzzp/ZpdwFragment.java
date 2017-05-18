@@ -354,6 +354,7 @@ public class ZpdwFragment extends Fragment {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            isTen = false;
                             refreshData();
                         }
                     }, 25);

@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +54,7 @@ public class ZpxxFragment extends Fragment {
     private SpringView springView;
     private boolean isTen = false;
 
+    private static final String TAG = "ZpxxFragment";
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -330,6 +332,7 @@ public class ZpxxFragment extends Fragment {
 
     private void postResult(String json) {
         Map<String, String> map = DataConvert.toMap(json);
+        Log.d(TAG, "postResult: 返回数据 Map " + map);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
                 springView.setGive(SpringView.Give.BOTH);
@@ -427,6 +430,7 @@ public class ZpxxFragment extends Fragment {
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
+                            isTen = false;
                             refreshData();
                         }
                     }, 25);
