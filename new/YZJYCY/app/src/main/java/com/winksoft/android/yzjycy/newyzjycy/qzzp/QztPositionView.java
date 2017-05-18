@@ -639,9 +639,14 @@ public class QztPositionView extends BaseActivity {
             zwmcpost = commonUtil.getMapValue(positionInfo, "aca112");
             txt_zw.setText(zwmcpost);// 职位名称 招聘工种
             gzsm.setText(commonUtil.getMapValue(positionInfo, "acb22a")); // 工种说明
-            peopleCount.setText("男性:" + commonUtil.getMapValue(positionInfo, "acb21d") + "; 女性:" + commonUtil.getMapValue(positionInfo, "acb21e"));// 招聘人数
+            String nannum = "".equals(commonUtil.getMapValue(positionInfo, "acb21d")) ? "0人" : commonUtil.getMapValue(positionInfo, "acb21d")+"人";
+            String nvnum = "".equals(commonUtil.getMapValue(positionInfo, "acb21e")) ? "0人" : commonUtil.getMapValue(positionInfo, "acb21e")+"人";
+
+            peopleCount.setText("男性:" + nannum
+                    + "; 女性:" + nvnum);// 招聘人数
+
             pushDate.setText(commonUtil.getMapValue(positionInfo, "aae397") + "~" + commonUtil.getMapValue(positionInfo, "aae398"));// 有效期
-            String price = commonUtil.getMapValue(positionInfo, "acb241");
+            String price = "".equals(commonUtil.getMapValue(positionInfo, "acb241")) ? "0元" : commonUtil.getMapValue(positionInfo, "acb241")+"元";
             if ("".equals(price))
                 price = "面议";
             monthlyPay.setText(price);// 工资
@@ -650,10 +655,22 @@ public class QztPositionView extends BaseActivity {
             lxr.setText(commonUtil.getMapValue(positionInfo, "aae004"));
             sxzy.setText(commonUtil.getMapValue(positionInfo, "aac183"));
             xl.setText(commonUtil.getMapValue(positionInfo, "aac011"));// 学历
-            nl.setText(commonUtil.getMapValue(positionInfo, "acb221") + "~" + commonUtil.getMapValue(positionInfo, "acb222"));//年龄
-            sgtz.setText("身高:" + commonUtil.getMapValue(positionInfo, "aac034") + "; 体重:" + commonUtil.getMapValue(positionInfo, "aac035"));
+
+            String maxnl = "".equals(commonUtil.getMapValue(positionInfo, "acb222")) ? "0岁" : commonUtil.getMapValue(positionInfo, "acb222")+"岁";
+            String minnl = "".equals(commonUtil.getMapValue(positionInfo, "acb221")) ? "0岁" : commonUtil.getMapValue(positionInfo, "acb221")+"岁";
+
+
+            nl.setText(minnl + "~" + maxnl);//年龄
+
+            String sgtz1 = "".equals(commonUtil.getMapValue(positionInfo, "aac034")) ? "0cm" : commonUtil.getMapValue(positionInfo, "aac034")+"cm";
+            String sgtz2 = "".equals(commonUtil.getMapValue(positionInfo, "aac035")) ? "0kg" : commonUtil.getMapValue(positionInfo, "aac035")+"kg";
+            sgtz.setText("身高:" + sgtz1 + "; 体重:" + sgtz2);
+
             gxrq.setText(commonUtil.getMapValue(positionInfo, "aae397"));
-            cyns.setText(commonUtil.getMapValue(positionInfo, "acc217"));
+
+            String cyns1 = "".equals(commonUtil.getMapValue(positionInfo, "acc217")) ? "0年" : commonUtil.getMapValue(positionInfo, "acc217")+"年";
+
+            cyns.setText(cyns1);
             area.setText(positionInfo.get("aab301"));// 用工区域
 
 

@@ -110,7 +110,7 @@ public class PxDetailsActivity extends BaseActivity implements OnClickListener {
                     startActivity(loginIntent);
                 } else {
                     if (verifyFlag == 1 && mIsWs) {
-                        doBm();
+                        doBmts();
                     } else if (verifyFlag == 2) {
                         commonUtil.shortToast("请完善个人信息!");
                         // 跳转到 完整个人信息的界面
@@ -140,6 +140,36 @@ public class PxDetailsActivity extends BaseActivity implements OnClickListener {
                 break;
         }
     }
+
+    /**
+     * 报名的提示框
+     */
+    public void doBmts() {
+        final Dialog builder = new Dialog(this, R.style.dialog);
+        builder.setContentView(R.layout.zpt_confirm_dialog);
+        TextView ptitle = (TextView) builder.findViewById(R.id.pTitle);
+        TextView pMsg = (TextView) builder.findViewById(R.id.pMsg);
+        ptitle.setText("培训报名");
+        pMsg.setText("确定要报名吗？");
+        final Button confirm_btn = (Button) builder.findViewById(R.id.confirm_btn);
+        Button cancel_btn = (Button) builder.findViewById(R.id.cancel_btn);
+        confirm_btn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                confirm_btn.setEnabled(false);
+                doBm();
+                builder.dismiss();
+            }
+        });
+
+        cancel_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                builder.dismiss();
+            }
+        });
+        builder.show();
+    }
+
 
     @Override
     protected void onResume() {

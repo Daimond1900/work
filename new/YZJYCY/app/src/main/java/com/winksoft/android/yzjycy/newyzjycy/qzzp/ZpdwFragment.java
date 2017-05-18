@@ -313,6 +313,7 @@ public class ZpdwFragment extends Fragment {
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
+                springView.setGive(SpringView.Give.BOTH);
                 formatData(DataConvert.toConvertStringList(json, "table"));
                 yfbaseAdapter.notifyDataSetChanged();
                 listview.setVisibility(View.VISIBLE);

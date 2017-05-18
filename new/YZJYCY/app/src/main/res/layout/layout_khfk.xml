@@ -56,7 +56,7 @@
             android:maxLines="1"
             android:text="客户姓名："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/khmc"
@@ -97,12 +97,13 @@
             android:textColor="#FF0000" />
 
         <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="1"
             android:text="手机号码："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/sjhm"
@@ -150,7 +151,7 @@
             android:maxLines="1"
             android:text="电子邮箱："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/dzyj"
@@ -189,7 +190,7 @@
             android:layout_gravity="left"
             android:maxLength="20"
             android:text="*"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FF0000" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -197,7 +198,7 @@
             android:maxLines="1"
             android:text="反馈类型："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <Spinner
             android:id="@+id/fklx"
@@ -235,7 +236,7 @@
             android:layout_gravity="left"
             android:maxLength="20"
             android:text="*"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FF0000" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -243,7 +244,7 @@
             android:maxLines="1"
             android:text="反馈主题："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/fkzt"
@@ -281,7 +282,7 @@
             android:layout_gravity="left"
             android:maxLength="20"
             android:text="*"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FF0000" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -289,7 +290,7 @@
             android:maxLines="1"
             android:text="反馈内容："
             android:textColor="#444444"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/fknr"

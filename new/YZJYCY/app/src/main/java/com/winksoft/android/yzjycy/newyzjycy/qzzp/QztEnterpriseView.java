@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -33,6 +34,7 @@ public class QztEnterpriseView extends BaseActivity {
     private String companyNameStr;
     private String zphId = "";
     private String companyNames = "";
+    private static final String TAG = "QztEnterpriseView";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -203,10 +205,10 @@ public class QztEnterpriseView extends BaseActivity {
             txtemail.setText(email);    //邮箱
 
 
-            String faxes = enterInfo.get("aae014") == null ? "" : enterInfo.get("aae014");
+            String faxes = enterInfo.get("aae387") == null ? "" : enterInfo.get("aae387");
             txtfaxes.setText(faxes);    //传真
 
-            String url = enterInfo.get("aae016") == null ? "" : enterInfo.get("aae016");
+            String url = enterInfo.get("aae392") == null ? "" : enterInfo.get("aae392");
             txturl.setText(url);    //网址
 
             //公司简介
@@ -215,7 +217,8 @@ public class QztEnterpriseView extends BaseActivity {
 
             //如果公司地址为空就显示公司名字
             String address = enterInfo.get("aae006") == null ? "" : enterInfo.get("aae006");
-            companyAddress.setText("".equals(address) ? companyNames : address + "	(地图定位)");
+            Log.d(TAG, "setPageData: 公司名称  == " + companyNameStr);
+            companyAddress.setText("".equals(address) ? companyNameStr : address + "	(地图定位)");
 
             String dwzb = enterInfo.get("dwzb") == null ? "" : enterInfo.get("dwzb");
             if (!"".equals(dwzb)) {
