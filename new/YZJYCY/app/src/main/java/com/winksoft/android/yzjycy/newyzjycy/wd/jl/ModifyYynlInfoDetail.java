@@ -287,6 +287,7 @@ public  class ModifyYynlInfoDetail extends BaseActivity implements View.OnClickL
         if (map != null) {
             if (("true").equals(map.get("success"))) {
                 commonUtil.shortToast(map.get("msg"));
+                this.finish();
             } else {
                 commonUtil.shortToast(map.get("msg"));
             }
@@ -329,6 +330,7 @@ public  class ModifyYynlInfoDetail extends BaseActivity implements View.OnClickL
         if (map != null) {
             if (("true").equals(map.get("success"))) {
                 commonUtil.shortToast(map.get("msg"));
+                this.finish();
             } else {
                 commonUtil.shortToast(map.get("msg"));
             }

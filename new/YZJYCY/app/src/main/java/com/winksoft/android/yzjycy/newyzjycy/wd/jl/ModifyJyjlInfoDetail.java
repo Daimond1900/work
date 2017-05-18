@@ -121,6 +121,7 @@ public class ModifyJyjlInfoDetail extends BaseActivity implements View.OnClickLi
         if (map != null) {
             if (("true").equals(map.get("success"))) {
                 commonUtil.shortToast(map.get("msg"));
+                this.finish();
             } else {
                 commonUtil.shortToast(map.get("msg"));
             }
@@ -163,6 +164,7 @@ public class ModifyJyjlInfoDetail extends BaseActivity implements View.OnClickLi
         if (map != null) {
             if (("true").equals(map.get("success"))) {
                 commonUtil.shortToast(map.get("msg"));
+                this.finish();
             } else {
                 commonUtil.shortToast(map.get("msg"));
             }
