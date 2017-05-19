@@ -217,7 +217,11 @@ public class HomeFm extends Fragment {
                     if (table.get("picpath") == null || "".equals(table.get("picpath"))) {
                         url = Constants.IP + "attached/recruit/main_banner1.png";
                     } else {
-                        url = Constants.IP + table.get("picpath").replace("\\", "/");
+//                        url = Constants.IP + table.get("picpath").replace("\\", "/");
+                        Log.d("heool", "postLoadBannerImgResult: 图片地址" + table.get("picpath").replace("\\", "/"));
+                        String tpdz = table.get("picpath").replace("\\", "/");
+                        tpdz.substring(2);
+                        url = "http://222.189.216.110:8010" + tpdz.substring(2);
                     }
                     String zphId = table.get("acb330") != null && !"".equals(table.get("acb330")) ? table.get("acb330") : "";
                     zphIds.add(zphId);

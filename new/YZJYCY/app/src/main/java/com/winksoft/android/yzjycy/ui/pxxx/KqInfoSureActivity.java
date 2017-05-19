@@ -1,5 +1,7 @@
 package com.winksoft.android.yzjycy.ui.pxxx;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
@@ -12,6 +14,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -71,6 +74,12 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
     private TextView dwdz;
     private String mProvince = "", mCity = "", mDistrict = "", mStreet = "", mStreetNumber = "";
     private Dialog mDialog;
+    private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_QX = {
+            Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.CAMERA,
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,8 +93,21 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
         commonUtil = new CommonUtil(this);
         xwzxDAL = new XwzxDAL(this);
         initView();
+
+        // 请求权限的动态加载
+
+        verifyStoragePermissions(this);
         doKqDw();
 
+    }
+
+
+    public static void verifyStoragePermissions(Activity activity) {
+            ActivityCompat.requestPermissions(
+                    activity,
+                    PERMISSIONS_QX,
+                    REQUEST_EXTERNAL_STORAGE
+            );
     }
 
     private void doKqDw() {

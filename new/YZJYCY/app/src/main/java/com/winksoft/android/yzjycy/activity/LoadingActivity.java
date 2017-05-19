@@ -4,11 +4,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
-
-import com.winksoft.android.yzjycy.newyzjycy.MainActivity;
-import com.winksoft.android.yzjycy.R;
-import com.yifeng.nox.android.ui.BaseLoading;
 import android.view.animation.Animation.AnimationListener;
+
+import com.winksoft.android.yzjycy.R;
+import com.winksoft.android.yzjycy.newyzjycy.MainActivity;
+import com.winksoft.android.yzjycy.util.Constants;
+import com.yifeng.nox.android.ui.BaseLoading;
 
 public class LoadingActivity extends BaseLoading{
 	@Override
@@ -34,8 +35,8 @@ public class LoadingActivity extends BaseLoading{
 			@Override
 			public void onAnimationEnd(Animation animation) {
 				//带有自动更新闪屏,参数说明:successToPage 跳至成功界面,failToPage 跳至失败界面,downApkUrl 下载apk地址 ,versionUrl 检测版号txt路径,isShowMsg 是否显示进度文字
-//		        initPage(LoginActivity.class, null, Constants.downapk, Constants.downtxt, false);
-				initPage(MainActivity.class, 1000);
+		        initPage(MainActivity.class, null, Constants.downapk, Constants.downtxt, false);
+//				initPage(MainActivity.class, 1000);
 			}
 		});
 		

@@ -30,7 +30,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-//import com.winksoft.android.yzjycy.fragment.HomeFragment.MyReceiver;
 
 public class ZxFragment extends Fragment {
 	private CommonUtil commonUtil;

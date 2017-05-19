@@ -12,7 +12,7 @@ android {
     }*/
 
     //home
-   signingConfigs {
+    signingConfigs {
         YZJYCY {
             keyAlias 'YZJYCY'
             keyPassword '123456'
