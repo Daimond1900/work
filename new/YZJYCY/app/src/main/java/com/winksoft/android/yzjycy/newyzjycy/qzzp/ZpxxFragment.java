@@ -431,7 +431,6 @@ public class ZpxxFragment extends Fragment {
                         @Override
                         public void run() {
                             isTen = false;
-
                             refreshData();
                         }
                     }, 25);
