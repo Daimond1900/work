@@ -219,9 +219,9 @@ public class HomeFm extends Fragment {
                     } else {
 //                        url = Constants.IP + table.get("picpath").replace("\\", "/");
                         Log.d("heool", "postLoadBannerImgResult: 图片地址" + table.get("picpath").replace("\\", "/"));
-                        String tpdz = table.get("picpath").replace("\\", "/");
-                        tpdz.substring(2);
-                        url = "http://222.189.216.110:8010" + tpdz.substring(2);
+                        url = table.get("picpath").replace("\\", "/");
+//                        tpdz.substring(2);
+//                        url = "http://222.189.216.110:8010" + tpdz.substring(2);
                     }
                     String zphId = table.get("acb330") != null && !"".equals(table.get("acb330")) ? table.get("acb330") : "";
                     zphIds.add(zphId);
