@@ -131,7 +131,7 @@ public class QztPositionView extends BaseActivity {
         }
         Log.d(TAG, "登录是判断 = " + (Constants.iflogin ? user.getUserId() : ""));
 
-        xwzxDAL.getPosition(Constants.iflogin ? user.getUserId() : "", positionId, i, callBack);
+        xwzxDAL.getPosition(Constants.iflogin ? user.getUserId() : "", positionId, i,callBack);
 
     }
 
@@ -317,6 +317,8 @@ public class QztPositionView extends BaseActivity {
     }
 
     private void initPage() {
+        zphId = this.getIntent().getStringExtra("zphId") == null ? "" : this.getIntent().getStringExtra("zphId");
+
         MyOnclick onClick = new MyOnclick();
         // 投递简历
         deliveryBtn = (Button) findViewById(R.id.deliveryBtn);
@@ -361,6 +363,11 @@ public class QztPositionView extends BaseActivity {
 
         // 点击公司查看公司详细
         company_item = (TableRow) findViewById(R.id.company_item);
+
+
+        Log.d(TAG, "initPage: 是否可以点 = " + this.getIntent().getBooleanExtra("isClick",false));
+        
+        
         if (!this.getIntent().getBooleanExtra("isClick", false)) {// 如果是所有职位进来查看公司详细不可点
             findViewById(R.id.im_right).setVisibility(View.VISIBLE);
             company_item.setOnClickListener(onClick);
@@ -411,6 +418,13 @@ public class QztPositionView extends BaseActivity {
                     bl.putExtra("companyId", companyId);
                     Log.d(TAG, "onClick: 公司ID = " + companyId);
                     bl.putExtra("companyName", companyNameStr);
+
+                    Log.d(TAG, "职位详情点击: zphId = " + zphId);
+
+                    if(!"".equals(zphId)){
+                        bl.putExtra("zphId", zphId);
+                    }
+
                     startActivity(bl);
                     break;
                 case R.id.back_btn:
@@ -618,6 +632,7 @@ public class QztPositionView extends BaseActivity {
      * aca112 岗位名称CB21  acb22a 岗位描述CB21
      */
     private void setPageData() {
+        Log.d(TAG, "setPageData-------------------: positionInfo = " + positionInfo);
         if (positionInfo != null) {
 
             isgz = commonUtil.getMapValue(positionInfo, "is_focus");
@@ -634,7 +649,6 @@ public class QztPositionView extends BaseActivity {
             }
             gz = commonUtil.getMapValue(positionInfo, "aca111");
             tv_gz.setText(gz);
-            zphId = commonUtil.getMapValue(positionInfo, "acb330");
             zwId = commonUtil.getMapValue(positionInfo, "acb200");
             zwmcpost = commonUtil.getMapValue(positionInfo, "aca112");
             txt_zw.setText(zwmcpost);// 职位名称 招聘工种

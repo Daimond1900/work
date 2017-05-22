@@ -3,6 +3,7 @@ package com.winksoft.android.yzjycy.newyzjycy.zph;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -159,8 +160,10 @@ public class ZphActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.zpxx: // 招聘信息
                 i = new Intent(this, QztPositionList.class);
+                Log.d("zphid", "onClick: zphId = " + zphId);
                 i.putExtra("zphId", zphId);
                 i.putExtra("flag", "2");
+                i.putExtra("sfkd","1");
                 i.putExtra("companyName", zphmcStr);
                 startActivity(i);
                 break;

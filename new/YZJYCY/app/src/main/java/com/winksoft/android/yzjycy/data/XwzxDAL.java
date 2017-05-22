@@ -407,8 +407,10 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
      * @param positionId
      * @return
      */
-    public void getPosition(String usrId, String positionId, int flag, AjaxCallBack<?> callBack) {
+    public void getPosition(String usrId, String positionId, int flag,AjaxCallBack<?> callBack) {
         String url = "";
+        Map<String, String> map = new HashMap<String, String>();
+
         if (flag == 1) { // 报名职位详情接口
             url = "android/person/viewDelivery";
         } else if (flag == 3) { // 关注职位详情接口
@@ -416,7 +418,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
         } else {
             url = "android/recruit/viewCb21";
         }
-        Map<String, String> map = new HashMap<String, String>();
+
         map.put("id", positionId);//职位编号
         map.put("aac001", usrId);//userId
         String secret_value = DateUtil.getStrCurrentDate();

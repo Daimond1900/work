@@ -146,9 +146,12 @@ public class QztEnterpriseView extends BaseActivity {
                     Intent posotionList = new Intent(QztEnterpriseView.this, QztPositionList.class);
                     posotionList.putExtra("companyName", companyName.getText().toString());
 
+                    Log.d(TAG, "公司详情点击所有职位的: zphId = " + zphId);
+
                     if (!"".equals(zphId)) {
                         posotionList.putExtra("flag", "2");
                         posotionList.putExtra("zphId", zphId);
+
                     }
                     posotionList.putExtra("companyId", companyId);
                     startActivity(posotionList);

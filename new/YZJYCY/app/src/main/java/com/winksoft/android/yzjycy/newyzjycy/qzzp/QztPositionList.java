@@ -34,9 +34,10 @@ import java.util.Map;
  * 该公司所有职位 列表 招聘信息 列表
  */
 public class QztPositionList extends BaseActivity {
-    private String companyId = "", zphId = "", flag = "";
+    private String companyId = "", zphId = "", flag = "", sfkd="";
     private SpringView springView;
-    private Boolean isflage = true;
+    private boolean isflage = true ;
+
     MyListView1 listview;
     List<Map<String, Object>> mapList = new ArrayList<>();
     YFBaseAdapter yfbaseAdapter;
@@ -57,8 +58,10 @@ public class QztPositionList extends BaseActivity {
         TextView headerstr = (TextView) findViewById(R.id.headerstr);
         zphId = this.getIntent().getStringExtra("zphId") == null ? "" : this.getIntent().getStringExtra("zphId");
 
+        sfkd = this.getIntent().getStringExtra("sfkd") == null ? "" : this.getIntent().getStringExtra("sfkd");
 
         flag = this.getIntent().getStringExtra("flag") == null ? "" : this.getIntent().getStringExtra("flag");
+
 
 
         if (!"".equals(zphId)) {
@@ -67,7 +70,7 @@ public class QztPositionList extends BaseActivity {
             } else {
                 headerstr.setText("招聘信息");
             }
-            isflage = false;
+//            isflage = false;
         }
         companyId = this.getIntent().getStringExtra("companyId") == null ? "" : this.getIntent().getStringExtra("companyId");
         companyName.setText(this.getIntent().getStringExtra("companyName") == null ? "" : this.getIntent().getStringExtra("companyName"));
@@ -94,12 +97,23 @@ public class QztPositionList extends BaseActivity {
                         if (arg2 == mapList.size()) {
                             return;
                         }
+
                         String positionId = mapList.get(arg2).get("acb200").toString();// 职位编号
                         Intent intent = new Intent(QztPositionList.this, QztPositionView.class);
                         intent.putExtra("title", "职位详情");
                         intent.putExtra("positionId", positionId);
-                        intent.putExtra("isClick", isflage);//进到职位详细信息 公司名称不可点
+
+                        if("1".equals(sfkd)){
+                            intent.putExtra("isClick", false);//进到职位详细信息 公司名称不可点
+                        }else {
+                            intent.putExtra("isClick", isflage);//进到职位详细信息 公司名称不可点
+                        }
                         intent.putExtra("companyNameStr", mapList.get(arg2).get("aab004").toString());
+
+                        if(!"".equals(zphId)){
+                            intent.putExtra("zphId", zphId);
+                        }
+
                         startActivity(intent);
                     } catch (Exception e) {
                         e.printStackTrace();
