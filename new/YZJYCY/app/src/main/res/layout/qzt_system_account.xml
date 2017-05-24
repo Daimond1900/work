@@ -51,14 +51,16 @@
                         android:text="原始密码：" />
 
                     <EditText
+                        android:textSize="16sp"
                         android:id="@+id/old_passwordEdt"
                         android:layout_width="wrap_content"
                         android:layout_height="35dip"
                         android:layout_weight="1"
                         android:background="@drawable/qzt_input_bg"
                         android:gravity="center_vertical"
-                        android:maxLength="15"
+                        android:maxLength="16"
                         android:password="true"
+                        android:hint="6~16位大小写字母/数字"
                         android:textColor="#000000" />
                 </TableRow>
 
@@ -72,13 +74,15 @@
                         android:text="新密码：" />
 
                     <EditText
+                        android:textSize="16sp"
                         android:id="@+id/new_passwordEdt"
                         android:layout_width="wrap_content"
                         android:layout_height="35dip"
                         android:layout_weight="1"
                         android:background="@drawable/qzt_input_bg"
                         android:gravity="left|center_vertical"
-                        android:maxLength="15"
+                        android:maxLength="16"
+                        android:hint="6~16位大小写字母/数字"
                         android:password="true"
                         android:textColor="#000000" />
                 </TableRow>
@@ -99,7 +103,9 @@
                         android:layout_weight="1"
                         android:background="@drawable/qzt_input_bg"
                         android:gravity="center_vertical|left"
-                        android:maxLength="15"
+                        android:maxLength="16"
+                        android:textSize="16sp"
+                        android:hint="6~16位大小写字母/数字"
                         android:password="true"
                         android:textColor="#000000" />
                 </TableRow>

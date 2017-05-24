@@ -24,7 +24,7 @@
                     android:id="@+id/id_lv"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
-                    android:background="#ffffff"
+                    android:background="#F6F6F6"
                     android:cacheColorHint="#00000000"
                     android:descendantFocusability="blocksDescendants"
                     android:divider="#F6F6F6"

@@ -72,9 +72,8 @@
                     android:layout_width="10dp"
                     android:layout_height="10dp"
                     android:layout_marginTop="4dp"
-                    android:src="@mipmap/dj_good"
                     android:text="100" />
-
+<!--android:src="@mipmap/dj_good"-->
                 <TextView
                     android:layout_marginLeft="2dp"
                     android:id="@+id/xw_hit"

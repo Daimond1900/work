@@ -15,12 +15,7 @@
 
         <ScrollView
             android:id="@+id/myscroll"
-            style="@style/Fill"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:fadingEdge="none"
-            android:scrollbars="none">
+            style="@style/Fill">
 
             <LinearLayout
                 android:layout_width="match_parent"

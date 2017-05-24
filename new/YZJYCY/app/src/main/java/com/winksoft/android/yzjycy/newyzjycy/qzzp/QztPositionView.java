@@ -678,7 +678,8 @@ public class QztPositionView extends BaseActivity {
 
             String sgtz1 = "".equals(commonUtil.getMapValue(positionInfo, "aac034")) ? "0cm" : commonUtil.getMapValue(positionInfo, "aac034")+"cm";
             String sgtz2 = "".equals(commonUtil.getMapValue(positionInfo, "aac035")) ? "0kg" : commonUtil.getMapValue(positionInfo, "aac035")+"kg";
-            sgtz.setText("身高:" + sgtz1 + "; 体重:" + sgtz2);
+//            sgtz.setText("身高:" + sgtz1 + "; 体重:" + sgtz2);
+            sgtz.setText(sgtz1 + ";" + sgtz2);
 
             gxrq.setText(commonUtil.getMapValue(positionInfo, "aae397"));
 
