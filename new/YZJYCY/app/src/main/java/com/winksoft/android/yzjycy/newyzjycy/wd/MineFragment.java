@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.winksoft.android.yzjycy.CommonPageView;
 import com.winksoft.android.yzjycy.R;
 import com.winksoft.android.yzjycy.activity.LoginActivity;
 import com.winksoft.android.yzjycy.data.LoginDal;
@@ -29,7 +30,9 @@ import com.winksoft.android.yzjycy.ui.bminfo.Zpt_RegisterCountListActivity;
 import com.winksoft.android.yzjycy.ui.enterprise.ZptEnterpriseActivity;
 import com.winksoft.android.yzjycy.ui.hireQuery.Zpt_EmployCountListActivity;
 import com.winksoft.android.yzjycy.ui.pxxx.BmInfoSureActivity;
+import com.winksoft.android.yzjycy.util.CommonUtil;
 import com.winksoft.android.yzjycy.util.Constants;
+import com.winksoft.android.yzjycy.util.DialogUtil;
 import com.yifeng.nox.android.http.http.AjaxCallBack;
 import com.yifeng.nox.android.json.DataConvert;
 
@@ -55,6 +58,9 @@ public class MineFragment extends Fragment implements OnClickListener {
     private TextView tv_cache_size;
     private ProgressBar publicloading;
     Dialog proDialog;
+    private CommonUtil commonUtil;
+    private DialogUtil dialogUtil;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -64,6 +70,8 @@ public class MineFragment extends Fragment implements OnClickListener {
             // 防止多次new出片段对象，造成图片错乱问题
             return layout;
         }
+        commonUtil = new CommonUtil(getActivity());
+        dialogUtil = new DialogUtil(getActivity());
 
         loginDal = new LoginDal(getActivity());
         layout = inflater.inflate(R.layout.fragment_mine, container, false);
@@ -280,10 +288,15 @@ public class MineFragment extends Fragment implements OnClickListener {
 
                 break;
             case R.id.layout_mine_help: //使用说明
-                Log.d("ttt", "onClick:  使用说明 = ");
+                if (!commonUtil.checkNetWork()) {/*dialogUtil.shortToast("请设置网络连接!");*/
+                    dialogUtil.alertNetError();
+                } else {
+                    Intent intent = new Intent(getActivity(), CommonPageView.class);
+                    intent.putExtra("url", Constants.IP+"android/person/help");
+                    intent.putExtra("title", "使用说明");
+                    startActivity(intent);
+                }
                 break;
-
-
             default:
                 break;
         }
