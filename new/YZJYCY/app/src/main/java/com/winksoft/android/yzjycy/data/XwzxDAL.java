@@ -549,9 +549,10 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
      * appSign	签名认证
      * dateTime	yyyy-MM-dd HH:mm:ss
      */
-    public void doCompleteSheBaoInfo(String userid, String idcard, String sbcard, String idnumber, String phone, AjaxCallBack<?> callBack) {
+    public void doCompleteSheBaoInfo(String name ,String userid, String idcard, String sbcard, String idnumber, String phone, AjaxCallBack<?> callBack) {
         Map<String, String> map = new HashMap<String, String>();
         map.put("id", userid);
+        map.put("name", name);
         map.put("idcard", idcard);
         map.put("sbcard", sbcard);
         map.put("idnumber", idnumber);

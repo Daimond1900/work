@@ -42,6 +42,9 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
 
     private static final String TAG = "SheBaoFm";
 
+
+    private String iZsxm, iSjh, iSfz;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -77,14 +80,11 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
                 if (!commonUtil.checkNetWork()) {/*dialogUtil.shortToast("请设置网络连接!");*/
                     dialogUtil.alertNetError();
                 } else {
-
-
                     if (Constants.iflogin) if (isBindInfo) {
                         StringBuilder url = new StringBuilder(Constants.IP + "android/socialsec/pensionPayView");
                         queryInfo(url, "养老金查询");
                     } else { // 跳转信息绑定页面
-                        intent = new Intent(getActivity(), SheBaoInfoSure.class);
-                        startActivity(intent);
+                        gotoWsInfo();
                     }
                     else {
                         intent = new Intent(getActivity(), LoginActivity.class);
@@ -101,8 +101,7 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
                             StringBuilder url = new StringBuilder(Constants.IP + "android/socialsec/medicareQuery");
                             queryInfo(url, "医疗保险查询");
                         } else {
-                            intent = new Intent(getActivity(), SheBaoInfoSure.class);
-                            startActivity(intent);
+                            gotoWsInfo();
                         }
                     } else {
                         intent = new Intent(getActivity(), LoginActivity.class);
@@ -119,8 +118,7 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
                             StringBuilder url = new StringBuilder(Constants.IP + "android/socialsec/loseWork");
                             queryInfo(url, "失业保险查询");
                         } else {
-                            intent = new Intent(getActivity(), SheBaoInfoSure.class);
-                            startActivity(intent);
+                            gotoWsInfo();
                         }
                     } else {
                         intent = new Intent(getActivity(), LoginActivity.class);
@@ -130,6 +128,16 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
                 break;
         }
     }
+
+
+    private void gotoWsInfo() {
+        Intent intent = new Intent(getActivity(), SheBaoInfoSure.class);
+        intent.putExtra("iZsxm",iZsxm);
+        intent.putExtra("iSjh",iSjh);
+        intent.putExtra("iSfz",iSfz);
+        startActivity(intent);
+    }
+
 
     private void queryInfo(StringBuilder url, String title) {
         HashMap<String, String> map = new HashMap<>();
@@ -174,17 +182,29 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
                     proDialog.dismiss();
             }
         };
-        xwzxDAL.checkUserInfo(user.getUserId(),callBack);
+        xwzxDAL.checkUserInfo(user.getUserId(), callBack);
     }
 
     private void postResult(String json) {
+        Log.d(TAG, "postResult: json ==================" + json);
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
+            String s = map.get("row");
+            Map<String, String> row = new HashMap<>();
+            if(s!=null){
+                row = DataConvert.toMap(s);
+            }
+            Log.d(TAG, "postResult: row ================" + row);
             if (("true").equals(map.get("success"))) {
                 isBindInfo = true;
                 Log.d(TAG, "postResult: 返回结果 = " + map);
-            }else{
+            } else {
                 isBindInfo = false;
+            }
+            if (row != null) {
+                iZsxm = commonUtil.getMapValue(row, "NKNAME");
+                iSjh = commonUtil.getMapValue(row, "PHONE");
+                iSfz = commonUtil.getMapValue(row, "IDCARD");
             }
         }
     }
@@ -195,7 +215,7 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
         super.onResume();
         UserSession userSession = new UserSession(getActivity());
         user = userSession.getUser();
-        Log.d(TAG, "onResume: ID = " + user.getUserId() );
+        Log.d(TAG, "onResume: ID = " + user.getUserId());
         loadDate();
     }
 

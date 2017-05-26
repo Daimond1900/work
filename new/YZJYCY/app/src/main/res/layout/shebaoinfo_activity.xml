@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical" >
+    android:background="#f6f6f6"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/top"
-        style="@style/titleComStyle" >
+        style="@style/titleComStyle">
 
         <Button
             android:id="@+id/back_btn"
@@ -21,21 +21,23 @@
             android:text="社保信息绑定" />
     </RelativeLayout>
 
-    <LinearLayout style="@style/baoming_info_layout" >
+
+    <LinearLayout style="@style/baoming_info_layout">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
-            android:text="社保号："
+            android:text="真实姓名（必填）："
             android:textColor="@color/black"
             android:textSize="@dimen/small_middle_text_size" />
 
         <EditText
-            android:id="@+id/et_sbh"
+            android:id="@+id/et_zsxm"
             style="@style/sign_up_editText"
-            android:hint="请输入社保号" />
+            android:hint="请输入真实姓名" />
     </LinearLayout>
+
     <!-- 手机号 -->
 
     <!--   <LinearLayout style="@style/baoming_info_layout" >
@@ -57,13 +59,13 @@
       </LinearLayout> -->
     <!-- 身份证号 -->
 
-    <LinearLayout style="@style/baoming_info_layout" >
+    <LinearLayout style="@style/baoming_info_layout">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
-            android:text="身份证号："
+            android:text="身份证号（必填）："
             android:textColor="@color/black"
             android:textSize="@dimen/small_middle_text_size" />
 
@@ -73,13 +75,48 @@
             android:hint="请输入身份证号" />
     </LinearLayout>
 
-    <LinearLayout style="@style/baoming_info_layout" >
+
+    <LinearLayout style="@style/baoming_info_layout">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
-            android:text="省个人识别码："
+            android:text="手机号码（必填）："
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/sign_up_editText"
+            android:inputType="phone"
+            android:hint="请输入手机号码" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/baoming_info_layout">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="社保号（选填）："
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_middle_text_size" />
+
+        <EditText
+            android:id="@+id/et_sbh"
+            style="@style/sign_up_editText"
+            android:hint="请输入社保号" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/baoming_info_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="省个人识别码（选填）："
             android:textColor="@color/black"
             android:textSize="@dimen/small_middle_text_size" />
 
@@ -89,21 +126,7 @@
             android:hint="请输入省个人识别码" />
     </LinearLayout>
 
-    <LinearLayout style="@style/baoming_info_layout" >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
-            android:text="联系电话（选填）："
-            android:textColor="@color/black"
-            android:textSize="@dimen/small_middle_text_size" />
-
-        <EditText
-            android:id="@+id/et_phone"
-            style="@style/sign_up_editText"
-            android:hint="请输入电话号码" />
-    </LinearLayout>
 
     <Button
         android:id="@+id/btn_sure"
