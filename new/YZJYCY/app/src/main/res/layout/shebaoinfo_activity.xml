@@ -24,6 +24,7 @@
 
     <LinearLayout style="@style/baoming_info_layout">
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
-            android:text="社保号（选填）："
+            android:text="社保号："
             android:textColor="@color/black"
             android:textSize="@dimen/small_middle_text_size" />
 
@@ -116,7 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
-            android:text="省个人识别码（选填）："
+            android:text="省个人识别码："
             android:textColor="@color/black"
             android:textSize="@dimen/small_middle_text_size" />
 
