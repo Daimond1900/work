@@ -54,7 +54,6 @@ public class QztEnterpriseView extends BaseActivity {
             }
         });
 
-
     }
 
     private void onPostData() {
@@ -229,13 +228,7 @@ public class QztEnterpriseView extends BaseActivity {
             Log.d(TAG, "setPageData: 经纬度 = " + dwzb);
             if (!"".equals(dwzb)) {
                 try {
-                    String[] dwzbs = null;
-                    boolean contains = dwzb.contains(";");
-                    if (contains) {
-                        dwzbs = dwzb.split(";");
-                    } else {
-                        dwzbs = dwzb.split(",");
-                    }
+                    String[] dwzbs = dwzb.split(";");
                     if (dwzbs != null) {
                         longitude = dwzbs[0];//经度
                         latitude = dwzbs[1];//纬度
