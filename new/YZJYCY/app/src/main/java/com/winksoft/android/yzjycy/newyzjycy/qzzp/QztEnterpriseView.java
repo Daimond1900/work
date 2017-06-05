@@ -223,7 +223,7 @@ public class QztEnterpriseView extends BaseActivity {
             String address = enterInfo.get("aae006") == null ? "" : enterInfo.get("aae006");
             Log.d(TAG, "setPageData: 公司名称  == " + companyNameStr);
             companyAddress.setText("".equals(address) ? companyNameStr : address + "	(地图定位)");
-
+            //修改
             String dwzb = enterInfo.get("dwzb") == null ? "" : enterInfo.get("dwzb");
             Log.d(TAG, "setPageData: 经纬度 = " + dwzb);
             if (!"".equals(dwzb)) {
