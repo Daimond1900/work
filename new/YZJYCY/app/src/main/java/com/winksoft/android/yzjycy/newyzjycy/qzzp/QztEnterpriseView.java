@@ -93,6 +93,7 @@ public class QztEnterpriseView extends BaseActivity {
     }
 
     private void postResult(String json) {
+        Log.d(TAG, "postResult: json 结果： = " + json);
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (("true").equals(map.get("success"))) {
@@ -157,6 +158,7 @@ public class QztEnterpriseView extends BaseActivity {
                     startActivity(posotionList);
                     break;
                 case R.id.companyAddressItem:
+                    Log.d(TAG, "onClick: 点击时的经纬度 = " + longitude + ":" + latitude);
                     if (!"".equals(longitude) && !"".equals(latitude)) {
                         Intent map = new Intent(QztEnterpriseView.this, ZptMapInfoActivity.class);
                         map.putExtra("lot", longitude);//经度
@@ -224,12 +226,21 @@ public class QztEnterpriseView extends BaseActivity {
             companyAddress.setText("".equals(address) ? companyNameStr : address + "	(地图定位)");
 
             String dwzb = enterInfo.get("dwzb") == null ? "" : enterInfo.get("dwzb");
+            Log.d(TAG, "setPageData: 经纬度 = " + dwzb);
             if (!"".equals(dwzb)) {
                 try {
-                    String[] dwzbs = dwzb.split(";");
-                    longitude = dwzbs[0];//经度
-                    latitude = dwzbs[1];//纬度
-                }catch (Exception e){
+                    String[] dwzbs = null;
+                    boolean contains = dwzb.contains(";");
+                    if (contains) {
+                        dwzbs = dwzb.split(";");
+                    } else {
+                        dwzbs = dwzb.split(",");
+                    }
+                    if (dwzbs != null) {
+                        longitude = dwzbs[0];//经度
+                        latitude = dwzbs[1];//纬度
+                    }
+                } catch (Exception e) {
                     longitude = "";
                     latitude = "";
                 }
