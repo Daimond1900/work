@@ -197,6 +197,8 @@
                                 android:background="@drawable/qzt_head"
                                 android:scaleType="fitXY"
                                 android:textColor="#333" />
+
+
                         </RelativeLayout>
                     </RelativeLayout>
 

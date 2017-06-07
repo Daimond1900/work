@@ -29,9 +29,9 @@ import java.util.Map;
 public class PxDetailsActivity extends BaseActivity implements OnClickListener {
 
     private static final String TAG = "PxDetails";
-    private Button back_btn, bm, ybm;
+    private Button back_btn, bm, ybm,ygq;
     private TextView bjmc, pxjg, pxlx, pxgz, pxdj, pxks, kbrq, jsrq;
-    private String class_id, is_enroll = "";
+    private String class_id, is_enroll = "",is_time_ok="";
     private int verifyFlag;
     private String longitude = "";// 经度
     private String latitude = "";// 纬度
@@ -67,15 +67,22 @@ public class PxDetailsActivity extends BaseActivity implements OnClickListener {
      *
      * @param is_enroll2
      */
-    private void isEnroll(String is_enroll2) {
+    private void isEnroll(String is_enroll2 , String is_time_ok) {
         if ("1".equals(is_enroll2)) { // 已经报过名了
             bm.setVisibility(View.GONE);
+            ygq.setVisibility(View.GONE);
             ybm.setVisibility(View.VISIBLE);
         } else {
-            bm.setVisibility(View.VISIBLE);
-            ybm.setVisibility(View.GONE);
+            if("1".equals(is_time_ok)){ //过期了
+                bm.setVisibility(View.GONE);
+                ybm.setVisibility(View.GONE);
+                ygq.setVisibility(View.VISIBLE);
+            }else{
+                bm.setVisibility(View.VISIBLE);
+                ybm.setVisibility(View.GONE);
+                ygq.setVisibility(View.GONE);
+            }
         }
-
     }
 
     // 初始化
@@ -83,9 +90,12 @@ public class PxDetailsActivity extends BaseActivity implements OnClickListener {
         back_btn = (Button) findViewById(R.id.back_btn); // 返回键
         back_btn.setOnClickListener(this);
         bm = (Button) findViewById(R.id.bm); // 报名
-        bm.setOnClickListener(this);
         ybm = (Button) findViewById(R.id.ybm); // 已报名
+        ygq= (Button) findViewById(R.id.ygq); // 过期
+        bm.setOnClickListener(this);
         ybm.setOnClickListener(this);
+        ygq.setOnClickListener(this);
+
         bjmc = (TextView) findViewById(R.id.bjmc);
         pxjg = (TextView) findViewById(R.id.pxjg);
         pxlx = (TextView) findViewById(R.id.pxlx);
@@ -121,6 +131,9 @@ public class PxDetailsActivity extends BaseActivity implements OnClickListener {
                 break;
             case R.id.ybm: // 已报名
                 commonUtil.shortToast("您已经报过名了!");
+                break;
+            case R.id.ygq: // 已报名
+                commonUtil.shortToast("报名时间已截止!");
                 break;
             // case R.id.dz: // 地图
             // if (!longitude.equals("") && !latitude.equals("")) {
@@ -222,6 +235,7 @@ public class PxDetailsActivity extends BaseActivity implements OnClickListener {
      * @param json
      */
     private void postResult(String json) {
+        Log.d(TAG, "postResult:详情界面   = =  "+ json);
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if (map.get("success").equals("false")) {
@@ -236,6 +250,11 @@ public class PxDetailsActivity extends BaseActivity implements OnClickListener {
                     jsrq.setText(commonUtil.getMapValue(mapClassInfo, "ending_time"));
                     kbrq.setText(commonUtil.getMapValue(mapClassInfo, "opening_time"));// 开班时间
                     is_enroll = commonUtil.getMapValue(mapClassInfo, "is_enroll"); // 是否投过简历
+
+                    is_time_ok = commonUtil.getMapValue(mapClassInfo, "is_time_ok"); // 是否过时
+
+
+
                     latitude = commonUtil.getMapValue(mapClassInfo, "loc_lat"); // 纬度
                     longitude = commonUtil.getMapValue(mapClassInfo, "loc_lng"); // 经度
                 }
@@ -304,7 +323,7 @@ public class PxDetailsActivity extends BaseActivity implements OnClickListener {
         pxgz.setText(this.getIntent().getStringExtra("training_job_type")); // 培训工种
         pxdj.setText(this.getIntent().getStringExtra("training_level")); // 培训等级
 
-        isEnroll(is_enroll);
+        isEnroll(is_enroll,is_time_ok);
     }
 
     /**
@@ -395,7 +414,7 @@ public class PxDetailsActivity extends BaseActivity implements OnClickListener {
         if (map != null) {
             if (("true").equals(map.get("success"))) {
                 commonUtil.shortToast("报名成功!");
-                isEnroll("1");
+                isEnroll("1","0");
                 return;
             } else {
                 commonUtil.shortToast("报名失败!");

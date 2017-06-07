@@ -312,6 +312,19 @@
                                 android:textSize="16.0sp"
                                 android:visibility="gone"
                                  />
+                            <Button
+                                android:id="@+id/ygq"
+                                style="@style/common_btn_style"
+                                android:background="@drawable/heise_button"
+                                android:layout_marginRight="6dp"
+                                android:layout_marginTop="13dp"
+                                android:text="报     名"
+                                android:textColor="#fff"
+                                android:textSize="16.0sp"
+                                android:visibility="gone"
+                                />
+
+
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>

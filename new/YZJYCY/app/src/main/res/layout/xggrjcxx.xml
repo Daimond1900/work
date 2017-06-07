@@ -100,13 +100,13 @@
                                     android:id="@+id/xm"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="85dp"
                                     android:layout_marginLeft="6dp"
+                                    android:layout_marginRight="85dp"
                                     android:layout_weight="1"
                                     android:background="@null"
+                                    android:hint="请输入姓名"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:hint="请输入姓名"
                                     android:textSize="16sp" />
                             </LinearLayout>
 
@@ -208,6 +208,16 @@
                                 android:background="@drawable/qzt_head"
                                 android:scaleType="fitXY"
                                 android:textColor="#333" />
+
+                            <TextView
+                                style="@style/whwrap_style"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="#00000000"
+                                android:text="编辑头像"
+                                android:textColor="#FF811B" />
+
                         </RelativeLayout>
                     </RelativeLayout>
 
@@ -298,15 +308,15 @@
                                     android:id="@+id/sg"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-                                    android:maxLines="1"
-                                    android:layout_marginLeft="6dp"
+                                    android:hint="请输入身高"
                                     android:inputType="number"
+                                    android:maxLines="1"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:hint="请输入身高"
                                     android:textSize="16sp" />
 
                                 <ImageView
@@ -348,11 +358,11 @@
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-                                    android:maxLines="1"
+                                    android:hint="请输入体重"
                                     android:inputType="number"
+                                    android:maxLines="1"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:hint="请输入体重"
                                     android:textSize="16sp" />
 
                                 <ImageView
@@ -390,15 +400,15 @@
                                     android:id="@+id/sl"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
-                                    android:layout_marginLeft="6dp"
                                     android:background="@null"
+                                    android:hint="请输入视力"
                                     android:maxLines="1"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:hint="请输入视力"
-                                    android:textSize="16sp"  />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -521,13 +531,13 @@
                                     android:id="@+id/zyms"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-                                    android:textColor="#444444"
-                                    android:layout_marginLeft="6dp"
-                                    android:textColorHint="#ccc"
                                     android:hint="请输入专业描述"
+                                    android:textColor="#444444"
+                                    android:textColorHint="#ccc"
                                     android:textSize="16sp" />
                             </LinearLayout>
 
@@ -560,14 +570,14 @@
                                     android:id="@+id/csrq"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
+                                    android:hint="请输入出生日期"
                                     android:maxLines="1"
-                                    android:layout_marginLeft="6dp"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:hint="请输入出生日期"
                                     android:textSize="16sp" />
 
                                 <ImageView
@@ -649,13 +659,13 @@
                                     android:id="@+id/jkzk"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
+                                    android:hint="请输入健康状况"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:layout_marginLeft="6dp"
-                                    android:hint="请输入健康状况"
                                     android:textSize="16sp" />
 
                                 <ImageView
@@ -673,12 +683,14 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="10dp"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     style="@style/login_hint"
                                     android:layout_gravity="left"
                                     android:maxLength="20"
                                     android:text="*"
                                     android:textColor="#ffffff" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -691,14 +703,14 @@
                                     android:id="@+id/byyx"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-                                    android:layout_marginLeft="6dp"
+                                    android:hint="请输入毕业院校"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:hint="请输入毕业院校"
-                                    android:textSize="16sp"  />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -715,12 +727,14 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="10dp"
                                 android:orientation="horizontal">
+
                                 <TextView
                                     style="@style/login_hint"
                                     android:layout_gravity="left"
                                     android:maxLength="20"
                                     android:text="*"
                                     android:textColor="#ffffff" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -819,15 +833,15 @@
                                     android:id="@+id/byrq"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
+                                    android:hint="请输入毕业日期"
                                     android:maxLines="1"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:layout_marginLeft="6dp"
-                                    android:hint="请输入毕业日期"
-                                    android:textSize="16sp"  />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -864,14 +878,14 @@
                                     android:id="@+id/zwjs"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-                                    android:layout_marginLeft="6dp"
+                                    android:hint="请输入自我介绍"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:hint="请输入自我介绍"
-                                    android:textSize="16sp"   />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -908,14 +922,14 @@
                                     android:id="@+id/jtzz"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-                                    android:layout_marginLeft="6dp"
+                                    android:hint="请输入家庭住址"
                                     android:textColor="#444444"
                                     android:textColorHint="#ccc"
-                                    android:hint="请输入家庭住址"
-                                    android:textSize="16sp"  />
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -995,14 +1009,14 @@
                                     android:id="@+id/yzbm"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-                                    android:textColor="#444444"
-                                    android:layout_marginLeft="6dp"
-                                    android:textColorHint="#ccc"
                                     android:hint="请输入邮政编码"
-                                    android:textSize="16sp"/>
+                                    android:textColor="#444444"
+                                    android:textColorHint="#ccc"
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -1039,14 +1053,14 @@
                                     android:id="@+id/gddh"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-                                    android:textColor="#444444"
-                                    android:layout_marginLeft="6dp"
-                                    android:textColorHint="#ccc"
                                     android:hint="请输入固定电话"
-                                    android:textSize="16sp"/>
+                                    android:textColor="#444444"
+                                    android:textColorHint="#ccc"
+                                    android:textSize="16sp" />
 
                                 <ImageView
                                     style="@style/whwrap_style"
@@ -1084,15 +1098,14 @@
                                     android:id="@+id/sjhm"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:background="@null"
-                                    android:textColorHint="#ccc"
-                                    android:layout_marginLeft="6dp"
                                     android:hint="请输入手机号码"
-                                    android:textSize="16sp"
                                     android:inputType="phone"
                                     android:textColor="#444444"
-                                    />
+                                    android:textColorHint="#ccc"
+                                    android:textSize="16sp" />
                             </LinearLayout>
 
                             <View style="@style/line_style" />
@@ -1124,13 +1137,13 @@
                                     android:id="@+id/dzyj"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginLeft="6dp"
                                     android:layout_marginRight="10dp"
                                     android:layout_weight="1"
                                     android:background="@null"
-                                    android:textColor="#444444"
-                                    android:layout_marginLeft="6dp"
-                                    android:textColorHint="#ccc"
                                     android:hint="请输入电子信箱"
+                                    android:textColor="#444444"
+                                    android:textColorHint="#ccc"
                                     android:textSize="16sp" />
 
                                 <ImageView

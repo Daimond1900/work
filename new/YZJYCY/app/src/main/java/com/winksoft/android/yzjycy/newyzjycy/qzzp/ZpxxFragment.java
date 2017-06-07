@@ -318,7 +318,7 @@ public class ZpxxFragment extends Fragment {
                 view.findViewById(R.id.islayout).setVisibility(View.GONE);
                 view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
                 view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
-                ((TextView) view.findViewById(R.id.sxyc)).setText("服务器繁忙，请稍后再试！");
+                ((TextView) view.findViewById(R.id.sxyc)).setText("暂无数据，下拉刷新！");
                 isBotom = true;
                 springView.setEnable(true);
                 springView.setGive(SpringView.Give.TOP);

@@ -897,6 +897,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
                              String gddhStr,
                              String sjhmStr,
                              String dzyjStr,
+                             List<com.yifeng.nox.android.http.entity.FormFile> list,
                              AjaxCallBack<?> callBack) {
 
         Map<String, String> map = new HashMap<String, String>();
@@ -931,8 +932,8 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
         Log.d(TAG, "doModifyJbxx: szdqStr = " + szdqStr);
         map.put("aae005", gddhStr);  //固定电话
         map.put("aae159", dzyjStr);  //电子信箱
-
-        post(Constants.IP + "android/person/updateACAC01", callBack, map);
+        upload(Constants.IP + "android/person/updateACAC01", callBack, map,list);
+//        post(Constants.IP + "android/person/updateACAC01", callBack, map);
     }
 
 

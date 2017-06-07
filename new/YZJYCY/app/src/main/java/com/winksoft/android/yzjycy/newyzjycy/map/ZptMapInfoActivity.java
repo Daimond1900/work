@@ -39,6 +39,9 @@ public class ZptMapInfoActivity extends Activity {
         });
         mapView = (MapView) findViewById(R.id.bmapView);
         baiduMap = mapView.getMap();
+//        baiduMap.setMapType(BaiduMap.MAP_TYPE_SATELLITE);/*新加的 卫星图*/
+        baiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
+//        baiduMap.setMapType();
         baiduMap.setMyLocationEnabled(true);
         double lat;
         double lot;

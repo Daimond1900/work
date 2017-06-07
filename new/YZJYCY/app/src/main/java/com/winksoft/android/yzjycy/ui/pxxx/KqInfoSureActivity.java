@@ -98,16 +98,15 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
 
         verifyStoragePermissions(this);
         doKqDw();
-
     }
 
 
     public static void verifyStoragePermissions(Activity activity) {
-            ActivityCompat.requestPermissions(
-                    activity,
-                    PERMISSIONS_QX,
-                    REQUEST_EXTERNAL_STORAGE
-            );
+        ActivityCompat.requestPermissions(
+                activity,
+                PERMISSIONS_QX,
+                REQUEST_EXTERNAL_STORAGE
+        );
     }
 
     private void doKqDw() {
@@ -149,6 +148,7 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 }
                 if (latitude != 0.0 && longitude != 0.0) {
                     commonUtil.shortToast("考勤定位成功");
+
                     if ("".equals(mProvince) && "".equals(mCity) && "".equals(mDistrict) && "".equals(mStreet) && "".equals(mStreetNumber)) {
                         dwdz.setOnClickListener(KqInfoSureActivity.this);
                         commonUtil.shortToast("考勤定位失败");

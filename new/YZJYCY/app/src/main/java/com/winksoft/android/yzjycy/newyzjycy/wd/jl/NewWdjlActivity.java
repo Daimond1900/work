@@ -11,12 +11,15 @@ import android.widget.ScrollView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.winksoft.android.yzjycy.BaseActivity;
 import com.winksoft.android.yzjycy.CustomeProgressDialog;
 import com.winksoft.android.yzjycy.MyListView1;
 import com.winksoft.android.yzjycy.R;
 import com.winksoft.android.yzjycy.data.XwzxDAL;
 import com.winksoft.android.yzjycy.util.CommonUtil;
+import com.winksoft.android.yzjycy.util.Constants;
 import com.yifeng.nox.android.http.http.AjaxCallBack;
 import com.yifeng.nox.android.json.DataConvert;
 
@@ -37,9 +40,10 @@ public class NewWdjlActivity extends BaseActivity implements View.OnClickListene
     Dialog proDialog;
     private List<Map<String, String>> gzjlList, jyjlList, pxjlList, yynlList, jszcList, qzyxList;
     private Map<String, String> jcxxList;
-    private ImageView wsj_img;
+    private ImageView wsj_img , head;
     private TextView wsj_tv;
     private ScrollView islayout;
+    private ImageLoader im;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +51,9 @@ public class NewWdjlActivity extends BaseActivity implements View.OnClickListene
         setContentView(R.layout.new_wdjl);
         xwzxDAL = new XwzxDAL(this);
         commonUtil = new CommonUtil(this);
+        im = ImageLoader.getInstance();
         initView();
+        im.init(ImageLoaderConfiguration.createDefault(this));
     }
 
     @Override
@@ -57,6 +63,7 @@ public class NewWdjlActivity extends BaseActivity implements View.OnClickListene
     }
 
     private void initView() {
+        head = (ImageView) findViewById(R.id.head);/*头像*/
         xz = (Button) findViewById(R.id.xz);
         xz.setOnClickListener(this);
 
@@ -203,6 +210,14 @@ public class NewWdjlActivity extends BaseActivity implements View.OnClickListene
                 gddh.setText(commonUtil.getMapValue(jcxxList, "aae005"));//固定电话
                 sjhm.setText(commonUtil.getMapValue(jcxxList, "acb501"));//手机号码
                 dzyj.setText(commonUtil.getMapValue(jcxxList, "aae159"));//电子信箱
+
+                /*----------------------------------------------------------------------*/
+                /*头像的获取*/
+                String headUrl = commonUtil.getMapValue(jcxxList, "head");/*头像地址*/
+                if(headUrl !=null && !"".equals(headUrl)){
+                    im.displayImage(Constants.IP+headUrl,head);
+                }
+                /*----------------------------------------------------------------------*/
             }
         }
         /*-------------------求职意向------------------------------*/

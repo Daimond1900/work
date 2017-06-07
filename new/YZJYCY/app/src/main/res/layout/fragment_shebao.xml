@@ -51,7 +51,7 @@
                         android:layout_weight="1.0"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="养老保险查询"
+                        android:text="养老缴费查询"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -86,7 +86,7 @@
                         android:layout_weight="1.0"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="医疗保险查询"
+                        android:text="医保缴费查询"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -121,7 +121,7 @@
                         android:layout_weight="1.0"
                         android:ellipsize="end"
                         android:singleLine="true"
-                        android:text="失业保险查询"
+                        android:text="失业金领取"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 

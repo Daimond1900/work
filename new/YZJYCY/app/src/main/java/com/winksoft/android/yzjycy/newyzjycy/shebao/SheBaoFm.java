@@ -42,7 +42,6 @@ public class SheBaoFm extends Fragment implements View.OnClickListener {
 
     private static final String TAG = "SheBaoFm";
 
-
     private String iZsxm, iSjh, iSfz;
 
     @Override
