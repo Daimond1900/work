@@ -88,6 +88,7 @@ public class UserSession {
 		User user = new User();
 		SharedPreferences userinfo = context.getSharedPreferences(USERINFO, 0);
 		// user.setKey(userinfo.getString("key", ""));
+		user.setPic(userinfo.getString("pic", ""));
 		user.setLogintype(userinfo.getString("logintype", ""));
 		user.setIsuse(userinfo.getString("isuse", ""));
 		user.setLoginName(userinfo.getString("loginname", ""));

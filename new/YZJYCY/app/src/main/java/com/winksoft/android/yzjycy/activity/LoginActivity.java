@@ -1,6 +1,12 @@
 package com.winksoft.android.yzjycy.activity;
 
-import java.util.Map;
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.winksoft.android.yzjycy.CustomeProgressDialog;
 import com.winksoft.android.yzjycy.R;
@@ -12,13 +18,8 @@ import com.yifeng.nox.android.afinal.annotation.view.SetView;
 import com.yifeng.nox.android.http.http.AjaxCallBack;
 import com.yifeng.nox.android.json.DataConvert;
 import com.yifeng.nox.android.ui.BaseLogin;
-import android.app.Dialog;
-import android.content.Intent;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+
+import java.util.Map;
 
 /**
  * 用户登录
@@ -127,6 +128,7 @@ public class LoginActivity extends BaseLogin {
 					this.remeberPwd(this.getName(), this.getPwd());
  					User user = new User();
  					/*解析数据，存入User*/
+ 					user.setPic(getMapValue(map1,"pic")); /*------------------------------*/
  					user.setLoginName(this.getName());				// 用户名	
  					user.setPassWord(this.getPwd());
  					user.setLogintype(getMapValue(map1,"logintype"));//密码

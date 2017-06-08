@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.winksoft.android.yzjycy.CommonPageView;
 import com.winksoft.android.yzjycy.R;
 import com.winksoft.android.yzjycy.activity.LoginActivity;
@@ -43,6 +45,7 @@ import java.util.Map;
  */
 public class MineFragment extends Fragment implements OnClickListener {
 
+    private static final String TAG = "MineFragment";
     private View mViewNotLogined;
     private View mViewLogined;
     private View layout;
@@ -60,8 +63,9 @@ public class MineFragment extends Fragment implements OnClickListener {
     Dialog proDialog;
     private CommonUtil commonUtil;
     private DialogUtil dialogUtil;
-
-
+    private ImageView imageView;
+    private ImageLoader im;
+    private String picUrl;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -72,7 +76,8 @@ public class MineFragment extends Fragment implements OnClickListener {
         }
         commonUtil = new CommonUtil(getActivity());
         dialogUtil = new DialogUtil(getActivity());
-
+        im = ImageLoader.getInstance();
+        im.init(ImageLoaderConfiguration.createDefault(getActivity()));
         loginDal = new LoginDal(getActivity());
         layout = inflater.inflate(R.layout.fragment_mine, container, false);
         initView();
@@ -88,6 +93,13 @@ public class MineFragment extends Fragment implements OnClickListener {
             mViewLogined.setVisibility(View.VISIBLE);
             mViewNotLogined.setVisibility(View.GONE);
             layout_mine_xgmm.setVisibility(View.VISIBLE);
+
+            Log.d(TAG, "onLoadUser: 头像地址 " + picUrl);
+            if (!"".equals(picUrl)) {
+                im.displayImage(Constants.IP + picUrl, imageView);
+            }else {
+                imageView.setImageResource(R.drawable.t_name);
+            }
 
             if (user.getRoleid().equals("4028c2e948ba2b750148ba2e76960000")) {
                 tv_name.setText(newRealname);
@@ -155,6 +167,7 @@ public class MineFragment extends Fragment implements OnClickListener {
     }
 
     private void loginResult(String json) {
+        Log.d(TAG, "loginResult: 登录返回的图片： " + json);
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
             if ("true".equals(map.get("success"))) {
@@ -166,6 +179,7 @@ public class MineFragment extends Fragment implements OnClickListener {
                     sex = getMapValue(map1, "aac004");
                     sjhm = getMapValue(map1, "acb501"); // 手机号
                     csrq = getMapValue(map1, "aac006");// 出生日期
+                    picUrl = getMapValue(map1, "pic");// touxiang
 
                     onLoadUser();
                 }
@@ -191,7 +205,7 @@ public class MineFragment extends Fragment implements OnClickListener {
 
         tv_name = (TextView) layout.findViewById(R.id.tv_name);
         tv_phone = (TextView) layout.findViewById(R.id.tv_phone);
-        ImageView imageView = (ImageView) layout.findViewById(R.id.user_icon);
+        imageView = (ImageView) layout.findViewById(R.id.user_icon); /*头像*/
         imageView.setOnClickListener(this);
         layout_mine_xgmm = layout.findViewById(R.id.layout_mine_xgmm);
         layout_mine_xgmm.setOnClickListener(this);
@@ -292,7 +306,7 @@ public class MineFragment extends Fragment implements OnClickListener {
                     dialogUtil.alertNetError();
                 } else {
                     Intent intent = new Intent(getActivity(), CommonPageView.class);
-                    intent.putExtra("url", Constants.IP+"android/person/help");
+                    intent.putExtra("url", Constants.IP + "android/person/help");
                     intent.putExtra("title", "使用说明");
                     startActivity(intent);
                 }
