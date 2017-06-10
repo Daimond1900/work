@@ -66,6 +66,7 @@ public class MineFragment extends Fragment implements OnClickListener {
     private ImageView imageView;
     private ImageLoader im;
     private String picUrl;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -97,7 +98,7 @@ public class MineFragment extends Fragment implements OnClickListener {
             Log.d(TAG, "onLoadUser: 头像地址 " + picUrl);
             if (!"".equals(picUrl)) {
                 im.displayImage(Constants.IP + picUrl, imageView);
-            }else {
+            } else {
                 imageView.setImageResource(R.drawable.t_name);
             }
 
@@ -286,7 +287,6 @@ public class MineFragment extends Fragment implements OnClickListener {
                 intent1.putExtra("title", "面试邀请函");
                 startActivity(intent1);
                 break;
-
             case R.id.personal_login_button: // 登录
                 startActivity(new Intent(getContext(), LoginActivity.class));
                 break;
@@ -315,7 +315,6 @@ public class MineFragment extends Fragment implements OnClickListener {
                 break;
         }
     }
-
 
     /**
      * 清除缓存的提示框
