@@ -399,6 +399,7 @@ public class ModifyPersonJcInfo extends BaseActivity implements View.OnClickList
                 , dzyjStr, listForm
         );
     }
+
     /**
      * 提交基本信息数据
      */
@@ -607,6 +608,7 @@ public class ModifyPersonJcInfo extends BaseActivity implements View.OnClickList
         String headUrl = commonUtil.getMapValue(map, "head");/*头像地址*/
         if (headUrl != null && !"".equals(headUrl)) {
             im.displayImage(Constants.IP + headUrl, head);
+
         }
 
                 /*----------------------------------------------------------------------*/
