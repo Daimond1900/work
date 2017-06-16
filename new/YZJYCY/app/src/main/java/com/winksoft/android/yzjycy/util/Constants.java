@@ -2,9 +2,12 @@ package com.winksoft.android.yzjycy.util;
 
 public class Constants {
 
-    public static final String IP = "http://222.189.216.110:8889/yzjycy/"; // 外网
+//        public static final String IP = "http://222.189.216.110:8889/yzjycy/"; // 公司外网
 
-//    public static final String IP = "http://192.168.66.244:8080/yzjycy/";
+    public static final String IP = "http://139.196.124.232:8080/yzjycy/"; // 正式地址
+
+
+//    public static final String IP = "http://192.168.66.244:8080/yzjycy/"; //王梅君本地
 
     public static final String downapk = IP + "down/yzcyjy.apk";
     public static final String downtxt = IP + "down/version.txt";

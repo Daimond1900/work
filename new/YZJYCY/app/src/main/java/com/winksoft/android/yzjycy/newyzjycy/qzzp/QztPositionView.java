@@ -131,7 +131,7 @@ public class QztPositionView extends BaseActivity {
         }
         Log.d(TAG, "登录是判断 = " + (Constants.iflogin ? user.getUserId() : ""));
 
-        xwzxDAL.getPosition(Constants.iflogin ? user.getUserId() : "", positionId, i,callBack);
+        xwzxDAL.getPosition(Constants.iflogin ? user.getUserId() : "", positionId, i, callBack);
 
     }
 
@@ -295,7 +295,7 @@ public class QztPositionView extends BaseActivity {
     /**
      * 投递简历 结果
      */
-    private void jltdResult(String json) {
+    /*private void jltdResult(String json) {
         Log.d(TAG, "投递简历的结果:  json = " + json);
         Map<String, String> map = DataConvert.toMap(json);
         if (map != null) {
@@ -313,7 +313,31 @@ public class QztPositionView extends BaseActivity {
         } else {
             commonUtil.shortToast("系统繁忙，请稍后！");
         }
+    }*/
 
+    /**
+     * 投递简历 结果 修改
+     */
+    private void jltdResult(String json) {
+        Log.d(TAG, "投递简历的结果:  json = " + json);
+        Map<String, String> map = DataConvert.toMap(json);
+        if (map != null) {
+            if (("true").equals(commonUtil.getMapValue(map, "success"))) {
+                if (("您还没有简历！").equals(commonUtil.getMapValue(map, "msg"))) {
+                    commonUtil.shortToast("请先完善您的简历");
+                    Intent intent = new Intent(this, ModifyJLActivity.class);
+                    intent.putExtra("pdbt", 0);
+                    startActivity(intent);
+                } else {
+                    commonUtil.shortToast(map.get("msg"));
+                    deliveryBtn.setText("取消投递");
+                }
+            } else {
+
+            }
+        } else {
+            commonUtil.shortToast("系统繁忙，请稍后！");
+        }
     }
 
     private void initPage() {
@@ -365,9 +389,9 @@ public class QztPositionView extends BaseActivity {
         company_item = (TableRow) findViewById(R.id.company_item);
 
 
-        Log.d(TAG, "initPage: 是否可以点 = " + this.getIntent().getBooleanExtra("isClick",false));
-        
-        
+        Log.d(TAG, "initPage: 是否可以点 = " + this.getIntent().getBooleanExtra("isClick", false));
+
+
         if (!this.getIntent().getBooleanExtra("isClick", false)) {// 如果是所有职位进来查看公司详细不可点
             findViewById(R.id.im_right).setVisibility(View.VISIBLE);
             company_item.setOnClickListener(onClick);
@@ -421,7 +445,7 @@ public class QztPositionView extends BaseActivity {
 
                     Log.d(TAG, "职位详情点击: zphId = " + zphId);
 
-                    if(!"".equals(zphId)){
+                    if (!"".equals(zphId)) {
                         bl.putExtra("zphId", zphId);
                     }
 
@@ -450,6 +474,7 @@ public class QztPositionView extends BaseActivity {
                         String flagStr = deliveryBtn.getText().toString().trim();
                         if ("投递简历".equals(flagStr)) {
                             doTdTd();
+
                         } else if ("取消投递".equals(flagStr)) {
                             doQxTd();
                         }
@@ -653,14 +678,14 @@ public class QztPositionView extends BaseActivity {
             zwmcpost = commonUtil.getMapValue(positionInfo, "aca112");
             txt_zw.setText(zwmcpost);// 职位名称 招聘工种
             gzsm.setText(commonUtil.getMapValue(positionInfo, "acb22a")); // 工种说明
-            String nannum = "".equals(commonUtil.getMapValue(positionInfo, "acb21d")) ? "0人" : commonUtil.getMapValue(positionInfo, "acb21d")+"人";
-            String nvnum = "".equals(commonUtil.getMapValue(positionInfo, "acb21e")) ? "0人" : commonUtil.getMapValue(positionInfo, "acb21e")+"人";
+            String nannum = "".equals(commonUtil.getMapValue(positionInfo, "acb21d")) ? "0人" : commonUtil.getMapValue(positionInfo, "acb21d") + "人";
+            String nvnum = "".equals(commonUtil.getMapValue(positionInfo, "acb21e")) ? "0人" : commonUtil.getMapValue(positionInfo, "acb21e") + "人";
 
             peopleCount.setText("男性:" + nannum
                     + "; 女性:" + nvnum);// 招聘人数
 
             pushDate.setText(commonUtil.getMapValue(positionInfo, "aae397") + "~" + commonUtil.getMapValue(positionInfo, "aae398"));// 有效期
-            String price = "".equals(commonUtil.getMapValue(positionInfo, "acb241")) ? "0元" : commonUtil.getMapValue(positionInfo, "acb241")+"元";
+            String price = "".equals(commonUtil.getMapValue(positionInfo, "acb241")) ? "0元" : commonUtil.getMapValue(positionInfo, "acb241") + "元";
             if ("".equals(price))
                 price = "面议";
             monthlyPay.setText(price);// 工资
@@ -670,20 +695,20 @@ public class QztPositionView extends BaseActivity {
             sxzy.setText(commonUtil.getMapValue(positionInfo, "aac183"));
             xl.setText(commonUtil.getMapValue(positionInfo, "aac011"));// 学历
 
-            String maxnl = "".equals(commonUtil.getMapValue(positionInfo, "acb222")) ? "0岁" : commonUtil.getMapValue(positionInfo, "acb222")+"岁";
-            String minnl = "".equals(commonUtil.getMapValue(positionInfo, "acb221")) ? "0岁" : commonUtil.getMapValue(positionInfo, "acb221")+"岁";
+            String maxnl = "".equals(commonUtil.getMapValue(positionInfo, "acb222")) ? "0岁" : commonUtil.getMapValue(positionInfo, "acb222") + "岁";
+            String minnl = "".equals(commonUtil.getMapValue(positionInfo, "acb221")) ? "0岁" : commonUtil.getMapValue(positionInfo, "acb221") + "岁";
 
 
             nl.setText(minnl + "~" + maxnl);//年龄
 
-            String sgtz1 = "".equals(commonUtil.getMapValue(positionInfo, "aac034")) ? "0cm" : commonUtil.getMapValue(positionInfo, "aac034")+"cm";
-            String sgtz2 = "".equals(commonUtil.getMapValue(positionInfo, "aac035")) ? "0kg" : commonUtil.getMapValue(positionInfo, "aac035")+"kg";
+            String sgtz1 = "".equals(commonUtil.getMapValue(positionInfo, "aac034")) ? "0cm" : commonUtil.getMapValue(positionInfo, "aac034") + "cm";
+            String sgtz2 = "".equals(commonUtil.getMapValue(positionInfo, "aac035")) ? "0kg" : commonUtil.getMapValue(positionInfo, "aac035") + "kg";
 //            sgtz.setText("身高:" + sgtz1 + "; 体重:" + sgtz2);
             sgtz.setText(sgtz1 + ";" + sgtz2);
 
             gxrq.setText(commonUtil.getMapValue(positionInfo, "aae397"));
 
-            String cyns1 = "".equals(commonUtil.getMapValue(positionInfo, "acc217")) ? "0年" : commonUtil.getMapValue(positionInfo, "acc217")+"年";
+            String cyns1 = "".equals(commonUtil.getMapValue(positionInfo, "acc217")) ? "0年" : commonUtil.getMapValue(positionInfo, "acc217") + "年";
 
             cyns.setText(cyns1);
             area.setText(positionInfo.get("aab301"));// 用工区域

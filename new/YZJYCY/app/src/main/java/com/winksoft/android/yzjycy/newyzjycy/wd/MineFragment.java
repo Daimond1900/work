@@ -307,6 +307,7 @@ public class MineFragment extends Fragment implements OnClickListener {
                 } else {
                     Intent intent = new Intent(getActivity(), CommonPageView.class);
                     intent.putExtra("url", Constants.IP + "android/person/help");
+//                    intent.putExtra("url", "http://58.216.50.26/mobile/txl/index.html");
                     intent.putExtra("title", "使用说明");
                     startActivity(intent);
                 }

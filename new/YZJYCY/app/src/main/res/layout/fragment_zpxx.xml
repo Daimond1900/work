@@ -6,11 +6,103 @@
     android:layout_height="fill_parent"
     android:background="#F6F6F6"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="#F6F6F6"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_title"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spn_area"
+                        android:layout_width="fill_parent"
+                        android:layout_height="33dp"
+                        android:background="@drawable/qzt_btn_dropdown"
+                        android:prompt="@string/spin_prompt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/spn_gzxz"
+                        android:layout_width="fill_parent"
+                        android:layout_height="33dp"
+                        android:background="@drawable/qzt_btn_dropdown"
+                        android:prompt="@string/spin_prompt" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtTxt_keyword"
+                    android:layout_width="0dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/jcy_search_bg"
+                    android:hint="请输入工种/职位"
+                    android:maxLength="20"
+                    android:paddingLeft="5dp"
+                    android:textColor="#333"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="65dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="2sp"
+            android:background="@drawable/com_btns1"
+            android:text="查询"
+            android:textColor="@color/default_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
     <!-- 列表 -->
     <com.liaoinstan.springview.widget.SpringView
         android:id="@+id/springview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/search_bar"
         android:layout_weight="1">
 
         <ScrollView
@@ -27,94 +119,7 @@
                     android:orientation="vertical">
 
                     <!-- 主体 -->
-                    <LinearLayout
-                        android:id="@+id/search_bar"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
-                        android:background="#F6F6F6"
-                        android:gravity="center">
 
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:focusable="true"
-                            android:focusableInTouchMode="true"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@id/top_title"
-                                android:gravity="center">
-
-                                <LinearLayout
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:focusable="true"
-                                    android:focusableInTouchMode="true"
-                                    android:orientation="vertical">
-
-                                    <Spinner
-                                        android:id="@+id/spn_area"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="33dp"
-                                        android:background="@drawable/qzt_btn_dropdown"
-                                        android:prompt="@string/spin_prompt" />
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="fill_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="2dp"
-                                    android:layout_weight="1"
-                                    android:focusable="true"
-                                    android:focusableInTouchMode="true"
-                                    android:orientation="vertical">
-
-                                    <Spinner
-                                        android:id="@+id/spn_gzxz"
-                                        android:layout_width="fill_parent"
-                                        android:layout_height="33dp"
-                                        android:background="@drawable/qzt_btn_dropdown"
-                                        android:prompt="@string/spin_prompt" />
-                                </LinearLayout>
-                            </LinearLayout>
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:orientation="horizontal">
-
-                                <EditText
-                                    android:id="@+id/edtTxt_keyword"
-                                    android:layout_width="0dp"
-                                    android:layout_height="33dp"
-                                    android:layout_weight="1"
-                                    android:background="@drawable/jcy_search_bg"
-                                    android:hint="请输入工种/职位"
-                                    android:maxLength="20"
-                                    android:paddingLeft="5dp"
-                                    android:textColor="#333"
-                                    android:textColorHint="@color/hintColor"
-                                    android:textSize="14sp" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                        <Button
-                            android:id="@+id/search_btn"
-                            android:layout_width="65dp"
-                            android:layout_height="75dp"
-                            android:layout_marginLeft="2sp"
-                            android:background="@drawable/com_btns1"
-                            android:text="查询"
-                            android:textColor="@color/default_text"
-                            android:textSize="16sp" />
-                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/islayout"

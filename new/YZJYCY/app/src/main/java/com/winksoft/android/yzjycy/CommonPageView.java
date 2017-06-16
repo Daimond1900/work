@@ -154,8 +154,8 @@ public class CommonPageView extends BaseActivity {
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
 				// TODO Auto-generated method stub
 				//super.shouldOverrideUrlLoading(view, url);
-				
-				if(url.contains("tel:")){//调用拔打电话   
+
+				if(url.contains("tel:")){//调用拔打电话
 					try{
 					int i=url.indexOf(":");
 					String tel="";
@@ -165,27 +165,27 @@ public class CommonPageView extends BaseActivity {
 					if(!tel.equals(""))
 					dialogUtil.showCallDialog("系统提示", "您是否要拔打"+tel+"电话吗?",tel);
 					}catch(Exception e){e.printStackTrace();}
-		          
+
 		        }else if(url.contains("qq.com")){
 		        	goToOAth2(url);
 		        }else{
-		        	
-		        	
+
+
 		        	if(url.indexOf("?")>0){
 		        	   url=url+"&isAndroid=true";
 		        	}else{
 		        	   url=url+"?isAndroid=true";
 		        	}
-		        	
+
 		        	url=url.replace("#", "");//把#号设置为空，一般浏览器URL有#号会认为结束、后面参数找不到。
-		        	
+
 		        	//System.out.println("执行url==="+url);
-		        	
-		        	webView.loadUrl(url);  
-		        	
-		        } 
-				  return true;    
-				
+
+		        	webView.loadUrl(url);
+
+		        }
+				  return true;
+
 			}
 		});
     	

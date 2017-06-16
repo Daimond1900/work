@@ -23,8 +23,9 @@
                     android:id="@+id/bjmc"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="35dp"
                     android:singleLine="true"
-                    android:text="创业xxxxxxxxxxxx课"
+                    android:text="创业xxxxxxxxxxx士大夫士大夫大师傅大师傅大师傅大师傅的x课"
                     android:textColor="#444444"
                     android:textSize="16sp" />
 
