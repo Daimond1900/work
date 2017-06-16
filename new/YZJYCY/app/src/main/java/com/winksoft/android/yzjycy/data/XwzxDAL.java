@@ -32,7 +32,6 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
         user = userSession.getUser();
     }
 
-
     /**
      * 性别
      */

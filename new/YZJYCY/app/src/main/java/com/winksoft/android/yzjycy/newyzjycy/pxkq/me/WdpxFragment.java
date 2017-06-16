@@ -151,15 +151,18 @@ public class WdpxFragment extends Fragment implements View.OnClickListener {
         super.onResume();
         Log.d("cc_pxbm", "onResume: ");
         if (!Constants.iflogin) {
+            Log.d("cc_pxbm", "onResume: +++++++++++++++");
             tx_dl.setVisibility(View.VISIBLE);
             listview.setVisibility(View.GONE);
             view.findViewById(R.id.kb).setVisibility(View.GONE);
             view.findViewById(R.id.wlyc).setVisibility(View.GONE);
-            isBotom = true;
-            springView.setEnable(true);
-            springView.setGive(SpringView.Give.TOP);
-            springView.getFooterView().setVisibility(View.GONE);
+            springView.setEnable(false);
+//            isBotom = true;
+//            springView.setEnable(true);
+//            springView.setGive(SpringView.Give.TOP);
+//            springView.getFooterView().setVisibility(View.GONE);
         } else if (Constants.iflogin) {
+            Log.d("cc_pxbm", "onResume: ----------------");
             tx_dl.setVisibility(View.GONE);
             listview.setVisibility(View.VISIBLE);
             refreshData();

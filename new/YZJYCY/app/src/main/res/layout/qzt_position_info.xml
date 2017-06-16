@@ -253,9 +253,9 @@
                     android:layout_marginTop="10dp">
 
                     <TextView
+                        android:text="@string/zwxq_gz_str"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="工        种:"
                         android:textColor="#444444"
                         android:textSize="@dimen/small_middle_text_size" />
 
@@ -439,7 +439,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="年        龄:"
+                        android:text="@string/zwxq_nl_str"
                         android:textColor="#444444"
                         android:textSize="16sp" />
 

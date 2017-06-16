@@ -58,7 +58,7 @@ import java.util.Map;
  * Created by 1900 on 2017/4/20.
  */
 public class ModifyPersonJcInfo extends BaseActivity implements View.OnClickListener {
-    private static final String TAG = "ModifyPer";
+    private static final String TAG = "queryResult";
     private EditText xm, byyx, sg, tz, zwjs, jtzz, gddh, sjhm, dzyj, zyms, jkzk, sl, yzbm;
     private TextView csrq;
     private TextView byrq;

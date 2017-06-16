@@ -92,7 +92,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="姓        名："
+                                    android:text="@string/wdjl_xg_xm_str"
                                     android:textColor="#444444"
                                     android:textSize="16sp" />
 
@@ -132,7 +132,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="性        别："
+                                    android:text="@string/wdjl_xg_xb_str"
                                     android:textColor="#444444"
                                     android:textSize="16sp" />
 
@@ -169,7 +169,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="学        历："
+                                    android:text="@string/wdjl_xg_xl_str"
                                     android:textColor="#444444"
                                     android:textSize="16sp" />
 
@@ -257,7 +257,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="民        族："
+                                    android:text="@string/wdjl_xg_mz_str"
                                     android:textColor="#444444"
                                     android:textSize="16sp" />
 
@@ -300,7 +300,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="身高(cm)："
+                                    android:text="@string/wdjl_xg_sg_str"
                                     android:textColor="#444444"
                                     android:textSize="16sp" />
 
@@ -392,7 +392,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:maxLines="1"
-                                    android:text="视        力："
+                                    android:text="@string/wdjl_xg_sl_str"
                                     android:textColor="#444444"
                                     android:textSize="16sp" />
 

@@ -267,10 +267,9 @@ public class ZpdwFragment extends Fragment {
             view.findViewById(R.id.islayout).setVisibility(View.GONE);
             view.findViewById(R.id.kb).setVisibility(View.VISIBLE);
             view.findViewById(R.id.wlyc).setVisibility(View.VISIBLE);
-            ((TextView) view.findViewById(R.id.sxyc)).setText("暂无数据    ");
+            ((TextView) view.findViewById(R.id.sxyc)).setText("暂无数据");
         }
     }
-
 
     protected void loadDate() {
         AjaxCallBack<Object> callBack = new AjaxCallBack<Object>(getActivity(), false) {
@@ -342,7 +341,6 @@ public class ZpdwFragment extends Fragment {
             }
         });
     }
-
 
     private class MyOnclick implements View.OnClickListener {
 

@@ -188,7 +188,6 @@ public class MineFragment extends Fragment implements OnClickListener {
         }
     }
 
-
     private void initView() {
         publicloading = (ProgressBar) layout.findViewById(R.id.publicloading);
         tv_cache_size = (TextView) layout.findViewById(R.id.tv_cache_size);

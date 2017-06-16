@@ -29,4 +29,28 @@
     <string name="cube_ptr_seconds_ago">&#160;seconds ago</string>
     <string name="cube_ptr_minutes_ago">&#160;minutes ago</string>
     <string name="cube_ptr_hours_ago">&#160;hours ago</string>
+
+    <string name="zph_zt_str">主&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;题:</string>
+    <string name="zwxq_gz_str">工&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;种:</string>
+    <string name="zwxq_nl_str">年&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;龄:</string>
+
+    <string name="wdjl_xm_str">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名:&#160;&#160;</string>
+    <string name="wdjl_xg_xm_str">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名：</string>
+
+    <string name="wdjl_xb_str">性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;别:&#160;&#160;</string>
+    <string name="wdjl_xg_xb_str">性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;别：</string>
+
+    <string name="wdjl_xl_str">学&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;历:&#160;&#160;</string>
+    <string name="wdjl_xg_xl_str">学&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;历：</string>
+
+    <string name="wdjl_mz_str">民&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;族:&#160;&#160;</string>
+    <string name="wdjl_xg_mz_str">民&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;族：</string>
+
+    <string name="wdjl_sg_str">身&#160;高(cm):&#160;&#160;</string>
+    <string name="wdjl_xg_sg_str">身&#160;高(cm)：</string>
+    <string name="wdjl_xg_sl_str">视&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;力：</string>
+
+    <string name="px_bm_bt_str">报&#160;&#160;&#160;&#160;名</string>
+    <string name="px_kq_bt_str">考&#160;&#160;&#160;&#160;勤</string>
+    <string name="px_qt_bt_str">签&#160;&#160;&#160;&#160;退</string>
 </resources>

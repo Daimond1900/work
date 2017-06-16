@@ -297,7 +297,7 @@
                                 style="@style/common_btn_style"
                                 android:layout_marginRight="6dp"
                                 android:layout_marginTop="13dp"
-                                android:text="报     名"
+                                android:text="@string/px_bm_bt_str"
                                 android:textColor="#fff"
                                 android:textSize="16.0sp" />
 
@@ -318,7 +318,7 @@
                                 android:background="@drawable/heise_button"
                                 android:layout_marginRight="6dp"
                                 android:layout_marginTop="13dp"
-                                android:text="报     名"
+                                android:text="@string/px_bm_bt_str"
                                 android:textColor="#fff"
                                 android:textSize="16.0sp"
                                 android:visibility="gone"

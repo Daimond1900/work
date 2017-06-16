@@ -222,7 +222,7 @@
                                 style="@style/common_btn_style"
                                 android:layout_marginRight="6dp"
                                 android:layout_marginTop="13dp"
-                                android:text="考     勤"
+                                android:text="@string/px_kq_bt_str"
                                 android:textSize="16sp" />
 
                             <Button
@@ -230,7 +230,7 @@
                                 style="@style/common_btn_style"
                                 android:layout_marginRight="6dp"
                                 android:layout_marginTop="13dp"
-                                android:text="签     退"
+                                android:text="@string/px_qt_bt_str"
                                 android:textSize="16sp"
                                 android:visibility="gone" />
                         </LinearLayout>

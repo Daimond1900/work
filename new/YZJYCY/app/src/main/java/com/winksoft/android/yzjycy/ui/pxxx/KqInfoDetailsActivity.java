@@ -275,10 +275,10 @@ public class KqInfoDetailsActivity extends BaseActivity implements OnClickListen
 
 
                     if ("1".equals(isKqStr) && "0".equals(isQtStr)) {
-                        bt_kq.setText("签退");
+                        bt_kq.setText(R.string.px_qt_bt_str);
                         isCheck = "2";
                     } else if ("0".equals(isKqStr) && !"".equals(course_id)) {
-                        bt_kq.setText("考勤");
+                        bt_kq.setText(R.string.px_kq_bt_str);
                         isCheck = "1";
                     } else if ("0".equals(isKqStr) && "".equals(course_id)) {
                         bt_kq.setBackgroundDrawable(getResources().getDrawable(R.drawable.heise_button));
