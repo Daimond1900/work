@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -122,7 +121,6 @@ public class HomeFm extends Fragment {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-                Log.d("home", "onItemClick: " + arg2);
                 if (!commonUtil.checkNetWork()) {/*dialogUtil.shortToast("请设置网络连接!");*/
                     dialogUtil.alertNetError();
                 } else {
@@ -218,7 +216,6 @@ public class HomeFm extends Fragment {
                         url = Constants.IP + "attached/recruit/main_banner1.png";
                     } else {
 //                        url = Constants.IP + table.get("picpath").replace("\\", "/");
-                        Log.d("heool", "postLoadBannerImgResult: 图片地址" + table.get("picpath").replace("\\", "/"));
                         url = table.get("picpath").replace("\\", "/");
 //                        tpdz.substring(2);
 //                        url = "http://222.189.216.110:8010" + tpdz.substring(2);

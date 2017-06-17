@@ -406,7 +406,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
      * @param positionId
      * @return
      */
-    public void getPosition(String usrId, String positionId, int flag,AjaxCallBack<?> callBack) {
+    public void getPosition(String usrId, String positionId, int flag, AjaxCallBack<?> callBack) {
         String url = "";
         Map<String, String> map = new HashMap<String, String>();
 
@@ -524,11 +524,11 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
     /**
      * 社保查询，检查用户信息是否完整
      */
-    public void checkUserInfo(String userid,AjaxCallBack<?> callBack) {
+    public void checkUserInfo(String userid, AjaxCallBack<?> callBack) {
         Map<String, String> map = new HashMap<String, String>();
         map.put("id", userid);
 
-        Log.d("SheBaoFm", "checkUserInfo: 社保ID = " +  userid);
+        Log.d("SheBaoFm", "checkUserInfo: 社保ID = " + userid);
 
         map.put("datetime", DateUtil.getStrCurrentDateTime());
         String secret_value = DateUtil.getStrCurrentDate();
@@ -548,7 +548,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
      * appSign	签名认证
      * dateTime	yyyy-MM-dd HH:mm:ss
      */
-    public void doCompleteSheBaoInfo(String name ,String userid, String idcard, String sbcard, String idnumber, String phone, AjaxCallBack<?> callBack) {
+    public void doCompleteSheBaoInfo(String name, String userid, String idcard, String sbcard, String idnumber, String phone, AjaxCallBack<?> callBack) {
         Map<String, String> map = new HashMap<String, String>();
         map.put("id", userid);
         map.put("name", name);
@@ -645,7 +645,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
     /**
      * 考勤信息列表
      */
-    public void doKqInfoQuery(int page, String keyword, String userid,AjaxCallBack<?> callBack) {
+    public void doKqInfoQuery(int page, String keyword, String userid, AjaxCallBack<?> callBack) {
         Map<String, String> map = new HashMap<String, String>();
         map.put("userid", userid);
         Log.d("cc_pxbm", "doKqInfoQuery: 传值ID = " + userid);
@@ -743,6 +743,17 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
         HashMap SignHashMap = ParamSignUtils.sign(map, secret_key);
         map.put("appSign", (String) SignHashMap.get("appSign"));
         post(Constants.IP + "android/recruit/doDelivery", callBack, map);
+
+        Log.d(TAG, "doNewPostDelivery: 来看参数：" + "aac001:" + userid + "   " +
+                "acb200:" + positionId + "   " +
+                "aab004:" + dwmc + "   " +
+                "aca112:" + zwmc + "   " +
+                "aac001x:" + gsid + "   " +
+                "acb330:" + zphid + "   " +
+                "appSign:" + (String) SignHashMap.get("appSign")
+
+
+        );
     }
 
     /***
@@ -845,6 +856,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
      * @return
      */
     public void doJlcx(String userId, AjaxCallBack<?> callBack) {
+        Log.d(TAG, "doJlcx: 我得ID： " + userId);
         Map<String, String> map = new HashMap<String, String>();
         map.put("aac001", userId);
         String secret_value = DateUtil.getStrCurrentDate();
@@ -931,7 +943,7 @@ public class XwzxDAL extends com.yifeng.nox.android.http.BaseDAL {
         Log.d(TAG, "doModifyJbxx: szdqStr = " + szdqStr);
         map.put("aae005", gddhStr);  //固定电话
         map.put("aae159", dzyjStr);  //电子信箱
-        upload(Constants.IP + "android/person/updateACAC01", callBack, map,list);
+        upload(Constants.IP + "android/person/updateACAC01", callBack, map, list);
 //        post(Constants.IP + "android/person/updateACAC01", callBack, map);
     }
 
