@@ -1,13 +1,13 @@
 package com.winksoft.android.yzjycy.data;
-import java.util.HashMap;
-import java.util.Map;
-
 import android.content.Context;
 
 import com.winksoft.android.yzjycy.util.Constants;
 import com.yifeng.nox.android.http.BaseDAL;
 import com.yifeng.nox.android.http.http.AjaxCallBack;
 import com.yifeng.nox.android.util.StringUtil;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class LoginDal extends BaseDAL{
 	public LoginDal(Context context) {
@@ -98,13 +98,14 @@ public class LoginDal extends BaseDAL{
 	 * @param pwd
 	 * @param callBack
 	 */
-	public void registerUser(String phone ,String code,String pwd, String loginType ,String uuid, AjaxCallBack<?>  callBack){
+	public void registerUser(String phone ,String code,String pwd, String loginType ,String uuid,String realname, AjaxCallBack<?>  callBack){
 		Map<String , String > map=new HashMap<String, String>();
 		map.put("phone", phone);
 		map.put("verifycode", code);
 		map.put("pwd", pwd);
 		map.put("uuid", uuid);
 		map.put("logintype", loginType);
+		map.put("userName",realname);
 		post(Constants.IP+"wap/wapuser/registerUser", callBack, map);
 	}
 }

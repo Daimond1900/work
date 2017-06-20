@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include layout="@layout/com_title" />
 
@@ -10,9 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/item_margin_top"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
-        <LinearLayout style="@style/sign_up_layout" >
+        <LinearLayout style="@style/sign_up_layout">
 
             <TextView
                 android:id="@+id/tv_uid"
@@ -26,11 +26,11 @@
                 android:id="@+id/edit_uid"
                 style="@style/sign_up_editText"
                 android:hint="手机号"
-                android:maxLength="11"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:maxLength="11" />
         </LinearLayout>
 
-        <LinearLayout style="@style/sign_up_layout" >
+        <LinearLayout style="@style/sign_up_layout">
 
             <TextView
                 android:layout_width="80dip"
@@ -61,7 +61,8 @@
                 android:textSize="@dimen/tiny_middle_text_size" />
         </LinearLayout>
 
-        <LinearLayout style="@style/sign_up_layout"
+        <LinearLayout
+            style="@style/sign_up_layout"
             android:visibility="gone">
 
             <TextView
@@ -75,25 +76,40 @@
                 android:id="@+id/radioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/radioPersonal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="个人用户" >
-                </RadioButton>
+                    android:text="个人用户"></RadioButton>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="企业用户" >
-                </RadioButton>
+                    android:text="企业用户"></RadioButton>
             </RadioGroup>
         </LinearLayout>
 
-        <LinearLayout style="@style/sign_up_layout" >
+
+        <LinearLayout style="@style/sign_up_layout">
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:text="姓名："
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_middle_text_size" />
+
+            <EditText
+                android:id="@+id/edit_realname"
+                style="@style/sign_up_editText"
+                android:hint="请输入真实姓名" />
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/sign_up_layout">
 
             <TextView
                 android:layout_width="80dip"
@@ -115,7 +131,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="10dip"
             android:layout_marginRight="10dip"
-            android:gravity="center_vertical" >
+            android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="80dip"

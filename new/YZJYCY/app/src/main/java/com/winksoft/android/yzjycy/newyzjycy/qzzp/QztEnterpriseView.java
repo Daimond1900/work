@@ -164,7 +164,7 @@ public class QztEnterpriseView extends BaseActivity {
                         map.putExtra("lat", latitude);//纬度
                         startActivity(map);
                     } else {
-                        commonUtil.shortToast(companyNames + ",还没标注地理位置.");
+                        commonUtil.shortToast(companyNames + "还没标注地理位置.");
                     }
                     break;
                 case R.id.back_btn:
