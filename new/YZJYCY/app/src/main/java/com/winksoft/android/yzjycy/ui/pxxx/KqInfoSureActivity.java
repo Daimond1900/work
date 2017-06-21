@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.location.LocationManager;
@@ -14,7 +15,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -97,16 +100,41 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
         // 请求权限的动态加载
 
         verifyStoragePermissions(this);
-        doKqDw();
     }
 
+    //Manifest.permission.ACCESS_COARSE_LOCATION,
+//    Manifest.permission.ACCESS_FINE_LOCATION,
+//    Manifest.permission.CAMERA,
 
-    public static void verifyStoragePermissions(Activity activity) {
-        ActivityCompat.requestPermissions(
-                activity,
-                PERMISSIONS_QX,
-                REQUEST_EXTERNAL_STORAGE
-        );
+    public void verifyStoragePermissions(Activity activity) {
+        if (ContextCompat.checkSelfPermission(activity,Manifest.permission.ACCESS_COARSE_LOCATION)!= PackageManager.PERMISSION_GRANTED
+                || ContextCompat.checkSelfPermission(activity,Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED
+                || ContextCompat.checkSelfPermission(activity,Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                    activity,
+                    PERMISSIONS_QX,
+                    REQUEST_EXTERNAL_STORAGE
+            );
+        }else{
+            doKqDw();
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == REQUEST_EXTERNAL_STORAGE) {
+            if (grantResults.length > 0
+                    && grantResults[0] == PackageManager.PERMISSION_GRANTED
+                    && grantResults[1] == PackageManager.PERMISSION_GRANTED
+                    && grantResults[2] == PackageManager.PERMISSION_GRANTED) {
+                doKqDw();
+            }else{
+                dwdz.setOnClickListener(KqInfoSureActivity.this);
+                commonUtil.shortToast("考勤所需权限不够");
+                dwdz.setText("考勤所需权限不够，请点击允许所有权限");
+            }
+        }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
     private void doKqDw() {
@@ -229,7 +257,7 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 }
                 break;
             case R.id.dwdz: // 点击重新定位
-                doKqDw();
+                verifyStoragePermissions(this);
                 break;
             default:
                 break;
