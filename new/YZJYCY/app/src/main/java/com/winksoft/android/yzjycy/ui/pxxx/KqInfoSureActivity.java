@@ -107,15 +107,15 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
 //    Manifest.permission.CAMERA,
 
     public void verifyStoragePermissions(Activity activity) {
-        if (ContextCompat.checkSelfPermission(activity,Manifest.permission.ACCESS_COARSE_LOCATION)!= PackageManager.PERMISSION_GRANTED
-                || ContextCompat.checkSelfPermission(activity,Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED
-                || ContextCompat.checkSelfPermission(activity,Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED) {
+        if (ContextCompat.checkSelfPermission(activity, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                || ContextCompat.checkSelfPermission(activity, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                || ContextCompat.checkSelfPermission(activity, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(
                     activity,
                     PERMISSIONS_QX,
                     REQUEST_EXTERNAL_STORAGE
             );
-        }else{
+        } else {
             doKqDw();
         }
     }
@@ -128,7 +128,8 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                     && grantResults[1] == PackageManager.PERMISSION_GRANTED
                     && grantResults[2] == PackageManager.PERMISSION_GRANTED) {
                 doKqDw();
-            }else{
+                kqImageBtn.setOnClickListener(this);
+            } else {
                 dwdz.setOnClickListener(KqInfoSureActivity.this);
                 commonUtil.shortToast("考勤所需权限不够");
                 dwdz.setText("考勤所需权限不够，请点击允许所有权限");
@@ -171,10 +172,9 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
                 mDistrict = gpsUtil.getBaseLocation().district;//区
                 mStreet = gpsUtil.getBaseLocation().street;//街道
                 mStreetNumber = gpsUtil.getBaseLocation().streetNumber;//街道号码
-                if(!"".equals(mStreetNumber)){
+                if (!"".equals(mStreetNumber)) {
                     mStreetNumber += "号";
                 }
-
 
 
                 if (latitude != 0.0 && longitude != 0.0) {
@@ -211,7 +211,6 @@ public class KqInfoSureActivity extends BaseActivity implements OnClickListener 
     private void initView() {
         dwdz = (TextView) findViewById(R.id.dwdz);
         kqImageBtn = (ImageView) findViewById(R.id.kqImageBtn);
-        kqImageBtn.setOnClickListener(this);
         back = (Button) findViewById(R.id.back);
         back.setOnClickListener(this);
         btn_nokq = (Button) findViewById(R.id.btn_nokq);
