@@ -1,0 +1,59 @@
+Executing tasks: [signingReport]
+
+Configuration on demand is an incubating feature.
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to E:\Tools\Android\sdk\ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+useNewCruncher has been deprecated. It will be removed in a future version of the gradle plugin. New cruncher is now always enabled.
+Incremental java compilation is an incubating feature.
+:app:signingReport
+Variant: debugAndroidTest
+Config: YZJYCY
+Store: C:\Users\1900\Desktop\work\new\key\yzjycy.keystore
+Alias: YZJYCY
+MD5: C4:F1:2A:86:0F:2F:E7:62:69:67:32:2D:D8:C7:39:18
+SHA1: 2C:D9:F2:AA:71:79:1A:16:0C:8F:8B:EC:F1:2A:E7:EE:2D:00:F0:6A
+Valid until: 2116年12月24日 星期四
+----------
+Variant: release
+Config: YZJYCY
+Store: C:\Users\1900\Desktop\work\new\key\yzjycy.keystore
+Alias: YZJYCY
+MD5: C4:F1:2A:86:0F:2F:E7:62:69:67:32:2D:D8:C7:39:18
+SHA1: 2C:D9:F2:AA:71:79:1A:16:0C:8F:8B:EC:F1:2A:E7:EE:2D:00:F0:6A
+Valid until: 2116年12月24日 星期四
+----------
+Variant: releaseUnitTest
+Config: YZJYCY
+Store: C:\Users\1900\Desktop\work\new\key\yzjycy.keystore
+Alias: YZJYCY
+MD5: C4:F1:2A:86:0F:2F:E7:62:69:67:32:2D:D8:C7:39:18
+SHA1: 2C:D9:F2:AA:71:79:1A:16:0C:8F:8B:EC:F1:2A:E7:EE:2D:00:F0:6A
+Valid until: 2116年12月24日 星期四
+----------
+Variant: debug
+Config: YZJYCY
+Store: C:\Users\1900\Desktop\work\new\key\yzjycy.keystore
+Alias: YZJYCY
+MD5: C4:F1:2A:86:0F:2F:E7:62:69:67:32:2D:D8:C7:39:18
+SHA1: 2C:D9:F2:AA:71:79:1A:16:0C:8F:8B:EC:F1:2A:E7:EE:2D:00:F0:6A
+Valid until: 2116年12月24日 星期四
+----------
+Variant: debugUnitTest
+Config: YZJYCY
+Store: C:\Users\1900\Desktop\work\new\key\yzjycy.keystore
+Alias: YZJYCY
+MD5: C4:F1:2A:86:0F:2F:E7:62:69:67:32:2D:D8:C7:39:18
+SHA1: 2C:D9:F2:AA:71:79:1A:16:0C:8F:8B:EC:F1:2A:E7:EE:2D:00:F0:6A
+Valid until: 2116年12月24日 星期四
+----------
+
+BUILD SUCCESSFUL
+
+Total time: 0.764 secs
+
+-------------------------------------------------------------------------------
+SHA1: 2C:D9:F2:AA:71:79:1A:16:0C:8F:8B:EC:F1:2A:E7:EE:2D:00:F0:6A
+
+android端百度地图key: KKxHCNhc3F0CAav8Nw5tgfNiHfOr4R7v
