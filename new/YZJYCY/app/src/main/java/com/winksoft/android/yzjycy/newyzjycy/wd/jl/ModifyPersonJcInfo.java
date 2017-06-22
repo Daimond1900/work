@@ -8,6 +8,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -15,6 +16,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
 import android.util.Log;
@@ -78,6 +80,7 @@ public class ModifyPersonJcInfo extends BaseActivity implements View.OnClickList
     public static final int NONE = 0;
     private Bitmap postBitmap;
     private Map<String, String> postParams;
+    private int promiss_if = 0;
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_QX = {
             Manifest.permission.CAMERA,
@@ -92,16 +95,29 @@ public class ModifyPersonJcInfo extends BaseActivity implements View.OnClickList
         im.init(ImageLoaderConfiguration.createDefault(this));
         fileUtil = new FileUtils();
         fileName = DateUtil.getStrCurrentDates() + ".jpg";
-        verifyStoragePermissions(this);
         initView();
+        verifyStoragePermissions(this);
     }
 
-    public static void verifyStoragePermissions(Activity activity) {
+    private void verifyStoragePermissions(Activity activity) {
         ActivityCompat.requestPermissions(
                 activity,
                 PERMISSIONS_QX,
                 REQUEST_EXTERNAL_STORAGE
         );
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == REQUEST_EXTERNAL_STORAGE) {
+            if (grantResults.length > 0
+                    && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                promiss_if = 1;
+            } else {
+                promiss_if = -1;
+            }
+        }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
     /**
@@ -204,7 +220,12 @@ public class ModifyPersonJcInfo extends BaseActivity implements View.OnClickList
                 break;
             case R.id.head:
                 //选择图片
-                doPickPhotoAction();
+                if (promiss_if == 1) {
+                    doPickPhotoAction();
+                } else if (promiss_if == -1) {
+                    verifyStoragePermissions(this);
+                    commonUtil.shortToast("需要您允许权限");
+                }
                 break;
             default:
                 break;
