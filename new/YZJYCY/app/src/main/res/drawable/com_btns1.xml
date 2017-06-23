@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/box_orange" android:state_pressed="true"/>
-    <!-- <item  android:drawable="@drawable/top_button_right" /> -->
-    <item android:drawable="@drawable/box_grey"/>
-
-</selector>
