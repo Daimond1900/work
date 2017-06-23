@@ -39,9 +39,9 @@
                 android:id="@+id/islayout"
                 style="@style/whall_style">
 
-
                 <ImageView
                     android:id="@+id/zphTp"
+                    android:scaleType="fitXY"
                     android:layout_width="match_parent"
                     android:layout_height="150dip" />
 

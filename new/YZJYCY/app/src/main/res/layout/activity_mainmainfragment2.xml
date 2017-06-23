@@ -20,7 +20,7 @@
         android:id="@+id/nts_center"
         android:background="#eeeeee"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="35dp"
         app:nts_active_color="#466CE0"
         app:nts_color="#466CE0"
         app:nts_corners_radius="1.5dp"
@@ -29,7 +29,7 @@
         app:nts_inactive_color="#000000"
         app:nts_titles="@array/px_titles"
         app:nts_type="line"
-        app:nts_size="18sp"
+        app:nts_size="16sp"
         app:nts_weight="2dp"
         />
 

@@ -34,7 +34,7 @@
     <com.gigamole.navigationtabstrip.NavigationTabStrip
         android:id="@+id/nts_center"
         android:layout_width="match_parent"
-        android:layout_height="42dp"
+        android:layout_height="35dp"
         android:background="#eeeeee"
         app:nts_active_color="@color/tab_tv_color"
         app:nts_color="@color/tab_tv_color"
@@ -42,7 +42,7 @@
         app:nts_factor="1.8"
         app:nts_gravity="bottom"
         app:nts_inactive_color="#000000"
-        app:nts_size="18sp"
+        app:nts_size="16sp"
         app:nts_titles="@array/titles"
         app:nts_type="line"
         app:nts_weight="2dp" />

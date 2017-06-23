@@ -53,7 +53,7 @@
                         android:singleLine="true"
                         android:text="养老缴费查询"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -88,7 +88,7 @@
                         android:singleLine="true"
                         android:text="医保缴费查询"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
                         android:singleLine="true"
                         android:text="失业金领取"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"

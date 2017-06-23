@@ -60,7 +60,7 @@
                         android:singleLine="true"
                         android:text="基础信息"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -95,7 +95,7 @@
                         android:singleLine="true"
                         android:text="教育经历"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -130,7 +130,7 @@
                         android:singleLine="true"
                         android:text="培训经历"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -165,7 +165,7 @@
                         android:singleLine="true"
                         android:text="语言能力"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -200,7 +200,7 @@
                         android:singleLine="true"
                         android:text="技术专长"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -235,7 +235,7 @@
                         android:singleLine="true"
                         android:text="工作经历"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -275,7 +275,7 @@
                         android:singleLine="true"
                         android:text="求职意向"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
