@@ -9,9 +9,10 @@
 
     <com.liaoinstan.springview.widget.SpringView
         android:id="@+id/springview"
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
         <ScrollView
             style="@style/Fill"
             android:fadingEdge="none"
@@ -55,13 +56,15 @@
                             android:fastScrollEnabled="true" />
                     </LinearLayout>
                 </RelativeLayout>
+
                 <TextView
                     android:id="@+id/kb"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
+
                 <include layout="@layout/wlyc_info"></include>
             </LinearLayout>
         </ScrollView>
-</com.liaoinstan.springview.widget.SpringView>
+    </com.liaoinstan.springview.widget.SpringView>
 </LinearLayout>

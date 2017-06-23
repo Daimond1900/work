@@ -7,7 +7,6 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -92,6 +91,11 @@ public class Banner extends FrameLayout implements ViewPager.OnPageChangeListene
         super(context, attrs, defStyle);
         this.context = context;
         imageViews = new ArrayList<ImageView>();
+//
+//        for (ImageView imageView : imageViews) {
+//            imageView.setScaleType(ScaleType.FIT_XY);
+//        }
+
         indicatorImages = new ArrayList<ImageView>();
         initView(context, attrs);
     }
