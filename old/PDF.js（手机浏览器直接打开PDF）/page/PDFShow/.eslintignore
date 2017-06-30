@@ -1,0 +1,15 @@
+build/
+l10n/
+docs/
+node_modules/
+examples/
+external/bcmaps/
+external/webL10n/
+external/cmapscompress/
+external/builder/fixtures_esprima/
+test/tmp/
+test/features/
+test/pdfs/
+test/resources/
+test/font/*_spec.js
+*~/
